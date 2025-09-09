@@ -1,0 +1,3 @@
+[submodule "assets_private"]
+	path = assets_private
+	url = https://github.com/O-ElAli/GameDevProjectAssetsPrivate.git
