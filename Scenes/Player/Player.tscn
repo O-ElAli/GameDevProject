@@ -1,6 +1,9 @@
-[gd_scene format=3 uid="uid://d06523r6uwlmc"]
+[gd_scene load_steps=2 format=3 uid="uid://d06523r6uwlmc"]
+
+[ext_resource type="Script" uid="uid://mobever4yx10" path="res://scripts/player/player.gd" id="1_s0eop"]
 
 [node name="Player" type="Node2D"]
+script = ExtResource("1_s0eop")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 
