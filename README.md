@@ -1,14 +1,14 @@
 # GameDevProject
 
 This repository contains the **public code** for our Godot project.  
-Game assets are stored in a **private submodule** so they are only available to collaborators.
+Game assets live in a **private Git submodule** checked out as a **real folder** (`assets/`) — no symlinks — so Godot’s file watcher behaves correctly.
 
 ---
 
 ## 📦 Repositories
 
-- **Public code** → [GameDevProject](https://github.com/O-ElAli/GameDevProject)  
-- **Private assets** → [GameDevProjectAssetsPrivate](https://github.com/O-ElAli/GameDevProjectAssetsPrivate) *(collaborators only)*
+- **Public code** → `GameDevProject`  
+- **Private assets** → `GameDevProjectAssetsPrivate` *(collaborators only)*
 
 ---
 
@@ -16,54 +16,64 @@ Game assets are stored in a **private submodule** so they are only available to 
 
 ### Prerequisites
 - Install [Git](https://git-scm.com/downloads)  
-- (Optional) Install [Git LFS](https://git-lfs.com/)  
+- (Optional) Install [Git LFS](https://git-lfs.com/) if the assets repo uses it  
 - Be added as a **collaborator** to both repos
 
----
-
-### 1. Clone with submodules
-
-#### Option A — First time (recommended)
+### 1) Clone with submodules
 ```bash
 git clone --recurse-submodules https://github.com/O-ElAli/GameDevProject.git
 cd GameDevProject
 ```
 
-#### Option B — If you already cloned without submodules
+If you already cloned without submodules:
 ```bash
-cd GameDevProject
 git submodule update --init --recursive
 ```
 
+### 2) Ensure assets submodule is a real folder at `assets/` (no symlink)
+We keep the private assets repo **mounted directly at `assets/`** to avoid Godot reloading issues with symlinks.
+
+If you previously had a symlink named `assets` → `assets_private`, delete it (safe; it won’t touch your real files):
+- **Windows (PowerShell/cmd):**
+  ```bat
+  rmdir assets
+  ```
+- **macOS/Linux:**
+  ```bash
+  rm assets
+  ```
+
+> The assets submodule path should be `assets/`. If your submodule currently lives at `assets_private/`, migrate it once (guide below).
+
 ---
 
-### 2. Link `assets` → `assets_private`
+## 🔧 One‑time: make the submodule track `main`
 
-Godot expects assets under `res://assets/`.  
-We symlink this folder to the private submodule.
-
-#### Windows (PowerShell; run as Admin or with Developer Mode)
-```powershell
-Remove-Item -Recurse -Force assets -ErrorAction SilentlyContinue
-cmd /c mklink /D assets assets_private
-```
-
-#### macOS / Linux
+From the repo root:
 ```bash
-rm -rf assets 2>/dev/null || true
-ln -s assets_private assets
+git submodule set-branch --branch main assets
+git submodule sync --recursive
+git submodule update --init --remote --recursive
+git add .gitmodules assets
+git commit -m "Track assets submodule on main; initialize to latest"
 ```
+
+This records that the submodule should follow the **`main`** branch when we update with `--remote`.
 
 ---
 
-### 3. Verify in Godot
-1. Open the project in Godot.  
-2. In the **FileSystem dock**, you should see:
-   ```
-   res://assets/
-   ```
-   with folders like `bar/`, `bedroom/`, `character/`, etc.  
-3. Drag `res://assets/bar/test.png` into a scene to confirm.
+## ⚡ Optional quality-of-life
+
+Add a handy alias to always pull code + latest assets:
+
+```bash
+git config alias.update-all "!git pull --recurse-submodules && git submodule update --remote --recursive"
+```
+
+Now you can just run:
+```bash
+git update-all
+```
 
 ---
 
@@ -71,80 +81,82 @@ ln -s assets_private assets
 
 ### Pull latest code + assets
 ```bash
-git pull
-git submodule update --init --recursive
+git update-all
+# or, without the alias:
+# git pull --recurse-submodules
+# git submodule update --remote --recursive
 ```
 
+### Make code changes (public repo)
+```bash
+# edit code...
+git add <files>
+git commit -m "Your message"
+git push
+```
+
+### Add or update assets (private repo)
+```bash
+cd assets
+# add/edit under bar/, character/, etc.
+git add <files>
+git commit -m "Add/Update <assets>"
+git push
+cd ..
+# record the new submodule commit in the public repo so teammates get it
+git add assets
+git commit -m "Bump assets submodule to latest main"
+git push
+```
+
+> **Why bump?** The public repo pins an exact assets commit. Committing the submodule pointer tells others which assets revision to use.
+
 ---
 
-## 🎨 Adding or Updating Assets
+## 🧹 Git ignore rules (inside assets repo)
 
-1. Work inside the private repo:
-   ```bash
-   cd GameDevProject/assets_private
-   # add or edit files under bar/, character/, etc.
-   git add <files>
-   git commit -m "Add/Update <assets>"
-   git push
-   ```
-
-2. Bump the submodule pointer in the public repo:
-   ```bash
-   cd ..
-   git add assets_private
-   git commit -m "Bump assets_private to latest: <short note>"
-   git push
-   ```
-
-💡 Why bump? The public repo tracks **which commit** of the private repo it’s using.  
-Without this step, others won’t automatically see your asset changes.
-
----
-
-## 🧹 Git Ignore Rules
-
-Inside the **private repo** (`assets_private/.gitignore`):
-
+In `assets/.gitignore` (i.e., the private repo):
 ```
 .import/
 *.import
 ```
+- `.import/` → Godot’s cache (auto-regenerated)  
+- `*.import` → Godot sidecar import files
 
-- `.import/` → Godot’s cache folder (regenerated automatically)  
-- `*.import` → Sidecar import files generated for each asset  
-
-To clear ignored junk:
+To clean ignored junk safely:
 ```bash
 git clean -fdX
 ```
 
 ---
 
-## 🛑 Troubleshooting
+## 🛠 Troubleshooting
 
-- **404 when clicking `assets_private` in GitHub:**  
-  You’re not a collaborator on the private repo. This is expected for outsiders.
+- **Detached HEAD in submodule**
+  - Cause: `git submodule update` without `--remote` pins to a commit.
+  - Fix: `git submodule update --remote --recursive` or use `git update-all` alias.
+  - Then commit the bump in the parent repo.
 
-- **Symlink fails on Windows:**  
-  - Run PowerShell as **Administrator**  
-  - Or enable **Developer Mode** in Windows settings.
+- **Teammate doesn’t see new assets**
+  - They need the commit that bumped the submodule pointer.
+  - Run: `git pull` (parent) → `git submodule update --init --remote --recursive`.
 
-- **Submodule broken / missing mapping:**  
-  Reset and re-add:
-  ```bash
-  rmdir /S /Q assets_private 2>NUL
-  rmdir /S /Q .git\modulesssets_private 2>NUL
-  git config -f .git/config --remove-section submodule.assets_private 2>NUL
-  git submodule add https://github.com/O-ElAli/GameDevProjectAssetsPrivate.git assets_private
-  git commit -m "Re-add assets submodule"
-  ```
+- **Large binaries**
+  - Use Git LFS in the assets repo:
+    ```bash
+    git lfs track "*.png" "*.wav" "*.ogg" "*.fbx" "*.glb"
+    git add .gitattributes
+    git commit -m "Use LFS for binaries"
+    git push
+    ```
+
+- **Windows symlink errors**
+  - Not needed anymore since we don’t use symlinks. If you still have legacy links, remove them with `rmdir <link>`.
 
 ---
 
 ## ✅ Summary
 
-- Code = public repo  
-- Assets = private repo  
-- Godot always uses `res://assets/...`  
-- Teammates must clone with `--recurse-submodules` and set up the `assets` symlink  
-- Outsiders see the code but cannot access assets (private repo returns 404)
+- Assets live at **`assets/`** as a **submodule** (no symlinks).  
+- Use `git update-all` (alias) to fetch latest code + assets.  
+- When you change assets, **push the assets repo** and **commit the bump** in the parent repo.
