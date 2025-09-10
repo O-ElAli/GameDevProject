@@ -1,0 +1,214 @@
+[gd_scene load_steps=9 format=3 uid="uid://ben7rq638snug"]
+
+[ext_resource type="Script" uid="uid://byxhuvbhxoj8r" path="res://scripts/Start_Screen/Start_Screen.gd" id="1_xehwy"]
+[ext_resource type="Texture2D" uid="uid://bntj0x3f628kr" path="res://assets/start_screen/Detektiv in der Neonstadt.png" id="2_k5ki8"]
+[ext_resource type="FontFile" uid="uid://ital403v4yx3" path="res://assets/start_screen/Born2bSportyV2.ttf" id="3_k5ki8"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_o5mhj"]
+texture = ExtResource("2_k5ki8")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_k5ki8"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_o5mhj"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8c11w"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_k5ki8"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[node name="Start_Screen" type="Control"]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_xehwy")
+
+[node name="Font" type="Panel" parent="."]
+layout_mode = 0
+offset_left = -574.0
+offset_top = -323.0
+offset_right = 575.0
+offset_bottom = 321.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_o5mhj")
+
+[node name="Start" type="Button" parent="."]
+layout_mode = 2
+offset_left = 376.0
+offset_top = -60.0
+offset_right = 537.0
+offset_bottom = -8.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+theme_override_colors/font_hover_color = Color(0.917647, 0, 0.85098, 1)
+theme_override_colors/font_color = Color(0.443137, 0.109804, 0.568627, 1)
+theme_override_colors/font_focus_color = Color(0.443137, 0.109804, 0.568627, 1)
+theme_override_colors/font_pressed_color = Color(0.0392157, 0.741176, 0.776471, 1)
+theme_override_fonts/font = ExtResource("3_k5ki8")
+theme_override_font_sizes/font_size = 51
+theme_override_styles/focus = SubResource("StyleBoxEmpty_k5ki8")
+theme_override_styles/hover = SubResource("StyleBoxFlat_o5mhj")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_8c11w")
+theme_override_styles/normal = SubResource("StyleBoxFlat_k5ki8")
+text = "Start"
+
+[node name="Continue" type="Button" parent="."]
+layout_mode = 2
+offset_left = 331.0
+offset_top = -10.0
+offset_right = 581.0
+offset_bottom = 42.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+theme_override_colors/font_hover_color = Color(0.917647, 0, 0.85098, 1)
+theme_override_colors/font_color = Color(0.443137, 0.109804, 0.568627, 1)
+theme_override_colors/font_focus_color = Color(0.443137, 0.109804, 0.568627, 1)
+theme_override_colors/font_pressed_color = Color(0.0392157, 0.741176, 0.776471, 1)
+theme_override_fonts/font = ExtResource("3_k5ki8")
+theme_override_font_sizes/font_size = 51
+theme_override_styles/focus = SubResource("StyleBoxEmpty_k5ki8")
+theme_override_styles/hover = SubResource("StyleBoxFlat_o5mhj")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_8c11w")
+theme_override_styles/normal = SubResource("StyleBoxFlat_k5ki8")
+text = "Continue"
+
+[node name="Options" type="Button" parent="."]
+layout_mode = 2
+offset_left = 346.0
+offset_top = 47.0
+offset_right = 573.0
+offset_bottom = 99.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+theme_override_colors/font_hover_color = Color(0.917647, 0, 0.85098, 1)
+theme_override_colors/font_color = Color(0.443137, 0.109804, 0.568627, 1)
+theme_override_colors/font_focus_color = Color(0.443137, 0.109804, 0.568627, 1)
+theme_override_colors/font_pressed_color = Color(0.0392157, 0.741176, 0.776471, 1)
+theme_override_fonts/font = ExtResource("3_k5ki8")
+theme_override_font_sizes/font_size = 51
+theme_override_styles/focus = SubResource("StyleBoxEmpty_k5ki8")
+theme_override_styles/hover = SubResource("StyleBoxFlat_o5mhj")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_8c11w")
+theme_override_styles/normal = SubResource("StyleBoxFlat_k5ki8")
+text = "Options"
+
+[node name="Quit" type="Button" parent="."]
+layout_mode = 2
+offset_left = 392.0
+offset_top = 103.0
+offset_right = 527.0
+offset_bottom = 155.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+theme_override_colors/font_hover_color = Color(0.917647, 0, 0.85098, 1)
+theme_override_colors/font_color = Color(0.443137, 0.109804, 0.568627, 1)
+theme_override_colors/font_focus_color = Color(0.443137, 0.109804, 0.568627, 1)
+theme_override_colors/font_pressed_color = Color(0.0392157, 0.741176, 0.776471, 1)
+theme_override_fonts/font = ExtResource("3_k5ki8")
+theme_override_font_sizes/font_size = 51
+theme_override_styles/focus = SubResource("StyleBoxEmpty_k5ki8")
+theme_override_styles/hover = SubResource("StyleBoxFlat_o5mhj")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_8c11w")
+theme_override_styles/normal = SubResource("StyleBoxFlat_k5ki8")
+text = "Quit"
+
+[node name="Title" type="Label" parent="."]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+physics_interpolation_mode = 2
+auto_translate_mode = 0
+editor_description = ""
+visible = true
+modulate = Color(1, 1, 1, 1)
+self_modulate = Color(1, 1, 1, 1)
+show_behind_parent = false
+top_level = false
+clip_children = 0
+light_mask = 1
+visibility_layer = 1
+z_index = 0
+z_as_relative = true
+y_sort_enabled = false
+texture_filter = 0
+texture_repeat = 0
+material = null
+use_parent_material = false
+clip_contents = false
+custom_minimum_size = Vector2(0, 0)
+layout_direction = 0
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_top = 0.0
+anchor_right = 0.5
+anchor_bottom = 0.0
+offset_left = -146.0
+offset_top = -289.0
+offset_right = 140.0
+offset_bottom = -224.0
+grow_horizontal = 2
+grow_vertical = 1
+rotation = 0.0
+scale = Vector2(1, 1)
+pivot_offset = Vector2(0, 0)
+size_flags_horizontal = 1
+size_flags_vertical = 4
+size_flags_stretch_ratio = 1.0
+localize_numeral_system = true
+tooltip_text = ""
+tooltip_auto_translate_mode = 0
+focus_neighbor_left = NodePath("")
+focus_neighbor_top = NodePath("")
+focus_neighbor_right = NodePath("")
+focus_neighbor_bottom = NodePath("")
+focus_next = NodePath("")
+focus_previous = NodePath("")
+focus_mode = 0
+mouse_filter = 2
+mouse_force_pass_scroll_events = true
+mouse_default_cursor_shape = 0
+theme = null
+theme_type_variation = &""
+theme_override_colors/font_color = Color(0.443137, 0.109804, 0.568627, 1)
+theme_override_fonts/font = ExtResource("3_k5ki8")
+theme_override_font_sizes/font_size = 61
+text = "Lorem Ipsum"
+label_settings = null
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 0
+justification_flags = 163
+paragraph_separator = "\\n"
+clip_text = false
+text_overrun_behavior = 0
+ellipsis_char = "…"
+uppercase = false
+tab_stops = PackedFloat32Array()
+lines_skipped = 0
+max_lines_visible = -1
+visible_characters = -1
+visible_characters_behavior = 0
+visible_ratio = 1.0
+text_direction = 0
+language = ""
+structured_text_bidi_override = 0
+structured_text_bidi_override_options = []
+script = null
+
+[connection signal="pressed" from="Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="Continue" to="." method="_on_continue_pressed"]
+[connection signal="pressed" from="Options" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
