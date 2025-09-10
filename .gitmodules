@@ -2,3 +2,7 @@
 	path = assets_private
 	url = https://github.com/O-ElAli/GameDevProjectAssetsPrivate.git
 	branch = main
+[submodule "assets"]
+	path = assets
+	url = https://github.com/O-ElAli/GameDevProjectAssetsPrivate
+	branch = main
