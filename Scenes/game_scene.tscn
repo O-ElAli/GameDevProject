@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://d3kdniepivgb5"]
+
+[ext_resource type="PackedScene" uid="uid://d06523r6uwlmc" path="res://Scenes/Player/Player.tscn" id="1_x87qo"]
+[ext_resource type="Texture2D" uid="uid://5algrq5obix1" path="res://assets/player/deckard.png" id="2_b6fju"]
+
+[node name="GameScene" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_x87qo")]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(227, 100)
+texture = ExtResource("2_b6fju")
+region_enabled = true
+region_rect = Rect2(37.8033, 100.164, 19.1179, 27.8358)
+region_filter_clip_enabled = true
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(3, 3)
