@@ -113,59 +113,6 @@ git push
 
 ---
 
-## 🧭 Migration: move submodule from `assets_private/` → `assets/` (do once)
-
-If your project currently has the submodule at `assets_private/` and a symlink `assets` → `assets_private`, do this **once**:
-
-**1) Remove the symlink (do NOT delete the real folder):**
-- Windows:
-  ```bat
-  rmdir assets
-  ```
-- macOS/Linux:
-  ```bash
-  rm assets
-  ```
-
-**2) If `assets_private/` is the real folder, rename it to `assets/`:**
-- Windows:
-  ```bat
-  ren assets_private assets
-  ```
-- macOS/Linux:
-  ```bash
-  mv assets_private assets
-  ```
-
-**3) Update Git metadata so the submodule path is `assets`:**
-```bash
-# Rewrite the submodule path in config files
-git rm --cached assets -r 2>NUL || true
-git rm --cached assets_private -r 2>NUL || true
-
-# If your .gitmodules contains 'assets_private', change it to 'assets':
-# [submodule "assets"]
-#   path = assets
-#   url  = https://github.com/O-ElAli/GameDevProjectAssetsPrivate.git
-
-git add .gitmodules assets
-git commit -m "Move submodule to 'assets' path (no symlink)"
-```
-
-**4) Ensure branch tracking + latest revision:**
-```bash
-git submodule set-branch --branch main assets
-git submodule sync --recursive
-git submodule update --init --remote --recursive
-git add assets .gitmodules
-git commit -m "Track assets on main; update to latest"
-git push
-```
-
-> After this, Godot will see `res://assets/` as a normal directory and won’t over-reload on tab focus.
-
----
-
 ## 🧹 Git ignore rules (inside assets repo)
 
 In `assets/.gitignore` (i.e., the private repo):
