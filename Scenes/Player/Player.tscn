@@ -165,7 +165,7 @@ movement_speed = 100.0
 sprite_frames = SubResource("SpriteFrames_h54ih")
 animation = &"Down"
 autoplay = "Idle"
-frame_progress = 0.0857792
+frame_progress = 0.435582
 
 [node name="collision" type="CollisionShape2D" parent="Player"]
 position = Vector2(0, 3.5)
