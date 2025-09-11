@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="NPCResource" load_steps=3 format=3 uid="uid://doectsk62do5w"]
+
+[ext_resource type="Script" uid="uid://b8fd6b0j483xq" path="res://scripts/Npc/npc_resource.gd" id="1_0vupa"]
+[ext_resource type="Texture2D" uid="uid://ctlqihulxw0ha" path="res://assets/Characters/NPCs/matrixSERIESfreebies/upscaled48x48/$agentsmith.png" id="2_2xgl3"]
+
+[resource]
+script = ExtResource("1_0vupa")
+npc_name = "test"
+sprite = ExtResource("2_2xgl3")
+dialog_audio_pitch = ""
+metadata/_custom_type_script = "uid://b8fd6b0j483xq"
