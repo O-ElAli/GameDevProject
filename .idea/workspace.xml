@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="21ebc3dd-559a-4c4d-95a8-fb488af0bf0f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/projectSettingsUpdater.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets" beforeDir="false" afterPath="$PROJECT_DIR$/assets" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,12 +17,12 @@
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="false" />
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "git-widget-placeholder": "map-layout",
-    "node.js.selected.package.tslint": "(autodetect)"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;git-widget-placeholder&quot;: &quot;map-layout&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
   }
-}]]></component>
+}</component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
