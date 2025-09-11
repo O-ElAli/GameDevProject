@@ -153,23 +153,18 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ude3g"]
 size = Vector2(12, 21)
 
-[node name="Player_Scene" type="Node2D"]
-
-[node name="Player" type="CharacterBody2D" parent="."]
+[node name="Player" type="CharacterBody2D" groups=["player"]]
 motion_mode = 1
 platform_floor_layers = 4294967041
 script = ExtResource("1_ft8w5")
 movement_speed = 100.0
 
-[node name="sprite" type="AnimatedSprite2D" parent="Player"]
+[node name="sprite" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_h54ih")
 animation = &"Down"
 autoplay = "Idle"
-frame_progress = 0.435582
+frame_progress = 0.407481
 
-[node name="collision" type="CollisionShape2D" parent="Player"]
+[node name="collision" type="CollisionShape2D" parent="."]
 position = Vector2(0, 3.5)
 shape = SubResource("RectangleShape2D_ude3g")
-
-[node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(3, 3)
