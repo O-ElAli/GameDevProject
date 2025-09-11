@@ -6,10 +6,6 @@ var character_direction: Vector2
 
 func _physics_process(_delta: float) -> void:
 	
-	#character_direction.x = Input.get_axis("move_left", "move_right")
-	#character_direction.y = Input.get_axis("move_up", "move_down")
-	#character_direction = character_direction.normalized()
-	
 	character_direction = Vector2(0,0)
 	
 	if Input.is_action_pressed("move_down"):
@@ -33,7 +29,8 @@ func _physics_process(_delta: float) -> void:
 	
 	
 	velocity = character_direction * movement_speed
-	if Input.get_axis("move_right", "move_left"):
-		print("Moved" + str(velocity))
-		print("Player location: " + str(get_global_transform()))
 	move_and_slide()
+
+@onready var player = get_tree().get_first_node_in_group("player")
+func _ready() -> void:
+	print("Manager found player:", player)
