@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://83vcd18rqs2c" path="res://scripts/Npc/npc.gd" id="1_u75bn"]
 [ext_resource type="Resource" uid="uid://doectsk62do5w" path="res://Scenes/NPC/ressources/test_npc.tres" id="2_37ake"]
-[ext_resource type="Texture2D" uid="uid://cvl3shfgdiyq" path="res://assets/Characters/NPCs/matrixSERIESfreebies/upscaled48x48/$ghostmatrix.png" id="3_37ake"]
+[ext_resource type="Texture2D" uid="uid://ctlqihulxw0ha" path="res://assets/Characters/NPCs/matrixSERIESfreebies/upscaled48x48/$agentsmith.png" id="3_37ake"]
 [ext_resource type="Script" uid="uid://3k0mrhqbdcgn" path="res://scripts/Npc/npc_behavior_wander.gd" id="3_u4vjm"]
 
 [sub_resource type="Animation" id="Animation_tlawm"]
@@ -131,6 +131,7 @@ _data = {
 radius = 9.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_g62kn"]
+radius = 96.0
 
 [node name="NPC_Node" type="Node2D"]
 
@@ -157,7 +158,7 @@ shape = SubResource("CapsuleShape2D_8pqt6")
 
 [node name="NpcBehaviorWander" type="Node2D" parent="NPC"]
 script = ExtResource("3_u4vjm")
-wander_range = 4
+wander_range = 3
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="NPC/NpcBehaviorWander"]
 shape = SubResource("CircleShape2D_g62kn")
