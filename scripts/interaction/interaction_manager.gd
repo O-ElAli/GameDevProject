@@ -11,11 +11,9 @@ var active_areas = []
 var can_interact = true
 
 func register_area(area: InteractionArea):
-	print("(registerareafunc)manager: registered", self.name)
 	active_areas.append(area)
 
 func unregister_area(area: InteractionArea):
-	print("manager: unregistered", self.name)
 	var index = active_areas.find(area)
 	if index != -1:
 		active_areas.pop_at(index)
@@ -44,7 +42,6 @@ func _input(event):
 		if active_areas.size() > 0:
 			can_interact = false
 			label.hide()
-			
 			
 			await active_areas[0].interact.call()
 			

@@ -6,10 +6,11 @@
 [node name="GameScene" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource("1_x87qo")]
+visibility_layer = 2
 
 [node name="Interaction(Key)" parent="." instance=ExtResource("2_b6fju")]
 light_mask = 0
-visibility_layer = 2
+visibility_layer = 4
 position = Vector2(92, 20)
 scale = Vector2(0.502134, 0.5)
 
