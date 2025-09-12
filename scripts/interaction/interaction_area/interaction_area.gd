@@ -6,11 +6,11 @@ class_name InteractionArea
 var interact: Callable = func():
 	pass
 
-func _ready() -> void:
-	print("Interaction area ready!")
+#func _ready() -> void:
+	#print("Interaction area ready!")
 
 func _on_body_entered(_body: Node2D) -> void:
-	print("entered body")
+	#print("entered body")
 	InteractionManager.register_area(self)
 
 
