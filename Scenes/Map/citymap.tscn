@@ -1,4 +1,4 @@
-[gd_scene load_steps=145 format=4 uid="uid://dk5risx4k1p4l"]
+[gd_scene load_steps=147 format=4 uid="uid://dk5risx4k1p4l"]
 
 [ext_resource type="Texture2D" uid="uid://btkyehbnpvbs5" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A1.png" id="1_mfxgf"]
 [ext_resource type="Texture2D" uid="uid://cciw3y4tn2mtu" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A2.png" id="2_cj6ot"]
@@ -43,6 +43,7 @@
 [ext_resource type="Texture2D" uid="uid://dpqafxg1t4bho" path="res://assets/Map/Selfmade/PoliceSign.png" id="41_6ah4o"]
 [ext_resource type="Texture2D" uid="uid://d3vr5cufvw414" path="res://assets/Map/TopDownPack/adv-board.png" id="42_f6a27"]
 [ext_resource type="PackedScene" uid="uid://d06523r6uwlmc" path="res://Scenes/Player/Player.tscn" id="43_cj6ot"]
+[ext_resource type="Script" uid="uid://g36bl3phnsrp" path="res://Scenes/Map/maid_cafe_enter.gd" id="44_jwgbx"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4a6f5"]
 texture = ExtResource("1_mfxgf")
@@ -103989,6 +103990,9 @@ sources/6 = SubResource("TileSetAtlasSource_k0edg")
 sources/7 = SubResource("TileSetAtlasSource_rojtv")
 sources/8 = SubResource("TileSetAtlasSource_8uruf")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jwgbx"]
+size = Vector2(49, 93)
+
 [node name="CityMap" type="Node2D"]
 
 [node name="Ground" type="TileMapLayer" parent="."]
@@ -104024,4 +104028,21 @@ tile_map_data = PackedByteArray("AABGAEoABgAJACQAAABGAEsABgAJACUAAABHAEoABgAKACQ
 tile_set = SubResource("TileSet_7nfft")
 
 [node name="Player" parent="." instance=ExtResource("43_cj6ot")]
-position = Vector2(-867, 334)
+light_mask = 2
+visibility_layer = 2
+position = Vector2(-77, 1652)
+
+[node name="Camera2D2" type="Camera2D" parent="Player"]
+zoom = Vector2(2, 2)
+
+[node name="MaidCafeEnter" type="Area2D" parent="."]
+position = Vector2(-78, 1489)
+script = ExtResource("44_jwgbx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MaidCafeEnter"]
+position = Vector2(7, 64)
+shape = SubResource("RectangleShape2D_jwgbx")
+debug_color = Color(0.87494, 0.261283, 0.574632, 0.42)
+
+[connection signal="body_entered" from="MaidCafeEnter" to="MaidCafeEnter" method="_on_body_entered"]
+[connection signal="body_exited" from="MaidCafeEnter" to="MaidCafeEnter" method="_on_body_exited"]

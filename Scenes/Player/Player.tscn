@@ -167,5 +167,3 @@ frame_progress = 0.407481
 [node name="collision" type="CollisionShape2D" parent="."]
 position = Vector2(0, 9)
 shape = SubResource("RectangleShape2D_ude3g")
-
-[node name="Camera2D" type="Camera2D" parent="."]
