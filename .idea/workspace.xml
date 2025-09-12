@@ -4,201 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21ebc3dd-559a-4c4d-95a8-fb488af0bf0f" name="Changes" comment="map zwischenstand + changes from main">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scenes/Map/map.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/Map/map.tscn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets" beforeDir="false" afterPath="$PROJECT_DIR$/assets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/bladerunnerSPRITES/NATIVE 16x16/BR2019/pris.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/bladerunnerSPRITES/NATIVE 16x16/BR2019/pris.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/bladerunnerSPRITES/NATIVE 16x16/BR2019/rachel.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/bladerunnerSPRITES/NATIVE 16x16/BR2019/rachel.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/bladerunnerSPRITES/NATIVE 16x16/BR2019/royjacket.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/bladerunnerSPRITES/NATIVE 16x16/BR2019/royjacket.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/bladerunnerSPRITES/NATIVE 16x16/BR2019/royshirtless.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/bladerunnerSPRITES/NATIVE 16x16/BR2019/royshirtless.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/bladerunnerSPRITES/NATIVE 16x16/BR2049/deckard.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/bladerunnerSPRITES/NATIVE 16x16/BR2049/deckard.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/bladerunnerSPRITES/NATIVE 16x16/BR2049/joi.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/bladerunnerSPRITES/NATIVE 16x16/BR2049/joi.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/bladerunnerSPRITES/NATIVE 16x16/BR2049/k casual.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/bladerunnerSPRITES/NATIVE 16x16/BR2049/k casual.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/bladerunnerSPRITES/NATIVE 16x16/BR2049/k jacket.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/bladerunnerSPRITES/NATIVE 16x16/BR2049/k jacket.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/bladerunnerSPRITES/NATIVE 16x16/BR2049/luv combat.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/bladerunnerSPRITES/NATIVE 16x16/BR2049/luv combat.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/bladerunnerSPRITES/NATIVE 16x16/BR2049/luv corp.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/bladerunnerSPRITES/NATIVE 16x16/BR2049/luv corp.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/bladerunnerSPRITES/NATIVE 16x16/BR2049/mariette jacket.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/bladerunnerSPRITES/NATIVE 16x16/BR2049/mariette jacket.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/bladerunnerSPRITES/NATIVE 16x16/BR2049/neanderwallace.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/bladerunnerSPRITES/NATIVE 16x16/BR2049/neanderwallace.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/bladerunnerSPRITES/NATIVE 16x16/BR2049/sapper.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/bladerunnerSPRITES/NATIVE 16x16/BR2049/sapper.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/bladerunnerSPRITES/RPG Maker Compat 48x48/BR2019/deckard.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/bladerunnerSPRITES/RPG Maker Compat 48x48/BR2019/deckard.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/bladerunnerSPRITES/RPG Maker Compat 48x48/BR2019/pris.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/bladerunnerSPRITES/RPG Maker Compat 48x48/BR2019/pris.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/bladerunnerSPRITES/RPG Maker Compat 48x48/BR2019/rachel.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/bladerunnerSPRITES/RPG Maker Compat 48x48/BR2019/rachel.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/bladerunnerSPRITES/RPG Maker Compat 48x48/BR2019/royjacket.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/bladerunnerSPRITES/RPG Maker Compat 48x48/BR2019/royjacket.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/bladerunnerSPRITES/RPG Maker Compat 48x48/BR2019/royshirtless.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/bladerunnerSPRITES/RPG Maker Compat 48x48/BR2019/royshirtless.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/bladerunnerSPRITES/RPG Maker Compat 48x48/BR2049/deckard.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/bladerunnerSPRITES/RPG Maker Compat 48x48/BR2049/deckard.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/bladerunnerSPRITES/RPG Maker Compat 48x48/BR2049/joi.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/bladerunnerSPRITES/RPG Maker Compat 48x48/BR2049/joi.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/bladerunnerSPRITES/RPG Maker Compat 48x48/BR2049/k casual.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/bladerunnerSPRITES/RPG Maker Compat 48x48/BR2049/k casual.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/bladerunnerSPRITES/RPG Maker Compat 48x48/BR2049/k jacket.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/bladerunnerSPRITES/RPG Maker Compat 48x48/BR2049/k jacket.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/bladerunnerSPRITES/RPG Maker Compat 48x48/BR2049/luv combat.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/bladerunnerSPRITES/RPG Maker Compat 48x48/BR2049/luv combat.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/bladerunnerSPRITES/RPG Maker Compat 48x48/BR2049/luv corp.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/bladerunnerSPRITES/RPG Maker Compat 48x48/BR2049/luv corp.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/bladerunnerSPRITES/RPG Maker Compat 48x48/BR2049/mariette jacket.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/bladerunnerSPRITES/RPG Maker Compat 48x48/BR2049/mariette jacket.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/bladerunnerSPRITES/RPG Maker Compat 48x48/BR2049/neanderwallace.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/bladerunnerSPRITES/RPG Maker Compat 48x48/BR2049/neanderwallace.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/bladerunnerSPRITES/RPG Maker Compat 48x48/BR2049/sapper.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/bladerunnerSPRITES/RPG Maker Compat 48x48/BR2049/sapper.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/2077/native 16x16/jackiewelles.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/2077/native 16x16/jackiewelles.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/2077/native 16x16/johnnysilverhand.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/2077/native 16x16/johnnysilverhand.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/2077/native 16x16/judycasual.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/2077/native 16x16/judycasual.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/2077/native 16x16/judyscuba.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/2077/native 16x16/judyscuba.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/2077/native 16x16/panamcasual.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/2077/native 16x16/panamcasual.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/2077/native 16x16/panamcasualalt.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/2077/native 16x16/panamcasualalt.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/2077/native 16x16/panamjacket.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/2077/native 16x16/panamjacket.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/2077/native 16x16/riverwardcasual.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/2077/native 16x16/riverwardcasual.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/2077/native 16x16/riverwardjacket.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/2077/native 16x16/riverwardjacket.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/2077/native 16x16/rogue.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/2077/native 16x16/rogue.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/2077/native 16x16/roguejacket.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/2077/native 16x16/roguejacket.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/2077/native 16x16/takemuracasual.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/2077/native 16x16/takemuracasual.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/2077/native 16x16/takemurajacket.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/2077/native 16x16/takemurajacket.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/2077/native 16x16/tbug.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/2077/native 16x16/tbug.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/2077/rpgmaker compat 48x48/jackiewelles.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/2077/rpgmaker compat 48x48/jackiewelles.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/2077/rpgmaker compat 48x48/johnnysilverhand.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/2077/rpgmaker compat 48x48/johnnysilverhand.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/2077/rpgmaker compat 48x48/judycasual.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/2077/rpgmaker compat 48x48/judycasual.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/2077/rpgmaker compat 48x48/judyscuba.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/2077/rpgmaker compat 48x48/judyscuba.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/2077/rpgmaker compat 48x48/panamcasual.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/2077/rpgmaker compat 48x48/panamcasual.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/2077/rpgmaker compat 48x48/panamcasualalt.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/2077/rpgmaker compat 48x48/panamcasualalt.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/2077/rpgmaker compat 48x48/panamjacket.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/2077/rpgmaker compat 48x48/panamjacket.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/2077/rpgmaker compat 48x48/riverwardcasual.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/2077/rpgmaker compat 48x48/riverwardcasual.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/2077/rpgmaker compat 48x48/riverwardjacket.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/2077/rpgmaker compat 48x48/riverwardjacket.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/2077/rpgmaker compat 48x48/rogue.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/2077/rpgmaker compat 48x48/rogue.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/2077/rpgmaker compat 48x48/roguejacket.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/2077/rpgmaker compat 48x48/roguejacket.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/2077/rpgmaker compat 48x48/takemuracasual.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/2077/rpgmaker compat 48x48/takemuracasual.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/2077/rpgmaker compat 48x48/takemurajacket.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/2077/rpgmaker compat 48x48/takemurajacket.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/2077/rpgmaker compat 48x48/tbug.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/2077/rpgmaker compat 48x48/tbug.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/edgerunners/native 16x16/davidmartinez.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/edgerunners/native 16x16/davidmartinez.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/edgerunners/native 16x16/dorio.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/edgerunners/native 16x16/dorio.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/edgerunners/native 16x16/faraday.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/edgerunners/native 16x16/faraday.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/edgerunners/native 16x16/kiwi.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/edgerunners/native 16x16/kiwi.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/edgerunners/native 16x16/lucy.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/edgerunners/native 16x16/lucy.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/edgerunners/native 16x16/maine.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/edgerunners/native 16x16/maine.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/edgerunners/native 16x16/rebecca.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/edgerunners/native 16x16/rebecca.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/edgerunners/rpgmaker compat 48x48/davidmartinez.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/edgerunners/rpgmaker compat 48x48/davidmartinez.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/edgerunners/rpgmaker compat 48x48/dorio.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/edgerunners/rpgmaker compat 48x48/dorio.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/edgerunners/rpgmaker compat 48x48/faraday.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/edgerunners/rpgmaker compat 48x48/faraday.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/edgerunners/rpgmaker compat 48x48/kiwi.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/edgerunners/rpgmaker compat 48x48/kiwi.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/edgerunners/rpgmaker compat 48x48/lucy.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/edgerunners/rpgmaker compat 48x48/lucy.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/edgerunners/rpgmaker compat 48x48/maine.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/edgerunners/rpgmaker compat 48x48/maine.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/edgerunners/rpgmaker compat 48x48/rebecca.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/edgerunners/rpgmaker compat 48x48/rebecca.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/matrixSERIESfreebies/native16x16/$agent.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/matrixSERIESfreebies/native16x16/$agent.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/matrixSERIESfreebies/native16x16/$agentsmith.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/matrixSERIESfreebies/native16x16/$agentsmith.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/matrixSERIESfreebies/native16x16/$agentsmithFREED.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/matrixSERIESfreebies/native16x16/$agentsmithFREED.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/matrixSERIESfreebies/native16x16/$ghostmatrix.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/matrixSERIESfreebies/native16x16/$ghostmatrix.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/matrixSERIESfreebies/native16x16/$ghostmatrixALT.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/matrixSERIESfreebies/native16x16/$ghostmatrixALT.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/matrixSERIESfreebies/native16x16/$ghostzion.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/matrixSERIESfreebies/native16x16/$ghostzion.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/matrixSERIESfreebies/native16x16/$morpheusmatrix.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/matrixSERIESfreebies/native16x16/$morpheusmatrix.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/matrixSERIESfreebies/native16x16/$morpheuszion.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/matrixSERIESfreebies/native16x16/$morpheuszion.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/matrixSERIESfreebies/native16x16/$neomatrix.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/matrixSERIESfreebies/native16x16/$neomatrix.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/matrixSERIESfreebies/native16x16/$neomatrixALT.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/matrixSERIESfreebies/native16x16/$neomatrixALT.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/matrixSERIESfreebies/native16x16/$neozion.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/matrixSERIESfreebies/native16x16/$neozion.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/matrixSERIESfreebies/native16x16/$niobematrix.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/matrixSERIESfreebies/native16x16/$niobematrix.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/matrixSERIESfreebies/native16x16/$niobematrixALT.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/matrixSERIESfreebies/native16x16/$niobematrixALT.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/matrixSERIESfreebies/native16x16/$niobezion.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/matrixSERIESfreebies/native16x16/$niobezion.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/matrixSERIESfreebies/native16x16/$trinitymatrix.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/matrixSERIESfreebies/native16x16/$trinitymatrix.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/matrixSERIESfreebies/native16x16/$trinityzion.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/matrixSERIESfreebies/native16x16/$trinityzion.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/matrixSERIESfreebies/upscaled48x48/$agent.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/matrixSERIESfreebies/upscaled48x48/$agent.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/matrixSERIESfreebies/upscaled48x48/$agentsmith.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/matrixSERIESfreebies/upscaled48x48/$agentsmith.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/matrixSERIESfreebies/upscaled48x48/$agentsmithFREED.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/matrixSERIESfreebies/upscaled48x48/$agentsmithFREED.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/matrixSERIESfreebies/upscaled48x48/$ghostmatrix.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/matrixSERIESfreebies/upscaled48x48/$ghostmatrix.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/matrixSERIESfreebies/upscaled48x48/$ghostmatrixALT.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/matrixSERIESfreebies/upscaled48x48/$ghostmatrixALT.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/matrixSERIESfreebies/upscaled48x48/$ghostzion.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/matrixSERIESfreebies/upscaled48x48/$ghostzion.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/matrixSERIESfreebies/upscaled48x48/$morpheusmatrix.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/matrixSERIESfreebies/upscaled48x48/$morpheusmatrix.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/matrixSERIESfreebies/upscaled48x48/$morpheuszion.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/matrixSERIESfreebies/upscaled48x48/$morpheuszion.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/matrixSERIESfreebies/upscaled48x48/$neomatrix.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/matrixSERIESfreebies/upscaled48x48/$neomatrix.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/matrixSERIESfreebies/upscaled48x48/$neomatrixALT.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/matrixSERIESfreebies/upscaled48x48/$neomatrixALT.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/matrixSERIESfreebies/upscaled48x48/$neozion.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/matrixSERIESfreebies/upscaled48x48/$neozion.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/matrixSERIESfreebies/upscaled48x48/$niobematrix.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/matrixSERIESfreebies/upscaled48x48/$niobematrix.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/matrixSERIESfreebies/upscaled48x48/$niobematrixALT.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/matrixSERIESfreebies/upscaled48x48/$niobematrixALT.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/matrixSERIESfreebies/upscaled48x48/$niobezion.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/matrixSERIESfreebies/upscaled48x48/$niobezion.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/matrixSERIESfreebies/upscaled48x48/$trinitymatrix.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/matrixSERIESfreebies/upscaled48x48/$trinitymatrix.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/matrixSERIESfreebies/upscaled48x48/$trinityzion.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/matrixSERIESfreebies/upscaled48x48/$trinityzion.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/terminatorSERIESfreebies/native 16x16/dark fate/$carl.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/terminatorSERIESfreebies/native 16x16/dark fate/$carl.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/terminatorSERIESfreebies/native 16x16/dark fate/$daniARMOR.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/terminatorSERIESfreebies/native 16x16/dark fate/$daniARMOR.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/terminatorSERIESfreebies/native 16x16/dark fate/$daniwork.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/terminatorSERIESfreebies/native 16x16/dark fate/$daniwork.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/terminatorSERIESfreebies/native 16x16/dark fate/$graceARMOR.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/terminatorSERIESfreebies/native 16x16/dark fate/$graceARMOR.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/terminatorSERIESfreebies/native 16x16/dark fate/$graceSHIRT.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/terminatorSERIESfreebies/native 16x16/dark fate/$graceSHIRT.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/terminatorSERIESfreebies/native 16x16/dark fate/$rev9human.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/terminatorSERIESfreebies/native 16x16/dark fate/$rev9human.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/terminatorSERIESfreebies/native 16x16/dark fate/$rev9humandamaged.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/terminatorSERIESfreebies/native 16x16/dark fate/$rev9humandamaged.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/terminatorSERIESfreebies/native 16x16/dark fate/$sarah.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/terminatorSERIESfreebies/native 16x16/dark fate/$sarah.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/terminatorSERIESfreebies/native 16x16/terminator 2/$john1995.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/terminatorSERIESfreebies/native 16x16/terminator 2/$john1995.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/terminatorSERIESfreebies/native 16x16/terminator 2/$sarah1995.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/terminatorSERIESfreebies/native 16x16/terminator 2/$sarah1995.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/terminatorSERIESfreebies/native 16x16/terminator 2/$terminator1995.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/terminatorSERIESfreebies/native 16x16/terminator 2/$terminator1995.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/terminatorSERIESfreebies/native 16x16/terminator 2/$terminator1995damage1.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/terminatorSERIESfreebies/native 16x16/terminator 2/$terminator1995damage1.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/terminatorSERIESfreebies/native 16x16/terminator 2/$terminator1995damage2.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/terminatorSERIESfreebies/native 16x16/terminator 2/$terminator1995damage2.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/terminatorSERIESfreebies/native 16x16/terminator 2/$terminatorSKELETAL.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/terminatorSERIESfreebies/native 16x16/terminator 2/$terminatorSKELETAL.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/terminatorSERIESfreebies/native 16x16/terminator 2/$terminatorSKELETALalt.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/terminatorSERIESfreebies/native 16x16/terminator 2/$terminatorSKELETALalt.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/terminatorSERIESfreebies/native 16x16/terminator/$kylereese.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/terminatorSERIESfreebies/native 16x16/terminator/$kylereese.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/terminatorSERIESfreebies/native 16x16/terminator/$sarah1984.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/terminatorSERIESfreebies/native 16x16/terminator/$sarah1984.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/terminatorSERIESfreebies/native 16x16/terminator/$terminator1984.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/terminatorSERIESfreebies/native 16x16/terminator/$terminator1984.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/terminatorSERIESfreebies/upscaled 48x48/dark fate/$carl.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/terminatorSERIESfreebies/upscaled 48x48/dark fate/$carl.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/terminatorSERIESfreebies/upscaled 48x48/dark fate/$daniARMOR.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/terminatorSERIESfreebies/upscaled 48x48/dark fate/$daniARMOR.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/terminatorSERIESfreebies/upscaled 48x48/dark fate/$daniwork.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/terminatorSERIESfreebies/upscaled 48x48/dark fate/$daniwork.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/terminatorSERIESfreebies/upscaled 48x48/dark fate/$graceARMOR.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/terminatorSERIESfreebies/upscaled 48x48/dark fate/$graceARMOR.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/terminatorSERIESfreebies/upscaled 48x48/dark fate/$graceSHIRT.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/terminatorSERIESfreebies/upscaled 48x48/dark fate/$graceSHIRT.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/terminatorSERIESfreebies/upscaled 48x48/dark fate/$rev9SKELETAL.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/terminatorSERIESfreebies/upscaled 48x48/dark fate/$rev9SKELETAL.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/terminatorSERIESfreebies/upscaled 48x48/dark fate/$rev9human.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/terminatorSERIESfreebies/upscaled 48x48/dark fate/$rev9human.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/terminatorSERIESfreebies/upscaled 48x48/dark fate/$rev9humandamaged.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/terminatorSERIESfreebies/upscaled 48x48/dark fate/$rev9humandamaged.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/terminatorSERIESfreebies/upscaled 48x48/dark fate/$sarah.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/terminatorSERIESfreebies/upscaled 48x48/dark fate/$sarah.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/terminatorSERIESfreebies/upscaled 48x48/terminator 2/$john1995.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/terminatorSERIESfreebies/upscaled 48x48/terminator 2/$john1995.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/terminatorSERIESfreebies/upscaled 48x48/terminator 2/$sarah1995.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/terminatorSERIESfreebies/upscaled 48x48/terminator 2/$sarah1995.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/terminatorSERIESfreebies/upscaled 48x48/terminator 2/$terminator1995.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/terminatorSERIESfreebies/upscaled 48x48/terminator 2/$terminator1995.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/terminatorSERIESfreebies/upscaled 48x48/terminator 2/$terminator1995damage1.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/terminatorSERIESfreebies/upscaled 48x48/terminator 2/$terminator1995damage1.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/terminatorSERIESfreebies/upscaled 48x48/terminator 2/$terminator1995damage2.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/terminatorSERIESfreebies/upscaled 48x48/terminator 2/$terminator1995damage2.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/terminatorSERIESfreebies/upscaled 48x48/terminator 2/$terminatorSKELETAL.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/terminatorSERIESfreebies/upscaled 48x48/terminator 2/$terminatorSKELETAL.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/terminatorSERIESfreebies/upscaled 48x48/terminator 2/$terminatorSKELETALalt.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/terminatorSERIESfreebies/upscaled 48x48/terminator 2/$terminatorSKELETALalt.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/terminatorSERIESfreebies/upscaled 48x48/terminator/$kylereese.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/terminatorSERIESfreebies/upscaled 48x48/terminator/$kylereese.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/terminatorSERIESfreebies/upscaled 48x48/terminator/$sarah1984.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/terminatorSERIESfreebies/upscaled 48x48/terminator/$sarah1984.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/NPCs/terminatorSERIESfreebies/upscaled 48x48/terminator/$terminator1984.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/NPCs/terminatorSERIESfreebies/upscaled 48x48/terminator/$terminator1984.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Characters/pixelbuildings128-v1-upscale-x8-_00005_.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Characters/pixelbuildings128-v1-upscale-x8-_00005_.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Map/Other Engines - Textures/Other Engines - Textures/Godot_Outside_A1.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Map/Other Engines - Textures/Other Engines - Textures/Godot_Outside_A1.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Map/Other Engines - Textures/Other Engines - Textures/Godot_Outside_A2.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Map/Other Engines - Textures/Other Engines - Textures/Godot_Outside_A2.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Map/Other Engines - Textures/Other Engines - Textures/Godot_Outside_A2_Bright.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Map/Other Engines - Textures/Other Engines - Textures/Godot_Outside_A2_Bright.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Map/Other Engines - Textures/Other Engines - Textures/Godot_Outside_A3.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Map/Other Engines - Textures/Other Engines - Textures/Godot_Outside_A3.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Map/Other Engines - Textures/Other Engines - Textures/Godot_Outside_A4.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Map/Other Engines - Textures/Other Engines - Textures/Godot_Outside_A4.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Map/TopDownPack/adv-board.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Map/TopDownPack/adv-board.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Map/TopDownPack/air-conditioners.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Map/TopDownPack/air-conditioners.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Map/TopDownPack/anatomy-table.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Map/TopDownPack/anatomy-table.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Map/TopDownPack/bench.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Map/TopDownPack/bench.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Map/TopDownPack/body-burner.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Map/TopDownPack/body-burner.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Map/TopDownPack/character-base-sketch-taller.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Map/TopDownPack/character-base-sketch-taller.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Map/TopDownPack/computer-desk.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Map/TopDownPack/computer-desk.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Map/TopDownPack/construction-stuff.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Map/TopDownPack/construction-stuff.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Map/TopDownPack/cover.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Map/TopDownPack/cover.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Map/TopDownPack/graffiti-big.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Map/TopDownPack/graffiti-big.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Map/TopDownPack/indoor-gangsite-small.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Map/TopDownPack/indoor-gangsite-small.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Map/TopDownPack/laser-door.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Map/TopDownPack/laser-door.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Map/TopDownPack/outdoor-doors.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Map/TopDownPack/outdoor-doors.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Map/TopDownPack/outdoor-misc-stuff.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Map/TopDownPack/outdoor-misc-stuff.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Map/TopDownPack/plants-tree.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Map/TopDownPack/plants-tree.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Map/TopDownPack/robot-arm.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Map/TopDownPack/robot-arm.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Map/TopDownPack/surgery-room.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Map/TopDownPack/surgery-room.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Map/TopDownPack/vehicles-fixing.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Map/TopDownPack/vehicles-fixing.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Map/TopDownPack/vehicles.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Map/TopDownPack/vehicles.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Map/winlu_exterior/winlu_exterior/characters/!$Cyberlove.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Map/winlu_exterior/winlu_exterior/characters/!$Cyberlove.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Map/winlu_exterior/winlu_exterior/characters/!$Gate2.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Map/winlu_exterior/winlu_exterior/characters/!$Gate2.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Map/winlu_exterior/winlu_exterior/characters/!$Gate3.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Map/winlu_exterior/winlu_exterior/characters/!$Gate3.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Map/winlu_exterior/winlu_exterior/characters/!$Gate4.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Map/winlu_exterior/winlu_exterior/characters/!$Gate4.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Map/winlu_exterior/winlu_exterior/characters/!$Sign1.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Map/winlu_exterior/winlu_exterior/characters/!$Sign1.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Map/winlu_exterior/winlu_exterior/characters/!$Signs2.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Map/winlu_exterior/winlu_exterior/characters/!$Signs2.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Map/winlu_exterior/winlu_exterior/characters/!$Signs3.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Map/winlu_exterior/winlu_exterior/characters/!$Signs3.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Map/winlu_exterior/winlu_exterior/characters/!$traffic_signal.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Map/winlu_exterior/winlu_exterior/characters/!$traffic_signal.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Map/winlu_exterior/winlu_exterior/characters/!Misc.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Map/winlu_exterior/winlu_exterior/characters/!Misc.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Map/winlu_exterior/winlu_exterior/characters/!Policedrone.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Map/winlu_exterior/winlu_exterior/characters/!Policedrone.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Map/winlu_exterior/winlu_exterior/characters/!obj_door2.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Map/winlu_exterior/winlu_exterior/characters/!obj_door2.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Map/winlu_exterior/winlu_exterior/characters/$Car.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Map/winlu_exterior/winlu_exterior/characters/$Car.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Map/winlu_exterior/winlu_exterior/parallaxes/Background_1.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Map/winlu_exterior/winlu_exterior/parallaxes/Background_1.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Map/winlu_exterior/winlu_exterior/parallaxes/Background_1blur.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Map/winlu_exterior/winlu_exterior/parallaxes/Background_1blur.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A1.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A1.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A2.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A2.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A2_Bright.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A2_Bright.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A3.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A3.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A4.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A4.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A5.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A5.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_B.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_B.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_C.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_C.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_D.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_D.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/bar/test.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/bar/test.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/bedroom/test.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/bedroom/test.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/start_screen/Born2bSportyV2.ttf.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/start_screen/Born2bSportyV2.ttf.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/start_screen/Detektiv in der Neonstadt.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/assets/start_screen/Detektiv in der Neonstadt.png.import" afterDir="false" />
-    </list>
+    <list default="true" id="21ebc3dd-559a-4c4d-95a8-fb488af0bf0f" name="Changes" comment="map zwischenstand + changes from main" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -209,12 +15,49 @@
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="false" />
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;git-widget-placeholder&quot;: &quot;map-layout&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 1
+}]]></component>
+  <component name="ProjectId" id="32ayvnnMvaFA5zThosF09G9EJXW" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "map-layout",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RunManager" selected="GdScript Start and Debug.Player GDScript">
+    <configuration name="Player GDScript" type="GDSCRIPT_DEBUG_RUN_CONFIGURATION" factoryName="GdScriptRunFactory" show_console_on_std_err="false" show_console_on_std_out="false" port="6006">
+      <option name="address" value="127.0.0.1" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Editor" type="RunNativeExe" factoryName="Native Executable">
+      <option name="EXE_PATH" value="$USER_HOME$/Downloads/Godot_v4.4.1-stable_win64.exe/Godot_v4.4.1-stable_win64.exe" />
+      <option name="PROGRAM_PARAMETERS" value="--path &quot;./&quot; --editor" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\jmsan\Desktop\Gameeee" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="ENV_FILE_PATHS" value="" />
+      <option name="REDIRECT_INPUT_PATH" value="" />
+      <option name="PTY_MODE" value="Auto" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -230,14 +73,54 @@
     <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="false" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="main" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="HEAD" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/main" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/player" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -247,5 +130,23 @@
     <MESSAGE value="map zwischenstand + changes from main" />
     <option name="LAST_COMMIT_MESSAGE" value="map zwischenstand + changes from main" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.OperationCanceledException" breakIfHandledByOtherCode="false" displayValue="System.OperationCanceledException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.Threading.Tasks.TaskCanceledException" breakIfHandledByOtherCode="false" displayValue="System.Threading.Tasks.TaskCanceledException" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
