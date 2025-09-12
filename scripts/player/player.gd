@@ -30,7 +30,3 @@ func _physics_process(_delta: float) -> void:
 	
 	velocity = character_direction * movement_speed
 	move_and_slide()
-
-@onready var player = get_tree().get_first_node_in_group("player")
-func _ready() -> void:
-	print("Manager found player:", player)
