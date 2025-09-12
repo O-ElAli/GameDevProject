@@ -1,6 +1,7 @@
-[gd_scene load_steps=16 format=3 uid="uid://csp8hwwrci1iy"]
+[gd_scene load_steps=17 format=3 uid="uid://csp8hwwrci1iy"]
 
 [ext_resource type="Script" uid="uid://83vcd18rqs2c" path="res://scripts/Npc/npc.gd" id="1_u75bn"]
+[ext_resource type="Resource" uid="uid://doectsk62do5w" path="res://Scenes/NPC/ressources/test_npc.tres" id="2_37ake"]
 [ext_resource type="Texture2D" uid="uid://ctlqihulxw0ha" path="res://assets/Characters/NPCs/matrixSERIESfreebies/upscaled48x48/$agentsmith.png" id="3_37ake"]
 [ext_resource type="Script" uid="uid://81lisok66of4" path="res://scripts/Npc/patrol_location.gd" id="5_tlawm"]
 [ext_resource type="Script" uid="uid://c43p2a511a2o4" path="res://scripts/Npc/patrol_behavior.gd" id="6_r2mia"]
@@ -147,6 +148,7 @@ fill_to = Vector2(0.5, 0)
 [node name="NPC" type="CharacterBody2D" parent="."]
 position = Vector2(942, 939)
 script = ExtResource("1_u75bn")
+npc_resource = ExtResource("2_37ake")
 
 [node name="Sprite2D" type="Sprite2D" parent="NPC"]
 position = Vector2(0, -35)
@@ -181,7 +183,7 @@ position = Vector2(-1, 3)
 texture = SubResource("GradientTexture2D_tlawm")
 
 [node name="Line2D" type="Line2D" parent="NPC/NpcBehaviorPatrol/NPC_Way/Way"]
-points = PackedVector2Array(0, 0, -112, -59)
+points = PackedVector2Array(0, 0, -5, -175)
 width = 1.0
 default_color = Color(1, 1, 1, 0.552941)
 
@@ -216,7 +218,7 @@ metadata/_edit_use_anchors_ = true
 [node name="NPC_Way2" type="Node2D" parent="NPC/NpcBehaviorPatrol"]
 modulate = Color(1, 1, 0, 1)
 show_behind_parent = true
-position = Vector2(-114, -63)
+position = Vector2(-7, -179)
 script = ExtResource("5_tlawm")
 wait_time = 1.0
 
@@ -226,7 +228,7 @@ position = Vector2(-1, 3)
 texture = SubResource("GradientTexture2D_tlawm")
 
 [node name="Line2D" type="Line2D" parent="NPC/NpcBehaviorPatrol/NPC_Way2/Way"]
-points = PackedVector2Array(0, 0, 291, -42)
+points = PackedVector2Array(0, 0, 210, 36)
 width = 1.0
 default_color = Color(1, 1, 1, 0.552941)
 
@@ -261,7 +263,7 @@ metadata/_edit_use_anchors_ = true
 [node name="NPC_Way3" type="Node2D" parent="NPC/NpcBehaviorPatrol"]
 modulate = Color(0, 1, 0, 1)
 show_behind_parent = true
-position = Vector2(177, -105)
+position = Vector2(177, -107)
 script = ExtResource("5_tlawm")
 wait_time = 3.0
 
@@ -271,7 +273,7 @@ position = Vector2(-1, 3)
 texture = SubResource("GradientTexture2D_tlawm")
 
 [node name="Line2D" type="Line2D" parent="NPC/NpcBehaviorPatrol/NPC_Way3/Way"]
-points = PackedVector2Array(0, 0, -43, 113)
+points = PackedVector2Array(0, 0, -205, 139)
 width = 1.0
 default_color = Color(1, 1, 1, 0.552941)
 
@@ -290,51 +292,6 @@ text = "2"
 metadata/_edit_use_anchors_ = true
 
 [node name="Label2" type="Label" parent="NPC/NpcBehaviorPatrol/NPC_Way3/Way"]
-offset_left = -14.0
-offset_top = 6.0
-offset_right = 30.0
-offset_bottom = 23.0
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_constants/shadow_offset_x = 0
-theme_override_constants/shadow_offset_y = 1
-theme_override_constants/outline_size = 3
-theme_override_font_sizes/font_size = 8
-text = "wait: 3.0s"
-metadata/_edit_use_anchors_ = true
-
-[node name="NPC_Way4" type="Node2D" parent="NPC/NpcBehaviorPatrol"]
-modulate = Color(0, 1, 1, 1)
-show_behind_parent = true
-position = Vector2(134, 8)
-script = ExtResource("5_tlawm")
-wait_time = 3.0
-
-[node name="Way" type="Sprite2D" parent="NPC/NpcBehaviorPatrol/NPC_Way4"]
-self_modulate = Color(1, 1, 1, 0.447059)
-position = Vector2(-1, 3)
-texture = SubResource("GradientTexture2D_tlawm")
-
-[node name="Line2D" type="Line2D" parent="NPC/NpcBehaviorPatrol/NPC_Way4/Way"]
-points = PackedVector2Array(0, 0, -136, -12)
-width = 1.0
-default_color = Color(1, 1, 1, 0.552941)
-
-[node name="Label" type="Label" parent="NPC/NpcBehaviorPatrol/NPC_Way4/Way"]
-offset_left = -3.0
-offset_top = -9.0
-offset_right = 37.0
-offset_bottom = 14.0
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_constants/shadow_offset_x = 0
-theme_override_constants/shadow_offset_y = 1
-theme_override_constants/outline_size = 3
-theme_override_font_sizes/font_size = 12
-text = "3"
-metadata/_edit_use_anchors_ = true
-
-[node name="Label2" type="Label" parent="NPC/NpcBehaviorPatrol/NPC_Way4/Way"]
 offset_left = -14.0
 offset_top = 6.0
 offset_right = 30.0

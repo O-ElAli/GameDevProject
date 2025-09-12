@@ -1,12 +1,13 @@
-class_name NPCBehavior extends Node2D
+class_name NPCBehavior
+extends Node2D
 
-var npc : NPC
+var npc: NPC
 
 func _ready() -> void:
-	var p = get_parent()
-	if p is NPC:
-		npc = p as NPC
-		npc.do_behavior_enabled.connect( start)
+	var parent = get_parent()
+	if parent is NPC:
+		npc = parent
+		npc.behavior_ready.connect(_on_behavior_ready)
 
-func start() -> void:
+func _on_behavior_ready() -> void:
 	pass
