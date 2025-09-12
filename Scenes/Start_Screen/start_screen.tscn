@@ -1,8 +1,13 @@
 [gd_scene load_steps=9 format=3 uid="uid://ben7rq638snug"]
 
 [ext_resource type="Script" uid="uid://byxhuvbhxoj8r" path="res://scripts/Start_Screen/Start_Screen.gd" id="1_xehwy"]
+<<<<<<< HEAD
 [ext_resource type="Texture2D" uid="uid://csw1a4mi7xu26" path="res://assets/start_screen/Detektiv in der Neonstadt.png" id="2_k5ki8"]
 [ext_resource type="FontFile" uid="uid://w3nj1vqtthjl" path="res://assets/start_screen/Born2bSportyV2.ttf" id="3_k5ki8"]
+=======
+[ext_resource type="Texture2D" uid="uid://bys8d2j5xu4ca" path="res://assets/start_screen/Detektiv in der Neonstadt.png" id="2_k5ki8"]
+[ext_resource type="FontFile" uid="uid://cfo133qua1ops" path="res://assets/start_screen/Born2bSportyV2.ttf" id="3_k5ki8"]
+>>>>>>> origin/interior
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_o5mhj"]
 texture = ExtResource("2_k5ki8")
