@@ -1,7 +1,7 @@
 [gd_scene load_steps=22 format=3 uid="uid://d06523r6uwlmc"]
 
 [ext_resource type="Script" uid="uid://mobever4yx10" path="res://scripts/player/player.gd" id="1_ft8w5"]
-[ext_resource type="Texture2D" uid="uid://5algrq5obix1" path="res://assets/player/deckard.png" id="1_s0eop"]
+[ext_resource type="Texture2D" uid="uid://hw10ixxeia4m" path="res://assets/player/deckard.png" id="1_s0eop"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0kmp4"]
 atlas = ExtResource("1_s0eop")
@@ -151,7 +151,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ude3g"]
-size = Vector2(12, 21)
+size = Vector2(12, 10)
 
 [node name="Player" type="CharacterBody2D" groups=["player"]]
 motion_mode = 1
@@ -166,5 +166,7 @@ autoplay = "Idle"
 frame_progress = 0.407481
 
 [node name="collision" type="CollisionShape2D" parent="."]
-position = Vector2(0, 3.5)
+position = Vector2(0, 9)
 shape = SubResource("RectangleShape2D_ude3g")
+
+[node name="Camera2D" type="Camera2D" parent="."]
