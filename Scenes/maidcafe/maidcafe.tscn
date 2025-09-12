@@ -6458,3 +6458,4 @@ light_mask = 2
 visibility_layer = 2
 position = Vector2(60, 239)
 scale = Vector2(2, 2)
+movement_speed = 300.0
