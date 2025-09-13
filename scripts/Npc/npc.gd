@@ -15,6 +15,8 @@ var allow_behavior: bool = true
 
 func _ready() -> void:
 	_initialize_from_resource()
+	face_towards(global_position + facing)
+	play_animation()
 	if Engine.is_editor_hint():
 		return
 	behavior_ready.emit()
@@ -23,12 +25,20 @@ func _physics_process(delta: float) -> void:
 	move_and_slide()
 
 func play_animation() -> void:
-	animator.play(current_state + "_" + facing_label)
+	if animator:
+		animator.play(current_state + "_" + facing_label)
+	else:
+		# Nur Debug, kein Absturz
+		if Engine.is_editor_hint():
+			return
+		push_warning("Animator ist noch null! Kann Animation nicht abspielen.")
+
 
 func face_towards(target: Vector2) -> void:
 	facing = global_position.direction_to(target)
 	_resolve_facing_label()
-	sprite.flip_h = facing_label == "side" and facing.x < 0
+	if sprite:
+		sprite.flip_h = facing_label == "side" and facing.x < 0
 
 func _resolve_facing_label() -> void:
 	var limit := 0.45
