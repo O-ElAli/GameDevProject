@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://ccsdaigmfbtse"]
 
 [ext_resource type="Script" uid="uid://b7vilobdr0205" path="res://scripts/interaction/key/key_script.gd" id="1_0yxbd"]
-[ext_resource type="Texture2D" uid="uid://c25pa2wybomi1" path="res://assets/player/key_sprite-Sheet.png" id="1_5lifa"]
+[ext_resource type="Texture2D" uid="uid://c85injug7lmmi" path="res://assets/player/key_sprite-Sheet.png" id="1_5lifa"]
 [ext_resource type="PackedScene" uid="uid://cni5tldua6sbj" path="res://Interaction/InteractionArea/interaction_area.tscn" id="2_s0n7e"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0yxbd"]

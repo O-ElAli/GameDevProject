@@ -1,0 +1,48 @@
+@tool
+class_name NPC extends CharacterBody2D
+
+signal behavior_ready
+
+var current_state: String = "idle"
+var facing: Vector2 = Vector2.DOWN
+var facing_label: String = "down"
+var allow_behavior: bool = true
+
+@export var data: NPCResource : set = _apply_data
+
+@onready var sprite: Sprite2D = $Sprite2D
+@onready var animator: AnimationPlayer = $AnimationPlayer
+
+func _ready() -> void:
+	_initialize_from_resource()
+	if Engine.is_editor_hint():
+		return
+	behavior_ready.emit()
+
+func _physics_process(delta: float) -> void:
+	move_and_slide()
+
+func play_animation() -> void:
+	animator.play(current_state + "_" + facing_label)
+
+func face_towards(target: Vector2) -> void:
+	facing = global_position.direction_to(target)
+	_resolve_facing_label()
+	sprite.flip_h = facing_label == "side" and facing.x < 0
+
+func _resolve_facing_label() -> void:
+	var limit := 0.45
+	if facing.y < -limit:
+		facing_label = "up"
+	elif facing.y > limit:
+		facing_label = "down"
+	elif abs(facing.x) > limit:
+		facing_label = "side"
+
+func _initialize_from_resource() -> void:
+	if data and sprite:
+		sprite.texture = data.sprite
+
+func _apply_data(new_data: NPCResource) -> void:
+	data = new_data
+	_initialize_from_resource()
