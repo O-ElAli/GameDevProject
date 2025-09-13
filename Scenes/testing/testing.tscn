@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://dnjd6je2ie4kd"]
+
+[ext_resource type="PackedScene" uid="uid://csp8hwwrci1iy" path="res://Scenes/NPC/NPC.tscn" id="1_buwdf"]
+[ext_resource type="PackedScene" uid="uid://d06523r6uwlmc" path="res://Scenes/Player/Player.tscn" id="2_6jmw4"]
+
+[node name="Testing" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("2_6jmw4")]
+position = Vector2(687, 930)
+
+[node name="NPC_Node" parent="." instance=ExtResource("1_buwdf")]
