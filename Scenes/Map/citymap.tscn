@@ -44,7 +44,6 @@
 [ext_resource type="Texture2D" uid="uid://d3vr5cufvw414" path="res://assets/Map/TopDownPack/adv-board.png" id="42_f6a27"]
 [ext_resource type="PackedScene" uid="uid://d06523r6uwlmc" path="res://Scenes/Player/Player.tscn" id="43_cj6ot"]
 [ext_resource type="Script" uid="uid://dpgfgwoo0otog" path="res://Scenes/Map/enter_maid_cafe.gd" id="44_jwgbx"]
-[ext_resource type="Script" uid="uid://crd27tej7qics" path="res://Scenes/Map/enter_bar.gd" id="44_vxoa0"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4a6f5"]
 texture = ExtResource("1_mfxgf")
@@ -104055,6 +104054,9 @@ sources/8 = SubResource("TileSetAtlasSource_8uruf")
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vxoa0"]
 size = Vector2(56, 94)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jwgbx"]
+size = Vector2(40.5, 79)
+
 [node name="CityMap" type="Node2D"]
 
 [node name="Ground" type="TileMapLayer" parent="."]
@@ -104120,14 +104122,6 @@ build_mode = 1
 polygon = PackedVector2Array(-1174.97, 1533.88, -637.129, 1533.88, -635.179, 1896.34, 216.41, 1898.29, 2525.64, 1898.29, 2515.9, 563.416, 2344.41, 563.416, 2346.36, -1256.69, 2079.38, -1256.69, 2081.33, -940.994, -1174.98, -942.943)
 metadata/_edit_lock_ = true
 
-[node name="EnterBar" type="Area2D" parent="."]
-script = ExtResource("44_vxoa0")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="EnterBar"]
-position = Vector2(-70, 1531)
-shape = SubResource("RectangleShape2D_vxoa0")
-debug_color = Color(0.927271, 0.220012, 0.401478, 0.42)
-
 [node name="EnterMaidCafe" type="Area2D" parent="."]
 script = ExtResource("44_jwgbx")
 
@@ -104136,7 +104130,12 @@ position = Vector2(-70, 1531)
 shape = SubResource("RectangleShape2D_vxoa0")
 debug_color = Color(0.927271, 0.220012, 0.401478, 0.42)
 
-[connection signal="body_entered" from="EnterBar" to="EnterBar" method="_on_body_entered"]
-[connection signal="body_exited" from="EnterBar" to="EnterBar" method="_on_body_exited"]
+[node name="EnterBar" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="EnterBar"]
+position = Vector2(752, 1540)
+shape = SubResource("RectangleShape2D_jwgbx")
+debug_color = Color(0.642905, 0.408654, 0.840949, 0.42)
+
 [connection signal="body_entered" from="EnterMaidCafe" to="EnterMaidCafe" method="_on_body_entered"]
 [connection signal="body_exited" from="EnterMaidCafe" to="EnterMaidCafe" method="_on_body_exited"]
