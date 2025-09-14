@@ -4,45 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21ebc3dd-559a-4c4d-95a8-fb488af0bf0f" name="Changes" comment="added area2d for doors + edited map decoration">
-      <change afterPath="$PROJECT_DIR$/Scenes/Dialogue/dialogue.tscn" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Scenes/Map/enter_bar.gd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Scenes/Map/enter_bar.gd.uid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Scenes/Map/enter_maid_cafe.gd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Scenes/Map/enter_maid_cafe.gd.uid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Scenes/Map/maid_cafe_enter.gd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Scenes/Map/maid_cafe_enter.gd.uid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Scenes/NPC/NPC.tscn" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Scenes/NPC/ressources/test_npc.tres" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Scenes/bar/bar.tscn" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Scenes/maidcafe/maidcafe.tscn" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/Dialogue/dialogue.gd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/Dialogue/dialogue.gd.uid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/Npc/npc.gd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/Npc/npc.gd.uid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/Npc/npc_behavior.gd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/Npc/npc_behavior.gd.uid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/Npc/npc_resource.gd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/Npc/npc_resource.gd.uid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/Npc/patrol_behavior.gd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/Npc/patrol_behavior.gd.uid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/Npc/patrol_location.gd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/Npc/patrol_location.gd.uid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scenes/Map/citymap.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/Map/citymap.tscn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scenes/Map/map.tscn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scenes/Pickups/Key.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/Pickups/Key.tscn" afterDir="false" />
+    <list default="true" id="21ebc3dd-559a-4c4d-95a8-fb488af0bf0f" name="Changes" comment="merge">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scenes/Map/bedroom.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/Map/bedroom.tscn" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Scenes/Player/Player.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/Player/Player.tscn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scenes/Start_Screen/start_screen.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/Start_Screen/start_screen.tscn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scenes/area_2d.tscn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scenes/game_scene.tscn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets" beforeDir="false" afterPath="$PROJECT_DIR$/assets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project.godot" beforeDir="false" afterPath="$PROJECT_DIR$/project.godot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/interaction/interaction_area/interaction_area.gd" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/interaction/interaction_area/interaction_area.gd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/interaction/interaction_manager.gd" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/interaction/interaction_manager.gd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/player/player.gd" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/player/player.gd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/player/test-script.gd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/player/test-script.gd.uid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.png.import" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,18 +27,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Merging citymap-doors&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "git-widget-placeholder": "bedroom-scene",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="GdScript Start and Debug.Player GDScript">
     <configuration name="Player GDScript" type="GDSCRIPT_DEBUG_RUN_CONFIGURATION" factoryName="GdScriptRunFactory" show_console_on_std_err="false" show_console_on_std_out="false" port="6006">
       <option name="address" value="127.0.0.1" />
@@ -126,7 +91,15 @@
       <option name="project" value="LOCAL" />
       <updated>1757758802718</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="merge">
+      <option name="closed" value="true" />
+      <created>1757766571841</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1757766571841</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,7 +158,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="map zwischenstand + changes from main" />
     <MESSAGE value="added area2d for doors + edited map decoration" />
-    <option name="LAST_COMMIT_MESSAGE" value="added area2d for doors + edited map decoration" />
+    <MESSAGE value="merge" />
+    <option name="LAST_COMMIT_MESSAGE" value="merge" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
   <component name="XDebuggerManager">
