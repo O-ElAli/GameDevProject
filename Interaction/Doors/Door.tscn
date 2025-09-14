@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://b0xqb38acejis"]
+
+[ext_resource type="Script" uid="uid://dd5ibb37dvq67" path="res://scripts/interaction/Doors/doorsParent.gd" id="1_sbccy"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sbccy"]
+size = Vector2(48, 56)
+
+[node name="Door" type="Area2D"]
+script = ExtResource("1_sbccy")
+metadata/_custom_type_script = "uid://dd5ibb37dvq67"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+z_index = 20
+position = Vector2(14, 18)
+shape = SubResource("RectangleShape2D_sbccy")
+debug_color = Color(0.900579, 0.242278, 0.501195, 0.42)

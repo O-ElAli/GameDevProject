@@ -158,7 +158,6 @@ height = 15.7229
 motion_mode = 1
 platform_floor_layers = 4294967041
 script = ExtResource("1_ft8w5")
-movement_speed = 100.0
 
 [node name="sprite" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_h54ih")
