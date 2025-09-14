@@ -104199,4 +104199,10 @@ target_scene_path = "uid://ctvhr0orgextw"
 action_name = "enter"
 
 [node name="PoliceStation" parent="." instance=ExtResource("44_jwgbx")]
+position = Vector2(467, 50)
+action_name = "enter"
+
+[node name="House" parent="." instance=ExtResource("44_jwgbx")]
+position = Vector2(1144, 833)
+target_scene_path = "uid://dufrm3sjuqo7s"
 action_name = "enter"

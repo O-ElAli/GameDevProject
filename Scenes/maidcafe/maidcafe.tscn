@@ -6457,7 +6457,7 @@ tile_set = SubResource("TileSet_1y2tx")
 [node name="Player" parent="." instance=ExtResource("4_75ur6")]
 light_mask = 2
 visibility_layer = 2
-position = Vector2(60, 239)
+position = Vector2(-202, 234)
 scale = Vector2(2, 2)
 
 [node name="Door" parent="." instance=ExtResource("5_ubmid")]
