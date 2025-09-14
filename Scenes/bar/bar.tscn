@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=4 uid="uid://ctvhr0orgextw"]
+[gd_scene load_steps=25 format=4 uid="uid://ctvhr0orgextw"]
 
 [ext_resource type="Texture2D" uid="uid://cm4t7y2hfaxuq" path="res://assets/Map/Galacti-Chrons Sci-Fi Warehouse Pack/img/tilesets/SciFi_Warehouse_A5.png" id="1_auboo"]
 [ext_resource type="Texture2D" uid="uid://swu1mrwk60jm" path="res://assets/Map/Galacti-Chrons Sci-Fi Warehouse Pack/img/tilesets/SciFi_Warehouse_A4.png" id="2_tpw24"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://c3p500jjjr1ap" path="res://assets/Map/Galacti-Chrons Sci-Fi Warehouse Pack/img/tilesets/SciFi_Warehouse_E.png" id="5_gi02k"]
 [ext_resource type="Texture2D" uid="uid://7x7mcsqbvvom" path="res://assets/Map/TopDownPack/indoor-gangsite-small.png" id="6_odq2c"]
 [ext_resource type="PackedScene" uid="uid://d06523r6uwlmc" path="res://Scenes/Player/Player.tscn" id="7_gi02k"]
+[ext_resource type="PackedScene" uid="uid://b0xqb38acejis" path="res://Interaction/Doors/Door.tscn" id="8_yf7e6"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_uev4l"]
 texture = ExtResource("1_auboo")
@@ -18969,3 +18970,7 @@ tile_set = SubResource("TileSet_0jrg0")
 [node name="Player" parent="." instance=ExtResource("7_gi02k")]
 position = Vector2(80, 200)
 scale = Vector2(2, 2)
+
+[node name="ExitBar" parent="." instance=ExtResource("8_yf7e6")]
+position = Vector2(150, 204)
+target_scene_path = "uid://dk5risx4k1p4l"

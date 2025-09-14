@@ -1,4 +1,4 @@
-[gd_scene load_steps=147 format=4 uid="uid://dk5risx4k1p4l"]
+[gd_scene load_steps=145 format=4 uid="uid://dk5risx4k1p4l"]
 
 [ext_resource type="Texture2D" uid="uid://btkyehbnpvbs5" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A1.png" id="1_mfxgf"]
 [ext_resource type="Texture2D" uid="uid://cciw3y4tn2mtu" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A2.png" id="2_cj6ot"]
@@ -44,8 +44,6 @@
 [ext_resource type="Texture2D" uid="uid://d3vr5cufvw414" path="res://assets/Map/TopDownPack/adv-board.png" id="42_f6a27"]
 [ext_resource type="PackedScene" uid="uid://d06523r6uwlmc" path="res://Scenes/Player/Player.tscn" id="43_cj6ot"]
 [ext_resource type="PackedScene" uid="uid://b0xqb38acejis" path="res://Interaction/Doors/Door.tscn" id="44_jwgbx"]
-[ext_resource type="PackedScene" uid="uid://ctvhr0orgextw" path="res://Scenes/bar/bar.tscn" id="46_uhbmj"]
-[ext_resource type="PackedScene" uid="uid://dcuaqlbsnrk1w" path="res://Scenes/maidcafe/maidcafe.tscn" id="47_troj3"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4a6f5"]
 texture = ExtResource("1_mfxgf")
@@ -104191,10 +104189,10 @@ metadata/_edit_lock_ = true
 
 [node name="MaidCafe" parent="." instance=ExtResource("44_jwgbx")]
 position = Vector2(-87, 1537)
-target_scene = ExtResource("47_troj3")
+target_scene_path = "uid://dcuaqlbsnrk1w"
 action_name = "enter"
 
 [node name="Bar" parent="." instance=ExtResource("44_jwgbx")]
 position = Vector2(746, 1541)
-target_scene = ExtResource("46_uhbmj")
+target_scene_path = "uid://ctvhr0orgextw"
 action_name = "enter"
