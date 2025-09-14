@@ -104115,6 +104115,7 @@ light_mask = 2
 z_index = 6
 position = Vector2(-69, 1667)
 scale = Vector2(3, 3)
+movement_speed = 500.0
 
 [node name="Tilemap" type="Node" parent="."]
 
@@ -104195,4 +104196,7 @@ action_name = "enter"
 [node name="Bar" parent="." instance=ExtResource("44_jwgbx")]
 position = Vector2(746, 1541)
 target_scene_path = "uid://ctvhr0orgextw"
+action_name = "enter"
+
+[node name="PoliceStation" parent="." instance=ExtResource("44_jwgbx")]
 action_name = "enter"
