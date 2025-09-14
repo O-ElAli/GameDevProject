@@ -8,13 +8,19 @@ script = ExtResource("1_p4lj5")
 
 [node name="Label" type="Label" parent="."]
 z_index = 20
-anchors_preset = 5
+anchors_preset = 8
 anchor_left = 0.5
+anchor_top = 0.5
 anchor_right = 0.5
-offset_left = -52.5
-offset_right = 52.5
-offset_bottom = 23.0
+anchor_bottom = 0.5
+offset_left = -163.0
+offset_top = -34.5
+offset_right = 163.0
+offset_bottom = 34.5
 grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(163, 34.5)
+theme_override_font_sizes/font_size = 50
 text = "[E] to interact"
 horizontal_alignment = 1
 vertical_alignment = 1

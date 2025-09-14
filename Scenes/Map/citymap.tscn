@@ -1,4 +1,4 @@
-[gd_scene load_steps=151 format=4 uid="uid://dk5risx4k1p4l"]
+[gd_scene load_steps=147 format=4 uid="uid://dk5risx4k1p4l"]
 
 [ext_resource type="Texture2D" uid="uid://btkyehbnpvbs5" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A1.png" id="1_mfxgf"]
 [ext_resource type="Texture2D" uid="uid://cciw3y4tn2mtu" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A2.png" id="2_cj6ot"]
@@ -43,8 +43,9 @@
 [ext_resource type="Texture2D" uid="uid://dpqafxg1t4bho" path="res://assets/Map/Selfmade/PoliceSign.png" id="41_6ah4o"]
 [ext_resource type="Texture2D" uid="uid://d3vr5cufvw414" path="res://assets/Map/TopDownPack/adv-board.png" id="42_f6a27"]
 [ext_resource type="PackedScene" uid="uid://d06523r6uwlmc" path="res://Scenes/Player/Player.tscn" id="43_cj6ot"]
-[ext_resource type="Script" uid="uid://dpgfgwoo0otog" path="res://Scenes/Map/enter_maid_cafe.gd" id="44_jwgbx"]
-[ext_resource type="Script" uid="uid://crd27tej7qics" path="res://Scenes/Map/enter_bar.gd" id="44_vxoa0"]
+[ext_resource type="PackedScene" uid="uid://b0xqb38acejis" path="res://Interaction/Doors/Door.tscn" id="44_jwgbx"]
+[ext_resource type="PackedScene" uid="uid://ctvhr0orgextw" path="res://Scenes/bar/bar.tscn" id="46_uhbmj"]
+[ext_resource type="PackedScene" uid="uid://dcuaqlbsnrk1w" path="res://Scenes/maidcafe/maidcafe.tscn" id="47_troj3"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4a6f5"]
 texture = ExtResource("1_mfxgf")
@@ -104109,21 +104110,13 @@ sources/38 = SubResource("TileSetAtlasSource_1bu8t")
 sources/39 = SubResource("TileSetAtlasSource_pwpve")
 sources/40 = SubResource("TileSetAtlasSource_p8aql")
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_vxoa0"]
-size = Vector2(56, 69.3916)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_uhbmj"]
-size = Vector2(93.7255, 71.2484)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_x2cos"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_troj3"]
-size = Vector2(45.4774, 80.5267)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_wb5te"]
-size = Vector2(103.658, 106.737)
-
 [node name="CityMap" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("43_cj6ot")]
+light_mask = 2
+z_index = 6
+position = Vector2(-69, 1667)
+scale = Vector2(3, 3)
 
 [node name="Tilemap" type="Node" parent="."]
 
@@ -104187,14 +104180,6 @@ tile_map_data = PackedByteArray("AAAdAH0ACAAMABIAAAAdAH4ACAAMABMAAAAdAH8ACAAMABQ
 tile_set = SubResource("TileSet_7nfft")
 metadata/_edit_lock_ = true
 
-[node name="Player" parent="Tilemap" instance=ExtResource("43_cj6ot")]
-light_mask = 2
-z_index = 6
-position = Vector2(533, 959)
-scale = Vector2(3, 3)
-movement_speed = 300.0
-metadata/_edit_lock_ = true
-
 [node name="MapBounds" type="StaticBody2D" parent="."]
 metadata/_edit_lock_ = true
 
@@ -104204,57 +104189,12 @@ build_mode = 1
 polygon = PackedVector2Array(-1174.97, 1533.88, -633.314, 1533.92, -635.976, 1897.28, 216.41, 1898.29, 2525.64, 1898.29, 2515.9, 563.416, 2344.41, 563.416, 2346.36, -1256.69, 2079.38, -1256.69, 2080.02, -919.396, -592.282, -927.716, -1175.46, -918.45, -1172.26, -137.146)
 metadata/_edit_lock_ = true
 
-[node name="Door" type="Node" parent="."]
+[node name="MaidCafe" parent="." instance=ExtResource("44_jwgbx")]
+position = Vector2(-87, 1537)
+target_scene = ExtResource("47_troj3")
+action_name = "enter"
 
-[node name="EnterBar" type="Area2D" parent="Door"]
-script = ExtResource("44_vxoa0")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Door/EnterBar"]
-position = Vector2(760, 1547)
-shape = SubResource("RectangleShape2D_vxoa0")
-debug_color = Color(0.927271, 0.220012, 0.401478, 0.42)
-
-[node name="EnterMaidCafe" type="Area2D" parent="Door"]
-script = ExtResource("44_jwgbx")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Door/EnterMaidCafe"]
-position = Vector2(-71, 1544)
-shape = SubResource("RectangleShape2D_vxoa0")
-debug_color = Color(0.927271, 0.220012, 0.401478, 0.42)
-
-[node name="PoliceDoor" type="Area2D" parent="Door"]
-position = Vector2(478.984, 64.0269)
-metadata/_edit_lock_ = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Door/PoliceDoor"]
-position = Vector2(0.772644, -19.5354)
-shape = SubResource("RectangleShape2D_uhbmj")
-debug_color = Color(0.996669, 0, 0.18213, 0.42)
-
-[node name="BedroomDoor" type="Area2D" parent="Door"]
-position = Vector2(1159.03, 835.091)
-metadata/_edit_lock_ = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Door/BedroomDoor"]
-shape = SubResource("RectangleShape2D_x2cos")
-
-[node name="SecretPoliceDoor" type="Area2D" parent="Door"]
-position = Vector2(1577.96, -480.174)
-metadata/_edit_lock_ = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Door/SecretPoliceDoor"]
-position = Vector2(-0.966553, 8.81891)
-shape = SubResource("RectangleShape2D_troj3")
-
-[node name="GangsterDoor" type="Area2D" parent="Door"]
-position = Vector2(-1366.39, 1152.03)
-metadata/_edit_lock_ = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Door/GangsterDoor"]
-position = Vector2(-0.741821, 14.6792)
-shape = SubResource("RectangleShape2D_wb5te")
-
-[connection signal="body_entered" from="Door/EnterBar" to="Door/EnterBar" method="_on_body_entered"]
-[connection signal="body_exited" from="Door/EnterBar" to="Door/EnterBar" method="_on_body_exited"]
-[connection signal="body_entered" from="Door/EnterMaidCafe" to="Door/EnterMaidCafe" method="_on_body_entered"]
-[connection signal="body_exited" from="Door/EnterMaidCafe" to="Door/EnterMaidCafe" method="_on_body_exited"]
+[node name="Bar" parent="." instance=ExtResource("44_jwgbx")]
+position = Vector2(746, 1541)
+target_scene = ExtResource("46_uhbmj")
+action_name = "enter"

@@ -1,9 +1,11 @@
-[gd_scene load_steps=19 format=4 uid="uid://dcuaqlbsnrk1w"]
+[gd_scene load_steps=21 format=4 uid="uid://dcuaqlbsnrk1w"]
 
 [ext_resource type="Texture2D" uid="uid://dfpjojjk6aryt" path="res://assets/Map/maidcafe/Diner-Tileset.png" id="1_8o0ip"]
 [ext_resource type="Texture2D" uid="uid://c3p500jjjr1ap" path="res://assets/Map/Galacti-Chrons Sci-Fi Warehouse Pack/img/tilesets/SciFi_Warehouse_E.png" id="2_ehw0a"]
 [ext_resource type="Texture2D" uid="uid://cu6o4j2lk8r3l" path="res://assets/Map/TopDownPack/bench.png" id="3_gml6c"]
 [ext_resource type="PackedScene" uid="uid://d06523r6uwlmc" path="res://Scenes/Player/Player.tscn" id="4_75ur6"]
+[ext_resource type="PackedScene" uid="uid://b0xqb38acejis" path="res://Interaction/Doors/Door.tscn" id="5_ubmid"]
+[ext_resource type="PackedScene" uid="uid://dk5risx4k1p4l" path="res://Scenes/Map/citymap.tscn" id="6_e5auy"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ehw0a"]
 texture = ExtResource("1_8o0ip")
@@ -6458,4 +6460,10 @@ light_mask = 2
 visibility_layer = 2
 position = Vector2(60, 239)
 scale = Vector2(2, 2)
-movement_speed = 300.0
+
+[node name="ExitCafe" parent="." instance=ExtResource("5_ubmid")]
+unique_name_in_owner = true
+position = Vector2(-234, 296)
+scale = Vector2(2, 1)
+target_scene = ExtResource("6_e5auy")
+action_name = "exit"
