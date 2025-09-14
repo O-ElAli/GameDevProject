@@ -1,11 +1,11 @@
 extends InteractionArea
 class_name Door
 
-@export var target_scene : PackedScene
+@export_file("*.tscn") var target_scene_path :=""
 
 func interact() -> void:
-	if target_scene == null:
+	if target_scene_path == null:
 		print("Empty scene on:", get_path())
 		return
-	print("Changing to:", target_scene.resource_path)
-	get_tree().change_scene_to_packed(target_scene)
+
+	get_tree().change_scene_to_file(target_scene_path)
