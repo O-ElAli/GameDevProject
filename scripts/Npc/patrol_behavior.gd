@@ -1,13 +1,14 @@
 @tool
 extends NPCBehavior
 
-const COLORS := [Color.RED, Color.YELLOW, Color.GREEN,Color.CYAN, Color.BLUE, Color.MAGENTA]
+const COLORS := [Color.RED, Color.YELLOW, Color.GREEN, Color.CYAN, Color.BLUE, Color.MAGENTA]
 
 @export var speed: float = 30.0
 
 var waypoints: Array[PatrolLocation] = []
 var index: int = 0
 var active_target: PatrolLocation
+var _waiting: bool = false   
 
 func _ready() -> void:
 	_collect_waypoints()
@@ -20,12 +21,22 @@ func _ready() -> void:
 		process_mode = Node.PROCESS_MODE_DISABLED
 		return
 	active_target = waypoints[0]
+	_start_next_segment()
 
-func _process(delta: float) -> void:
-	if Engine.is_editor_hint():
+func _physics_process(delta: float) -> void:
+	if Engine.is_editor_hint() or not npc.allow_behavior or not active_target:
 		return
+	if _waiting:
+		return
+
+	
+	var dir := npc.global_position.direction_to(active_target.target_position)
+	npc.velocity = dir * speed
+
+	
 	var threshold := 4.0
 	if npc.global_position.distance_to(active_target.target_position) <= threshold:
+		
 		npc.global_position = active_target.target_position
 		npc.velocity = Vector2.ZERO
 		_start_next_segment()
@@ -36,23 +47,22 @@ func _collect_waypoints(_n: Node = null) -> void:
 		if child is PatrolLocation:
 			waypoints.append(child)
 
-	# Editor-only Darstellung
+	
 	if Engine.is_editor_hint() and not waypoints.is_empty():
 		for i in range(waypoints.size()):
 			var wp := waypoints[i] as PatrolLocation
-			if not wp.tranform_changed.is_connected(_collect_waypoints):
-				wp.tranform_changed.connect(_collect_waypoints)
+			if not wp.transform_changed.is_connected(_collect_waypoints):
+				wp.transform_changed.connect(_collect_waypoints)
 			wp.update_label(str(i))                    # Zahl aktualisieren
 			wp.modulate = _color_for_index(i)          # Farbe zuweisen
 			var nxt := waypoints[(i + 1) % waypoints.size()]
 			wp.update_line(nxt.position)
 
-
 func _start_next_segment() -> void:
 	if not npc.allow_behavior or waypoints.size() < 2:
 		return
 
-	# Idle-Phase
+	
 	npc.current_state = "idle"
 	npc.velocity = Vector2.ZERO
 	npc.play_animation()
@@ -61,15 +71,16 @@ func _start_next_segment() -> void:
 	index = (index + 1) % waypoints.size()
 	active_target = waypoints[index]
 
-	await get_tree().create_timer(wait).timeout
+	if wait > 0:
+		_waiting = true
+		await get_tree().create_timer(wait).timeout
+		_waiting = false
 	if not npc.allow_behavior:
 		return
 
-	# Bewegungs-Phase
+	
 	npc.current_state = "walk"
-	var dir := global_position.direction_to(active_target.target_position)
-	npc.facing = dir
-	npc.velocity = dir * speed
+	npc.facing = npc.global_position.direction_to(active_target.target_position)
 	npc.face_towards(active_target.target_position)
 	npc.play_animation()
 

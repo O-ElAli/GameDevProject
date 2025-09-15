@@ -1,11 +1,15 @@
-[gd_scene load_steps=16 format=3 uid="uid://csp8hwwrci1iy"]
+[gd_scene load_steps=21 format=3 uid="uid://dnjd6je2ie4kd"]
 
-[ext_resource type="Script" uid="uid://bej3684kpdmq8" path="res://scripts/Npc/npc.gd" id="1_37ake"]
-[ext_resource type="Texture2D" uid="uid://chghv11vip0i5" path="res://assets/Characters/NPCs/bladerunnerSPRITES/RPG Maker Compat 48x48/BR2019/deckard.png" id="2_37ake"]
-[ext_resource type="Script" uid="uid://bquehj3xedq4" path="res://scripts/Npc/patrol_behavior.gd" id="3_tlawm"]
-[ext_resource type="Script" uid="uid://dnhtv77nf6s3f" path="res://scripts/Npc/patrol_location.gd" id="4_r2mia"]
+[ext_resource type="Script" uid="uid://bej3684kpdmq8" path="res://scripts/Npc/npc.gd" id="2_3uedj"]
+[ext_resource type="PackedScene" uid="uid://d06523r6uwlmc" path="res://Scenes/Player/Player.tscn" id="2_6jmw4"]
+[ext_resource type="Texture2D" uid="uid://chghv11vip0i5" path="res://assets/Characters/NPCs/bladerunnerSPRITES/RPG Maker Compat 48x48/BR2019/deckard.png" id="3_g4scy"]
+[ext_resource type="Script" uid="uid://bquehj3xedq4" path="res://scripts/Npc/patrol_behavior.gd" id="4_8uoxh"]
+[ext_resource type="Script" uid="uid://dnhtv77nf6s3f" path="res://scripts/Npc/patrol_location.gd" id="5_6a1x4"]
+[ext_resource type="Script" uid="uid://dv1eidaomdx7j" path="res://scripts/Dialogue/dialogue_interaction.gd" id="6_3uedj"]
+[ext_resource type="PackedScene" uid="uid://c40h00sbv0l0y" path="res://Scenes/Dialogue/dialogue.tscn" id="6_tqklv"]
+[ext_resource type="Script" uid="uid://253linsyeq8b" path="res://scripts/Dialogue/dialogue_text.gd" id="7_g4scy"]
 
-[sub_resource type="Animation" id="Animation_tqklv"]
+[sub_resource type="Animation" id="Animation_tlawm"]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -20,7 +24,7 @@ tracks/0/keys = {
 "values": [1]
 }
 
-[sub_resource type="Animation" id="Animation_3uedj"]
+[sub_resource type="Animation" id="Animation_37ake"]
 resource_name = "idle_down"
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -35,7 +39,7 @@ tracks/0/keys = {
 "values": [1]
 }
 
-[sub_resource type="Animation" id="Animation_g4scy"]
+[sub_resource type="Animation" id="Animation_b2drp"]
 resource_name = "idle_side"
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -50,7 +54,7 @@ tracks/0/keys = {
 "values": [7]
 }
 
-[sub_resource type="Animation" id="Animation_8uoxh"]
+[sub_resource type="Animation" id="Animation_r2mia"]
 resource_name = "idle_up"
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -65,7 +69,7 @@ tracks/0/keys = {
 "values": [10]
 }
 
-[sub_resource type="Animation" id="Animation_6a1x4"]
+[sub_resource type="Animation" id="Animation_qxiy1"]
 resource_name = "walk_down"
 length = 2.0
 loop_mode = 1
@@ -82,7 +86,7 @@ tracks/0/keys = {
 "values": [0, 2, 0, 2]
 }
 
-[sub_resource type="Animation" id="Animation_gksx4"]
+[sub_resource type="Animation" id="Animation_fpqpt"]
 resource_name = "walk_side"
 length = 2.0
 loop_mode = 1
@@ -99,7 +103,7 @@ tracks/0/keys = {
 "values": [6, 7, 8, 7]
 }
 
-[sub_resource type="Animation" id="Animation_708gs"]
+[sub_resource type="Animation" id="Animation_uy66f"]
 resource_name = "walk_up"
 length = 2.0
 loop_mode = 1
@@ -116,72 +120,77 @@ tracks/0/keys = {
 "values": [9, 10, 11, 10]
 }
 
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_ymmgw"]
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_fvu2l"]
 _data = {
-&"RESET": SubResource("Animation_tqklv"),
-&"idle_down": SubResource("Animation_3uedj"),
-&"idle_side": SubResource("Animation_g4scy"),
-&"idle_up": SubResource("Animation_8uoxh"),
-&"walk_down": SubResource("Animation_6a1x4"),
-&"walk_side": SubResource("Animation_gksx4"),
-&"walk_up": SubResource("Animation_708gs")
+&"RESET": SubResource("Animation_tlawm"),
+&"idle_down": SubResource("Animation_37ake"),
+&"idle_side": SubResource("Animation_b2drp"),
+&"idle_up": SubResource("Animation_r2mia"),
+&"walk_down": SubResource("Animation_qxiy1"),
+&"walk_side": SubResource("Animation_fpqpt"),
+&"walk_up": SubResource("Animation_uy66f")
 }
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_8pqt6"]
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_gksx4"]
 radius = 9.0
 
-[sub_resource type="Gradient" id="Gradient_37ake"]
+[sub_resource type="Gradient" id="Gradient_r2mia"]
 offsets = PackedFloat32Array(0.480519, 0.798701, 0.993506)
 colors = PackedColorArray(1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0)
 
-[sub_resource type="GradientTexture2D" id="GradientTexture2D_tlawm"]
-gradient = SubResource("Gradient_37ake")
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_708gs"]
+gradient = SubResource("Gradient_r2mia")
 width = 24
 height = 24
 fill = 1
 fill_from = Vector2(0.5, 0.5)
 fill_to = Vector2(0.5, 0)
 
-[node name="NPC_Node" type="Node2D"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8uoxh"]
+size = Vector2(44, 32)
 
-[node name="NPC" type="CharacterBody2D" parent="." groups=["npc"]]
-position = Vector2(1625, 861)
-script = ExtResource("1_37ake")
-npc_name = null
+[node name="Testing" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("2_6jmw4")]
+position = Vector2(955, 528)
+
+[node name="NPC" type="CharacterBody2D" parent="."]
+position = Vector2(942, 939)
+script = ExtResource("2_3uedj")
 
 [node name="Sprite2D" type="Sprite2D" parent="NPC"]
 position = Vector2(0, -35)
-texture = ExtResource("2_37ake")
+texture = ExtResource("3_g4scy")
 hframes = 3
 vframes = 4
 frame = 1
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="NPC"]
 libraries = {
-&"": SubResource("AnimationLibrary_ymmgw")
+&"": SubResource("AnimationLibrary_fvu2l")
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="NPC"]
 rotation = -1.58058
-shape = SubResource("CapsuleShape2D_8pqt6")
+shape = SubResource("CapsuleShape2D_gksx4")
 
 [node name="NpcBehaviorPatrol" type="Node2D" parent="NPC"]
 position = Vector2(0, 2)
-script = ExtResource("3_tlawm")
+script = ExtResource("4_8uoxh")
 
 [node name="NPC_Way" type="Node2D" parent="NPC/NpcBehaviorPatrol"]
 modulate = Color(1, 0, 0, 1)
 show_behind_parent = true
 position = Vector2(-2, -4)
-script = ExtResource("4_r2mia")
+script = ExtResource("5_6a1x4")
 
 [node name="Way" type="Sprite2D" parent="NPC/NpcBehaviorPatrol/NPC_Way"]
 self_modulate = Color(1, 1, 1, 0.447059)
 position = Vector2(-1, 3)
-texture = SubResource("GradientTexture2D_tlawm")
+texture = SubResource("GradientTexture2D_708gs")
 
 [node name="Line2D" type="Line2D" parent="NPC/NpcBehaviorPatrol/NPC_Way/Way"]
-points = PackedVector2Array(0, 0, -70, 99)
+points = PackedVector2Array(0, 0, -112, -59)
 width = 1.0
 default_color = Color(1, 1, 1, 0.552941)
 
@@ -216,16 +225,16 @@ metadata/_edit_use_anchors_ = true
 [node name="NPC_Way2" type="Node2D" parent="NPC/NpcBehaviorPatrol"]
 modulate = Color(1, 1, 0, 1)
 show_behind_parent = true
-position = Vector2(-72, 95)
-script = ExtResource("4_r2mia")
+position = Vector2(-114, -63)
+script = ExtResource("5_6a1x4")
 
 [node name="Way" type="Sprite2D" parent="NPC/NpcBehaviorPatrol/NPC_Way2"]
 self_modulate = Color(1, 1, 1, 0.447059)
 position = Vector2(-1, 3)
-texture = SubResource("GradientTexture2D_tlawm")
+texture = SubResource("GradientTexture2D_708gs")
 
 [node name="Line2D" type="Line2D" parent="NPC/NpcBehaviorPatrol/NPC_Way2/Way"]
-points = PackedVector2Array(0, 0, 122, -2)
+points = PackedVector2Array(0, 0, 146, -17)
 width = 1.0
 default_color = Color(1, 1, 1, 0.552941)
 
@@ -260,16 +269,16 @@ metadata/_edit_use_anchors_ = true
 [node name="NPC_Way3" type="Node2D" parent="NPC/NpcBehaviorPatrol"]
 modulate = Color(0, 1, 0, 1)
 show_behind_parent = true
-position = Vector2(50, 93)
-script = ExtResource("4_r2mia")
+position = Vector2(32, -80)
+script = ExtResource("5_6a1x4")
 
 [node name="Way" type="Sprite2D" parent="NPC/NpcBehaviorPatrol/NPC_Way3"]
 self_modulate = Color(1, 1, 1, 0.447059)
 position = Vector2(-1, 3)
-texture = SubResource("GradientTexture2D_tlawm")
+texture = SubResource("GradientTexture2D_708gs")
 
 [node name="Line2D" type="Line2D" parent="NPC/NpcBehaviorPatrol/NPC_Way3/Way"]
-points = PackedVector2Array(0, 0, -52, -97)
+points = PackedVector2Array(0, 0, 102, 88)
 width = 1.0
 default_color = Color(1, 1, 1, 0.552941)
 
@@ -300,3 +309,63 @@ theme_override_constants/outline_size = 3
 theme_override_font_sizes/font_size = 8
 text = "wait: 0.0s"
 metadata/_edit_use_anchors_ = true
+
+[node name="NPC_Way4" type="Node2D" parent="NPC/NpcBehaviorPatrol"]
+modulate = Color(0, 1, 1, 1)
+show_behind_parent = true
+position = Vector2(134, 8)
+script = ExtResource("5_6a1x4")
+
+[node name="Way" type="Sprite2D" parent="NPC/NpcBehaviorPatrol/NPC_Way4"]
+self_modulate = Color(1, 1, 1, 0.447059)
+position = Vector2(-1, 3)
+texture = SubResource("GradientTexture2D_708gs")
+
+[node name="Line2D" type="Line2D" parent="NPC/NpcBehaviorPatrol/NPC_Way4/Way"]
+points = PackedVector2Array(0, 0, -136, -12)
+width = 1.0
+default_color = Color(1, 1, 1, 0.552941)
+
+[node name="Label" type="Label" parent="NPC/NpcBehaviorPatrol/NPC_Way4/Way"]
+offset_left = -3.0
+offset_top = -9.0
+offset_right = 37.0
+offset_bottom = 14.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 12
+text = "3"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label2" type="Label" parent="NPC/NpcBehaviorPatrol/NPC_Way4/Way"]
+offset_left = -14.0
+offset_top = 6.0
+offset_right = 30.0
+offset_bottom = 23.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 8
+text = "wait: 0.0s"
+metadata/_edit_use_anchors_ = true
+
+[node name="Interaction" type="Area2D" parent="NPC"]
+collision_layer = 0
+collision_mask = 4
+monitorable = false
+script = ExtResource("6_3uedj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC/Interaction"]
+shape = SubResource("RectangleShape2D_8uoxh")
+debug_color = Color(0.30105, 0.00896101, 0.154032, 0.42)
+
+[node name="DialogText" type="Node" parent="NPC/Interaction" groups=["dialog_system"]]
+script = ExtResource("7_g4scy")
+metadata/_custom_type_script = "uid://253linsyeq8b"
+
+[node name="Dialogue" parent="." instance=ExtResource("6_tqklv")]
