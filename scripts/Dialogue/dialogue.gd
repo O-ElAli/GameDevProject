@@ -1,38 +1,36 @@
-@tool
-class_name DialogSystemNode extends CanvasLayer
+extends CanvasLayer
+class_name DialogSystemNode
 
-var is_active : bool = false
-@onready var dialog_ui : Control = $UI
+var is_active: bool = false
+var current_npc = null
+var line_index: int = 0
+
+@onready var dialog_ui: Control = $UI
+@onready var text_label: RichTextLabel = $UI/PanelContainer/RichTextLabel
+@onready var name_label: Label = $UI/Name
 
 func _ready() -> void:
-	if Engine.is_editor_hint():
-		if get_viewport() is Window:
-			get_parent().remove_child(self)
-			return
-		return
 	hide_dialog()
-	pass
 
-func _unhandled_input(event: InputEvent) -> void:
-	#if is_active == false:
-		#return
-	if event.is_action_pressed("dialogue_interaction"):
-		if is_active == false:
-			show_dialog()
-		else:
-			hide_dialog()
-	pass
-
-func show_dialog() -> void:
+func start_dialog(npc) -> void:
+	current_npc = npc
 	is_active = true
 	dialog_ui.visible = true
-	dialog_ui.process_mode = Node.PROCESS_MODE_ALWAYS
-	get_tree().paused = true
-	pass
+	name_label.text = npc.npc_name
+	line_index = 0
+	_show_next_line()
+
+func _show_next_line() -> void:
+	if current_npc == null:
+		return
+	if line_index < current_npc.dialogue_lines.size():
+		text_label.bbcode_text = current_npc.dialogue_lines[line_index]
+		line_index += 1
+	else:
+		hide_dialog()
 
 func hide_dialog() -> void:
 	is_active = false
+	current_npc = null
 	dialog_ui.visible = false
-	dialog_ui.process_mode = Node.PROCESS_MODE_DISABLED
-	get_tree().paused = false
-	pass
+	line_index = 0

@@ -2,7 +2,7 @@
 class_name PatrolLocation
 extends Node2D
 
-signal tranform_changed
+signal transform_changed
 
 @export var wait_time: float = 0.0:
 	set(value):
@@ -16,7 +16,7 @@ func _enter_tree() -> void:
 
 func _notification(what: int) -> void:
 	if what == NOTIFICATION_TRANSFORM_CHANGED:
-		tranform_changed.emit()
+		transform_changed.emit()
 
 func _ready() -> void:
 	target_position = global_position
