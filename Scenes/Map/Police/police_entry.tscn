@@ -1,4 +1,4 @@
-[gd_scene load_steps=51 format=4 uid="uid://qk01bptfs0kg"]
+[gd_scene load_steps=53 format=4 uid="uid://qk01bptfs0kg"]
 
 [ext_resource type="Texture2D" uid="uid://isar4kcw7wdu" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_A2_remaster.png" id="1_ys47u"]
 [ext_resource type="Texture2D" uid="uid://d1q6hsa7eoem1" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_A2_remaster_V2.png" id="2_hn2s3"]
@@ -25390,8 +25390,14 @@ sources/15 = SubResource("TileSetAtlasSource_6mcho")
 sources/16 = SubResource("TileSetAtlasSource_fg0q8")
 sources/17 = SubResource("TileSetAtlasSource_uyfar")
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_rpf8c"]
-size = Vector2(45.3948, 16.7285)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ys47u"]
+size = Vector2(190.734, 90.8408)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hn2s3"]
+size = Vector2(75.3038, 49.9005)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_unm25"]
+size = Vector2(85.9249, 45.6762)
 
 [node name="Police" type="Node2D"]
 
@@ -25431,25 +25437,43 @@ tile_set = SubResource("TileSet_nr38d")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="MapBounds"]
 build_mode = 1
-polygon = PackedVector2Array(-221.463, -301.806, 638.829, -304.501, 638.041, 15.2492, 721.224, 13.6524, 722.188, -8.79287, 763.571, -6.83798, 764.937, 15.0184, 799.574, 16.0005, 797.721, 94.248, 641.994, 94.248, 641.046, 449.509, 305.209, 448.758, 305.269, 529.328, 111.42, 528.02, 112.63, 446.95, -223.75, 446.95, -222.215, 94.1373, -383.747, 94.1373, -382.996, -140.273, -223.717, -140.273)
+polygon = PackedVector2Array(-224.625, -304.059, 638.829, -304.501, 640.674, 14.978, 721.849, 15.8141, 765.416, 16.1996, 799.574, 16.0005, 797.721, 94.248, 641.994, 94.248, 641.046, 449.509, 305.209, 448.758, 305.269, 529.328, 111.42, 528.02, 112.63, 446.95, -223.75, 446.95, -222.215, 94.1373, -383.747, 94.1373, -384.197, 17.2487, -225.632, 16.7355)
 
 [node name="EntryDoor" type="Area2D" parent="."]
+position = Vector2(208.525, 490.75)
 script = ExtResource("23_pvqn4")
 target_scene_path = "uid://dk5risx4k1p4l"
+action_name = "enter"
 metadata/_custom_type_script = "uid://dd5ibb37dvq67"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="EntryDoor"]
-position = Vector2(210.19, 506.192)
-shape = SubResource("RectangleShape2D_rpf8c")
+z_index = 1
+position = Vector2(1.0081, -7.2236)
+shape = SubResource("RectangleShape2D_ys47u")
+debug_color = Color(0.976053, 0, 0.414781, 0.42)
 
 [node name="LeftDoor" type="Area2D" parent="."]
+position = Vector2(97.8697, 178.81)
 script = ExtResource("23_pvqn4")
 target_scene_path = "uid://gsafwi6iq46e"
+action_name = "enter"
 metadata/_custom_type_script = "uid://dd5ibb37dvq67"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="LeftDoor"]
-position = Vector2(-328.929, 9.19326)
-shape = SubResource("RectangleShape2D_rpf8c")
+z_index = 1
+position = Vector2(-426.067, -162.736)
+shape = SubResource("RectangleShape2D_hn2s3")
+debug_color = Color(0.963228, 0, 0.499953, 0.42)
+
+[node name="RightDoor" type="Area2D" parent="."]
+script = ExtResource("23_pvqn4")
+metadata/_custom_type_script = "uid://dd5ibb37dvq67"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RightDoor"]
+z_index = 1
+position = Vector2(745.209, 14.3407)
+shape = SubResource("RectangleShape2D_unm25")
+debug_color = Color(0.974685, 0, 0.424969, 0.42)
 
 [node name="Player" parent="." instance=ExtResource("24_1apj7")]
 z_index = 1
