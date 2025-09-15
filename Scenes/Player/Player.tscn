@@ -1,7 +1,7 @@
 [gd_scene load_steps=22 format=3 uid="uid://d06523r6uwlmc"]
 
 [ext_resource type="Script" uid="uid://mobever4yx10" path="res://scripts/player/player.gd" id="1_ft8w5"]
-[ext_resource type="Texture2D" uid="uid://ckykw0ke45510" path="res://assets/player/deckard.png" id="1_s0eop"]
+[ext_resource type="Texture2D" uid="uid://dworbwkhhkfvn" path="res://assets/player/deckard.png" id="1_s0eop"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0kmp4"]
 atlas = ExtResource("1_s0eop")
@@ -158,7 +158,6 @@ height = 15.7229
 motion_mode = 1
 platform_floor_layers = 4294967041
 script = ExtResource("1_ft8w5")
-movement_speed = 100.0
 
 [node name="sprite" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_h54ih")

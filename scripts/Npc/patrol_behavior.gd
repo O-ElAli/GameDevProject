@@ -8,7 +8,7 @@ const COLORS := [Color.RED, Color.YELLOW, Color.GREEN, Color.CYAN, Color.BLUE, C
 var waypoints: Array[PatrolLocation] = []
 var index: int = 0
 var active_target: PatrolLocation
-var _waiting: bool = false   # true während Idle-Phase
+var _waiting: bool = false   
 
 func _ready() -> void:
 	_collect_waypoints()
@@ -29,14 +29,14 @@ func _physics_process(delta: float) -> void:
 	if _waiting:
 		return
 
-	# Richtung berechnen
+	
 	var dir := npc.global_position.direction_to(active_target.target_position)
 	npc.velocity = dir * speed
 
-	# Ziel erreicht?
+	
 	var threshold := 4.0
 	if npc.global_position.distance_to(active_target.target_position) <= threshold:
-		# Snap exakt auf Ziel
+		
 		npc.global_position = active_target.target_position
 		npc.velocity = Vector2.ZERO
 		_start_next_segment()
@@ -47,7 +47,7 @@ func _collect_waypoints(_n: Node = null) -> void:
 		if child is PatrolLocation:
 			waypoints.append(child)
 
-	# Editor-only Darstellung
+	
 	if Engine.is_editor_hint() and not waypoints.is_empty():
 		for i in range(waypoints.size()):
 			var wp := waypoints[i] as PatrolLocation
@@ -62,7 +62,7 @@ func _start_next_segment() -> void:
 	if not npc.allow_behavior or waypoints.size() < 2:
 		return
 
-	# Idle-Phase
+	
 	npc.current_state = "idle"
 	npc.velocity = Vector2.ZERO
 	npc.play_animation()
@@ -78,7 +78,7 @@ func _start_next_segment() -> void:
 	if not npc.allow_behavior:
 		return
 
-	# Bewegungs-Phase vorbereiten (Bewegung passiert in _physics_process)
+	
 	npc.current_state = "walk"
 	npc.facing = npc.global_position.direction_to(active_target.target_position)
 	npc.face_towards(active_target.target_position)
