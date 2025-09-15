@@ -72,10 +72,3 @@ dialogue_interaction={
 2d_physics/layer_2="player"
 2d_physics/layer_3="interactions"
 window/size/mode=3
-<<<<<<< HEAD
-
-[rendering]
-
-environment/defaults/default_clear_color=Color(0, 0, 0, 1)
-=======
->>>>>>> origin/fixing
