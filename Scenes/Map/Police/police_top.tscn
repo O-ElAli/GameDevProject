@@ -25389,6 +25389,7 @@ debug_color = Color(0.991578, 0, 0.263712, 0.42)
 
 [node name="Door2" type="Area2D" parent="."]
 script = ExtResource("22_b7ox3")
+target_scene_path = "uid://bw4ued8o4ntf7"
 action_name = "enter"
 metadata/_custom_type_script = "uid://dd5ibb37dvq67"
 
