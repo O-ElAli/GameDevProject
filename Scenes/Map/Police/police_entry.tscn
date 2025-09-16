@@ -25397,7 +25397,7 @@ size = Vector2(190.734, 90.8408)
 size = Vector2(75.3038, 49.9005)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_unm25"]
-size = Vector2(85.9249, 45.6762)
+size = Vector2(149.2, 45.6762)
 
 [node name="Police" type="Node2D"]
 
@@ -25465,13 +25465,14 @@ position = Vector2(-426.067, -162.736)
 shape = SubResource("RectangleShape2D_hn2s3")
 debug_color = Color(0.963228, 0, 0.499953, 0.42)
 
-[node name="RightDoor" type="Area2D" parent="."]
+[node name="TopDoor" type="Area2D" parent="."]
 script = ExtResource("23_pvqn4")
+target_scene_path = "uid://yr244iy6k8q3"
 metadata/_custom_type_script = "uid://dd5ibb37dvq67"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="RightDoor"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TopDoor"]
 z_index = 1
-position = Vector2(745.209, 14.3407)
+position = Vector2(207.179, -302.437)
 shape = SubResource("RectangleShape2D_unm25")
 debug_color = Color(0.974685, 0, 0.424969, 0.42)
 

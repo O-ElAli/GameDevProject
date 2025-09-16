@@ -1,4 +1,4 @@
-[gd_scene load_steps=49 format=4 uid="uid://yr244iy6k8q3"]
+[gd_scene load_steps=50 format=4 uid="uid://yr244iy6k8q3"]
 
 [ext_resource type="Texture2D" uid="uid://isar4kcw7wdu" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_A2_remaster.png" id="1_6qwod"]
 [ext_resource type="Texture2D" uid="uid://d1q6hsa7eoem1" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_A2_remaster_V2.png" id="2_a3aq7"]
@@ -22,6 +22,7 @@
 [ext_resource type="Texture2D" uid="uid://mhqe2iggycwd" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!Cyberpunk_decoration.png" id="20_vkklk"]
 [ext_resource type="Texture2D" uid="uid://b67kumvybfsuu" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!Cyberpunk_Toilet_Door.png" id="21_vokhv"]
 [ext_resource type="Script" uid="uid://dd5ibb37dvq67" path="res://scripts/interaction/Doors/doorsParent.gd" id="22_b7ox3"]
+[ext_resource type="PackedScene" uid="uid://d06523r6uwlmc" path="res://Scenes/Player/Player.tscn" id="23_01pau"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_v2luy"]
 texture = ExtResource("1_6qwod")
@@ -8643,6 +8644,7 @@ texture = ExtResource("5_0re05")
 5:36/0 = 0
 6:36/0 = 0
 11:36/0 = 0
+11:36/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 15:36/0 = 0
 16:36/0 = 0
 17:36/0 = 0
@@ -8679,8 +8681,11 @@ texture = ExtResource("5_0re05")
 7:37/0 = 0
 8:37/0 = 0
 9:37/0 = 0
+9:37/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 10:37/0 = 0
+10:37/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 11:37/0 = 0
+11:37/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 12:37/0 = 0
 13:37/0 = 0
 14:37/0 = 0
@@ -8723,8 +8728,11 @@ texture = ExtResource("5_0re05")
 7:38/0 = 0
 8:38/0 = 0
 9:38/0 = 0
+9:38/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 10:38/0 = 0
+10:38/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 11:38/0 = 0
+11:38/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 12:38/0 = 0
 13:38/0 = 0
 14:38/0 = 0
@@ -8759,14 +8767,19 @@ texture = ExtResource("5_0re05")
 1:39/0 = 0
 2:39/0 = 0
 3:39/0 = 0
+3:39/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 4:39/0 = 0
+4:39/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 5:39/0 = 0
 6:39/0 = 0
 7:39/0 = 0
 8:39/0 = 0
 9:39/0 = 0
+9:39/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 10:39/0 = 0
+10:39/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 11:39/0 = 0
+11:39/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 12:39/0 = 0
 13:39/0 = 0
 14:39/0 = 0
@@ -8806,8 +8819,11 @@ texture = ExtResource("5_0re05")
 7:40/0 = 0
 8:40/0 = 0
 9:40/0 = 0
+9:40/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 10:40/0 = 0
+10:40/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 11:40/0 = 0
+11:40/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 12:40/0 = 0
 13:40/0 = 0
 14:40/0 = 0
@@ -8845,8 +8861,11 @@ texture = ExtResource("5_0re05")
 7:41/0 = 0
 8:41/0 = 0
 9:41/0 = 0
+9:41/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 10:41/0 = 0
+10:41/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 11:41/0 = 0
+11:41/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 12:41/0 = 0
 13:41/0 = 0
 14:41/0 = 0
@@ -10575,6 +10594,7 @@ texture = ExtResource("6_b7ox3")
 35:38/0 = 0
 36:38/0 = 0
 37:38/0 = 0
+37:38/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 38:38/0 = 0
 40:38/0 = 0
 41:38/0 = 0
@@ -10617,6 +10637,7 @@ texture = ExtResource("6_b7ox3")
 32:39/0 = 0
 36:39/0 = 0
 37:39/0 = 0
+37:39/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 38:39/0 = 0
 40:39/0 = 0
 41:39/0 = 0
@@ -25331,6 +25352,7 @@ texture = ExtResource("21_vokhv")
 8:35/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_dffe2"]
+physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_grhhd")
 sources/1 = SubResource("TileSetAtlasSource_kjwk3")
 sources/2 = SubResource("TileSetAtlasSource_rrej8")
@@ -25372,7 +25394,12 @@ tile_map_data = PackedByteArray("AAD6/9n/AAAMAAoAAAD6/9r/AAAMAAsAAAD6/9v/AAAMAAs
 tile_set = SubResource("TileSet_v2luy")
 
 [node name="Decorations" type="TileMapLayer" parent="Tilemap"]
-tile_map_data = PackedByteArray("AAD9/9r/DgAbAAEAAAD9/9v/DgAbAAIAAAD9/9z/DgAbAAMAAAD9/93/DgAbAAQAAAD9/97/DgAbAAUAAAD+/9r/DgAcAAEAAAD+/9v/DgAcAAIAAAD+/9z/DgAcAAMAAAD+/93/DgAcAAQAAAD+/97/DgAcAAUAAAD//9r/DgAdAAEAAAD//9v/DgAdAAIAAAD//9z/DgAdAAMAAAD//93/DgAdAAQAAAD//97/DgAdAAUAAAACANr/DgAbAAEAABACANv/DgAbAAIAABACANz/DgAbAAMAABACAN3/DgAbAAQAABACAN7/DgAbAAUAABAEANz/AQAkACQAAAAEAN3/AQAkACUAAAAEAN7/AQAkACYAAAAEAN//AQAkACcAAAAEAOD/AQAkACgAAAAFANz/AQAlACQAAAAFAN3/AQAlACUAAAAFAN7/AQAlACYAAAAFAN//AQAlACcAAAAFAOD/AQAlACgAAAAGANz/AQAmACQAAAAGAN3/AQAmACUAAAAGAN7/AQAmACYAAAAGAN//AQAmACcAAAAGAOD/AQAmACgAAAD7/9z/AQAmACQAAAD6/9z/AQAlACQAAAD5/9z/AQAkACQAAAD7/93/AQAmACUAAAD6/93/AQAlACUAAAD5/93/AQAkACUAAAD7/97/AQAmACYAAAD6/97/AQAlACYAAAD5/97/AQAkACYAAAD7/9//AQAmACcAAAD6/9//AQAlACcAAAD5/9//AQAkACcAAAD7/+D/AQAmACgAAAD5/+D/AQAkACgAAAAAANr/DgAdAAEAABAAANv/DgAdAAIAABAAANz/DgAdAAMAABAAAN3/DgAdAAQAABAAAN7/DgAdAAUAABABANr/DgAcAAEAABABANv/DgAcAAIAABABANz/DgAcAAMAABABAN3/DgAcAAQAABABAN7/DgAcAAUAABD5//3/AQAkACQAAAD5//7/AQAkACUAAAD5////AQAkACYAAAD6//3/AQAlACQAAAD6//7/AQAlACUAAAD6////AQAlACYAAAD7//3/AQAmACQAAAD7//7/AQAmACUAAAD7////AQAmACYAAAAEAP3/AQAkACQAAAAEAP7/AQAkACUAAAAEAP//AQAkACYAAAAFAP3/AQAlACQAAAAFAP7/AQAlACUAAAAFAP//AQAlACYAAAAGAP3/AQAmACQAAAAGAP7/AQAmACUAAAAGAP//AQAmACYAAAD5/wAAAQAkACcAAAD5/wEAAQAkACgAAAD6/wAAAQAlACcAAAD6/wEAAQAlACgAAAD7/wAAAQAmACcAAAD7/wEAAQAmACgAAAAEAAAAAQAkACcAAAAEAAEAAQAkACgAAAAFAAAAAQAlACcAAAAFAAEAAQAlACgAAAAGAAAAAQAmACcAAAAGAAEAAQAmACgAAAD5/+j/AQAkACQAAAD5/+n/AQAkACUAAAD5/+r/AQAkACYAAAD5//P/AQAkACQAAAD5//T/AQAkACUAAAD5//X/AQAkACYAAAD6/+j/AQAlACQAAAD6/+n/AQAlACUAAAD6/+r/AQAlACYAAAD6//P/AQAlACQAAAD6//T/AQAlACUAAAD6//X/AQAlACYAAAD7/+j/AQAmACQAAAD7/+n/AQAmACUAAAD7/+r/AQAmACYAAAD7//P/AQAmACQAAAD7//T/AQAmACUAAAD7//X/AQAmACYAAAAEAOn/AQAkACUAAAAEAOr/AQAkACYAAAAEAPP/AQAkACQAAAAEAPT/AQAkACUAAAAEAPX/AQAkACYAAAAFAOn/AQAlACUAAAAFAOr/AQAlACYAAAAFAPP/AQAlACQAAAAFAPT/AQAlACUAAAAFAPX/AQAlACYAAAAGAOn/AQAmACUAAAAGAOr/AQAmACYAAAAGAPP/AQAmACQAAAAGAPT/AQAmACUAAAAGAPX/AQAmACYAAAD5/+v/AQAkACcAAAD5/+z/AQAkACgAAAD5//b/AQAkACcAAAD5//f/AQAkACgAAAD6/+v/AQAlACcAAAD6/+z/AQAlACgAAAD6//b/AQAlACcAAAD6//f/AQAlACgAAAD7/+v/AQAmACcAAAD7/+z/AQAmACgAAAD7//b/AQAmACcAAAD7//f/AQAmACgAAAAEAOv/AQAkACcAAAAEAOz/AQAkACgAAAAEAPb/AQAkACcAAAAEAPf/AQAkACgAAAAFAOv/AQAlACcAAAAFAOz/AQAlACgAAAAFAPb/AQAlACcAAAAFAPf/AQAlACgAAAAGAOv/AQAmACcAAAAGAOz/AQAmACgAAAAGAPb/AQAmACcAAAAGAPf/AQAmACgAAAD6/+D/AQAlACgAAAADAOL/AAAJACUAAAADAOP/AAAJACYAAAADAOT/AAAJACcAAAADAOX/AAAJACgAAAADAOb/AAAJACkAAAADAOf/AAAFACcAABAEAOL/AAAKACUAAAAEAOP/AAAKACYAAAAEAOT/AAAKACcAAAAEAOX/AAAKACgAAAAEAOb/AAAKACkAAAAEAOf/AAAEACcAABAEAOj/AQAkACQAAAAFAOH/AAALACQAAAAFAOL/AAALACUAAAAFAOP/AAALACYAAAAFAOT/AAALACcAAAAFAOX/AAALACgAAAAFAOb/AAALACkAAAAFAOf/AAADACcAABAFAOj/AQAlACQAAAAGAOj/AQAmACQAAAA=")
+tile_map_data = PackedByteArray("AAD9/9r/DgAbAAEAAAD9/9v/DgAbAAIAAAD9/9z/DgAbAAMAAAD9/93/DgAbAAQAAAD9/97/DgAbAAUAAAD+/9r/DgAcAAEAAAD+/9v/DgAcAAIAAAD+/9z/DgAcAAMAAAD+/93/DgAcAAQAAAD+/97/DgAcAAUAAAD//9r/DgAdAAEAAAD//9v/DgAdAAIAAAD//9z/DgAdAAMAAAD//93/DgAdAAQAAAD//97/DgAdAAUAAAACANr/DgAbAAEAABACANv/DgAbAAIAABACANz/DgAbAAMAABACAN3/DgAbAAQAABACAN7/DgAbAAUAABAEANz/AQAkACQAAAAEAN3/AQAkACUAAAAEAN7/AQAkACYAAAAEAN//AQAkACcAAAAEAOD/AQAkACgAAAAFANz/AQAlACQAAAAFAN3/AQAlACUAAAAFAN7/AQAlACYAAAAFAN//AQAlACcAAAAFAOD/AQAlACgAAAAGANz/AQAmACQAAAAGAN3/AQAmACUAAAAGAN7/AQAmACYAAAAGAN//AQAmACcAAAAGAOD/AQAmACgAAAD7/9z/AQAmACQAAAD6/9z/AQAlACQAAAD5/9z/AQAkACQAAAD7/93/AQAmACUAAAD6/93/AQAlACUAAAD5/93/AQAkACUAAAD7/97/AQAmACYAAAD6/97/AQAlACYAAAD5/97/AQAkACYAAAD7/9//AQAmACcAAAD6/9//AQAlACcAAAD5/9//AQAkACcAAAD7/+D/AQAmACgAAAD5/+D/AQAkACgAAAAAANr/DgAdAAEAABAAANv/DgAdAAIAABAAANz/DgAdAAMAABAAAN3/DgAdAAQAABAAAN7/DgAdAAUAABABANr/DgAcAAEAABABANv/DgAcAAIAABABANz/DgAcAAMAABABAN3/DgAcAAQAABABAN7/DgAcAAUAABD6/+D/AQAlACgAAAADAOL/AAAJACUAAAADAOP/AAAJACYAAAADAOT/AAAJACcAAAADAOX/AAAJACgAAAADAOb/AAAJACkAAAADAOf/AAAFACcAABAEAOL/AAAKACUAAAAEAOP/AAAKACYAAAAEAOT/AAAKACcAAAAEAOX/AAAKACgAAAAEAOb/AAAKACkAAAAEAOf/AAAEACcAABAFAOH/AAALACQAAAAFAOL/AAALACUAAAAFAOP/AAALACYAAAAFAOT/AAALACcAAAAFAOX/AAALACgAAAAFAOb/AAALACkAAAAFAOf/AAADACcAABD5/+z/AQAkACcAAAD5/+3/AQAkACgAAAD5//f/AQAkACcAAAD5//j/AQAkACgAAAD5/wEAAQAkACcAAAD5/wIAAQAkACgAAAD6/+z/AQAlACcAAAD6/+3/AQAlACgAAAD6//f/AQAlACcAAAD6//j/AQAlACgAAAD6/wEAAQAlACcAAAD6/wIAAQAlACgAAAD7/+z/AQAmACcAAAD7/+3/AQAmACgAAAD7//f/AQAmACcAAAD7//j/AQAmACgAAAD7/wEAAQAmACcAAAD7/wIAAQAmACgAAAAEAOz/AQAkACcAAAAEAO3/AQAkACgAAAAEAPf/AQAkACcAAAAEAPj/AQAkACgAAAAEAAEAAQAkACcAAAAEAAIAAQAkACgAAAAFAOz/AQAlACcAAAAFAO3/AQAlACgAAAAFAPf/AQAlACcAAAAFAPj/AQAlACgAAAAFAAEAAQAlACcAAAAFAAIAAQAlACgAAAAGAOz/AQAmACcAAAAGAO3/AQAmACgAAAAGAPf/AQAmACcAAAAGAPj/AQAmACgAAAAGAAEAAQAmACcAAAAGAAIAAQAmACgAAAA=")
+tile_set = SubResource("TileSet_dffe2")
+
+[node name="Decorations2" type="TileMapLayer" parent="Tilemap"]
+z_index = 2
+tile_map_data = PackedByteArray("AAD5/+n/AQAkACQAAAD5/+r/AQAkACUAAAD5/+v/AQAkACYAAAD5//T/AQAkACQAAAD5//X/AQAkACUAAAD5//b/AQAkACYAAAD5//7/AQAkACQAAAD5////AQAkACUAAAD5/wAAAQAkACYAAAD6/+n/AQAlACQAAAD6/+r/AQAlACUAAAD6/+v/AQAlACYAAAD6//T/AQAlACQAAAD6//X/AQAlACUAAAD6//b/AQAlACYAAAD6//7/AQAlACQAAAD6////AQAlACUAAAD6/wAAAQAlACYAAAD7/+n/AQAmACQAAAD7/+r/AQAmACUAAAD7/+v/AQAmACYAAAD7//T/AQAmACQAAAD7//X/AQAmACUAAAD7//b/AQAmACYAAAD7//7/AQAmACQAAAD7////AQAmACUAAAD7/wAAAQAmACYAAAAEAOn/AQAkACQAAAAEAOr/AQAkACUAAAAEAOv/AQAkACYAAAAEAPT/AQAkACQAAAAEAPX/AQAkACUAAAAEAPb/AQAkACYAAAAEAP7/AQAkACQAAAAEAP//AQAkACUAAAAEAAAAAQAkACYAAAAFAOn/AQAlACQAAAAFAOr/AQAlACUAAAAFAOv/AQAlACYAAAAFAPT/AQAlACQAAAAFAPX/AQAlACUAAAAFAPb/AQAlACYAAAAFAP7/AQAlACQAAAAFAP//AQAlACUAAAAFAAAAAQAlACYAAAAGAOn/AQAmACQAAAAGAOr/AQAmACUAAAAGAOv/AQAmACYAAAAGAPT/AQAmACQAAAAGAPX/AQAmACUAAAAGAPb/AQAmACYAAAAGAP7/AQAmACQAAAAGAP//AQAmACUAAAAGAAAAAQAmACYAAAA=")
 tile_set = SubResource("TileSet_dffe2")
 
 [node name="Door" type="Area2D" parent="."]
@@ -25398,3 +25425,12 @@ z_index = 1
 position = Vector2(-1.5, -519.5)
 shape = SubResource("RectangleShape2D_60f3r")
 debug_color = Color(0.982344, 0, 0.363033, 0.42)
+
+[node name="Player" parent="." instance=ExtResource("23_01pau")]
+z_index = 1
+
+[node name="MapBounds" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="MapBounds"]
+build_mode = 1
+polygon = PackedVector2Array(-96.0606, 33.1208, -49.6157, 33.1208, -49.6157, 65.9055, 50.1042, 65.2225, 50.7873, 31.0718, 93.8171, 31.0718, 97.2322, -528.316, -96.0606, -528.999)
