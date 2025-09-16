@@ -1,4 +1,4 @@
-[gd_scene load_steps=47 format=4 uid="uid://5s48by732xw6"]
+[gd_scene load_steps=49 format=4 uid="uid://5s48by732xw6"]
 
 [ext_resource type="Texture2D" uid="uid://isar4kcw7wdu" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_A2_remaster.png" id="1_lkf4i"]
 [ext_resource type="Texture2D" uid="uid://d1q6hsa7eoem1" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_A2_remaster_V2.png" id="2_yto40"]
@@ -22,6 +22,7 @@
 [ext_resource type="Texture2D" uid="uid://c5873hohw3l8x" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!$Gate1_remaster.png" id="20_bbkeq"]
 [ext_resource type="Texture2D" uid="uid://bjhawj8nkjdyt" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!$Lights_Glowing.png" id="21_en4mf"]
 [ext_resource type="PackedScene" uid="uid://d06523r6uwlmc" path="res://Scenes/Player/Player.tscn" id="22_yto40"]
+[ext_resource type="Script" uid="uid://dd5ibb37dvq67" path="res://scripts/interaction/Doors/doorsParent.gd" id="23_w62tb"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_un35h"]
 texture = ExtResource("1_lkf4i")
@@ -27631,6 +27632,9 @@ sources/18 = SubResource("TileSetAtlasSource_q47nr")
 sources/19 = SubResource("TileSetAtlasSource_p278v")
 sources/20 = SubResource("TileSetAtlasSource_tdpgh")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ge23g"]
+size = Vector2(137.9, 60.6)
+
 [node name="PoliceRight" type="Node2D"]
 
 [node name="Tilemap" type="Node" parent="."]
@@ -27674,3 +27678,14 @@ position = Vector2(246.235, -11.979)
 z_index = 1
 build_mode = 1
 polygon = PackedVector2Array(-209.417, -465.701, -210.231, 48.967, 476.983, 47.9995, 478.083, 114, 608.983, 115.1, 607.883, 52.3995, 710.183, 49.0995, 707.983, -466.8, 486.883, -466.8, 484.683, -478.9, 705.783, -481.1, 703.583, -1025.6, -412.917, -1026.7, -419.517, -475.6, 422.643, -477.03, 426.273, -466.14)
+
+[node name="Door" type="Area2D" parent="."]
+script = ExtResource("23_w62tb")
+target_scene_path = "uid://dk5risx4k1p4l"
+metadata/_custom_type_script = "uid://dd5ibb37dvq67"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Door"]
+z_index = 1
+position = Vector2(542.95, 86.4)
+shape = SubResource("RectangleShape2D_ge23g")
+debug_color = Color(0.979093, 0, 0.390873, 0.42)
