@@ -18,6 +18,7 @@ func _on_body_entered(_body: Node2D) -> void:
 	else:
 		print("Body not in player")
 
+
 func _on_body_exited(_body: CharacterBody2D) -> void:
 	InteractionManager.unregister_area(self)
 	print("Body exited")
