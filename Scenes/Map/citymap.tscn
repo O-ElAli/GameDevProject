@@ -104163,28 +104163,36 @@ polygon = PackedVector2Array(-1174.97, 1533.88, -633.314, 1533.92, -635.976, 189
 metadata/_edit_lock_ = true
 
 [node name="MaidCafe" parent="." instance=ExtResource("44_jwgbx")]
-position = Vector2(-87, 1537)
+position = Vector2(-92, 1545)
+scale = Vector2(1.335, 1.335)
 target_scene_path = "uid://dcuaqlbsnrk1w"
 action_name = "enter"
 
 [node name="Bar" parent="." instance=ExtResource("44_jwgbx")]
-position = Vector2(746, 1541)
+position = Vector2(742, 1546)
+scale = Vector2(1.275, 1.275)
 target_scene_path = "uid://ctvhr0orgextw"
 action_name = "enter"
 
 [node name="PoliceStation" parent="." instance=ExtResource("44_jwgbx")]
-position = Vector2(452, 37)
+position = Vector2(452, 63)
 scale = Vector2(2.005, 2.005)
 target_scene_path = "uid://qk01bptfs0kg"
 action_name = "enter"
 
 [node name="House" parent="." instance=ExtResource("44_jwgbx")]
-position = Vector2(1141, 834)
+position = Vector2(1137, 854)
 scale = Vector2(1.425, 1.425)
 target_scene_path = "uid://dufrm3sjuqo7s"
 action_name = "enter"
 
 [node name="PoliceBackdoor" parent="." instance=ExtResource("44_jwgbx")]
-position = Vector2(1554, -483)
-scale = Vector2(1.585, 1.585)
+position = Vector2(1560, -459)
+scale = Vector2(1.205, 1.205)
 target_scene_path = "uid://5s48by732xw6"
+
+[node name="Gangster" parent="." instance=ExtResource("44_jwgbx")]
+position = Vector2(-1394, 1203)
+scale = Vector2(1.785, 1.785)
+target_scene_path = "uid://c2yu8jt6ag0x"
+action_name = "enter"
