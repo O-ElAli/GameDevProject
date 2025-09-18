@@ -1,7 +1,8 @@
-[gd_scene load_steps=16 format=3 uid="uid://csp8hwwrci1iy"]
+[gd_scene load_steps=17 format=3 uid="uid://csp8hwwrci1iy"]
 
 [ext_resource type="Script" uid="uid://bej3684kpdmq8" path="res://scripts/Npc/npc.gd" id="1_37ake"]
 [ext_resource type="Texture2D" uid="uid://bw746mw18lg3s" path="res://assets/Characters/NPCs/matrixSERIESfreebies/upscaled48x48/$morpheusmatrix.png" id="2_37ake"]
+[ext_resource type="Resource" uid="uid://doectsk62do5w" path="res://resources/NPC/test_npc.tres" id="2_tlawm"]
 [ext_resource type="Script" uid="uid://bquehj3xedq4" path="res://scripts/Npc/patrol_behavior.gd" id="3_tlawm"]
 [ext_resource type="Script" uid="uid://dnhtv77nf6s3f" path="res://scripts/Npc/patrol_location.gd" id="4_r2mia"]
 
@@ -147,6 +148,7 @@ fill_to = Vector2(0.5, 0)
 [node name="NPC" type="CharacterBody2D" parent="."]
 position = Vector2(942, 939)
 script = ExtResource("1_37ake")
+data = ExtResource("2_tlawm")
 
 [node name="Sprite2D" type="Sprite2D" parent="NPC"]
 position = Vector2(0, -35)
