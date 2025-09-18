@@ -1,4 +1,4 @@
-[gd_scene load_steps=50 format=4 uid="uid://qk01bptfs0kg"]
+[gd_scene load_steps=50 format=4 uid="uid://bllgdksh0t7wf"]
 
 [ext_resource type="Texture2D" uid="uid://dcn0w1il1j74u" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_A2_remaster.png" id="1_ys47u"]
 [ext_resource type="Texture2D" uid="uid://dntwj7l6xfb2p" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_A2_remaster_V2.png" id="2_hn2s3"]
@@ -25432,7 +25432,7 @@ polygon = PackedVector2Array(-224.625, -304.059, 638.829, -304.501, 640.674, 14.
 
 [node name="Player" parent="." instance=ExtResource("24_1apj7")]
 z_index = 1
-position = Vector2(23.2224, 50.543)
+position = Vector2(203, 390)
 scale = Vector2(1.835, 1.835)
 
 [node name="EntryDoor" parent="." instance=ExtResource("24_ys47u")]
