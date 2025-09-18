@@ -24,7 +24,7 @@ texture_margin_top = 1.0
 texture_margin_right = 1.0
 texture_margin_bottom = 1.0
 
-[node name="Dialogue" type="CanvasLayer" groups=["dialogue_system"]]
+[node name="Dialogue" type="CanvasLayer"]
 process_mode = 3
 layer = 0
 script = ExtResource("1_fero3")
