@@ -27050,4 +27050,4 @@ action_name = "enter"
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="MapBounds"]
 build_mode = 1
-polygon = PackedVector2Array(-1454, 96, -1326, 95, -1325, 70, -1284, 70, -1283, 96, 593, 97, 593, -48, 686, -48, 686, 191, -1455, 190)
+polygon = PackedVector2Array(-1454, 96, -1326, 95, -1325, 70, -1284, 70, -1283, 96, 593, 97, 593, -48, 686, -48, 690, 206, -1456, 206)
