@@ -1,4 +1,4 @@
-[gd_scene load_steps=71 format=4 uid="uid://bedq416yj7uj5"]
+[gd_scene load_steps=58 format=4 uid="uid://bedq416yj7uj5"]
 
 [ext_resource type="Texture2D" uid="uid://6hji4nygq1ls" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A2.png" id="1_rupkt"]
 [ext_resource type="Texture2D" uid="uid://difmn0l2ovhh1" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A2_Bright.png" id="2_djlk5"]
@@ -11,28 +11,15 @@
 [ext_resource type="Texture2D" uid="uid://b1aor7vsiinug" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_C.png" id="9_ixxyq"]
 [ext_resource type="Texture2D" uid="uid://cjgnjkrjpv8q3" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_D.png" id="11_5vww2"]
 [ext_resource type="Texture2D" uid="uid://divm5pi4v5t7r" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!TV_screens_remaster.png" id="11_bbsxu"]
-[ext_resource type="Texture2D" path="res://assets/interior/Laboratory/factory asset v.2 - chemical lab/part-0001.png" id="12_0rir2"]
 [ext_resource type="Texture2D" uid="uid://5tohn443yj7f" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_Bv2_remaster.png" id="12_5hy8f"]
-[ext_resource type="Texture2D" path="res://assets/interior/Laboratory/factory asset v.2 - chemical lab/part-0002.png" id="13_2jjug"]
 [ext_resource type="Texture2D" uid="uid://cq1x35gqu286y" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_B_remaster.png" id="13_ge7mq"]
 [ext_resource type="Texture2D" uid="uid://c5kryx0b86ufc" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_C_remaster.png" id="14_6j20s"]
-[ext_resource type="Texture2D" path="res://assets/interior/Laboratory/factory asset v.2 - chemical lab/part-0003.png" id="14_34jr7"]
 [ext_resource type="Texture2D" uid="uid://bb1blo5gaej47" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_D_remaster.png" id="15_l3bgf"]
-[ext_resource type="Texture2D" path="res://assets/interior/Laboratory/factory asset v.2 - chemical lab/part-0004.png" id="15_qovv4"]
 [ext_resource type="Texture2D" uid="uid://bcr3aoe7jqvt4" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!Cyberpunk_decoration.png" id="16_0rir2"]
-[ext_resource type="Texture2D" path="res://assets/interior/Laboratory/factory asset v.2 - chemical lab/part-0005.png" id="16_l6sw1"]
-[ext_resource type="Texture2D" path="res://assets/interior/Laboratory/factory asset v.2 - chemical lab/part-0006.png" id="17_0palk"]
 [ext_resource type="Texture2D" uid="uid://dih3h7arf61tj" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!lights_remaster.png" id="17_2jjug"]
 [ext_resource type="Texture2D" uid="uid://drn0vvt5dyui2" path="res://assets/Map/winlu_exterior/winlu_exterior/characters/!Policedrone.png" id="17_djlk5"]
 [ext_resource type="Texture2D" uid="uid://ndv30euemq2b" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!$Lights_Glowing.png" id="18_34jr7"]
-[ext_resource type="Texture2D" path="res://assets/interior/Laboratory/factory asset v.2 - chemical lab/part-0007.png" id="18_xqmbc"]
-[ext_resource type="Texture2D" path="res://assets/interior/Laboratory/factory asset v.2 - chemical lab/part-0008.png" id="19_bm4vq"]
 [ext_resource type="PackedScene" uid="uid://b0xqb38acejis" path="res://Interaction/Doors/Door.tscn" id="19_qovv4"]
-[ext_resource type="Texture2D" path="res://assets/interior/Laboratory/factory asset v.2 - chemical lab/part-0009.png" id="20_fa04c"]
-[ext_resource type="Texture2D" path="res://assets/interior/Laboratory/factory asset v.2 - chemical lab/part-0010.png" id="22_cpsfi"]
-[ext_resource type="Texture2D" path="res://assets/interior/Laboratory/factory asset v.2 - chemical lab/part-0011.png" id="23_req15"]
-[ext_resource type="Texture2D" path="res://assets/interior/Laboratory/factory asset v.2 - chemical lab/part-0012.png" id="24_6lcay"]
-[ext_resource type="Texture2D" path="res://assets/interior/Laboratory/factory asset v.2 - chemical lab/Sprite-0011.png" id="25_36x03"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_l6sw1"]
 texture = ExtResource("1_rupkt")
@@ -34282,7 +34269,6 @@ texture = ExtResource("18_34jr7")
 sources/0 = SubResource("TileSetAtlasSource_pa7x5")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_l3bgf"]
-texture = ExtResource("12_0rir2")
 texture_region_size = Vector2i(15, 16)
 1:0/0 = 0
 0:1/0 = 0
@@ -34310,7 +34296,6 @@ texture_region_size = Vector2i(15, 16)
 0:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0rir2"]
-texture = ExtResource("13_2jjug")
 margins = Vector2i(0, 1)
 texture_region_size = Vector2i(14, 16)
 2:5/0 = 0
@@ -34336,7 +34321,6 @@ texture_region_size = Vector2i(14, 16)
 2:6/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2jjug"]
-texture = ExtResource("23_req15")
 texture_region_size = Vector2i(18, 15)
 0:0/0 = 0
 1:0/0 = 0
@@ -34360,7 +34344,6 @@ texture_region_size = Vector2i(18, 15)
 1:6/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_34jr7"]
-texture = ExtResource("24_6lcay")
 texture_region_size = Vector2i(16, 17)
 0:0/0 = 0
 1:0/0 = 0
@@ -34385,7 +34368,6 @@ texture_region_size = Vector2i(16, 17)
 2:6/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qovv4"]
-texture = ExtResource("25_36x03")
 5:0/0 = 0
 6:0/0 = 0
 7:0/0 = 0
@@ -34832,7 +34814,6 @@ texture = ExtResource("25_36x03")
 26:19/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jhffg"]
-texture = ExtResource("14_34jr7")
 texture_region_size = Vector2i(14, 16)
 0:0/0 = 0
 1:0/0 = 0
@@ -34860,7 +34841,6 @@ texture_region_size = Vector2i(14, 16)
 2:7/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_31uma"]
-texture = ExtResource("15_qovv4")
 texture_region_size = Vector2i(12, 15)
 0:0/0 = 0
 1:0/0 = 0
@@ -34885,7 +34865,6 @@ texture_region_size = Vector2i(12, 15)
 2:6/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3uhin"]
-texture = ExtResource("16_l6sw1")
 texture_region_size = Vector2i(12, 15)
 0:0/0 = 0
 1:0/0 = 0
@@ -34910,7 +34889,6 @@ texture_region_size = Vector2i(12, 15)
 2:6/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dfmc8"]
-texture = ExtResource("17_0palk")
 texture_region_size = Vector2i(15, 16)
 0:0/0 = 0
 1:0/0 = 0
@@ -34942,7 +34920,6 @@ texture_region_size = Vector2i(15, 16)
 3:6/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pe1rb"]
-texture = ExtResource("18_xqmbc")
 texture_region_size = Vector2i(12, 15)
 0:0/0 = 0
 1:0/0 = 0
@@ -34967,7 +34944,6 @@ texture_region_size = Vector2i(12, 15)
 0:6/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6b7jo"]
-texture = ExtResource("19_bm4vq")
 texture_region_size = Vector2i(16, 15)
 0:0/0 = 0
 1:0/0 = 0
@@ -34981,7 +34957,6 @@ texture_region_size = Vector2i(16, 15)
 1:4/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_k75jh"]
-texture = ExtResource("20_fa04c")
 texture_region_size = Vector2i(13, 16)
 0:0/0 = 0
 1:0/0 = 0
@@ -35006,7 +34981,6 @@ texture_region_size = Vector2i(13, 16)
 2:6/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2ebho"]
-texture = ExtResource("22_cpsfi")
 texture_region_size = Vector2i(14, 14)
 1:0/0 = 0
 1:1/0 = 0
