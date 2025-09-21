@@ -26983,6 +26983,7 @@ position = Vector2(-447, 572)
 rotation = 1.5708
 scale = Vector2(3.175, 3.175)
 target_scene_path = "uid://dk5risx4k1p4l"
+action_name = "exit"
 
 [node name="Basement" parent="." instance=ExtResource("16_ruev8")]
 position = Vector2(-144, 40)
