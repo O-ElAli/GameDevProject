@@ -27667,7 +27667,7 @@ tile_set = SubResource("TileSet_pmky2")
 
 [node name="Player" parent="." instance=ExtResource("22_yto40")]
 z_index = 1
-position = Vector2(246.235, -11.979)
+position = Vector2(538, 1)
 scale = Vector2(2.21, 2.21)
 
 [node name="MapBounds" type="StaticBody2D" parent="."]
