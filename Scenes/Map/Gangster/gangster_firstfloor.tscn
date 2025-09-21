@@ -28500,7 +28500,6 @@ tile_map_data = PackedByteArray("AADb/wAAAQAkAAAAAADc/wAAAQAlAAAAAADd/wAAAQAlAAA
 tile_set = SubResource("TileSet_7jr8h")
 
 [node name="Decorations2" type="TileMapLayer" parent="Tilemap"]
-tile_map_data = PackedByteArray("AADJ/wQAAgAqAC8AAADK/wQAAgArAC8AAADL/wQAAgAsAC8AAADM/wQAAgAtAC8AAADN/wQAAgAuAC8AAADO/wQAAgAvAC8AAAA=")
 tile_set = SubResource("TileSet_7jr8h")
 
 [node name="MapBounds" type="StaticBody2D" parent="."]

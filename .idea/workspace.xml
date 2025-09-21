@@ -6,9 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="21ebc3dd-559a-4c4d-95a8-fb488af0bf0f" name="Changes" comment="gangster update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scenes/Map/Gangster/gangster_bossroom.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/Map/Gangster/gangster_bossroom.tscn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scenes/Map/Gangster/gangster_main.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/Map/Gangster/gangster_main.tscn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scenes/Map/Gangster/gangster_second.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/Map/Gangster/gangster_second.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scenes/Map/Gangster/gangster_basement.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/Map/Gangster/gangster_basement.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scenes/Map/Gangster/gangster_firstfloor.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/Map/Gangster/gangster_firstfloor.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scenes/Map/Gangster/gangster_secretroom.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/Map/Gangster/gangster_secretroom.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scenes/Map/bedroom.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/Map/bedroom.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets" beforeDir="false" afterPath="$PROJECT_DIR$/assets" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,18 +36,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "git-widget-placeholder": "gangster-underground-map",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;gangster-underground-map&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="GdScript Start and Debug.Player GDScript">
     <configuration name="Player GDScript" type="GDSCRIPT_DEBUG_RUN_CONFIGURATION" factoryName="GdScriptRunFactory" show_console_on_std_err="false" show_console_on_std_out="false" port="6006">
       <option name="address" value="127.0.0.1" />
@@ -231,7 +233,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/player" />
+                        <option value="gangster-underground-map" />
                       </list>
                     </value>
                   </entry>
