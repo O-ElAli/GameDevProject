@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://dqpiidii1buod"]
+
+[ext_resource type="PackedScene" uid="uid://d06523r6uwlmc" path="res://Scenes/Player/Player.tscn" id="1_ekqxe"]
+
+[sub_resource type="TileSet" id="TileSet_1c7hw"]
+
+[node name="MaidcafeMain" type="Node2D"]
+
+[node name="Tilemap" type="Node" parent="."]
+
+[node name="Ground" type="TileMapLayer" parent="Tilemap"]
+tile_set = SubResource("TileSet_1c7hw")
+
+[node name="Walls" type="TileMapLayer" parent="Tilemap"]
+
+[node name="Player" parent="." instance=ExtResource("1_ekqxe")]
