@@ -104177,7 +104177,7 @@ action_name = "enter"
 [node name="PoliceStation" parent="." instance=ExtResource("44_jwgbx")]
 position = Vector2(452, 63)
 scale = Vector2(2.005, 2.005)
-target_scene_path = "uid://qk01bptfs0kg"
+target_scene_path = "uid://bllgdksh0t7wf"
 action_name = "enter"
 
 [node name="House" parent="." instance=ExtResource("44_jwgbx")]

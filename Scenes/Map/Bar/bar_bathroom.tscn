@@ -27212,7 +27212,7 @@ tile_set = SubResource("TileSet_konff")
 position = Vector2(-14, -21)
 rotation = 1.5708
 scale = Vector2(1.78, 1.78)
-target_scene_path = "uid://ctvhr0orgextw"
+target_scene_path = "uid://derad0n6ii0hf"
 action_name = "exit"
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
