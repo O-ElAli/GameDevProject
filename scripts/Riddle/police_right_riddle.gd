@@ -35,8 +35,6 @@ func _on_button_pressed():
 	if entered == code:
 		title_label.text = "Access Granted"
 		title_label.modulate = Color.GREEN
-		get_tree().pop_scene()
 	else:
 		title_label.text = "Error"
 		title_label.modulate = Color.RED
-		get_tree().pop_scene()
