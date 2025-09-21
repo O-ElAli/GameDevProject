@@ -30885,8 +30885,9 @@ z_index = 1
 position = Vector2(1316.7, 231.47)
 scale = Vector2(2, 2)
 
-[node name="Door" parent="." instance=ExtResource("23_vwlt3")]
+[node name="Exit" parent="." instance=ExtResource("23_vwlt3")]
 position = Vector2(1366, 271)
 rotation = 1.5708
 scale = Vector2(3.02, 3.02)
-target_scene_path = "uid://qk01bptfs0kg"
+target_scene_path = "uid://bllgdksh0t7wf"
+action_name = "exit"
