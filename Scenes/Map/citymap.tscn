@@ -104195,5 +104195,5 @@ action_name = "enter"
 [node name="Gangster" parent="." instance=ExtResource("44_jwgbx")]
 position = Vector2(-1394, 1203)
 scale = Vector2(1.785, 1.785)
-target_scene_path = "uid://c2yu8jt6ag0x"
+target_scene_path = "uid://bhv1yf5tjy08c"
 action_name = "enter"
