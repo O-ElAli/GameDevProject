@@ -73,15 +73,19 @@ alignment = 1
 
 [node name="Input1" type="LineEdit" parent="Control/Panel/HBoxContainer"]
 layout_mode = 2
+alignment = 1
 
 [node name="Input2" type="LineEdit" parent="Control/Panel/HBoxContainer"]
 layout_mode = 2
+alignment = 1
 
 [node name="Input3" type="LineEdit" parent="Control/Panel/HBoxContainer"]
 layout_mode = 2
+alignment = 1
 
 [node name="Input4" type="LineEdit" parent="Control/Panel/HBoxContainer"]
 layout_mode = 2
+alignment = 1
 
 [node name="Button" type="Button" parent="Control/Panel"]
 layout_mode = 0
@@ -93,8 +97,8 @@ text = "Verify"
 
 [node name="Button2" type="Button" parent="Control/Panel"]
 layout_mode = 0
-offset_left = 28.0
-offset_top = 20.0
-offset_right = 118.0
-offset_bottom = 82.0
+offset_left = 26.0
+offset_top = 30.0
+offset_right = 116.0
+offset_bottom = 92.0
 text = "ESC"
