@@ -27680,6 +27680,7 @@ polygon = PackedVector2Array(-209.417, -465.701, -210.231, 48.967, 476.983, 47.9
 [node name="ExitDoor" parent="." instance=ExtResource("23_w62tb")]
 position = Vector2(502, 82)
 scale = Vector2(2.97, 2.97)
+target_scene_path = "uid://dk5risx4k1p4l"
 action_name = "exit"
 
 [node name="EnterCodeDoor" parent="." instance=ExtResource("23_w62tb")]

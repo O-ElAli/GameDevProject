@@ -29406,3 +29406,4 @@ position = Vector2(37, 230)
 rotation = 1.5708
 scale = Vector2(2.515, 2.515)
 target_scene_path = "uid://yr244iy6k8q3"
+action_name = "exit"
