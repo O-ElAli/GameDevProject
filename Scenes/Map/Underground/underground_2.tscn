@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=4 uid="uid://k2urbilwh603"]
+[gd_scene load_steps=36 format=4 uid="uid://k2urbilwh603"]
 
 [ext_resource type="Texture2D" uid="uid://6hji4nygq1ls" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A2.png" id="1_d2e8g"]
 [ext_resource type="Texture2D" uid="uid://difmn0l2ovhh1" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A2_Bright.png" id="2_byl6v"]
@@ -15,6 +15,7 @@
 [ext_resource type="Texture2D" uid="uid://5tohn443yj7f" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_Bv2_remaster.png" id="13_kqhvm"]
 [ext_resource type="Texture2D" uid="uid://ndv30euemq2b" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!$Lights_Glowing.png" id="14_3d6yu"]
 [ext_resource type="PackedScene" uid="uid://b0xqb38acejis" path="res://Interaction/Doors/Door.tscn" id="15_byl6v"]
+[ext_resource type="PackedScene" uid="uid://d06523r6uwlmc" path="res://Scenes/Player/Player.tscn" id="16_22yl6"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_km3i7"]
 texture = ExtResource("1_d2e8g")
@@ -27034,13 +27035,14 @@ tile_set = SubResource("TileSet_q4gvg")
 tile_map_data = PackedByteArray("AAAlAP3/AAAjACQAAAAlAP7/AAAjACUAAAAlAP//AAAjACYAAAAlAAAAAAAjACcAAAAlAAEAAAAjACgAAAAlAAIAAAAjACkAAAAlAAMAAAAjACoAAAAlAAQAAAAjACsAAAAmAP3/AAAkACQAAAAmAP7/AAAkACUAAAAmAP//AAAkACYAAAAmAAAAAAAkACcAAAAmAAEAAAAkACgAAAAmAAIAAAAkACkAAAAmAAMAAAAkACoAAAAmAAQAAAAkACsAAAAnAP3/AAAlACQAAAAnAP7/AAAlACUAAAAnAP//AAAlACYAAAAnAAAAAAAlACcAAAAnAAEAAAAlACgAAAAnAAIAAAAlACkAAAAnAAMAAAAlACoAAAAnAAQAAAAlACsAAAAoAP3/AAAmACQAAAAoAP7/AAAmACUAAAAoAP//AAAmACYAAAAoAAAAAAAmACcAAAAoAAEAAAAmACgAAAAoAAIAAAAmACkAAAAoAAMAAAAmACoAAAAoAAQAAAAmACsAAAApAP3/AAAnACQAAAApAP7/AAAnACUAAAApAP//AAAnACYAAAApAAAAAAAnACcAAAApAAEAAAAnACgAAAApAAIAAAAnACkAAAApAAMAAAAnACoAAAApAAQAAAAnACsAAAAqAP3/AAAoACQAAAAqAP7/AAAoACUAAAAqAP//AAAoACYAAAAqAAAAAAAoACcAAAAqAAEAAAAoACgAAAAqAAIAAAAoACkAAAAqAAMAAAAoACoAAAAqAAQAAAAoACsAAAArAP3/AAAjACQAAAArAP7/AAAjACUAAAArAP//AAAjACYAAAArAAAAAAAjACcAAAArAAEAAAAjACgAAAArAAIAAAAjACkAAAArAAMAAAAjACoAAAArAAQAAAAjACsAAAAsAP3/AAAkACQAAAAsAP7/AAAkACUAAAAsAP//AAAkACYAAAAsAAAAAAAkACcAAAAsAAEAAAAkACgAAAAsAAIAAAAkACkAAAAsAAMAAAAkACoAAAAsAAQAAAAkACsAAAAtAP3/AAAlACQAAAAtAP7/AAAlACUAAAAtAP//AAAlACYAAAAtAAAAAAAlACcAAAAtAAEAAAAlACgAAAAtAAIAAAAlACkAAAAtAAMAAAAlACoAAAAtAAQAAAAlACsAAAAuAP3/AAAmACQAAAAuAP7/AAAmACUAAAAuAP//AAAmACYAAAAuAAAAAAAmACcAAAAuAAEAAAAmACgAAAAuAAIAAAAmACkAAAAuAAMAAAAmACoAAAAuAAQAAAAmACsAAAAvAP3/AAAnACQAAAAvAP7/AAAnACUAAAAvAP//AAAnACYAAAAvAAAAAAAnACcAAAAvAAEAAAAnACgAAAAvAAIAAAAnACkAAAAvAAMAAAAnACoAAAAvAAQAAAAnACsAAAAwAP3/AAAoACQAAAAwAP7/AAAoACUAAAAwAP//AAAoACYAAAAwAAAAAAAoACcAAAAwAAEAAAAoACgAAAAwAAIAAAAoACkAAAAwAAMAAAAoACoAAAAwAAQAAAAoACsAAACk//z/AAAjACQAABCj//z/AAAkACQAABCi//z/AAAlACQAABCh//z/AAAmACQAABCg//z/AAAnACQAABCf//z/AAAoACQAABCk//3/AAAjACUAABCj//3/AAAkACUAABCi//3/AAAlACUAABCh//3/AAAmACUAABCg//3/AAAnACUAABCf//3/AAAoACUAABCk//7/AAAjACYAABCj//7/AAAkACYAABCi//7/AAAlACYAABCh//7/AAAmACYAABCg//7/AAAnACYAABCf//7/AAAoACYAABCk////AAAjACcAABCj////AAAkACcAABCi////AAAlACcAABCh////AAAmACcAABCg////AAAnACcAABCf////AAAoACcAABCk/wAAAAAjACgAABCj/wAAAAAkACgAABCi/wAAAAAlACgAABCh/wAAAAAmACgAABCg/wAAAAAnACgAABCf/wAAAAAoACgAABCk/wEAAAAjACkAABCj/wEAAAAkACkAABCi/wEAAAAlACkAABCh/wEAAAAmACkAABCg/wEAAAAnACkAABCf/wEAAAAoACkAABCk/wIAAAAjACoAABCj/wIAAAAkACoAABCi/wIAAAAlACoAABCh/wIAAAAmACoAABCg/wIAAAAnACoAABCf/wIAAAAoACoAABCk/wMAAAAjACsAABCj/wMAAAAkACsAABCi/wMAAAAlACsAABCh/wMAAAAmACsAABCg/wMAAAAnACsAABCf/wMAAAAoACsAABA=")
 tile_set = SubResource("TileSet_63ar3")
 
-[node name="Door" parent="." instance=ExtResource("15_byl6v")]
+[node name="Corner" parent="." instance=ExtResource("15_byl6v")]
 position = Vector2(671, -31)
 rotation = 1.57952
 scale = Vector2(1.675, 1.675)
-action_name = "exit"
+target_scene_path = "uid://bvhbmrryrili7"
+action_name = "go back"
 
-[node name="Door2" parent="." instance=ExtResource("15_byl6v")]
+[node name="VillainRoom" parent="." instance=ExtResource("15_byl6v")]
 position = Vector2(-1327, 31)
 scale = Vector2(1.67, 1.67)
 target_scene_path = "uid://bedq416yj7uj5"
@@ -27050,4 +27052,9 @@ action_name = "enter"
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="MapBounds"]
 build_mode = 1
-polygon = PackedVector2Array(-1454, 96, -1326, 95, -1325, 70, -1284, 70, -1283, 96, 593, 97, 593, -48, 686, -48, 690, 206, -1456, 206)
+polygon = PackedVector2Array(-1454, 96, -1326, 95, -1325, 70, -1284, 70, -1283, 96, 593, 97, 593, -48, 686, -48, 688, 195, -1457, 194)
+
+[node name="Player" parent="." instance=ExtResource("16_22yl6")]
+z_index = 1
+position = Vector2(636, 56)
+scale = Vector2(2.155, 2.155)

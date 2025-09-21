@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=4 uid="uid://bvhbmrryrili7"]
+[gd_scene load_steps=36 format=4 uid="uid://bvhbmrryrili7"]
 
 [ext_resource type="Texture2D" uid="uid://6hji4nygq1ls" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A2.png" id="1_dmgij"]
 [ext_resource type="Texture2D" uid="uid://difmn0l2ovhh1" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A2_Bright.png" id="2_bmyfk"]
@@ -15,6 +15,7 @@
 [ext_resource type="Texture2D" uid="uid://5tohn443yj7f" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_Bv2_remaster.png" id="13_outml"]
 [ext_resource type="Texture2D" uid="uid://ndv30euemq2b" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!$Lights_Glowing.png" id="14_jvexh"]
 [ext_resource type="PackedScene" uid="uid://b0xqb38acejis" path="res://Interaction/Doors/Door.tscn" id="15_jvexh"]
+[ext_resource type="PackedScene" uid="uid://d06523r6uwlmc" path="res://Scenes/Player/Player.tscn" id="16_dtg10"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_outml"]
 texture = ExtResource("1_dmgij")
@@ -26917,11 +26918,16 @@ tile_set = SubResource("TileSet_bnlwp")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="MapBounds"]
 build_mode = 1
-polygon = PackedVector2Array(1791, 13, 1709, 91, -207, 93, -208, -93, -308, -91, -304, 193, 1792, 194, 1792, 114, 1865, 45, 1866, -61)
+polygon = PackedVector2Array(1791, 13, 1709, 91, -207, 93, -206, -44, -307, -46, -304, 193, 1792, 194)
 
-[node name="Door" parent="." instance=ExtResource("15_jvexh")]
-position = Vector2(-225, -69)
+[node name="Corner" parent="." instance=ExtResource("15_jvexh")]
+position = Vector2(-224, -30)
 rotation = 1.5708
 scale = Vector2(1.775, 1.775)
 target_scene_path = "uid://k2urbilwh603"
 action_name = "enter"
+
+[node name="Player" parent="." instance=ExtResource("16_dtg10")]
+z_index = 1
+position = Vector2(1650, 126)
+scale = Vector2(2.33, 2.33)

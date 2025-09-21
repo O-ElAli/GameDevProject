@@ -1,4 +1,4 @@
-[gd_scene load_steps=58 format=4 uid="uid://bedq416yj7uj5"]
+[gd_scene load_steps=59 format=4 uid="uid://bedq416yj7uj5"]
 
 [ext_resource type="Texture2D" uid="uid://6hji4nygq1ls" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A2.png" id="1_rupkt"]
 [ext_resource type="Texture2D" uid="uid://difmn0l2ovhh1" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A2_Bright.png" id="2_djlk5"]
@@ -20,6 +20,7 @@
 [ext_resource type="Texture2D" uid="uid://drn0vvt5dyui2" path="res://assets/Map/winlu_exterior/winlu_exterior/characters/!Policedrone.png" id="17_djlk5"]
 [ext_resource type="Texture2D" uid="uid://ndv30euemq2b" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!$Lights_Glowing.png" id="18_34jr7"]
 [ext_resource type="PackedScene" uid="uid://b0xqb38acejis" path="res://Interaction/Doors/Door.tscn" id="19_qovv4"]
+[ext_resource type="PackedScene" uid="uid://d06523r6uwlmc" path="res://Scenes/Player/Player.tscn" id="21_bbsxu"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_l6sw1"]
 texture = ExtResource("1_rupkt")
@@ -35070,7 +35071,7 @@ tile_set = SubResource("TileSet_dfmc8")
 [node name="LabAssets" type="TileMapLayer" parent="Tilemap"]
 tile_set = SubResource("TileSet_702gy")
 
-[node name="Door" parent="." instance=ExtResource("19_qovv4")]
+[node name="Exit" parent="." instance=ExtResource("19_qovv4")]
 position = Vector2(-272, 148)
 rotation = 1.5708
 scale = Vector2(1.74, 1.74)
@@ -35082,3 +35083,8 @@ action_name = "exit"
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="MapBounds"]
 build_mode = 1
 polygon = PackedVector2Array(-450, 127, -454, -373, -253, -371, -253, -447, 317, -448, 319, -364, 592, -360, 594, 127, -251, 130, -251, 209, -356, 211, -356, 127)
+
+[node name="Player" parent="." instance=ExtResource("21_bbsxu")]
+z_index = 1
+position = Vector2(-300, 82)
+scale = Vector2(2.105, 2.105)
