@@ -1,4 +1,4 @@
-[gd_scene load_steps=41 format=4 uid="uid://7areigq4b5se"]
+[gd_scene load_steps=42 format=4 uid="uid://7areigq4b5se"]
 
 [ext_resource type="Texture2D" uid="uid://dcn0w1il1j74u" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_A2_remaster.png" id="1_w2700"]
 [ext_resource type="Texture2D" uid="uid://dntwj7l6xfb2p" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_A2_remaster_V2.png" id="2_6cw71"]
@@ -17,6 +17,7 @@
 [ext_resource type="Texture2D" uid="uid://cr48k6h04ppp2" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!obj_door1_2_remaster.png" id="14_rh701"]
 [ext_resource type="Texture2D" uid="uid://b43p7rkvho67e" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!obj_door1_remaster.png" id="15_gs4vs"]
 [ext_resource type="PackedScene" uid="uid://b0xqb38acejis" path="res://Interaction/Doors/Door.tscn" id="16_0mi3q"]
+[ext_resource type="PackedScene" uid="uid://d06523r6uwlmc" path="res://Scenes/Player/Player.tscn" id="18_bp53s"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h56gi"]
 texture = ExtResource("1_w2700")
@@ -28479,7 +28480,7 @@ sources/9 = SubResource("TileSetAtlasSource_6ujf0")
 sources/10 = SubResource("TileSetAtlasSource_t4b00")
 sources/11 = SubResource("TileSetAtlasSource_bp53s")
 
-[node name="GangsterSecond" type="Node2D"]
+[node name="GangsterFirstFloor" type="Node2D"]
 
 [node name="Tilemap" type="Node" parent="."]
 
@@ -28506,7 +28507,7 @@ tile_set = SubResource("TileSet_7jr8h")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="MapBounds"]
 build_mode = 1
-polygon = PackedVector2Array(-883, 59, -784, 62, -784, 112, -592, 112, -592, 96, -418, 96, -417, 113, -224, 113, -225, 16, -126, 16, -126.452, 270.475, 32, 272, 32, 351, -126.923, 353.687, -128, 544, -879, 545, -879, 352, -1041, 351, -1041, 271, -879, 273)
+polygon = PackedVector2Array(-883, 59, -784, 62, -784, 112, -592, 112, -592, 96, -418, 96, -417, 113, -224, 113, -223, 65, -127, 65, -126.452, 270.475, 32, 272, 32, 351, -126.923, 353.687, -128, 544, -879, 545, -879, 352, -1041, 351, -1041, 271, -879, 273)
 
 [node name="BossRoom" parent="." instance=ExtResource("16_0mi3q")]
 position = Vector2(-471, 68)
@@ -28519,4 +28520,10 @@ action_name = "enter"
 position = Vector2(-145, 43)
 rotation = 1.5708
 scale = Vector2(1.79, 1.79)
+target_scene_path = "uid://bhv1yf5tjy08c"
 action_name = "go down"
+
+[node name="Player" parent="." instance=ExtResource("18_bp53s")]
+z_index = 1
+position = Vector2(-176, 122)
+scale = Vector2(1.775, 1.775)
