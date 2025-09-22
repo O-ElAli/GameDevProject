@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21ebc3dd-559a-4c4d-95a8-fb488af0bf0f" name="Changes" comment="gangster update">
+    <list default="true" id="21ebc3dd-559a-4c4d-95a8-fb488af0bf0f" name="Changes" comment="maidcafe done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scenes/Map/Gangster/gangster_basement.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/Map/Gangster/gangster_basement.tscn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scenes/Map/Gangster/gangster_firstfloor.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/Map/Gangster/gangster_firstfloor.tscn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scenes/Map/Gangster/gangster_secretroom.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/Map/Gangster/gangster_secretroom.tscn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scenes/Map/bedroom.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/Map/bedroom.tscn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets" beforeDir="false" afterPath="$PROJECT_DIR$/assets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scenes/Map/Maidcafe/maidcafe_main.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/Map/Maidcafe/maidcafe_main.tscn" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,7 +185,23 @@
       <option name="project" value="LOCAL" />
       <updated>1758327906302</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="fixes">
+      <option name="closed" value="true" />
+      <created>1758471884386</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1758471884386</updated>
+    </task>
+    <task id="LOCAL-00015" summary="maidcafe done">
+      <option name="closed" value="true" />
+      <created>1758541881617</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1758541881617</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -257,7 +269,9 @@
     <MESSAGE value="changes underground" />
     <MESSAGE value="bar update" />
     <MESSAGE value="gangster update" />
-    <option name="LAST_COMMIT_MESSAGE" value="gangster update" />
+    <MESSAGE value="fixes" />
+    <MESSAGE value="maidcafe done" />
+    <option name="LAST_COMMIT_MESSAGE" value="maidcafe done" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
   <component name="XDebuggerManager">
