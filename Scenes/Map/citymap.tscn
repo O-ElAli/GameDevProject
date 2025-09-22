@@ -104165,7 +104165,7 @@ metadata/_edit_lock_ = true
 [node name="MaidCafe" parent="." instance=ExtResource("44_jwgbx")]
 position = Vector2(-92, 1545)
 scale = Vector2(1.335, 1.335)
-target_scene_path = "uid://dcuaqlbsnrk1w"
+target_scene_path = "uid://dqpiidii1buod"
 action_name = "enter"
 
 [node name="Bar" parent="." instance=ExtResource("44_jwgbx")]
