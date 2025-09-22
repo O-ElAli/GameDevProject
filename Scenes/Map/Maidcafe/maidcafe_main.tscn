@@ -1,4 +1,4 @@
-[gd_scene load_steps=59 format=4 uid="uid://dqpiidii1buod"]
+[gd_scene load_steps=60 format=4 uid="uid://dqpiidii1buod"]
 
 [ext_resource type="PackedScene" uid="uid://d06523r6uwlmc" path="res://Scenes/Player/Player.tscn" id="1_ekqxe"]
 [ext_resource type="Texture2D" uid="uid://dcn0w1il1j74u" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_A2_remaster.png" id="1_y4umy"]
@@ -28,6 +28,7 @@
 [ext_resource type="Texture2D" uid="uid://cbfgkyekr72ib" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!Cyberpunk_Toilet_Door.png" id="21_uq4u3"]
 [ext_resource type="PackedScene" uid="uid://b0xqb38acejis" path="res://Interaction/Doors/Door.tscn" id="23_3q8mh"]
 [ext_resource type="Texture2D" uid="uid://dayk6tqm5jono" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_A5_remaster.png" id="24_4nn6y"]
+[ext_resource type="AudioStream" uid="uid://cu7iiuca8lvvw" path="res://assets/music/maidcafe/Cute Bossa Nova.ogg" id="29_s481f"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_aawy3"]
 texture = ExtResource("1_y4umy")
@@ -35229,11 +35230,12 @@ z_index = 2
 position = Vector2(-138, 216)
 scale = Vector2(2.35, 2.35)
 
-[node name="Door" parent="." instance=ExtResource("23_3q8mh")]
+[node name="ExitDoor" parent="." instance=ExtResource("23_3q8mh")]
 position = Vector2(-42, 310)
 rotation = 1.5708
 scale = Vector2(2.535, 2.535)
 target_scene_path = "uid://dk5risx4k1p4l"
+action_name = "exit"
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
@@ -35241,7 +35243,7 @@ target_scene_path = "uid://dk5risx4k1p4l"
 motion_scale = Vector2(1.37, 1.37)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
-position = Vector2(-781.486, -1076)
+position = Vector2(-753, -1069)
 scale = Vector2(2.72172, 2.70799)
 texture = ExtResource("24_4nn6y")
 centered = false
@@ -35254,3 +35256,8 @@ region_rect = Rect2(0.111893, 2.13554, 383.171, 91.6604)
 position = Vector2(-1, -131)
 build_mode = 1
 polygon = PackedVector2Array(-159, 419, -158, 482, -16, 483, -12, 418, 274, 419, 273, -387, -251, -388, -253, -350, -449, -350, -448, 420)
+
+[node name="CuteBossaNova" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("29_s481f")
+volume_db = -13.752
+autoplay = true
