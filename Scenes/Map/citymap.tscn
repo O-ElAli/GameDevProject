@@ -1,4 +1,4 @@
-[gd_scene load_steps=145 format=4 uid="uid://dk5risx4k1p4l"]
+[gd_scene load_steps=147 format=4 uid="uid://dk5risx4k1p4l"]
 
 [ext_resource type="Texture2D" uid="uid://btkyehbnpvbs5" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A1.png" id="1_mfxgf"]
 [ext_resource type="Texture2D" uid="uid://cciw3y4tn2mtu" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A2.png" id="2_cj6ot"]
@@ -44,6 +44,8 @@
 [ext_resource type="Texture2D" uid="uid://d3vr5cufvw414" path="res://assets/Map/TopDownPack/adv-board.png" id="42_f6a27"]
 [ext_resource type="PackedScene" uid="uid://d06523r6uwlmc" path="res://Scenes/Player/Player.tscn" id="43_cj6ot"]
 [ext_resource type="PackedScene" uid="uid://b0xqb38acejis" path="res://Interaction/Doors/Door.tscn" id="44_jwgbx"]
+[ext_resource type="PackedScene" uid="uid://bsolum1117wiw" path="res://Interaction/Items/ItemScene.tscn" id="45_uhbmj"]
+[ext_resource type="Texture2D" uid="uid://c85injug7lmmi" path="res://assets/player/key_sprite-Sheet.png" id="46_x2cos"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4a6f5"]
 texture = ExtResource("1_mfxgf")
@@ -104087,7 +104089,7 @@ sources/40 = SubResource("TileSetAtlasSource_p8aql")
 [node name="Player" parent="." instance=ExtResource("43_cj6ot")]
 light_mask = 2
 z_index = 6
-position = Vector2(-73, 1650)
+position = Vector2(131, 1663)
 scale = Vector2(2.21, 2.21)
 movement_speed = 500.0
 
@@ -104167,33 +104169,44 @@ position = Vector2(-92, 1545)
 scale = Vector2(1.335, 1.335)
 target_scene_path = "uid://dcuaqlbsnrk1w"
 action_name = "enter"
+metadata/_edit_lock_ = true
 
 [node name="Bar" parent="." instance=ExtResource("44_jwgbx")]
 position = Vector2(742, 1546)
 scale = Vector2(1.275, 1.275)
 target_scene_path = "uid://ctvhr0orgextw"
 action_name = "enter"
+metadata/_edit_lock_ = true
 
 [node name="PoliceStation" parent="." instance=ExtResource("44_jwgbx")]
 position = Vector2(452, 63)
 scale = Vector2(2.005, 2.005)
 target_scene_path = "uid://qk01bptfs0kg"
 action_name = "enter"
+metadata/_edit_lock_ = true
 
 [node name="House" parent="." instance=ExtResource("44_jwgbx")]
 position = Vector2(1137, 854)
 scale = Vector2(1.425, 1.425)
 target_scene_path = "uid://dufrm3sjuqo7s"
 action_name = "enter"
+metadata/_edit_lock_ = true
 
 [node name="PoliceBackdoor" parent="." instance=ExtResource("44_jwgbx")]
 position = Vector2(1560, -459)
 scale = Vector2(1.205, 1.205)
 target_scene_path = "uid://5s48by732xw6"
 action_name = "enter"
+metadata/_edit_lock_ = true
 
 [node name="Gangster" parent="." instance=ExtResource("44_jwgbx")]
 position = Vector2(-1394, 1203)
 scale = Vector2(1.785, 1.785)
 target_scene_path = "uid://c2yu8jt6ag0x"
 action_name = "enter"
+metadata/_edit_lock_ = true
+
+[node name="Pickup" parent="." instance=ExtResource("45_uhbmj")]
+position = Vector2(274, 1683)
+item_name = "interact"
+icon = ExtResource("46_x2cos")

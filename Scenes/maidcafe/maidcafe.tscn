@@ -1,10 +1,12 @@
-[gd_scene load_steps=20 format=4 uid="uid://dcuaqlbsnrk1w"]
+[gd_scene load_steps=22 format=4 uid="uid://dcuaqlbsnrk1w"]
 
 [ext_resource type="Texture2D" uid="uid://dfpjojjk6aryt" path="res://assets/Map/maidcafe/Diner-Tileset.png" id="1_8o0ip"]
 [ext_resource type="Texture2D" uid="uid://c3p500jjjr1ap" path="res://assets/Map/Galacti-Chrons Sci-Fi Warehouse Pack/img/tilesets/SciFi_Warehouse_E.png" id="2_ehw0a"]
 [ext_resource type="Texture2D" uid="uid://cu6o4j2lk8r3l" path="res://assets/Map/TopDownPack/bench.png" id="3_gml6c"]
 [ext_resource type="PackedScene" uid="uid://d06523r6uwlmc" path="res://Scenes/Player/Player.tscn" id="4_75ur6"]
 [ext_resource type="PackedScene" uid="uid://b0xqb38acejis" path="res://Interaction/Doors/Door.tscn" id="5_ubmid"]
+[ext_resource type="PackedScene" uid="uid://bsolum1117wiw" path="res://Interaction/Items/ItemScene.tscn" id="6_e5auy"]
+[ext_resource type="Texture2D" uid="uid://c85injug7lmmi" path="res://assets/player/key_sprite-Sheet.png" id="7_1y2tx"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ehw0a"]
 texture = ExtResource("1_8o0ip")
@@ -6455,13 +6457,20 @@ tile_map_data = PackedByteArray("AAANAPP/AAAXAAkAAAANAPT/AAAXAAoAAAAOAPP/AAAYAAk
 tile_set = SubResource("TileSet_1y2tx")
 
 [node name="Player" parent="." instance=ExtResource("4_75ur6")]
-light_mask = 2
-visibility_layer = 2
+light_mask = 1
+visibility_layer = 1
 position = Vector2(-202, 234)
 scale = Vector2(2, 2)
+collision_mask = 5
 
 [node name="Door" parent="." instance=ExtResource("5_ubmid")]
 unique_name_in_owner = true
 position = Vector2(-235, 280)
 scale = Vector2(2.1, 1)
 target_scene_path = "uid://dk5risx4k1p4l"
+
+[node name="Key" parent="." instance=ExtResource("6_e5auy")]
+unique_name_in_owner = true
+position = Vector2(-231, 0)
+collision_mask = 3
+icon = ExtResource("7_1y2tx")

@@ -4,6 +4,9 @@ extends CharacterBody2D
 
 var character_direction: Vector2
 
+func _ready() -> void:
+	add_to_group("player")
+
 func _physics_process(_delta: float) -> void:
 	
 	character_direction = Vector2(0,0)
