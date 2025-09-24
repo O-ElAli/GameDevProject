@@ -155,6 +155,8 @@ radius = 4.17676
 height = 15.7229
 
 [node name="Player" type="CharacterBody2D" groups=["player"]]
+light_mask = 2
+visibility_layer = 2
 motion_mode = 1
 platform_floor_layers = 4294967041
 script = ExtResource("1_ft8w5")

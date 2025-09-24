@@ -12,6 +12,7 @@ func _ready() -> void:
 	body_exited.connect(_on_body_exited)
 
 func _on_body_entered(_body: Node2D) -> void:
+	print("Pickup entered body:", _body)
 	if _body.is_in_group("player"):
 		print("entered body")
 		InteractionManager.register_area(self)
