@@ -1,7 +1,8 @@
-[gd_scene load_steps=147 format=4 uid="uid://dk5risx4k1p4l"]
+[gd_scene load_steps=148 format=4 uid="uid://dk5risx4k1p4l"]
 
 [ext_resource type="Texture2D" uid="uid://btkyehbnpvbs5" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A1.png" id="1_mfxgf"]
 [ext_resource type="Texture2D" uid="uid://cciw3y4tn2mtu" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A2.png" id="2_cj6ot"]
+[ext_resource type="PackedScene" uid="uid://csp8hwwrci1iy" path="res://Scenes/NPC/NPC.tscn" id="2_x2cos"]
 [ext_resource type="Texture2D" uid="uid://bmenmwb6arjsg" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A2_Bright.png" id="3_jwgbx"]
 [ext_resource type="Texture2D" uid="uid://b3i11dk5317oh" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A3.png" id="4_vxoa0"]
 [ext_resource type="Texture2D" uid="uid://bvns1c2v3a36r" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A4.png" id="5_uhbmj"]
@@ -104091,6 +104092,9 @@ z_index = 6
 position = Vector2(131, 1663)
 scale = Vector2(2.21, 2.21)
 movement_speed = 500.0
+
+[node name="NPC_Node" parent="." instance=ExtResource("2_x2cos")]
+position = Vector2(-436, 59)
 
 [node name="Tilemap" type="Node" parent="."]
 

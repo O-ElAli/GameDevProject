@@ -4,10 +4,21 @@ extends CharacterBody2D
 
 var character_direction: Vector2
 
+var allow_movement:= true
+
+
+
 func _ready() -> void:
 	add_to_group("player")
 
 func _physics_process(_delta: float) -> void:
+	
+	if not allow_movement:
+		velocity = Vector2.ZERO
+		if $sprite.animation != "Idle":
+			$sprite.animation = "Idle"
+		move_and_slide()
+		return
 	
 	character_direction = Vector2(0,0)
 	
@@ -33,3 +44,8 @@ func _physics_process(_delta: float) -> void:
 	
 	velocity = character_direction * movement_speed
 	move_and_slide()
+
+func set_movement_allowed(allowed:bool) -> void:
+	allow_movement = allowed
+	if not allowed:
+		velocity = Vector2.ZERO
