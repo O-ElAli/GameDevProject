@@ -47,3 +47,15 @@ func _input(event):
 			await active_areas[0].interact.call()
 			
 			can_interact = true
+			
+	elif event.is_action_pressed("dialogue_interaction") && can_interact:
+		print("dialogue pressed")
+		if active_areas.size()>0 and active_areas[0] is npc_interaction:
+			can_interact = false
+			label.hide()
+			
+			await active_areas[0].interact.call()
+			
+			can_interact = true
+			
+			

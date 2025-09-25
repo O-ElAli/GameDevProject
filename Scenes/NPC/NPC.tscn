@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://bej3684kpdmq8" path="res://scripts/Npc/npc.gd" id="1_37ake"]
 [ext_resource type="Texture2D" uid="uid://bw746mw18lg3s" path="res://assets/Characters/NPCs/matrixSERIESfreebies/upscaled48x48/$morpheusmatrix.png" id="2_37ake"]
 [ext_resource type="Resource" uid="uid://doectsk62do5w" path="res://resources/NPC/test_npc.tres" id="2_tlawm"]
+[ext_resource type="PackedScene" uid="uid://b3ts4syrygxeo" path="res://Interaction/NPC/npc_interaction.tscn" id="3_r2mia"]
 [ext_resource type="Script" uid="uid://bquehj3xedq4" path="res://scripts/Npc/patrol_behavior.gd" id="3_tlawm"]
 [ext_resource type="Script" uid="uid://dnhtv77nf6s3f" path="res://scripts/Npc/patrol_location.gd" id="4_r2mia"]
 
@@ -128,9 +129,6 @@ _data = {
 &"walk_up": SubResource("Animation_uy66f")
 }
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_8pqt6"]
-radius = 9.0
-
 [sub_resource type="Gradient" id="Gradient_r2mia"]
 offsets = PackedFloat32Array(0.480519, 0.798701, 0.993506)
 colors = PackedColorArray(1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0)
@@ -150,6 +148,8 @@ position = Vector2(942, 939)
 script = ExtResource("1_37ake")
 data = ExtResource("2_tlawm")
 
+[node name="npc_interaction" parent="NPC" instance=ExtResource("3_r2mia")]
+
 [node name="Sprite2D" type="Sprite2D" parent="NPC"]
 position = Vector2(0, -35)
 texture = ExtResource("2_37ake")
@@ -161,10 +161,6 @@ frame = 1
 libraries = {
 &"": SubResource("AnimationLibrary_fvu2l")
 }
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC"]
-rotation = -1.58058
-shape = SubResource("CapsuleShape2D_8pqt6")
 
 [node name="NpcBehaviorPatrol" type="Node2D" parent="NPC"]
 position = Vector2(0, 2)
