@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://b3ts4syrygxeo"]
+
+[ext_resource type="Script" uid="uid://c3sxqr3x14kk7" path="res://scripts/interaction/npc_interactions/npc_interaction.gd" id="1_32f0l"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_mi8im"]
+radius = 29.1548
+
+[node name="npc_interaction" type="Area2D"]
+script = ExtResource("1_32f0l")
+metadata/_custom_type_script = "uid://c3sxqr3x14kk7"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_mi8im")
+debug_color = Color(0.206849, 0.512137, 1, 0.42)

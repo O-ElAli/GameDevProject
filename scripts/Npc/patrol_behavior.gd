@@ -9,6 +9,10 @@ var waypoints: Array[PatrolLocation] = []
 var index: int = 0
 var active_target: PatrolLocation
 
+var was_interrupted: bool = false
+var pre_interrupt_velocity: Vector2 = Vector2.ZERO
+var pre_interrupt_state: String = "idle"
+
 func _ready() -> void:
 	_collect_waypoints()
 	if Engine.is_editor_hint():
@@ -24,6 +28,30 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	if Engine.is_editor_hint():
 		return
+	
+	var dialogue_system = get_tree().get_first_node_in_group("dialogue_system")
+	if dialogue_system and dialogue_system.is_active:
+		# PAUSE: Save current state when dialogue starts
+		if not was_interrupted:
+			pre_interrupt_velocity = npc.velocity
+			pre_interrupt_state = npc.current_state
+			was_interrupted = true
+		
+		# Freeze during dialogue
+		npc.velocity = Vector2.ZERO
+		npc.current_state = "idle"
+		npc.play_animation()
+		return
+	
+	# RESUME: Restore state when dialogue ends
+	if was_interrupted:
+		was_interrupted = false
+		npc.velocity = pre_interrupt_velocity
+		npc.current_state = pre_interrupt_state
+		npc.play_animation()
+		return
+	
+	# Normal patrol logic
 	var threshold := 4.0
 	if npc.global_position.distance_to(active_target.target_position) <= threshold:
 		npc.global_position = active_target.target_position
@@ -47,8 +75,12 @@ func _collect_waypoints(_n: Node = null) -> void:
 			var nxt := waypoints[(i + 1) % waypoints.size()]
 			wp.update_line(nxt.position)
 
-
 func _start_next_segment() -> void:
+	# Skip if dialogue is active
+	var dialogue_system = get_tree().get_first_node_in_group("dialogue_system")
+	if dialogue_system and dialogue_system.is_active:
+		return
+	
 	if not npc.allow_behavior or waypoints.size() < 2:
 		return
 
@@ -62,7 +94,10 @@ func _start_next_segment() -> void:
 	active_target = waypoints[index]
 
 	await get_tree().create_timer(wait).timeout
-	if not npc.allow_behavior:
+	
+	# Check again after waiting
+	dialogue_system = get_tree().get_first_node_in_group("dialogue_system")
+	if not npc.allow_behavior or (dialogue_system and dialogue_system.is_active):
 		return
 
 	# Bewegungs-Phase
