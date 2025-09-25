@@ -1,52 +1,49 @@
-[gd_scene load_steps=148 format=4 uid="uid://dk5risx4k1p4l"]
+[gd_scene load_steps=145 format=4 uid="uid://dk5risx4k1p4l"]
 
-[ext_resource type="Texture2D" uid="uid://btkyehbnpvbs5" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A1.png" id="1_mfxgf"]
-[ext_resource type="Texture2D" uid="uid://cciw3y4tn2mtu" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A2.png" id="2_cj6ot"]
-[ext_resource type="PackedScene" uid="uid://csp8hwwrci1iy" path="res://Scenes/NPC/NPC.tscn" id="2_x2cos"]
-[ext_resource type="Texture2D" uid="uid://bmenmwb6arjsg" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A2_Bright.png" id="3_jwgbx"]
-[ext_resource type="Texture2D" uid="uid://b3i11dk5317oh" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A3.png" id="4_vxoa0"]
-[ext_resource type="Texture2D" uid="uid://bvns1c2v3a36r" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A4.png" id="5_uhbmj"]
-[ext_resource type="Texture2D" uid="uid://bpnon5807vul8" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A5.png" id="6_x2cos"]
-[ext_resource type="Texture2D" uid="uid://od1fg5s3x2et" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_B.png" id="7_troj3"]
-[ext_resource type="Texture2D" uid="uid://bol0uwvouoerq" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_C.png" id="8_wb5te"]
-[ext_resource type="Texture2D" uid="uid://ctq0wq6gfbcv2" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_D.png" id="9_bf3n2"]
-[ext_resource type="Texture2D" uid="uid://bjbjki7spl1y7" path="res://assets/Map/winlu_exterior/winlu_exterior/parallaxes/Background_1.png" id="10_bqd1v"]
-[ext_resource type="Texture2D" uid="uid://5eadobhuf2vh" path="res://assets/Map/winlu_exterior/winlu_exterior/characters/!$Sign1.png" id="11_6xaus"]
-[ext_resource type="Texture2D" uid="uid://c5axnhrco7xxj" path="res://assets/Map/winlu_exterior/winlu_exterior/characters/!obj_door2.png" id="12_neceg"]
-[ext_resource type="Texture2D" uid="uid://dd0ii2dgh7f7t" path="res://assets/Map/winlu_exterior/winlu_exterior/characters/!$Cyberlove.png" id="13_ay6ku"]
-[ext_resource type="Texture2D" uid="uid://dulsj3e0b5yrq" path="res://assets/Map/winlu_exterior/winlu_exterior/characters/!$Gate2.png" id="14_texg2"]
-[ext_resource type="Texture2D" uid="uid://djtohqi8wd4c3" path="res://assets/Map/winlu_exterior/winlu_exterior/characters/!$Gate3.png" id="15_mopqy"]
-[ext_resource type="Texture2D" uid="uid://cwefq5wckpmdb" path="res://assets/Map/winlu_exterior/winlu_exterior/characters/!$Gate4.png" id="16_yr301"]
-[ext_resource type="Texture2D" uid="uid://h6uq0d8xnc0c" path="res://assets/Map/winlu_exterior/winlu_exterior/characters/!$Signs2.png" id="17_tgfad"]
-[ext_resource type="Texture2D" uid="uid://dbl62y5oxly1l" path="res://assets/Map/winlu_exterior/winlu_exterior/characters/!$Signs3.png" id="18_iqbs8"]
-[ext_resource type="Texture2D" uid="uid://cal7xx74my242" path="res://assets/Map/winlu_exterior/winlu_exterior/characters/!$traffic_signal.png" id="19_4j1cy"]
-[ext_resource type="Texture2D" uid="uid://dgrspykvjs22k" path="res://assets/Map/winlu_exterior/winlu_exterior/characters/!Misc.png" id="20_l2ojw"]
-[ext_resource type="Texture2D" uid="uid://dvn4v8yxobvju" path="res://assets/Map/winlu_exterior/winlu_exterior/characters/!Policedrone.png" id="21_ghbp3"]
-[ext_resource type="Texture2D" uid="uid://bllmemfjinpws" path="res://assets/Map/winlu_exterior/winlu_exterior/characters/$Car.png" id="22_cbq4t"]
-[ext_resource type="Texture2D" uid="uid://djx7dv6ft7kcs" path="res://assets/Map/TopDownPack/air-conditioners.png" id="23_77hyk"]
-[ext_resource type="Texture2D" uid="uid://cjnhm6r3esgo6" path="res://assets/Map/TopDownPack/anatomy-table.png" id="24_o2j8r"]
-[ext_resource type="Texture2D" uid="uid://cu6o4j2lk8r3l" path="res://assets/Map/TopDownPack/bench.png" id="25_rlir5"]
-[ext_resource type="Texture2D" uid="uid://bxub2bd8raf6o" path="res://assets/Map/TopDownPack/body-burner.png" id="26_2mksp"]
-[ext_resource type="Texture2D" uid="uid://dvrrip3v7ta2w" path="res://assets/Map/TopDownPack/character-base-sketch-taller.png" id="27_wdafm"]
-[ext_resource type="Texture2D" uid="uid://ctwqvt4i45xe8" path="res://assets/Map/TopDownPack/computer-desk.png" id="28_8hx3h"]
-[ext_resource type="Texture2D" uid="uid://ca6bxamoh8xsh" path="res://assets/Map/TopDownPack/construction-stuff.png" id="29_mfh3k"]
-[ext_resource type="Texture2D" uid="uid://cun565dagisbp" path="res://assets/Map/TopDownPack/cover.png" id="30_w433y"]
-[ext_resource type="Texture2D" uid="uid://dsoh7mm1x26x7" path="res://assets/Map/TopDownPack/graffiti-big.png" id="31_v0pgo"]
-[ext_resource type="Texture2D" uid="uid://7x7mcsqbvvom" path="res://assets/Map/TopDownPack/indoor-gangsite-small.png" id="32_l4lqm"]
-[ext_resource type="Texture2D" uid="uid://bpxuplv8kcdkq" path="res://assets/Map/TopDownPack/laser-door.png" id="33_y2w34"]
-[ext_resource type="Texture2D" uid="uid://dxm20er7jnei8" path="res://assets/Map/TopDownPack/outdoor-doors.png" id="34_23hem"]
-[ext_resource type="Texture2D" uid="uid://bpu2mfugcm51h" path="res://assets/Map/TopDownPack/outdoor-misc-stuff.png" id="35_5ahvw"]
-[ext_resource type="Texture2D" uid="uid://c1hluty4o4jbu" path="res://assets/Map/TopDownPack/plants-tree.png" id="36_018se"]
-[ext_resource type="Texture2D" uid="uid://wa5dokw1yjnx" path="res://assets/Map/TopDownPack/robot-arm.png" id="37_kpvik"]
-[ext_resource type="Texture2D" uid="uid://omf8aukq7o3g" path="res://assets/Map/TopDownPack/surgery-room.png" id="38_krydk"]
-[ext_resource type="Texture2D" uid="uid://b3e561xb7enhn" path="res://assets/Map/TopDownPack/vehicles-fixing.png" id="39_8pltr"]
-[ext_resource type="Texture2D" uid="uid://bg1hidgdgkpsb" path="res://assets/Map/TopDownPack/vehicles.png" id="40_d28c4"]
-[ext_resource type="Texture2D" uid="uid://dpqafxg1t4bho" path="res://assets/Map/Selfmade/PoliceSign.png" id="41_6ah4o"]
-[ext_resource type="Texture2D" uid="uid://d3vr5cufvw414" path="res://assets/Map/TopDownPack/adv-board.png" id="42_f6a27"]
+[ext_resource type="Texture2D" uid="uid://cyp5nhjese42" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A1.png" id="1_mfxgf"]
+[ext_resource type="Texture2D" uid="uid://6hji4nygq1ls" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A2.png" id="2_cj6ot"]
+[ext_resource type="Texture2D" uid="uid://difmn0l2ovhh1" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A2_Bright.png" id="3_jwgbx"]
+[ext_resource type="Texture2D" uid="uid://b7glm4h3tsqtm" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A3.png" id="4_vxoa0"]
+[ext_resource type="Texture2D" uid="uid://cbhfim8mlc6bn" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A4.png" id="5_uhbmj"]
+[ext_resource type="Texture2D" uid="uid://bdovsali0j2th" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A5.png" id="6_x2cos"]
+[ext_resource type="Texture2D" uid="uid://cws40yw5o0woo" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_B.png" id="7_troj3"]
+[ext_resource type="Texture2D" uid="uid://b1aor7vsiinug" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_C.png" id="8_wb5te"]
+[ext_resource type="Texture2D" uid="uid://cjgnjkrjpv8q3" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_D.png" id="9_bf3n2"]
+[ext_resource type="Texture2D" uid="uid://3k55d06yn636" path="res://assets/Map/winlu_exterior/winlu_exterior/parallaxes/Background_1.png" id="10_bqd1v"]
+[ext_resource type="Texture2D" uid="uid://bguqmlboa5is7" path="res://assets/Map/winlu_exterior/winlu_exterior/characters/!$Sign1.png" id="11_6xaus"]
+[ext_resource type="Texture2D" uid="uid://i3ucxhha6tog" path="res://assets/Map/winlu_exterior/winlu_exterior/characters/!obj_door2.png" id="12_neceg"]
+[ext_resource type="Texture2D" uid="uid://cvlwshaj8m6q" path="res://assets/Map/winlu_exterior/winlu_exterior/characters/!$Cyberlove.png" id="13_ay6ku"]
+[ext_resource type="Texture2D" uid="uid://cxvga4y76quhe" path="res://assets/Map/winlu_exterior/winlu_exterior/characters/!$Gate2.png" id="14_texg2"]
+[ext_resource type="Texture2D" uid="uid://b30571alnyaht" path="res://assets/Map/winlu_exterior/winlu_exterior/characters/!$Gate3.png" id="15_mopqy"]
+[ext_resource type="Texture2D" uid="uid://dalwsf0fda2sb" path="res://assets/Map/winlu_exterior/winlu_exterior/characters/!$Gate4.png" id="16_yr301"]
+[ext_resource type="Texture2D" uid="uid://cys85e33u3pi7" path="res://assets/Map/winlu_exterior/winlu_exterior/characters/!$Signs2.png" id="17_tgfad"]
+[ext_resource type="Texture2D" uid="uid://c01i4htri11ur" path="res://assets/Map/winlu_exterior/winlu_exterior/characters/!$Signs3.png" id="18_iqbs8"]
+[ext_resource type="Texture2D" uid="uid://81l3nq61452m" path="res://assets/Map/winlu_exterior/winlu_exterior/characters/!$traffic_signal.png" id="19_4j1cy"]
+[ext_resource type="Texture2D" uid="uid://dbi5kqrq77bmf" path="res://assets/Map/winlu_exterior/winlu_exterior/characters/!Misc.png" id="20_l2ojw"]
+[ext_resource type="Texture2D" uid="uid://drn0vvt5dyui2" path="res://assets/Map/winlu_exterior/winlu_exterior/characters/!Policedrone.png" id="21_ghbp3"]
+[ext_resource type="Texture2D" uid="uid://cqs7hf357dy1a" path="res://assets/Map/winlu_exterior/winlu_exterior/characters/$Car.png" id="22_cbq4t"]
+[ext_resource type="Texture2D" uid="uid://1wsn5oko55bv" path="res://assets/Map/TopDownPack/air-conditioners.png" id="23_77hyk"]
+[ext_resource type="Texture2D" uid="uid://b4otwegq5plxk" path="res://assets/Map/TopDownPack/anatomy-table.png" id="24_o2j8r"]
+[ext_resource type="Texture2D" uid="uid://1muf77p7bq7o" path="res://assets/Map/TopDownPack/bench.png" id="25_rlir5"]
+[ext_resource type="Texture2D" uid="uid://dxux1kgwnyqht" path="res://assets/Map/TopDownPack/body-burner.png" id="26_2mksp"]
+[ext_resource type="Texture2D" uid="uid://cf8foe0278jei" path="res://assets/Map/TopDownPack/character-base-sketch-taller.png" id="27_wdafm"]
+[ext_resource type="Texture2D" uid="uid://cv4bejqh6ltyr" path="res://assets/Map/TopDownPack/computer-desk.png" id="28_8hx3h"]
+[ext_resource type="Texture2D" uid="uid://dqv3ad8w76ci5" path="res://assets/Map/TopDownPack/construction-stuff.png" id="29_mfh3k"]
+[ext_resource type="Texture2D" uid="uid://scgtd66vevk1" path="res://assets/Map/TopDownPack/cover.png" id="30_w433y"]
+[ext_resource type="Texture2D" uid="uid://bkka7oyxxvd7h" path="res://assets/Map/TopDownPack/graffiti-big.png" id="31_v0pgo"]
+[ext_resource type="Texture2D" uid="uid://b1j4y83uxsacy" path="res://assets/Map/TopDownPack/indoor-gangsite-small.png" id="32_l4lqm"]
+[ext_resource type="Texture2D" uid="uid://dryfrmtu57h67" path="res://assets/Map/TopDownPack/laser-door.png" id="33_y2w34"]
+[ext_resource type="Texture2D" uid="uid://cuk5jovnldvw1" path="res://assets/Map/TopDownPack/outdoor-doors.png" id="34_23hem"]
+[ext_resource type="Texture2D" uid="uid://b1roq0h57kyds" path="res://assets/Map/TopDownPack/outdoor-misc-stuff.png" id="35_5ahvw"]
+[ext_resource type="Texture2D" uid="uid://x1v3otefe3vg" path="res://assets/Map/TopDownPack/plants-tree.png" id="36_018se"]
+[ext_resource type="Texture2D" uid="uid://chk3t5xkl7kqs" path="res://assets/Map/TopDownPack/robot-arm.png" id="37_kpvik"]
+[ext_resource type="Texture2D" uid="uid://bydwsug0u0lnh" path="res://assets/Map/TopDownPack/surgery-room.png" id="38_krydk"]
+[ext_resource type="Texture2D" uid="uid://b5wp7mn3wb47k" path="res://assets/Map/TopDownPack/vehicles-fixing.png" id="39_8pltr"]
+[ext_resource type="Texture2D" uid="uid://b8usrp2n8odw0" path="res://assets/Map/TopDownPack/vehicles.png" id="40_d28c4"]
+[ext_resource type="Texture2D" uid="uid://cagcvfrp5pq0" path="res://assets/Map/Selfmade/PoliceSign.png" id="41_6ah4o"]
+[ext_resource type="Texture2D" uid="uid://n32dx0hbsigv" path="res://assets/Map/TopDownPack/adv-board.png" id="42_f6a27"]
 [ext_resource type="PackedScene" uid="uid://d06523r6uwlmc" path="res://Scenes/Player/Player.tscn" id="43_cj6ot"]
 [ext_resource type="PackedScene" uid="uid://b0xqb38acejis" path="res://Interaction/Doors/Door.tscn" id="44_jwgbx"]
-[ext_resource type="PackedScene" uid="uid://bsolum1117wiw" path="res://Interaction/Items/ItemScene.tscn" id="45_uhbmj"]
-[ext_resource type="Texture2D" uid="uid://c85injug7lmmi" path="res://assets/player/key_sprite-Sheet.png" id="46_x2cos"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4a6f5"]
 texture = ExtResource("1_mfxgf")
@@ -104088,13 +104085,11 @@ sources/40 = SubResource("TileSetAtlasSource_p8aql")
 [node name="CityMap" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource("43_cj6ot")]
+light_mask = 2
 z_index = 6
-position = Vector2(131, 1663)
+position = Vector2(482, 959)
 scale = Vector2(2.21, 2.21)
 movement_speed = 500.0
-
-[node name="NPC_Node" parent="." instance=ExtResource("2_x2cos")]
-position = Vector2(-436, 59)
 
 [node name="Tilemap" type="Node" parent="."]
 
@@ -104170,46 +104165,35 @@ metadata/_edit_lock_ = true
 [node name="MaidCafe" parent="." instance=ExtResource("44_jwgbx")]
 position = Vector2(-92, 1545)
 scale = Vector2(1.335, 1.335)
-target_scene_path = "uid://dcuaqlbsnrk1w"
+target_scene_path = "uid://dqpiidii1buod"
 action_name = "enter"
-metadata/_edit_lock_ = true
 
 [node name="Bar" parent="." instance=ExtResource("44_jwgbx")]
 position = Vector2(742, 1546)
 scale = Vector2(1.275, 1.275)
-target_scene_path = "uid://ctvhr0orgextw"
+target_scene_path = "uid://derad0n6ii0hf"
 action_name = "enter"
-metadata/_edit_lock_ = true
 
 [node name="PoliceStation" parent="." instance=ExtResource("44_jwgbx")]
 position = Vector2(452, 63)
 scale = Vector2(2.005, 2.005)
-target_scene_path = "uid://qk01bptfs0kg"
+target_scene_path = "uid://bllgdksh0t7wf"
 action_name = "enter"
-metadata/_edit_lock_ = true
 
 [node name="House" parent="." instance=ExtResource("44_jwgbx")]
 position = Vector2(1137, 854)
 scale = Vector2(1.425, 1.425)
-target_scene_path = "uid://dufrm3sjuqo7s"
+target_scene_path = "uid://wmdx3lqmyoft"
 action_name = "enter"
-metadata/_edit_lock_ = true
 
 [node name="PoliceBackdoor" parent="." instance=ExtResource("44_jwgbx")]
 position = Vector2(1560, -459)
 scale = Vector2(1.205, 1.205)
 target_scene_path = "uid://5s48by732xw6"
 action_name = "enter"
-metadata/_edit_lock_ = true
 
 [node name="Gangster" parent="." instance=ExtResource("44_jwgbx")]
 position = Vector2(-1394, 1203)
 scale = Vector2(1.785, 1.785)
-target_scene_path = "uid://c2yu8jt6ag0x"
+target_scene_path = "uid://bhv1yf5tjy08c"
 action_name = "enter"
-metadata/_edit_lock_ = true
-
-[node name="Pickup" parent="." instance=ExtResource("45_uhbmj")]
-position = Vector2(274, 1683)
-item_name = "interact"
-icon = ExtResource("46_x2cos")

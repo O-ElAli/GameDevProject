@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21ebc3dd-559a-4c4d-95a8-fb488af0bf0f" name="Changes" comment="merge">
+    <list default="true" id="21ebc3dd-559a-4c4d-95a8-fb488af0bf0f" name="Changes" comment="maidcafe done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scenes/Map/bedroom.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/Map/bedroom.tscn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scenes/Player/Player.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/Player/Player.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scenes/Map/Maidcafe/maidcafe_main.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/Map/Maidcafe/maidcafe_main.tscn" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +14,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$/assets" value="62954e32d84f520064a02af6c82bb5f63699f0b5" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
@@ -27,18 +32,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "git-widget-placeholder": "bedroom-scene",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;gangster-underground-map&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="GdScript Start and Debug.Player GDScript">
     <configuration name="Player GDScript" type="GDSCRIPT_DEBUG_RUN_CONFIGURATION" factoryName="GdScriptRunFactory" show_console_on_std_err="false" show_console_on_std_out="false" port="6006">
       <option name="address" value="127.0.0.1" />
@@ -51,9 +56,9 @@
       <method v="2" />
     </configuration>
     <configuration name="Editor" type="RunNativeExe" factoryName="Native Executable">
-      <option name="EXE_PATH" value="$USER_HOME$/Downloads/Godot_v4.4.1-stable_win64.exe/Godot_v4.4.1-stable_win64.exe" />
+      <option name="EXE_PATH" value="N:/Downloads/Godot_v4.4.1-stable_win64.exe/Godot_v4.4.1-stable_win64.exe" />
       <option name="PROGRAM_PARAMETERS" value="--path &quot;./&quot; --editor" />
-      <option name="WORKING_DIRECTORY" value="C:\Users\jmsan\Desktop\Gameeee" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\monkey machine\Documents\GodotProjects\GameDevProject" />
       <option name="PASS_PARENT_ENVS" value="1" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="ENV_FILE_PATHS" value="" />
@@ -82,6 +87,7 @@
       <option name="presentableId" value="Default" />
       <updated>1757758648082</updated>
       <workItem from="1757758709543" duration="266000" />
+      <workItem from="1758294634436" duration="3726000" />
     </task>
     <task id="LOCAL-00002" summary="added area2d for doors + edited map decoration">
       <option name="closed" value="true" />
@@ -99,7 +105,103 @@
       <option name="project" value="LOCAL" />
       <updated>1757766571841</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="small change">
+      <option name="closed" value="true" />
+      <created>1758221404642</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1758221404642</updated>
+    </task>
+    <task id="LOCAL-00005" summary="scenes/map folder structure">
+      <option name="closed" value="true" />
+      <created>1758222346056</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1758222346056</updated>
+    </task>
+    <task id="LOCAL-00006" summary="maid assets">
+      <option name="closed" value="true" />
+      <created>1758226262630</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1758226262630</updated>
+    </task>
+    <task id="LOCAL-00007" summary="maid assets">
+      <option name="closed" value="true" />
+      <created>1758226475618</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1758226475618</updated>
+    </task>
+    <task id="LOCAL-00008" summary="maid assets">
+      <option name="closed" value="true" />
+      <created>1758226495324</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1758226495324</updated>
+    </task>
+    <task id="LOCAL-00009" summary="underground map">
+      <option name="closed" value="true" />
+      <created>1758294686606</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1758294686606</updated>
+    </task>
+    <task id="LOCAL-00010" summary="gangster map">
+      <option name="closed" value="true" />
+      <created>1758304964286</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1758304964286</updated>
+    </task>
+    <task id="LOCAL-00011" summary="changes underground">
+      <option name="closed" value="true" />
+      <created>1758304987210</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1758304987210</updated>
+    </task>
+    <task id="LOCAL-00012" summary="bar update">
+      <option name="closed" value="true" />
+      <created>1758327884086</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1758327884086</updated>
+    </task>
+    <task id="LOCAL-00013" summary="gangster update">
+      <option name="closed" value="true" />
+      <created>1758327906302</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1758327906302</updated>
+    </task>
+    <task id="LOCAL-00014" summary="fixes">
+      <option name="closed" value="true" />
+      <created>1758471884386</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1758471884386</updated>
+    </task>
+    <task id="LOCAL-00015" summary="maidcafe done">
+      <option name="closed" value="true" />
+      <created>1758541881617</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1758541881617</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -143,7 +245,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/player" />
+                        <option value="gangster-underground-map" />
                       </list>
                     </value>
                   </entry>
@@ -159,7 +261,17 @@
     <MESSAGE value="map zwischenstand + changes from main" />
     <MESSAGE value="added area2d for doors + edited map decoration" />
     <MESSAGE value="merge" />
-    <option name="LAST_COMMIT_MESSAGE" value="merge" />
+    <MESSAGE value="small change" />
+    <MESSAGE value="scenes/map folder structure" />
+    <MESSAGE value="maid assets" />
+    <MESSAGE value="underground map" />
+    <MESSAGE value="gangster map" />
+    <MESSAGE value="changes underground" />
+    <MESSAGE value="bar update" />
+    <MESSAGE value="gangster update" />
+    <MESSAGE value="fixes" />
+    <MESSAGE value="maidcafe done" />
+    <option name="LAST_COMMIT_MESSAGE" value="maidcafe done" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
   <component name="XDebuggerManager">

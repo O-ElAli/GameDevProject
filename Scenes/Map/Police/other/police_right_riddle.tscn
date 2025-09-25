@@ -1,0 +1,104 @@
+[gd_scene load_steps=4 format=3 uid="uid://btfrrdoj7qxpk"]
+
+[ext_resource type="Script" uid="uid://bnj7afy1kdkrf" path="res://scripts/Riddle/police_right_riddle.gd" id="1_n7uyf"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_n7uyf"]
+bg_color = Color(0.262932, 0.262932, 0.262932, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7drkw"]
+bg_color = Color(0.470775, 0.799435, 0.978088, 1)
+border_width_left = 15
+border_width_top = 15
+border_width_right = 15
+border_width_bottom = 15
+border_color = Color(0.796243, 0.796243, 0.796243, 1)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+shadow_color = Color(0.93845, 0.93845, 0.93845, 0.521569)
+shadow_size = 146
+
+[node name="PoliceRightRiddle" type="Node2D"]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_n7uyf")
+metadata/_edit_use_anchors_ = true
+
+[node name="Panel2" type="Panel" parent="Control"]
+layout_mode = 0
+offset_right = 1930.0
+offset_bottom = 1081.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_n7uyf")
+
+[node name="Panel" type="Panel" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -23.925
+anchor_top = -13.175
+anchor_right = -23.925
+anchor_bottom = -13.175
+offset_left = 308.0
+offset_top = 198.0
+offset_right = 1590.0
+offset_bottom = 875.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_7drkw")
+
+[node name="Label" type="Label" parent="Control/Panel"]
+layout_mode = 0
+offset_left = 179.0
+offset_top = 95.0
+offset_right = 1062.0
+offset_bottom = 159.0
+theme_override_font_sizes/font_size = 44
+text = "Enter Password"
+horizontal_alignment = 1
+uppercase = true
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control/Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 123.0
+offset_top = 227.0
+offset_right = -712.0
+offset_bottom = -380.0
+grow_horizontal = 2
+scale = Vector2(2.235, 2.235)
+theme_override_constants/separation = 27
+alignment = 1
+
+[node name="Input1" type="LineEdit" parent="Control/Panel/HBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Input2" type="LineEdit" parent="Control/Panel/HBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Input3" type="LineEdit" parent="Control/Panel/HBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Input4" type="LineEdit" parent="Control/Panel/HBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Button" type="Button" parent="Control/Panel"]
+layout_mode = 0
+offset_left = 530.0
+offset_top = 477.0
+offset_right = 729.0
+offset_bottom = 530.0
+text = "Verify"
+
+[node name="Button2" type="Button" parent="Control/Panel"]
+layout_mode = 0
+offset_left = 26.0
+offset_top = 30.0
+offset_right = 116.0
+offset_bottom = 92.0
+text = "ESC"
