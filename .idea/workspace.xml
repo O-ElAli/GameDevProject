@@ -4,9 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21ebc3dd-559a-4c4d-95a8-fb488af0bf0f" name="Changes" comment="maidcafe done">
+    <list default="true" id="21ebc3dd-559a-4c4d-95a8-fb488af0bf0f" name="Changes" comment="merge">
+      <change afterPath="$PROJECT_DIR$/Scenes/Player/weapon/projectile/projectile.tscn" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/player/weapon/projectiles/projectile.gd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/player/weapon/projectiles/projectile.gd.uid" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/player/weapon/weapon.gd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/player/weapon/weapon.gd.uid" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scenes/Map/Maidcafe/maidcafe_main.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/Map/Maidcafe/maidcafe_main.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scenes/Map/Police/police_ chefroom.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/Map/Police/police_ chefroom.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scenes/Map/Police/police_left.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/Map/Police/police_left.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scenes/Map/Police/police_top.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/Map/Police/police_top.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scenes/Map/bedroom.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/Map/bedroom.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scenes/Map/citymap.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/Map/citymap.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scenes/NPC/NPC.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/NPC/NPC.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scenes/Player/Player.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/Player/Player.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scenes/Start_Screen/start_screen.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/Start_Screen/start_screen.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets" beforeDir="false" afterPath="$PROJECT_DIR$/assets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project.godot" beforeDir="false" afterPath="$PROJECT_DIR$/project.godot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/Npc/npc.gd" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/Npc/npc.gd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/player/player.gd" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/player/player.gd" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,13 +32,25 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="gangster-underground-map" />
         <entry key="$PROJECT_DIR$/assets" value="62954e32d84f520064a02af6c82bb5f63699f0b5" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;tastych&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/O-ElAli/GameDevProject.git&quot;,
+    &quot;accountId&quot;: &quot;7fde04db-f840-4aaa-a211-8a8498c2de7f&quot;
+  }
+}</component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="false" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
@@ -36,7 +64,7 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;gangster-underground-map&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;fightingstuff&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
@@ -56,9 +84,9 @@
       <method v="2" />
     </configuration>
     <configuration name="Editor" type="RunNativeExe" factoryName="Native Executable">
-      <option name="EXE_PATH" value="N:/Downloads/Godot_v4.4.1-stable_win64.exe/Godot_v4.4.1-stable_win64.exe" />
+      <option name="EXE_PATH" value="$USER_HOME$/Desktop/Godot_v4.4.1-stable_win64.exe/Godot_v4.4.1-stable_win64.exe" />
       <option name="PROGRAM_PARAMETERS" value="--path &quot;./&quot; --editor" />
-      <option name="WORKING_DIRECTORY" value="C:\Users\monkey machine\Documents\GodotProjects\GameDevProject" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\Marius\RiderProjects\GangsterJasminStand" />
       <option name="PASS_PARENT_ENVS" value="1" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="ENV_FILE_PATHS" value="" />
@@ -88,6 +116,8 @@
       <updated>1757758648082</updated>
       <workItem from="1757758709543" duration="266000" />
       <workItem from="1758294634436" duration="3726000" />
+      <workItem from="1758716377956" duration="4322000" />
+      <workItem from="1758827940110" duration="1843000" />
     </task>
     <task id="LOCAL-00002" summary="added area2d for doors + edited map decoration">
       <option name="closed" value="true" />
