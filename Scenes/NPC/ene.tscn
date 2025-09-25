@@ -1,0 +1,44 @@
+[gd_scene load_steps=8 format=3 uid="uid://dh3ogrcweerfd"]
+
+[ext_resource type="Script" uid="uid://b2f3cfnj4vj0n" path="res://scripts/Npc/enem.gd" id="1_hgl8b"]
+[ext_resource type="Shader" uid="uid://bf0g6euyexxp4" path="res://shaders/damage_flash.gdshader" id="2_6y6e8"]
+[ext_resource type="Texture2D" uid="uid://dad7vdd48vcru" path="res://icon.svg" id="3_h3a33"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ueotf"]
+shader = ExtResource("2_6y6e8")
+shader_parameter/active = false
+shader_parameter/flash_color = Color(1, 1, 1, 1)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_w1bn8"]
+size = Vector2(120, 120)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hgl8b"]
+bg_color = Color(0.0110876, 0.0110876, 0.0110876, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6y6e8"]
+bg_color = Color(0.621044, 0.00444444, 0.110491, 1)
+
+[node name="enemy" type="Node2D"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." groups=["enemies"]]
+script = ExtResource("1_hgl8b")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+material = SubResource("ShaderMaterial_ueotf")
+texture = ExtResource("3_h3a33")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(0, 1)
+shape = SubResource("RectangleShape2D_w1bn8")
+
+[node name="Healthbar" type="ProgressBar" parent="CharacterBody2D"]
+offset_left = -53.0
+offset_top = -89.0
+offset_right = 52.0
+offset_bottom = -66.0
+theme_override_styles/background = SubResource("StyleBoxFlat_hgl8b")
+theme_override_styles/fill = SubResource("StyleBoxFlat_6y6e8")
+value = 30.0
+
+[node name="DamageNumberPoint" type="Node2D" parent="."]
+position = Vector2(0, -103)

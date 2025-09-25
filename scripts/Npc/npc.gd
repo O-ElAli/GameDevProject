@@ -14,6 +14,7 @@ var allow_behavior: bool = true
 #var dialogue_lines: Array = []
 
 @export var data: NPCResource : set = _apply_data
+@export var health: int = 100
 
 @onready var sprite: Sprite2D = $Sprite2D
 @onready var animator: AnimationPlayer = $AnimationPlayer
@@ -71,3 +72,9 @@ func _initialize_from_resource() -> void:
 func _apply_data(new_data: NPCResource) -> void:
 	data = new_data
 	_initialize_from_resource()
+	
+func take_damage(amount: int):
+	health -= amount
+	print("Gegner hat " + str(health) + " Lebenspunkte übrig.")
+	if health <= 0:
+		queue_free()
