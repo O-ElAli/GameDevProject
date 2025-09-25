@@ -20,6 +20,11 @@ config/icon="res://icon.svg"
 InteractionManager="*res://Interaction/InteractionManager.tscn"
 DamageNumber="*res://scripts/Npc/damage_number.gd"
 
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+
 [global_group]
 
 player=""
