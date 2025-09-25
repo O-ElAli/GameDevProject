@@ -1,0 +1,27 @@
+[gd_scene load_steps=6 format=3 uid="uid://igxk4bomxpbc"]
+
+[ext_resource type="Script" uid="uid://b2f3cfnj4vj0n" path="res://scripts/Npc/enem.gd" id="1_s5okj"]
+[ext_resource type="Shader" uid="uid://bf0g6euyexxp4" path="res://shaders/damage_flash.gdshader" id="2_4jevq"]
+[ext_resource type="Texture2D" uid="uid://dad7vdd48vcru" path="res://icon.svg" id="2_r6dxg"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_r6dxg"]
+shader = ExtResource("2_4jevq")
+shader_parameter/active = false
+shader_parameter/flash_color = Color(1, 1, 1, 1)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4jevq"]
+size = Vector2(119, 115)
+
+[node name="Enem" type="Node2D" groups=["enemies"]]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." groups=["enemies"]]
+script = ExtResource("1_s5okj")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+material = SubResource("ShaderMaterial_r6dxg")
+use_parent_material = true
+texture = ExtResource("2_r6dxg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(0.5, -1.5)
+shape = SubResource("RectangleShape2D_4jevq")
