@@ -10,12 +10,11 @@ var allow_movement:= true
 
 func _ready() -> void:
 	add_to_group("player")
+	change_weapon(PISTOL_SCENE)
+
 @onready var weapon_hand = $Hand
 
 var current_weapon = null
-
-func _ready():
-	change_weapon(PISTOL_SCENE)
 
 const PISTOL_SCENE = preload("res://Scenes/Player/weapon/Pistol.tscn")
 const RIFLE_SCENE = preload("res://Scenes/Player/weapon/Rifle.tscn")
