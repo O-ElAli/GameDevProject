@@ -1,4 +1,4 @@
-[gd_scene load_steps=75 format=4 uid="uid://dufrm3sjuqo7s"]
+[gd_scene load_steps=75 format=4 uid="uid://cc70hok8kxakq"]
 
 [ext_resource type="Texture2D" uid="uid://dy1k7tywo6e4r" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_A5_remaster.png" id="1_67hu0"]
 [ext_resource type="Texture2D" uid="uid://bmenmwb6arjsg" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A2_Bright.png" id="2_5pctu"]

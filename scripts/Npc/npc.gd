@@ -8,27 +8,53 @@ var facing: Vector2 = Vector2.DOWN
 var facing_label: String = "down"
 var allow_behavior: bool = true
 
+#@export var npc_name: String = "NPC"
+
+
+#var dialogue_lines: Array = []
+
 @export var data: NPCResource : set = _apply_data
+@export var health: int = 100
 
 @onready var sprite: Sprite2D = $Sprite2D
 @onready var animator: AnimationPlayer = $AnimationPlayer
 
 func _ready() -> void:
+	#if lines_dict.has(npc_name):
+		#print("if")
+		#dialogue_lines = lines_dict[npc_name]
+	#else:
+		#print("else")
+		#dialogue_lines = []
 	_initialize_from_resource()
+	face_towards(global_position + facing)
+	play_animation()
 	if Engine.is_editor_hint():
 		return
 	behavior_ready.emit()
 
 func _physics_process(delta: float) -> void:
-	move_and_slide()
+	# NPC bleibt stehen, wenn er kein Verhalten hat
+	if allow_behavior and velocity != Vector2.ZERO:
+		move_and_slide()
+	else:
+		# keine Bewegung, keine Reaktion auf Schieben
+		velocity = Vector2.ZERO
+
 
 func play_animation() -> void:
-	animator.play(current_state + "_" + facing_label)
+	if animator:
+		animator.play(current_state + "_" + facing_label)
+	else:
+		if Engine.is_editor_hint():
+			return
+	
 
 func face_towards(target: Vector2) -> void:
 	facing = global_position.direction_to(target)
 	_resolve_facing_label()
-	sprite.flip_h = facing_label == "side" and facing.x < 0
+	if sprite:
+		sprite.flip_h = facing_label == "side" and facing.x < 0
 
 func _resolve_facing_label() -> void:
 	var limit := 0.45
@@ -46,3 +72,9 @@ func _initialize_from_resource() -> void:
 func _apply_data(new_data: NPCResource) -> void:
 	data = new_data
 	_initialize_from_resource()
+	
+func take_damage(amount: int):
+	health -= amount
+	print("Gegner hat " + str(health) + " Lebenspunkte übrig.")
+	if health <= 0:
+		queue_free()

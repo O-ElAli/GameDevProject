@@ -104085,9 +104085,8 @@ sources/40 = SubResource("TileSetAtlasSource_p8aql")
 [node name="CityMap" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource("43_cj6ot")]
-light_mask = 2
 z_index = 6
-position = Vector2(-73, 1650)
+position = Vector2(482, 959)
 scale = Vector2(2.21, 2.21)
 movement_speed = 500.0
 
@@ -104165,25 +104164,25 @@ metadata/_edit_lock_ = true
 [node name="MaidCafe" parent="." instance=ExtResource("44_jwgbx")]
 position = Vector2(-92, 1545)
 scale = Vector2(1.335, 1.335)
-target_scene_path = "uid://dcuaqlbsnrk1w"
+target_scene_path = "uid://dqpiidii1buod"
 action_name = "enter"
 
 [node name="Bar" parent="." instance=ExtResource("44_jwgbx")]
 position = Vector2(742, 1546)
 scale = Vector2(1.275, 1.275)
-target_scene_path = "uid://ctvhr0orgextw"
+target_scene_path = "uid://derad0n6ii0hf"
 action_name = "enter"
 
 [node name="PoliceStation" parent="." instance=ExtResource("44_jwgbx")]
 position = Vector2(452, 63)
 scale = Vector2(2.005, 2.005)
-target_scene_path = "uid://qk01bptfs0kg"
+target_scene_path = "uid://bllgdksh0t7wf"
 action_name = "enter"
 
 [node name="House" parent="." instance=ExtResource("44_jwgbx")]
 position = Vector2(1137, 854)
 scale = Vector2(1.425, 1.425)
-target_scene_path = "uid://dufrm3sjuqo7s"
+target_scene_path = "uid://cc70hok8kxakq"
 action_name = "enter"
 
 [node name="PoliceBackdoor" parent="." instance=ExtResource("44_jwgbx")]
@@ -104195,5 +104194,5 @@ action_name = "enter"
 [node name="Gangster" parent="." instance=ExtResource("44_jwgbx")]
 position = Vector2(-1394, 1203)
 scale = Vector2(1.785, 1.785)
-target_scene_path = "uid://c2yu8jt6ag0x"
+target_scene_path = "uid://bhv1yf5tjy08c"
 action_name = "enter"
