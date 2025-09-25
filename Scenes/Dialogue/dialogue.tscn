@@ -1,8 +1,8 @@
 [gd_scene load_steps=7 format=3 uid="uid://c40h00sbv0l0y"]
 
 [ext_resource type="Script" uid="uid://b6bddvkbpaykx" path="res://scripts/Dialogue/dialogue.gd" id="1_fero3"]
-[ext_resource type="Texture2D" uid="uid://dl7mnlmak3lpt" path="res://assets/dialogue/dialoguebox_dark_purple.png" id="2_otsy6"]
-[ext_resource type="FontFile" uid="uid://cimocgogppa78" path="res://assets/start_screen/Born2bSportyV2.ttf" id="3_gmov8"]
+[ext_resource type="Texture2D" uid="uid://dlrqptbcjconb" path="res://assets/dialogue/dialoguebox_dark_purple.png" id="2_otsy6"]
+[ext_resource type="FontFile" uid="uid://dqteyeiuw4012" path="res://assets/start_screen/Born2bSportyV2.ttf" id="3_gmov8"]
 
 [sub_resource type="Gradient" id="Gradient_bg8p8"]
 offsets = PackedFloat32Array(0, 0.974026)
