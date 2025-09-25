@@ -21,6 +21,11 @@ func unregister_area(area: InteractionArea):
 		active_areas.pop_at(index)
 
 func _process(_delta):
+	var dialogue_system = get_tree().get_first_node_in_group("dialogue_system")
+	if dialogue_system and dialogue_system.is_active:
+		label.hide()
+		return
+		
 	# If array not empty and can_interact is true sort which one is closer to the player
 	if active_areas.size() > 0 && can_interact:
 		active_areas.sort_custom(_sort_by_distance_to_player)
@@ -40,22 +45,19 @@ func _sort_by_distance_to_player(area1, area2):
 func _input(event):
 	if event.is_action_pressed("interact") && can_interact:
 		print("interact pressed")
+		var dialogue_system = get_tree().get_first_node_in_group("dialogue_system")
+		if dialogue_system and dialogue_system.is_active:
+			label.hide()
+			return
 		if active_areas.size() > 0:
 			can_interact = false
 			label.hide()
 			
 			await active_areas[0].interact.call()
 			
+			#add small delay to prevent dialogue infinite loop
+			await get_tree().create_timer(2).timeout
 			can_interact = true
 			
-	elif event.is_action_pressed("dialogue_interaction") && can_interact:
-		print("dialogue pressed")
-		if active_areas.size()>0 and active_areas[0] is npc_interaction:
-			can_interact = false
-			label.hide()
-			
-			await active_areas[0].interact.call()
-			
-			can_interact = true
 			
 			
