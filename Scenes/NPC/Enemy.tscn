@@ -1,10 +1,10 @@
-[gd_scene load_steps=17 format=3 uid="uid://csp8hwwrci1iy"]
+[gd_scene load_steps=17 format=3 uid="uid://j8whx2kg6sph"]
 
-[ext_resource type="Script" uid="uid://bej3684kpdmq8" path="res://scripts/Npc/npc.gd" id="1_37ake"]
-[ext_resource type="Texture2D" uid="uid://562c0hrwbhve" path="res://assets/Characters/NPCs/matrixSERIESfreebies/upscaled48x48/$morpheusmatrix.png" id="2_37ake"]
-[ext_resource type="Resource" uid="uid://doectsk62do5w" path="res://resources/NPC/test_npc.tres" id="2_tlawm"]
-[ext_resource type="Script" uid="uid://bquehj3xedq4" path="res://scripts/Npc/patrol_behavior.gd" id="3_tlawm"]
-[ext_resource type="Script" uid="uid://dnhtv77nf6s3f" path="res://scripts/Npc/patrol_location.gd" id="4_r2mia"]
+[ext_resource type="Script" uid="uid://bej3684kpdmq8" path="res://scripts/Npc/npc.gd" id="1_y6w31"]
+[ext_resource type="Resource" uid="uid://doectsk62do5w" path="res://resources/NPC/test_npc.tres" id="2_ckq1m"]
+[ext_resource type="Texture2D" uid="uid://562c0hrwbhve" path="res://assets/Characters/NPCs/matrixSERIESfreebies/upscaled48x48/$morpheusmatrix.png" id="3_pkc11"]
+[ext_resource type="Script" uid="uid://bquehj3xedq4" path="res://scripts/Npc/patrol_behavior.gd" id="4_ornls"]
+[ext_resource type="Script" uid="uid://dnhtv77nf6s3f" path="res://scripts/Npc/patrol_location.gd" id="5_3st6w"]
 
 [sub_resource type="Animation" id="Animation_tlawm"]
 length = 0.001
@@ -131,12 +131,12 @@ _data = {
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_8pqt6"]
 radius = 9.0
 
-[sub_resource type="Gradient" id="Gradient_tlawm"]
+[sub_resource type="Gradient" id="Gradient_r2mia"]
 offsets = PackedFloat32Array(0.480519, 0.798701, 0.993506)
 colors = PackedColorArray(1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0)
 
 [sub_resource type="GradientTexture2D" id="GradientTexture2D_tlawm"]
-gradient = SubResource("Gradient_tlawm")
+gradient = SubResource("Gradient_r2mia")
 width = 24
 height = 24
 fill = 1
@@ -145,14 +145,14 @@ fill_to = Vector2(0.5, 0)
 
 [node name="NPC_Node" type="Node2D"]
 
-[node name="NPC" type="CharacterBody2D" parent="."]
+[node name="NPC" type="CharacterBody2D" parent="." groups=["enemies"]]
 position = Vector2(942, 939)
-script = ExtResource("1_37ake")
-data = ExtResource("2_tlawm")
+script = ExtResource("1_y6w31")
+data = ExtResource("2_ckq1m")
 
 [node name="Sprite2D" type="Sprite2D" parent="NPC"]
 position = Vector2(0, -35)
-texture = ExtResource("2_37ake")
+texture = ExtResource("3_pkc11")
 hframes = 3
 vframes = 4
 frame = 1
@@ -168,13 +168,13 @@ shape = SubResource("CapsuleShape2D_8pqt6")
 
 [node name="NpcBehaviorPatrol" type="Node2D" parent="NPC"]
 position = Vector2(0, 2)
-script = ExtResource("3_tlawm")
+script = ExtResource("4_ornls")
 
 [node name="NPC_Way" type="Node2D" parent="NPC/NpcBehaviorPatrol"]
 modulate = Color(1, 0, 0, 1)
 show_behind_parent = true
 position = Vector2(-2, -4)
-script = ExtResource("4_r2mia")
+script = ExtResource("5_3st6w")
 
 [node name="Way" type="Sprite2D" parent="NPC/NpcBehaviorPatrol/NPC_Way"]
 self_modulate = Color(1, 1, 1, 0.447059)
@@ -218,7 +218,7 @@ metadata/_edit_use_anchors_ = true
 modulate = Color(1, 1, 0, 1)
 show_behind_parent = true
 position = Vector2(-114, -63)
-script = ExtResource("4_r2mia")
+script = ExtResource("5_3st6w")
 
 [node name="Way" type="Sprite2D" parent="NPC/NpcBehaviorPatrol/NPC_Way2"]
 self_modulate = Color(1, 1, 1, 0.447059)
@@ -262,7 +262,7 @@ metadata/_edit_use_anchors_ = true
 modulate = Color(0, 1, 0, 1)
 show_behind_parent = true
 position = Vector2(32, -80)
-script = ExtResource("4_r2mia")
+script = ExtResource("5_3st6w")
 
 [node name="Way" type="Sprite2D" parent="NPC/NpcBehaviorPatrol/NPC_Way3"]
 self_modulate = Color(1, 1, 1, 0.447059)
@@ -306,7 +306,7 @@ metadata/_edit_use_anchors_ = true
 modulate = Color(0, 1, 1, 1)
 show_behind_parent = true
 position = Vector2(134, 8)
-script = ExtResource("4_r2mia")
+script = ExtResource("5_3st6w")
 
 [node name="Way" type="Sprite2D" parent="NPC/NpcBehaviorPatrol/NPC_Way4"]
 self_modulate = Color(1, 1, 1, 0.447059)
