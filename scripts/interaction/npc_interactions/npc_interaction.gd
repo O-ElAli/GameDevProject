@@ -9,12 +9,7 @@ class_name npc_interaction
 
 var dialogue_lines: Array = []
 
-var lines_dict = {
-	"Igor": [
-		'Hello, I\'m Igor!',
-		'Nice to meet you!'
-	]
-}
+
 
 func _ready():
 	super._ready()
@@ -24,22 +19,14 @@ func _ready():
 	print("Dialogue System Node: ", dialogue_system)
 	print("Dialogue Lines: ", dialogue_lines)
 	print("======================")
-	if lines_dict.has(npc_name):
-		print("if")
-		dialogue_lines = lines_dict[npc_name]
-	else:
-		print("else")
-		dialogue_lines = ["Hello!"]
+	
+	dialogue_lines = DialogueDatabase.get_dialogue(npc_name)
+	
 
 func interact():
 	print("=== INTERACT CALLED ===")
 	print("NPC: ", npc_name)
-	if lines_dict.has(npc_name):
-		dialogue_lines = lines_dict[npc_name]
-	else:
-		dialogue_lines = ["Hello!"]
-	
-		# THIS IS THE CRITICAL PART YOU'RE MISSING:
+
 	if dialogue_system:
 		dialogue_system.start_dialogue(self)
 	else:

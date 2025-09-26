@@ -20,6 +20,7 @@ config/icon="res://icon.svg"
 InteractionManager="*res://Interaction/InteractionManager.tscn"
 DamageNumber="*res://scripts/Npc/damage_number.gd"
 SceneManager="*res://scripts/SceneManager.gd"
+DialogueData="*res://scripts/dialogue_data.gd"
 
 [display]
 
