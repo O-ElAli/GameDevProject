@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://bej3684kpdmq8" path="res://scripts/Npc/npc.gd" id="2_3uedj"]
 [ext_resource type="PackedScene" uid="uid://d06523r6uwlmc" path="res://Scenes/Player/Player.tscn" id="2_6jmw4"]
-[ext_resource type="Texture2D" uid="uid://chghv11vip0i5" path="res://assets/Characters/NPCs/bladerunnerSPRITES/RPG Maker Compat 48x48/BR2019/deckard.png" id="3_g4scy"]
+[ext_resource type="Texture2D" uid="uid://wovu7tmbrkdg" path="res://assets/Characters/NPCs/bladerunnerSPRITES/RPG Maker Compat 48x48/BR2019/deckard.png" id="3_g4scy"]
 [ext_resource type="Script" uid="uid://bquehj3xedq4" path="res://scripts/Npc/patrol_behavior.gd" id="4_8uoxh"]
 [ext_resource type="Script" uid="uid://dnhtv77nf6s3f" path="res://scripts/Npc/patrol_location.gd" id="5_6a1x4"]
 [ext_resource type="PackedScene" uid="uid://c40h00sbv0l0y" path="res://Scenes/Dialogue/dialogue.tscn" id="6_tqklv"]
