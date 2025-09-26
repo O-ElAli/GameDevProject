@@ -6,12 +6,6 @@ var character_direction: Vector2
 
 var allow_movement:= true
 
-
-
-func _ready() -> void:
-	add_to_group("player")
-	change_weapon(PISTOL_SCENE)
-
 @onready var weapon_hand = $Hand
 
 var current_weapon = null
@@ -19,6 +13,13 @@ var current_weapon = null
 const PISTOL_SCENE = preload("res://Scenes/Player/weapon/Pistol.tscn")
 const RIFLE_SCENE = preload("res://Scenes/Player/weapon/Rifle.tscn")
 const SHOTGUN_SCENE = preload("res://Scenes/Player/weapon/Shotgun.tscn")
+
+func _ready() -> void:
+	add_to_group("player")
+	change_weapon(PISTOL_SCENE)
+	
+	SceneManager.restore_player_position(self, get_tree().current_scene.scene_file_path)
+
 
 func _physics_process(_delta: float) -> void:
 	
