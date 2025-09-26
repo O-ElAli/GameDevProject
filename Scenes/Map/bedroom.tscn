@@ -47922,6 +47922,7 @@ scale = Vector2(1.965, 1.965)
 [node name="LeaveRoom" parent="." instance=ExtResource("34_24wmc")]
 position = Vector2(10, 401)
 target_scene_path = "uid://dk5risx4k1p4l"
+is_exit = true
 action_name = "exit"
 
 [node name="MapBounds" type="StaticBody2D" parent="."]
