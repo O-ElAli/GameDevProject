@@ -1,21 +1,21 @@
 [gd_scene load_steps=39 format=4 uid="uid://s0a8hc3b2wyr"]
 
-[ext_resource type="Texture2D" uid="uid://dcn0w1il1j74u" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_A2_remaster.png" id="1_4sbh2"]
-[ext_resource type="Texture2D" uid="uid://dntwj7l6xfb2p" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_A2_remaster_V2.png" id="2_uwq4k"]
-[ext_resource type="Texture2D" uid="uid://cgshbl4w2yftg" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_A2_remaster_V2_2.png" id="3_g8kyi"]
-[ext_resource type="Texture2D" uid="uid://bvgbqgoclcw80" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_A4_remaster.png" id="4_e84xf"]
-[ext_resource type="Texture2D" uid="uid://5tohn443yj7f" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_Bv2_remaster.png" id="5_odrge"]
-[ext_resource type="Texture2D" uid="uid://cq1x35gqu286y" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_B_remaster.png" id="6_lrgny"]
-[ext_resource type="Texture2D" uid="uid://divm5pi4v5t7r" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!TV_screens_remaster.png" id="7_6wi41"]
-[ext_resource type="Texture2D" uid="uid://c5kryx0b86ufc" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_C_remaster.png" id="8_05ayj"]
-[ext_resource type="Texture2D" uid="uid://bb1blo5gaej47" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_D_remaster.png" id="9_6bkn8"]
-[ext_resource type="Texture2D" uid="uid://ndv30euemq2b" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!$Lights_Glowing.png" id="10_rxh0w"]
-[ext_resource type="Texture2D" uid="uid://bcr3aoe7jqvt4" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!Cyberpunk_decoration.png" id="11_pq6r6"]
-[ext_resource type="Texture2D" uid="uid://egcrnphos8r1" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!decoration_CP_static.png" id="12_3cie4"]
-[ext_resource type="Texture2D" uid="uid://dih3h7arf61tj" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!lights_remaster.png" id="13_xi5vd"]
-[ext_resource type="Texture2D" uid="uid://cr48k6h04ppp2" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!obj_door1_2_remaster.png" id="14_6vwvn"]
-[ext_resource type="Texture2D" uid="uid://b43p7rkvho67e" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!obj_door1_remaster.png" id="15_5ao35"]
-[ext_resource type="Texture2D" uid="uid://dayk6tqm5jono" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_A5_remaster.png" id="16_uwq4k"]
+[ext_resource type="Texture2D" uid="uid://bjcshus1vawjk" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_A2_remaster.png" id="1_4sbh2"]
+[ext_resource type="Texture2D" uid="uid://dbf7cjmqgm4c1" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_A2_remaster_V2.png" id="2_uwq4k"]
+[ext_resource type="Texture2D" uid="uid://clu40gfdlrk3i" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_A2_remaster_V2_2.png" id="3_g8kyi"]
+[ext_resource type="Texture2D" uid="uid://bp81y04rehofi" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_A4_remaster.png" id="4_e84xf"]
+[ext_resource type="Texture2D" uid="uid://bq807txph2vpm" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_Bv2_remaster.png" id="5_odrge"]
+[ext_resource type="Texture2D" uid="uid://b7oyjp145thvt" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_B_remaster.png" id="6_lrgny"]
+[ext_resource type="Texture2D" uid="uid://df4f8sg4hjg6v" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!TV_screens_remaster.png" id="7_6wi41"]
+[ext_resource type="Texture2D" uid="uid://b8sn7qda5l3ju" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_C_remaster.png" id="8_05ayj"]
+[ext_resource type="Texture2D" uid="uid://cssps26i6n55j" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_D_remaster.png" id="9_6bkn8"]
+[ext_resource type="Texture2D" uid="uid://gkhx86hn0uo2" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!$Lights_Glowing.png" id="10_rxh0w"]
+[ext_resource type="Texture2D" uid="uid://v52gk5wxs4i0" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!Cyberpunk_decoration.png" id="11_pq6r6"]
+[ext_resource type="Texture2D" uid="uid://bsaii0u6qibwc" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!decoration_CP_static.png" id="12_3cie4"]
+[ext_resource type="Texture2D" uid="uid://tuoxubj73lx6" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!lights_remaster.png" id="13_xi5vd"]
+[ext_resource type="Texture2D" uid="uid://d1qi3txmma6so" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!obj_door1_2_remaster.png" id="14_6vwvn"]
+[ext_resource type="Texture2D" uid="uid://b5vyrx5f50tpw" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!obj_door1_remaster.png" id="15_5ao35"]
+[ext_resource type="Texture2D" uid="uid://dy1k7tywo6e4r" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_A5_remaster.png" id="16_uwq4k"]
 [ext_resource type="PackedScene" uid="uid://b0xqb38acejis" path="res://Interaction/Doors/Door.tscn" id="17_g8kyi"]
 [ext_resource type="PackedScene" uid="uid://d06523r6uwlmc" path="res://Scenes/Player/Player.tscn" id="18_e84xf"]
 
@@ -23557,6 +23557,7 @@ position = Vector2(-448, 574)
 rotation = 1.5708
 scale = Vector2(3.165, 3.165)
 target_scene_path = "uid://7areigq4b5se"
+is_exit = true
 action_name = "exit"
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]

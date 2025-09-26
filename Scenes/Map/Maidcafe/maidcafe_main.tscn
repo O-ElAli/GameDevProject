@@ -35229,6 +35229,7 @@ position = Vector2(-42, 310)
 rotation = 1.5708
 scale = Vector2(2.535, 2.535)
 target_scene_path = "uid://dk5risx4k1p4l"
+is_exit = true
 action_name = "exit"
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
@@ -35249,7 +35250,7 @@ region_rect = Rect2(0.111893, 2.13554, 383.171, 91.6604)
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="MapBounds"]
 position = Vector2(-1, -131)
 build_mode = 1
-polygon = PackedVector2Array(-159, 419, -158, 482, -16, 483, -12, 418, 274, 419, 273, -387, -251, -388, -253, -350, -449, -350, -448, 420)
+polygon = PackedVector2Array(-159, 419, -158, 482, -84.3389, 482.519, -16, 483, -12, 418, 274, 419, 273, -387, -251, -388, -253, -350, -449, -350, -448, 420)
 
 [node name="CuteBossaNova" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("29_s481f")
