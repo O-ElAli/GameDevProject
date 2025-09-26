@@ -2,9 +2,17 @@ extends InteractionArea
 class_name Door
 
 @export_file("*.tscn") var target_scene_path := ""
+@export var is_exit:= false
 
 func interact() -> void:
 	if target_scene_path == "":
 		print("Empty scene on:", get_path())
 		return
-	get_tree().change_scene_to_file(target_scene_path)
+	
+	var player = get_tree().get_first_node_in_group("player")
+	
+	if is_exit:
+		SceneManager.go_back(player)
+	else:
+		SceneManager.enter_scene(target_scene_path, player)
+	
