@@ -21,7 +21,7 @@ func enter_scene(new_scene_path: String, player: CharacterBody2D) -> void:
 	get_tree().change_scene_to_file(new_scene_path)
 
 func go_back(player: CharacterBody2D):
-	if scene_stack.size > 0:
+	if scene_stack.size() > 0:
 		var previous_scene = scene_stack.pop_back()
 		get_tree().change_scene_to_file(previous_scene)
 	
