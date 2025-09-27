@@ -104086,7 +104086,7 @@ sources/40 = SubResource("TileSetAtlasSource_p8aql")
 
 [node name="Player" parent="." instance=ExtResource("43_cj6ot")]
 z_index = 6
-position = Vector2(482, 959)
+position = Vector2(1154, 884)
 scale = Vector2(2.21, 2.21)
 movement_speed = 500.0
 
