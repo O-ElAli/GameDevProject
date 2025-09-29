@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://dsvf4lt02i8yh"]
+
+[ext_resource type="Script" uid="uid://c3kkhkx4xxqk5" path="res://scripts/player/weapon/projectiles/gun_projectile.gd" id="1_27rag"]
+[ext_resource type="Texture2D" uid="uid://vam3p432xg3c" path="res://assets/weapon/projectiles/new_bullet.png" id="2_coqa6"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_74kn7"]
+radius = 7.0
+
+[node name="Projectile" type="Area2D"]
+script = ExtResource("1_27rag")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("2_coqa6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_74kn7")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]

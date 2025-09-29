@@ -6,10 +6,13 @@
 [node name="Weapon" type="Node2D"]
 scale = Vector2(0.3, 0.3)
 script = ExtResource("1_8sly1")
+damage = 16
+fire_rate = 0.4
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(56.6667, -2.02656e-06)
 rotation = 0.752237
 texture = ExtResource("2_8sly1")
 
 [node name="Muzzle" type="Marker2D" parent="."]
-position = Vector2(19, -4)
+position = Vector2(73.3333, -3.33333)

@@ -1,5 +1,7 @@
 extends CharacterBody2D
 
+@export var player_health: int = 100
+
 @export var movement_speed: float = 300.0
 
 var character_direction: Vector2
@@ -38,13 +40,16 @@ func _physics_process(_delta: float) -> void:
 		velocity = velocity.move_toward(Vector2.ZERO, movement_speed)
 		if $sprite.animation != "Idle": $sprite.animation = "Idle"
 	
-	
 	velocity = character_direction * movement_speed
 	move_and_slide()
 	
 func _process(delta: float):
+	# checken ob Maus link vom Spieler ist, für Waffenflip
+	var mouse_left_of_player: bool = get_global_mouse_position().x < global_position.x
 	if current_weapon:
 		current_weapon.look_at(get_global_mouse_position())
+		if current_weapon.has_method("flip_weapon"):
+			current_weapon.flip_weapon(mouse_left_of_player)
 	if Input.is_action_just_pressed("shoot"):
 		if current_weapon:
 			current_weapon.attack()
@@ -53,7 +58,6 @@ func _process(delta: float):
 	if Input.is_action_just_pressed("weapon_1"):
 		change_weapon(PISTOL_SCENE)
 
-
 func change_weapon(new_weapon_scene):
 	if current_weapon:
 		current_weapon.queue_free()
@@ -61,3 +65,16 @@ func change_weapon(new_weapon_scene):
 	var new_weapon_instance = new_weapon_scene.instantiate()
 	weapon_hand.add_child(new_weapon_instance)
 	current_weapon = new_weapon_instance
+
+func take_damage(amount: int):
+	if player_health <= 0:
+		return
+		
+	player_health -= amount
+	print("Spieler hat ", player_health, " Lebenspunkte übrig.")
+	# damage_flash() 
+	if player_health <= 0:
+		_die()
+		
+func _die():
+	print("Game Over!")

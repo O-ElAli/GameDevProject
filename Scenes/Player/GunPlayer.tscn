@@ -163,7 +163,6 @@ script = ExtResource("1_2jrmg")
 sprite_frames = SubResource("SpriteFrames_h54ih")
 animation = &"Down"
 autoplay = "Idle"
-frame_progress = 0.407481
 
 [node name="collision" type="CollisionShape2D" parent="."]
 position = Vector2(0.0464251, 9.78671)
@@ -174,4 +173,4 @@ shape = SubResource("CapsuleShape2D_ft8w5")
 position = Vector2(0.0261054, 0.0794861)
 
 [node name="Hand" type="Node2D" parent="."]
-position = Vector2(8, 1)
+position = Vector2(0, 3)

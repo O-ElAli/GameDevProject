@@ -5,24 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="21ebc3dd-559a-4c4d-95a8-fb488af0bf0f" name="Changes" comment="merge">
-      <change afterPath="$PROJECT_DIR$/Scenes/Player/weapon/projectile/projectile.tscn" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/player/weapon/projectiles/projectile.gd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/player/weapon/projectiles/projectile.gd.uid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/player/weapon/weapon.gd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/player/weapon/weapon.gd.uid" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scenes/Map/Police/police_ chefroom.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/Map/Police/police_ chefroom.tscn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scenes/Map/Police/police_left.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/Map/Police/police_left.tscn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scenes/Map/Police/police_top.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/Map/Police/police_top.tscn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scenes/Map/bedroom.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/Map/bedroom.tscn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scenes/Map/citymap.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/Map/citymap.tscn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scenes/NPC/NPC.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/NPC/NPC.tscn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scenes/Player/Player.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/Player/Player.tscn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scenes/Start_Screen/start_screen.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/Start_Screen/start_screen.tscn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets" beforeDir="false" afterPath="$PROJECT_DIR$/assets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project.godot" beforeDir="false" afterPath="$PROJECT_DIR$/project.godot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/Npc/npc.gd" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/Npc/npc.gd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scenes/Map/Bar/bar_enemy.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/Map/Bar/bar_enemy.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scenes/Map/Gangster/gangster_basement.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/Map/Gangster/gangster_basement.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scenes/Map/Gangster/gangster_bossroom.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/Map/Gangster/gangster_bossroom.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scenes/Map/Gangster/gangster_firstfloor.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/Map/Gangster/gangster_firstfloor.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scenes/Map/Gangster/gangster_main.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/Map/Gangster/gangster_main.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scenes/Map/Gangster/gangster_secretroom.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/Map/Gangster/gangster_secretroom.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scenes/Map/Police/police_main.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/Map/Police/police_main.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scenes/Map/Police/police_right.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/Map/Police/police_right.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scenes/Map/Underground/underground_2.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/Map/Underground/underground_2.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scenes/Map/Underground/underground_main.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/Map/Underground/underground_main.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scenes/Map/Underground/villain_room.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/Map/Underground/villain_room.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scenes/Player/GunPlayer.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/Player/GunPlayer.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scenes/Player/weapon/Pistol.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/Player/weapon/Pistol.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scenes/Player/weapon/Rifle.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/Player/weapon/Rifle.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scenes/Player/weapon/Shotgun.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/Player/weapon/Shotgun.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/Npc/damage_number.gd" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/Npc/damage_number.gd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/Npc/enem.gd" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/Npc/enem.gd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/player/player.gd" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/player/player.gd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/player/weapon/projectiles/projectile.gd" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/player/weapon/projectiles/projectile.gd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/player/weapon/weapon.gd" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/player/weapon/weapon.gd" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +120,8 @@
       <workItem from="1757758709543" duration="266000" />
       <workItem from="1758294634436" duration="3726000" />
       <workItem from="1758716377956" duration="4322000" />
-      <workItem from="1758827940110" duration="1843000" />
+      <workItem from="1758827940110" duration="4242000" />
+      <workItem from="1759163218545" duration="1024000" />
     </task>
     <task id="LOCAL-00002" summary="added area2d for doors + edited map decoration">
       <option name="closed" value="true" />

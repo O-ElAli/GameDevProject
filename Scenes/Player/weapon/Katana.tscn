@@ -1,0 +1,123 @@
+[gd_scene load_steps=7 format=3 uid="uid://dhhveu8f8cd3f"]
+
+[ext_resource type="Texture2D" uid="uid://clejyvu1egipq" path="res://assets/weapon/katana.png" id="2_w3ccv"]
+
+[sub_resource type="GDScript" id="GDScript_8l480"]
+script/source = "extends Area2D
+
+# Exporteigenschaften
+@export var damage: int = 50
+@export var cooldown_time: float = 5.0
+@export var swing_duration: float = 0.2 # Dauer der 180°-Drehung
+
+@onready var collision_shape: CollisionShape2D = $CollisionShape2D
+@onready var anim_player: AnimationPlayer = $AnimationPlayer
+
+var can_attack: bool = true
+var hit_bodies: Array[Object] = [] # Speichert getroffene Gegner pro Schwung, um Doppeltreffer zu verhindern
+
+func _ready():
+	# Am Anfang ist die Hitbox deaktiviert
+	collision_shape.disabled = true
+	# Das body_entered-Signal verbinden, um Schaden zuzufügen
+	body_entered.connect(_on_body_entered)
+
+func attack():
+	if not can_attack:
+		return
+
+	# Cooldown starten
+	can_attack = false
+	hit_bodies.clear() 
+	var cooldown_timer = get_tree().create_timer(cooldown_time)
+	cooldown_timer.timeout.connect(reset_cooldown)
+	
+	# 1. Startwinkel des Schwungs einstellen
+	# Setzt die Rotation um 90 Grad zurück, um den 180-Grad-Schwung zu ermöglichen.
+	# (Wenn der Spieler nach oben schaut, beginnt der Schwung bei links und endet bei rechts.)
+	rotation_degrees -= 90
+	
+	# 2. Animation starten und Kollision aktivieren
+	anim_player.play(\"swing_180_deg\") # Muss im AnimationPlayer definiert werden!
+	collision_shape.disabled = false
+	
+	# 3. Schwung stoppen (Hitbox deaktivieren und Rotation zurücksetzen)
+	var swing_timer = get_tree().create_timer(swing_duration)
+	swing_timer.timeout.connect(stop_swing)
+
+func stop_swing():
+	# Deaktiviert die Hitbox
+	collision_shape.disabled = true
+	# Setzt die Rotation zurück (wichtig, damit das Zielen des Spielers wieder funktioniert)
+	rotation_degrees += 90 
+
+func reset_cooldown():
+	can_attack = true
+	print(\"Schwert kann wieder benutzt werden!\")
+
+func _on_body_entered(body):
+	# Nur Schaden zufügen, wenn der Körper ein Gegner ist und noch nicht getroffen wurde
+	if body.is_in_group(\"enemies\") and not hit_bodies.has(body):
+		hit_bodies.append(body)
+		
+		if body.has_method(\"take_damage\"):
+			body.take_damage(damage)
+"
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_skqjf"]
+radius = 3.0
+height = 22.0
+
+[sub_resource type="Animation" id="Animation_5x1hs"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-1.46957]
+}
+
+[sub_resource type="Animation" id="Animation_w3ccv"]
+resource_name = "swing_180"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [-1.46957, 1.30551]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_skqjf"]
+_data = {
+&"RESET": SubResource("Animation_5x1hs"),
+&"swing_180": SubResource("Animation_w3ccv")
+}
+
+[node name="Katana" type="Area2D"]
+rotation = -1.46957
+script = SubResource("GDScript_8l480")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -31)
+texture = ExtResource("2_w3ccv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(2, -11)
+shape = SubResource("CapsuleShape2D_skqjf")
+
+[node name="Katanamove" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_skqjf")
+}

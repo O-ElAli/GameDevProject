@@ -1,0 +1,89 @@
+[gd_scene load_steps=12 format=3 uid="uid://xtwjtmuegpl0"]
+
+[ext_resource type="Script" uid="uid://c3kkhkx4xxqk5" path="res://scripts/player/weapon/projectiles/gun_projectile.gd" id="1_t2s84"]
+[ext_resource type="Texture2D" uid="uid://bfpkpjtejkdbx" path="res://assets/weapon/projectiles/RC Art - Plasma Electric Animations/Sprites/Plasma Ball.png" id="2_t2s84"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bl23s"]
+atlas = ExtResource("2_t2s84")
+region = Rect2(72, 0, 12, 11)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i2jwl"]
+atlas = ExtResource("2_t2s84")
+region = Rect2(60, 0, 12, 11)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2eq1y"]
+atlas = ExtResource("2_t2s84")
+region = Rect2(48, 0, 12, 11)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g0jwx"]
+atlas = ExtResource("2_t2s84")
+region = Rect2(36, 0, 12, 11)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2mpc2"]
+atlas = ExtResource("2_t2s84")
+region = Rect2(24, 0, 12, 11)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b81af"]
+atlas = ExtResource("2_t2s84")
+region = Rect2(12, 0, 12, 11)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bbtdd"]
+atlas = ExtResource("2_t2s84")
+region = Rect2(0, 0, 12, 11)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_2ds8m"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bl23s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i2jwl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2eq1y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g0jwx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2mpc2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b81af")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bbtdd")
+}],
+"loop": false,
+"name": &"ball",
+"speed": 16.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_74kn7"]
+radius = 2.0
+
+[node name="Projectile" type="Area2D"]
+scale = Vector2(5, 5)
+script = ExtResource("1_t2s84")
+base_speed = 300.0
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.3, 0.3)
+sprite_frames = SubResource("SpriteFrames_2ds8m")
+animation = &"ball"
+frame = 6
+frame_progress = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_74kn7")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]

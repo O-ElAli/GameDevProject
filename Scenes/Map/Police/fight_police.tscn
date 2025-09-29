@@ -1,32 +1,33 @@
-[gd_scene load_steps=50 format=4 uid="uid://bllgdksh0t7wf"]
+[gd_scene load_steps=51 format=4 uid="uid://ddxf1togrgfp8"]
 
-[ext_resource type="Texture2D" uid="uid://ckdtxyyq7oa20" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_A2_remaster.png" id="1_ys47u"]
-[ext_resource type="Texture2D" uid="uid://c6qja5fiympom" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_A2_remaster_V2.png" id="2_hn2s3"]
-[ext_resource type="Texture2D" uid="uid://k8ewvwafcesp" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_A2_remaster_V2_2.png" id="3_unm25"]
-[ext_resource type="Texture2D" uid="uid://bpql1huagovn7" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_A4_remaster.png" id="4_eb8w6"]
-[ext_resource type="Texture2D" uid="uid://dvxdm6yg4wejb" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_Bv2_remaster.png" id="5_nb68a"]
-[ext_resource type="Texture2D" uid="uid://ldt05nftghs7" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_B_remaster.png" id="6_gor3b"]
-[ext_resource type="Texture2D" uid="uid://cxxbr0xymcglt" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!decoration_CP_static.png" id="7_vgy04"]
-[ext_resource type="Texture2D" uid="uid://cccguj57e6wxr" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!Kitchen_devices_remaster.png" id="8_dfnop"]
-[ext_resource type="Texture2D" uid="uid://mx4xqinymqxx" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!lights_1_2.png" id="9_tx4f4"]
-[ext_resource type="Texture2D" uid="uid://cwm0scfo6135g" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!lights_remaster.png" id="10_es8h8"]
-[ext_resource type="Texture2D" uid="uid://bd2abg7dnkkuu" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!obj_door1_2_remaster.png" id="11_r6cdp"]
-[ext_resource type="Texture2D" uid="uid://dyydry7b3sela" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!obj_door1_remaster.png" id="12_yhlrj"]
-[ext_resource type="Texture2D" uid="uid://c4necnrnsrw4f" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!TV_screens_remaster.png" id="13_xjl8t"]
-[ext_resource type="Texture2D" uid="uid://dvncaf8io07rk" path="res://assets/Map/Selfmade/PoliceSign.png" id="14_aagx8"]
-[ext_resource type="Texture2D" uid="uid://bbgpn6f13u0hq" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_C_remaster.png" id="15_xgfix"]
-[ext_resource type="Texture2D" uid="uid://c4g717ta7xc7q" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_D_remaster.png" id="16_ykn15"]
-[ext_resource type="Texture2D" uid="uid://cqy848q5ne5ij" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!$Gate1_remaster.png" id="17_jvrgh"]
-[ext_resource type="Texture2D" uid="uid://bewjyiqq20lrc" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!$Lights_Glowing.png" id="18_abc8v"]
-[ext_resource type="Texture2D" uid="uid://c4yw403twsji2" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!candles_remaster.png" id="19_x8uj8"]
-[ext_resource type="Texture2D" uid="uid://2ebfmmlonx4a" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!cleanrobot_remaster.png" id="20_oiojd"]
-[ext_resource type="Texture2D" uid="uid://trjd04bufbrw" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!Cyberpunk_decoration.png" id="21_po70w"]
-[ext_resource type="Texture2D" uid="uid://cw7bgb1ceaib" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!Cyberpunk_Toilet_Door.png" id="22_q6yif"]
-[ext_resource type="PackedScene" uid="uid://d06523r6uwlmc" path="res://Scenes/Player/Player.tscn" id="24_1apj7"]
-[ext_resource type="PackedScene" uid="uid://b0xqb38acejis" path="res://Interaction/Doors/Door.tscn" id="24_ys47u"]
+[ext_resource type="Texture2D" uid="uid://ckdtxyyq7oa20" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_A2_remaster.png" id="1_2wsd5"]
+[ext_resource type="Texture2D" uid="uid://c6qja5fiympom" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_A2_remaster_V2.png" id="2_d1jp4"]
+[ext_resource type="Texture2D" uid="uid://k8ewvwafcesp" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_A2_remaster_V2_2.png" id="3_qipsm"]
+[ext_resource type="Texture2D" uid="uid://bpql1huagovn7" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_A4_remaster.png" id="4_3y7sb"]
+[ext_resource type="Texture2D" uid="uid://dvxdm6yg4wejb" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_Bv2_remaster.png" id="5_all5x"]
+[ext_resource type="Texture2D" uid="uid://ldt05nftghs7" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_B_remaster.png" id="6_cyuu4"]
+[ext_resource type="Texture2D" uid="uid://cxxbr0xymcglt" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!decoration_CP_static.png" id="7_d2utr"]
+[ext_resource type="Texture2D" uid="uid://cccguj57e6wxr" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!Kitchen_devices_remaster.png" id="8_qtskb"]
+[ext_resource type="Texture2D" uid="uid://mx4xqinymqxx" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!lights_1_2.png" id="9_3c77e"]
+[ext_resource type="Texture2D" uid="uid://cwm0scfo6135g" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!lights_remaster.png" id="10_w2ge7"]
+[ext_resource type="Texture2D" uid="uid://bd2abg7dnkkuu" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!obj_door1_2_remaster.png" id="11_n8oh5"]
+[ext_resource type="Texture2D" uid="uid://dyydry7b3sela" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!obj_door1_remaster.png" id="12_r4jxe"]
+[ext_resource type="Texture2D" uid="uid://c4necnrnsrw4f" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!TV_screens_remaster.png" id="13_0xl5n"]
+[ext_resource type="Texture2D" uid="uid://dvncaf8io07rk" path="res://assets/Map/Selfmade/PoliceSign.png" id="14_uggou"]
+[ext_resource type="Texture2D" uid="uid://bbgpn6f13u0hq" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_C_remaster.png" id="15_quapy"]
+[ext_resource type="Texture2D" uid="uid://c4g717ta7xc7q" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_D_remaster.png" id="16_wfok5"]
+[ext_resource type="Texture2D" uid="uid://cqy848q5ne5ij" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!$Gate1_remaster.png" id="17_2dhh2"]
+[ext_resource type="Texture2D" uid="uid://bewjyiqq20lrc" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!$Lights_Glowing.png" id="18_i73ch"]
+[ext_resource type="Texture2D" uid="uid://c4yw403twsji2" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!candles_remaster.png" id="19_y0smf"]
+[ext_resource type="Texture2D" uid="uid://2ebfmmlonx4a" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!cleanrobot_remaster.png" id="20_pouy1"]
+[ext_resource type="Texture2D" uid="uid://trjd04bufbrw" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!Cyberpunk_decoration.png" id="21_v4qqc"]
+[ext_resource type="Texture2D" uid="uid://cw7bgb1ceaib" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!Cyberpunk_Toilet_Door.png" id="22_yhj3h"]
+[ext_resource type="PackedScene" uid="uid://b0xqb38acejis" path="res://Interaction/Doors/Door.tscn" id="24_4b255"]
+[ext_resource type="PackedScene" uid="uid://m2b1x43pbtsv" path="res://Scenes/NPC/yakuza_boss.tscn" id="25_d1jp4"]
+[ext_resource type="PackedScene" uid="uid://cjb4mjdt6bo3b" path="res://Scenes/Player/GunPlayer.tscn" id="25_qipsm"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_eeydu"]
-texture = ExtResource("1_ys47u")
+texture = ExtResource("1_2wsd5")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -1757,7 +1758,7 @@ texture = ExtResource("1_ys47u")
 47:35/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ekrwn"]
-texture = ExtResource("2_hn2s3")
+texture = ExtResource("2_d1jp4")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -3437,7 +3438,7 @@ texture = ExtResource("2_hn2s3")
 47:35/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_upns5"]
-texture = ExtResource("3_unm25")
+texture = ExtResource("3_qipsm")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -5122,7 +5123,7 @@ sources/1 = SubResource("TileSetAtlasSource_ekrwn")
 sources/2 = SubResource("TileSetAtlasSource_upns5")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_61c0q"]
-texture = ExtResource("4_eb8w6")
+texture = ExtResource("4_3y7sb")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -7325,7 +7326,7 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_61c0q")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_w2pa4"]
-texture = ExtResource("5_nb68a")
+texture = ExtResource("5_all5x")
 3:0/0 = 0
 4:0/0 = 0
 5:0/0 = 0
@@ -9186,7 +9187,7 @@ texture = ExtResource("5_nb68a")
 32:47/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_f0lsf"]
-texture = ExtResource("6_gor3b")
+texture = ExtResource("6_cyuu4")
 3:0/0 = 0
 4:0/0 = 0
 5:0/0 = 0
@@ -11026,7 +11027,7 @@ texture = ExtResource("6_gor3b")
 32:47/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8lo6a"]
-texture = ExtResource("7_vgy04")
+texture = ExtResource("7_d2utr")
 1:1/0 = 0
 3:1/0 = 0
 4:1/0 = 0
@@ -11580,7 +11581,7 @@ texture = ExtResource("7_vgy04")
 35:47/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ufug1"]
-texture = ExtResource("8_dfnop")
+texture = ExtResource("8_qtskb")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -12797,7 +12798,7 @@ texture = ExtResource("8_dfnop")
 35:46/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_a33sp"]
-texture = ExtResource("9_tx4f4")
+texture = ExtResource("9_3c77e")
 0:1/0 = 0
 3:1/0 = 0
 6:1/0 = 0
@@ -12890,7 +12891,7 @@ texture = ExtResource("9_tx4f4")
 17:17/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_y3l8u"]
-texture = ExtResource("10_es8h8")
+texture = ExtResource("10_w2ge7")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -13750,7 +13751,7 @@ texture = ExtResource("10_es8h8")
 26:47/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7juty"]
-texture = ExtResource("11_r6cdp")
+texture = ExtResource("11_n8oh5")
 0:1/0 = 0
 1:1/0 = 0
 2:1/0 = 0
@@ -15085,7 +15086,7 @@ texture = ExtResource("11_r6cdp")
 35:47/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6mcho"]
-texture = ExtResource("12_yhlrj")
+texture = ExtResource("12_r4jxe")
 0:1/0 = 0
 1:1/0 = 0
 2:1/0 = 0
@@ -16528,7 +16529,7 @@ texture = ExtResource("12_yhlrj")
 35:47/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fg0q8"]
-texture = ExtResource("13_xjl8t")
+texture = ExtResource("13_0xl5n")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -18896,7 +18897,7 @@ texture = ExtResource("13_xjl8t")
 54:24/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_uyfar"]
-texture = ExtResource("14_aagx8")
+texture = ExtResource("14_uggou")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -18911,7 +18912,7 @@ texture = ExtResource("14_aagx8")
 3:2/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mdr38"]
-texture = ExtResource("15_xgfix")
+texture = ExtResource("15_quapy")
 22:0/0 = 0
 23:0/0 = 0
 24:0/0 = 0
@@ -20506,7 +20507,7 @@ texture = ExtResource("15_xgfix")
 47:47/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ms1cx"]
-texture = ExtResource("16_ykn15")
+texture = ExtResource("16_wfok5")
 12:0/0 = 0
 13:0/0 = 0
 14:0/0 = 0
@@ -21938,7 +21939,7 @@ texture = ExtResource("16_ykn15")
 47:47/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6847v"]
-texture = ExtResource("17_jvrgh")
+texture = ExtResource("17_2dhh2")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -22589,7 +22590,7 @@ texture = ExtResource("17_jvrgh")
 26:23/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jn5xw"]
-texture = ExtResource("18_abc8v")
+texture = ExtResource("18_i73ch")
 6:2/0 = 0
 7:2/0 = 0
 8:2/0 = 0
@@ -23258,7 +23259,7 @@ texture = ExtResource("18_abc8v")
 30:26/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_l4sid"]
-texture = ExtResource("19_x8uj8")
+texture = ExtResource("19_y0smf")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -23969,7 +23970,7 @@ texture = ExtResource("19_x8uj8")
 34:45/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_d8vnh"]
-texture = ExtResource("20_oiojd")
+texture = ExtResource("20_pouy1")
 0:1/0 = 0
 1:1/0 = 0
 2:1/0 = 0
@@ -24560,7 +24561,7 @@ texture = ExtResource("20_oiojd")
 35:23/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jmpae"]
-texture = ExtResource("21_po70w")
+texture = ExtResource("21_v4qqc")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -25097,7 +25098,7 @@ texture = ExtResource("21_po70w")
 17:23/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bdlk2"]
-texture = ExtResource("22_q6yif")
+texture = ExtResource("22_yhj3h")
 0:0/0 = 0
 2:0/0 = 0
 3:0/0 = 0
@@ -25430,24 +25431,28 @@ tile_set = SubResource("TileSet_nr38d")
 build_mode = 1
 polygon = PackedVector2Array(-224.625, -304.059, 638.829, -304.501, 640.674, 14.978, 721.849, 15.8141, 765.416, 16.1996, 799.574, 16.0005, 797.721, 94.248, 641.994, 94.248, 641.046, 449.509, 305.209, 448.758, 305.269, 529.328, 111.42, 528.02, 112.63, 446.95, -223.75, 446.95, -222.215, 94.1373, -383.747, 94.1373, -384.197, 17.2487, -225.632, 16.7355)
 
-[node name="Player" parent="." instance=ExtResource("24_1apj7")]
-z_index = 1
-position = Vector2(203, 390)
-scale = Vector2(1.835, 1.835)
-
-[node name="EntryDoor" parent="." instance=ExtResource("24_ys47u")]
+[node name="EntryDoor" parent="." instance=ExtResource("24_4b255")]
 position = Vector2(150, 484)
 scale = Vector2(4.09, 4.09)
 target_scene_path = "uid://dk5risx4k1p4l"
 action_name = "exit"
 
-[node name="LeftDoor" parent="." instance=ExtResource("24_ys47u")]
+[node name="LeftDoor" parent="." instance=ExtResource("24_4b255")]
 position = Vector2(-343, 0)
 target_scene_path = "uid://gsafwi6iq46e"
 action_name = "enter"
 
-[node name="TopDoor" parent="." instance=ExtResource("24_ys47u")]
+[node name="TopDoor" parent="." instance=ExtResource("24_4b255")]
 position = Vector2(170, -388)
 scale = Vector2(2.595, 2.595)
 target_scene_path = "uid://yr244iy6k8q3"
 action_name = "enter"
+
+[node name="Player" parent="." instance=ExtResource("25_qipsm")]
+z_index = 1
+position = Vector2(208, 287)
+scale = Vector2(2, 2)
+
+[node name="enemy" parent="." instance=ExtResource("25_d1jp4")]
+z_index = 1
+position = Vector2(207, 79)
