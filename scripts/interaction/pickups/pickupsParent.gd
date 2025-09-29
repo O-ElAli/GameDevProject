@@ -9,6 +9,8 @@ class_name Pickup
 @export var teleport_marker: NodePath 
 
 signal interaction_finished(item_name)
+var items_held : Array = []
+
 
 
 func _ready():
