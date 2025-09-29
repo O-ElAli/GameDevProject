@@ -1,0 +1,152 @@
+[gd_scene load_steps=21 format=3 uid="uid://2dhpdfhdx3iu"]
+
+[ext_resource type="Script" uid="uid://c3kkhkx4xxqk5" path="res://scripts/player/weapon/projectiles/gun_projectile.gd" id="1_jtsfm"]
+[ext_resource type="Texture2D" uid="uid://cf5nyj2cx8cws" path="res://assets/weapon/projectiles/Bullet 24x24 Free Part 2B.png" id="2_jtsfm"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jtsfm"]
+atlas = ExtResource("2_jtsfm")
+region = Rect2(360, 144, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pprjg"]
+atlas = ExtResource("2_jtsfm")
+region = Rect2(336, 144, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iqsxd"]
+atlas = ExtResource("2_jtsfm")
+region = Rect2(312, 144, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h7agk"]
+atlas = ExtResource("2_jtsfm")
+region = Rect2(288, 144, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7ct6y"]
+atlas = ExtResource("2_jtsfm")
+region = Rect2(264, 144, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bqb16"]
+atlas = ExtResource("2_jtsfm")
+region = Rect2(240, 144, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xgwnx"]
+atlas = ExtResource("2_jtsfm")
+region = Rect2(216, 144, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ti28d"]
+atlas = ExtResource("2_jtsfm")
+region = Rect2(192, 144, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sceti"]
+atlas = ExtResource("2_jtsfm")
+region = Rect2(360, 144, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iinoj"]
+atlas = ExtResource("2_jtsfm")
+region = Rect2(336, 144, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b6kw4"]
+atlas = ExtResource("2_jtsfm")
+region = Rect2(312, 144, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_00h27"]
+atlas = ExtResource("2_jtsfm")
+region = Rect2(288, 144, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lnjuc"]
+atlas = ExtResource("2_jtsfm")
+region = Rect2(264, 144, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mgald"]
+atlas = ExtResource("2_jtsfm")
+region = Rect2(240, 144, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k77nn"]
+atlas = ExtResource("2_jtsfm")
+region = Rect2(216, 144, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bnwnf"]
+atlas = ExtResource("2_jtsfm")
+region = Rect2(192, 144, 24, 24)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_pprjg"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jtsfm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pprjg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iqsxd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h7agk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7ct6y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bqb16")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xgwnx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ti28d")
+}],
+"loop": true,
+"name": &"ball",
+"speed": 16.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sceti")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iinoj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b6kw4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_00h27")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lnjuc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mgald")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k77nn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bnwnf")
+}],
+"loop": true,
+"name": &"default",
+"speed": 16.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_74kn7"]
+radius = 2.82843
+
+[node name="Projectile" type="Area2D"]
+scale = Vector2(5, 5)
+script = ExtResource("1_jtsfm")
+base_speed = 300.0
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.3, 0.3)
+sprite_frames = SubResource("SpriteFrames_pprjg")
+animation = &"ball"
+frame = 2
+frame_progress = 0.772507
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_74kn7")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]

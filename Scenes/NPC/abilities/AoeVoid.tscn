@@ -1,0 +1,100 @@
+[gd_scene load_steps=14 format=3 uid="uid://ctgj3n5p5mxqm"]
+
+[ext_resource type="Script" uid="uid://hup47ybehkkn" path="res://scripts/Npc/aoe_boss/aoe_boss.gd" id="1_hkflq"]
+[ext_resource type="Texture2D" uid="uid://cgohbfwtqd53w" path="res://assets/weapon/projectiles/RC Art - Plasma Electric Animations/Sprites/Gravity Burst.png" id="2_tykvg"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_4jkjq"]
+radius = 47.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7us5r"]
+atlas = ExtResource("2_tykvg")
+region = Rect2(736, 0, 92, 92)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2apjq"]
+atlas = ExtResource("2_tykvg")
+region = Rect2(644, 0, 92, 92)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uwhgg"]
+atlas = ExtResource("2_tykvg")
+region = Rect2(552, 0, 92, 92)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gfdcd"]
+atlas = ExtResource("2_tykvg")
+region = Rect2(460, 0, 92, 92)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_puvcy"]
+atlas = ExtResource("2_tykvg")
+region = Rect2(368, 0, 92, 92)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_47nph"]
+atlas = ExtResource("2_tykvg")
+region = Rect2(276, 0, 92, 92)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_48s2v"]
+atlas = ExtResource("2_tykvg")
+region = Rect2(184, 0, 92, 92)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pwxoi"]
+atlas = ExtResource("2_tykvg")
+region = Rect2(92, 0, 92, 92)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dssv3"]
+atlas = ExtResource("2_tykvg")
+region = Rect2(0, 0, 92, 92)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qlk2o"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"default",
+"speed": 2.67
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7us5r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2apjq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uwhgg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gfdcd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_puvcy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_47nph")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_48s2v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pwxoi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dssv3")
+}],
+"loop": true,
+"name": &"schockwave",
+"speed": 2.67
+}]
+
+[node name="AoeVoid" type="Node2D"]
+z_index = 1
+script = ExtResource("1_hkflq")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_4jkjq")
+disabled = true
+
+[node name="AnimatedExplosion" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_qlk2o")
+animation = &"schockwave"
+frame_progress = 0.979741
+
+[node name="Timer" type="Timer" parent="."]

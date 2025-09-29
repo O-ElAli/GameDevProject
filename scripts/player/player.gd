@@ -1,5 +1,7 @@
 extends CharacterBody2D
 
+@export var player_health: int = 100
+
 @export var movement_speed: float = 300.0
 
 var character_direction: Vector2
@@ -72,8 +74,12 @@ func set_movement_allowed(allowed:bool) -> void:
 		_show_idle()
 	
 func _process(delta: float):
+	# checken ob Maus link vom Spieler ist, für Waffenflip
+	var mouse_left_of_player: bool = get_global_mouse_position().x < global_position.x
 	if current_weapon:
 		current_weapon.look_at(get_global_mouse_position())
+		if current_weapon.has_method("flip_weapon"):
+			current_weapon.flip_weapon(mouse_left_of_player)
 	if Input.is_action_just_pressed("shoot"):
 		if current_weapon:
 			current_weapon.attack()
@@ -81,7 +87,6 @@ func _process(delta: float):
 		change_weapon(RIFLE_SCENE)
 	if Input.is_action_just_pressed("weapon_1"):
 		change_weapon(PISTOL_SCENE)
-
 
 func change_weapon(new_weapon_scene):
 	if current_weapon:
@@ -98,3 +103,15 @@ func _on_button_pressed() -> void:
 	hud.visible = true
 	#if hud:
 		#hud.visible = true
+func take_damage(amount: int):
+	if player_health <= 0:
+		return
+		
+	player_health -= amount
+	print("Spieler hat ", player_health, " Lebenspunkte übrig.")
+	# damage_flash() 
+	if player_health <= 0:
+		_die()
+		
+func _die():
+	print("Game Over!")
