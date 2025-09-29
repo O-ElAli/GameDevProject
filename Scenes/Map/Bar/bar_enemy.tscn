@@ -1,4 +1,4 @@
-[gd_scene load_steps=52 format=4 uid="uid://vn656univfub"]
+[gd_scene load_steps=54 format=4 uid="uid://vn656univfub"]
 
 [ext_resource type="Texture2D" uid="uid://bpql1huagovn7" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_A4_remaster.png" id="1_fnufg"]
 [ext_resource type="Texture2D" uid="uid://bco7ku8jme2xk" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A3.png" id="2_1htrt"]
@@ -24,7 +24,9 @@
 [ext_resource type="Texture2D" uid="uid://cccguj57e6wxr" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!Kitchen_devices_remaster.png" id="22_0lexn"]
 [ext_resource type="PackedScene" uid="uid://b0xqb38acejis" path="res://Interaction/Doors/Door.tscn" id="24_1wwe3"]
 [ext_resource type="PackedScene" uid="uid://cjb4mjdt6bo3b" path="res://Scenes/Player/GunPlayer.tscn" id="25_1htrt"]
-[ext_resource type="PackedScene" uid="uid://dh3ogrcweerfd" path="res://Scenes/NPC/ene.tscn" id="25_bo77b"]
+[ext_resource type="PackedScene" uid="uid://m2b1x43pbtsv" path="res://Scenes/NPC/yakuza_boss.tscn" id="26_bo77b"]
+[ext_resource type="PackedScene" uid="uid://uypnoydbxava" path="res://Scenes/NPC/gun_enemy.tscn" id="26_nm8vf"]
+[ext_resource type="PackedScene" uid="uid://bt7y2leuaqxcl" path="res://Scenes/NPC/maid_boss.tscn" id="27_nm8vf"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_stq1m"]
 texture = ExtResource("1_fnufg")
@@ -33050,6 +33052,18 @@ action_name = "exit"
 z_index = 1
 position = Vector2(702, -57)
 
-[node name="enemy" parent="." groups=["enemies"] instance=ExtResource("25_bo77b")]
+[node name="enemy2" parent="." instance=ExtResource("26_bo77b")]
 z_index = 1
-position = Vector2(892, -31)
+position = Vector2(684, -136)
+
+[node name="enemy" parent="." instance=ExtResource("26_nm8vf")]
+z_index = 1
+position = Vector2(878, -31)
+
+[node name="enemy3" parent="." instance=ExtResource("27_nm8vf")]
+z_index = 1
+position = Vector2(703, 45)
+
+[node name="enemy4" parent="." instance=ExtResource("26_nm8vf")]
+z_index = 1
+position = Vector2(652, 97)

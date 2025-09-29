@@ -1,37 +1,44 @@
 extends Node
 
 func display_damage(value: int, position: Vector2):
+	
 	var number = Label.new()
 	number.global_position = position
 	number.text = str(value)
 	number.z_index = 5
-	number.label_settings = LabelSettings.new()
 	
-	var color = "#FFF"
+	var settings = LabelSettings.new()
+
+	settings.font_color = Color("#FFF")
 	if value == 0:
-		color = "FFF8"
+		settings.font_color = Color("#FFF8")
+		
+	settings.font_size = 18
+	settings.outline_color = Color("#000")
+	settings.outline_size = 1
 	
-	number.label_settings.font_color = color
-	number.label_settings.font_size = 18
-	number.label_settings.outline_color = "#000"
-	number.label_settings.outline_size = 1
+	number.label_settings = settings
 	
 	call_deferred("add_child", number)
 	
 	await number.resized
-	number.pivot_offset = Vector2(number.size / 2 )
+	#Zentrieren
+	number.pivot_offset = number.size / 2
 	
-	var tween = get_tree().create_tween()
-	tween.set_parallel(true)
+	var tween = create_tween()
+	
+	# Damagevisual hoch bewegen
 	tween.tween_property(
-		number, "position:y", number.position.y -24, 0.25
-		).set_ease(Tween.EASE_OUT)
-	tween.tween_property(
-		number, "position:y", number.position.y, 0.5
-		).set_ease(Tween.EASE_IN).set_delay(0.25)
+		number, "global_position:y", number.global_position.y - 24, 0.25
+	).set_ease(Tween.EASE_OUT)
+	
+	# In der Luft halten
+	tween.tween_interval(0.5) 
+	
+	# verkleinern und objekt free
 	tween.tween_property(
 		number, "scale", Vector2.ZERO, 0.25
-		).set_ease(Tween.EASE_IN).set_delay(0.5)
+	).set_ease(Tween.EASE_IN)
 		
 	await tween.finished
 	number.queue_free()
