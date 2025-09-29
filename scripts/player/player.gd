@@ -70,7 +70,13 @@ func _process(delta: float):
 		change_weapon(RIFLE_SCENE)
 	if Input.is_action_just_pressed("weapon_1"):
 		change_weapon(PISTOL_SCENE)
-
+		
+	
+		# TEST: Add beer to inventory
+	if Input.is_action_just_pressed("give_beer"):  # <-- Make sure "add_beer" exists in Input Map
+		GameState.add_item("beer")
+		print("🍺 Beer added to inventory! Current inventory: ", GameState.inventory)
+	
 
 func change_weapon(new_weapon_scene):
 	if current_weapon:

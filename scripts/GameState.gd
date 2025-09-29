@@ -1,7 +1,7 @@
 extends Node
 
 # Track quest states and NPC relationships
-var npc_states = {}  # Format: { "Beggar": "after_beer", "Igor": "quest_started" }
+var npc_states = {}  # Format: { "Beggar": "after_beer", "Igor": "quest_complete" }
 var inventory = []   # Track items player has
 
 func set_npc_state(npc_name: String, state: String):
@@ -9,11 +9,7 @@ func set_npc_state(npc_name: String, state: String):
 	print("NPC state updated: ", npc_name, " -> ", state)
 
 func get_npc_state(npc_name: String) -> String:
-	print("🎯 GameState.get_npc_state called for: ", npc_name)
-	print("🎯 Current npc_states: ", npc_states)
-	var state = npc_states.get(npc_name, "default")
-	print("🎯 Returning state: '", state, "' for NPC: ", npc_name)
-	return state
+	return npc_states.get(npc_name, "default")
 
 func add_item(item_name: String):
 	if not item_name in inventory:
