@@ -8,6 +8,9 @@ radius = 37.1214
 [node name="PICKUP" type="Area2D"]
 script = ExtResource("1_i37lj")
 item_name = "to pick up"
+vanishes = null
+openSprite = null
+action_name = null
 metadata/_custom_type_script = "uid://c7v1xybdtw31q"
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
