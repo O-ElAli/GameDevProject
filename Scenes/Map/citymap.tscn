@@ -1,49 +1,57 @@
-[gd_scene load_steps=145 format=4 uid="uid://dk5risx4k1p4l"]
+[gd_scene load_steps=165 format=4 uid="uid://dk5risx4k1p4l"]
 
-[ext_resource type="Texture2D" uid="uid://btkyehbnpvbs5" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A1.png" id="1_mfxgf"]
-[ext_resource type="Texture2D" uid="uid://cciw3y4tn2mtu" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A2.png" id="2_cj6ot"]
-[ext_resource type="Texture2D" uid="uid://bmenmwb6arjsg" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A2_Bright.png" id="3_jwgbx"]
-[ext_resource type="Texture2D" uid="uid://b3i11dk5317oh" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A3.png" id="4_vxoa0"]
-[ext_resource type="Texture2D" uid="uid://bvns1c2v3a36r" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A4.png" id="5_uhbmj"]
-[ext_resource type="Texture2D" uid="uid://bpnon5807vul8" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A5.png" id="6_x2cos"]
-[ext_resource type="Texture2D" uid="uid://od1fg5s3x2et" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_B.png" id="7_troj3"]
-[ext_resource type="Texture2D" uid="uid://bol0uwvouoerq" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_C.png" id="8_wb5te"]
-[ext_resource type="Texture2D" uid="uid://ctq0wq6gfbcv2" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_D.png" id="9_bf3n2"]
-[ext_resource type="Texture2D" uid="uid://bjbjki7spl1y7" path="res://assets/Map/winlu_exterior/winlu_exterior/parallaxes/Background_1.png" id="10_bqd1v"]
-[ext_resource type="Texture2D" uid="uid://5eadobhuf2vh" path="res://assets/Map/winlu_exterior/winlu_exterior/characters/!$Sign1.png" id="11_6xaus"]
-[ext_resource type="Texture2D" uid="uid://c5axnhrco7xxj" path="res://assets/Map/winlu_exterior/winlu_exterior/characters/!obj_door2.png" id="12_neceg"]
-[ext_resource type="Texture2D" uid="uid://dd0ii2dgh7f7t" path="res://assets/Map/winlu_exterior/winlu_exterior/characters/!$Cyberlove.png" id="13_ay6ku"]
-[ext_resource type="Texture2D" uid="uid://dulsj3e0b5yrq" path="res://assets/Map/winlu_exterior/winlu_exterior/characters/!$Gate2.png" id="14_texg2"]
-[ext_resource type="Texture2D" uid="uid://djtohqi8wd4c3" path="res://assets/Map/winlu_exterior/winlu_exterior/characters/!$Gate3.png" id="15_mopqy"]
-[ext_resource type="Texture2D" uid="uid://cwefq5wckpmdb" path="res://assets/Map/winlu_exterior/winlu_exterior/characters/!$Gate4.png" id="16_yr301"]
-[ext_resource type="Texture2D" uid="uid://h6uq0d8xnc0c" path="res://assets/Map/winlu_exterior/winlu_exterior/characters/!$Signs2.png" id="17_tgfad"]
-[ext_resource type="Texture2D" uid="uid://dbl62y5oxly1l" path="res://assets/Map/winlu_exterior/winlu_exterior/characters/!$Signs3.png" id="18_iqbs8"]
-[ext_resource type="Texture2D" uid="uid://cal7xx74my242" path="res://assets/Map/winlu_exterior/winlu_exterior/characters/!$traffic_signal.png" id="19_4j1cy"]
-[ext_resource type="Texture2D" uid="uid://dgrspykvjs22k" path="res://assets/Map/winlu_exterior/winlu_exterior/characters/!Misc.png" id="20_l2ojw"]
-[ext_resource type="Texture2D" uid="uid://dvn4v8yxobvju" path="res://assets/Map/winlu_exterior/winlu_exterior/characters/!Policedrone.png" id="21_ghbp3"]
-[ext_resource type="Texture2D" uid="uid://bllmemfjinpws" path="res://assets/Map/winlu_exterior/winlu_exterior/characters/$Car.png" id="22_cbq4t"]
-[ext_resource type="Texture2D" uid="uid://djx7dv6ft7kcs" path="res://assets/Map/TopDownPack/air-conditioners.png" id="23_77hyk"]
-[ext_resource type="Texture2D" uid="uid://cjnhm6r3esgo6" path="res://assets/Map/TopDownPack/anatomy-table.png" id="24_o2j8r"]
-[ext_resource type="Texture2D" uid="uid://cu6o4j2lk8r3l" path="res://assets/Map/TopDownPack/bench.png" id="25_rlir5"]
-[ext_resource type="Texture2D" uid="uid://bxub2bd8raf6o" path="res://assets/Map/TopDownPack/body-burner.png" id="26_2mksp"]
-[ext_resource type="Texture2D" uid="uid://dvrrip3v7ta2w" path="res://assets/Map/TopDownPack/character-base-sketch-taller.png" id="27_wdafm"]
-[ext_resource type="Texture2D" uid="uid://ctwqvt4i45xe8" path="res://assets/Map/TopDownPack/computer-desk.png" id="28_8hx3h"]
-[ext_resource type="Texture2D" uid="uid://ca6bxamoh8xsh" path="res://assets/Map/TopDownPack/construction-stuff.png" id="29_mfh3k"]
-[ext_resource type="Texture2D" uid="uid://cun565dagisbp" path="res://assets/Map/TopDownPack/cover.png" id="30_w433y"]
-[ext_resource type="Texture2D" uid="uid://dsoh7mm1x26x7" path="res://assets/Map/TopDownPack/graffiti-big.png" id="31_v0pgo"]
-[ext_resource type="Texture2D" uid="uid://7x7mcsqbvvom" path="res://assets/Map/TopDownPack/indoor-gangsite-small.png" id="32_l4lqm"]
-[ext_resource type="Texture2D" uid="uid://bpxuplv8kcdkq" path="res://assets/Map/TopDownPack/laser-door.png" id="33_y2w34"]
-[ext_resource type="Texture2D" uid="uid://dxm20er7jnei8" path="res://assets/Map/TopDownPack/outdoor-doors.png" id="34_23hem"]
-[ext_resource type="Texture2D" uid="uid://bpu2mfugcm51h" path="res://assets/Map/TopDownPack/outdoor-misc-stuff.png" id="35_5ahvw"]
-[ext_resource type="Texture2D" uid="uid://c1hluty4o4jbu" path="res://assets/Map/TopDownPack/plants-tree.png" id="36_018se"]
-[ext_resource type="Texture2D" uid="uid://wa5dokw1yjnx" path="res://assets/Map/TopDownPack/robot-arm.png" id="37_kpvik"]
-[ext_resource type="Texture2D" uid="uid://omf8aukq7o3g" path="res://assets/Map/TopDownPack/surgery-room.png" id="38_krydk"]
-[ext_resource type="Texture2D" uid="uid://b3e561xb7enhn" path="res://assets/Map/TopDownPack/vehicles-fixing.png" id="39_8pltr"]
-[ext_resource type="Texture2D" uid="uid://bg1hidgdgkpsb" path="res://assets/Map/TopDownPack/vehicles.png" id="40_d28c4"]
-[ext_resource type="Texture2D" uid="uid://dpqafxg1t4bho" path="res://assets/Map/Selfmade/PoliceSign.png" id="41_6ah4o"]
-[ext_resource type="Texture2D" uid="uid://d3vr5cufvw414" path="res://assets/Map/TopDownPack/adv-board.png" id="42_f6a27"]
+[ext_resource type="Texture2D" uid="uid://ctjomyolw21p5" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A1.png" id="1_mfxgf"]
+[ext_resource type="Script" uid="uid://bn75yehcatcj2" path="res://scripts/citymap/citymap.gd" id="1_uhbmj"]
+[ext_resource type="Texture2D" uid="uid://bvvmohcqje3we" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A2.png" id="2_cj6ot"]
+[ext_resource type="Texture2D" uid="uid://3ppsxbsnh2sb" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A2_Bright.png" id="3_jwgbx"]
+[ext_resource type="Texture2D" uid="uid://c5r68le4u2tlv" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A3.png" id="4_vxoa0"]
+[ext_resource type="Texture2D" uid="uid://cqsawgkpmrhpj" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A4.png" id="5_uhbmj"]
+[ext_resource type="Texture2D" uid="uid://cb3tw54rqmivv" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A5.png" id="6_x2cos"]
+[ext_resource type="Texture2D" uid="uid://do2qd6o5rp3vn" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_B.png" id="7_troj3"]
+[ext_resource type="Texture2D" uid="uid://dmh2yjqvqurs5" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_C.png" id="8_wb5te"]
+[ext_resource type="Texture2D" uid="uid://lwid28ky5vrs" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_D.png" id="9_bf3n2"]
+[ext_resource type="Texture2D" uid="uid://wso2wibvfg8o" path="res://assets/Map/winlu_exterior/winlu_exterior/parallaxes/Background_1.png" id="10_bqd1v"]
+[ext_resource type="Texture2D" uid="uid://bgyi02sw3ovjw" path="res://assets/Map/winlu_exterior/winlu_exterior/characters/!$Sign1.png" id="11_6xaus"]
+[ext_resource type="Texture2D" uid="uid://bdls64paa5826" path="res://assets/Map/winlu_exterior/winlu_exterior/characters/!obj_door2.png" id="12_neceg"]
+[ext_resource type="Texture2D" uid="uid://dggic66wr2yxp" path="res://assets/Map/winlu_exterior/winlu_exterior/characters/!$Cyberlove.png" id="13_ay6ku"]
+[ext_resource type="Texture2D" uid="uid://cv2m5n1dxt5mp" path="res://assets/Map/winlu_exterior/winlu_exterior/characters/!$Gate2.png" id="14_texg2"]
+[ext_resource type="Texture2D" uid="uid://bb7mov1pt8xk" path="res://assets/Map/winlu_exterior/winlu_exterior/characters/!$Gate3.png" id="15_mopqy"]
+[ext_resource type="Texture2D" uid="uid://buj07q8tsrr4q" path="res://assets/Map/winlu_exterior/winlu_exterior/characters/!$Gate4.png" id="16_yr301"]
+[ext_resource type="Texture2D" uid="uid://bfn7maqajfct1" path="res://assets/Map/winlu_exterior/winlu_exterior/characters/!$Signs2.png" id="17_tgfad"]
+[ext_resource type="Texture2D" uid="uid://baauawd1350r5" path="res://assets/Map/winlu_exterior/winlu_exterior/characters/!$Signs3.png" id="18_iqbs8"]
+[ext_resource type="Texture2D" uid="uid://dh1a853eso85e" path="res://assets/Map/winlu_exterior/winlu_exterior/characters/!$traffic_signal.png" id="19_4j1cy"]
+[ext_resource type="Texture2D" uid="uid://b28dl3bbp5trt" path="res://assets/Map/winlu_exterior/winlu_exterior/characters/!Misc.png" id="20_l2ojw"]
+[ext_resource type="Texture2D" uid="uid://bmy42nx50wgjs" path="res://assets/Map/winlu_exterior/winlu_exterior/characters/!Policedrone.png" id="21_ghbp3"]
+[ext_resource type="Texture2D" uid="uid://cwu6yabtag60l" path="res://assets/Map/winlu_exterior/winlu_exterior/characters/$Car.png" id="22_cbq4t"]
+[ext_resource type="Texture2D" uid="uid://d4dbay4g5p2em" path="res://assets/Map/TopDownPack/air-conditioners.png" id="23_77hyk"]
+[ext_resource type="Texture2D" uid="uid://c3t3f0oat45wt" path="res://assets/Map/TopDownPack/anatomy-table.png" id="24_o2j8r"]
+[ext_resource type="Texture2D" uid="uid://ck3t7t1t0qjd7" path="res://assets/Map/TopDownPack/bench.png" id="25_rlir5"]
+[ext_resource type="Texture2D" uid="uid://ruv58o4gigng" path="res://assets/Map/TopDownPack/body-burner.png" id="26_2mksp"]
+[ext_resource type="Texture2D" uid="uid://lb20d18r6ngj" path="res://assets/Map/TopDownPack/character-base-sketch-taller.png" id="27_wdafm"]
+[ext_resource type="Texture2D" uid="uid://wa8c8kqguv3y" path="res://assets/Map/TopDownPack/computer-desk.png" id="28_8hx3h"]
+[ext_resource type="Texture2D" uid="uid://cw20cmkgnn854" path="res://assets/Map/TopDownPack/construction-stuff.png" id="29_mfh3k"]
+[ext_resource type="Texture2D" uid="uid://b4u1hb1el318r" path="res://assets/Map/TopDownPack/cover.png" id="30_w433y"]
+[ext_resource type="Texture2D" uid="uid://1pkdxjo51fx1" path="res://assets/Map/TopDownPack/graffiti-big.png" id="31_v0pgo"]
+[ext_resource type="Texture2D" uid="uid://cmm3lwu8n11ec" path="res://assets/Map/TopDownPack/indoor-gangsite-small.png" id="32_l4lqm"]
+[ext_resource type="Texture2D" uid="uid://c16ley16l0o4e" path="res://assets/Map/TopDownPack/laser-door.png" id="33_y2w34"]
+[ext_resource type="Texture2D" uid="uid://c0eqhn14ilbvr" path="res://assets/Map/TopDownPack/outdoor-doors.png" id="34_23hem"]
+[ext_resource type="Texture2D" uid="uid://co45xv1jvov5c" path="res://assets/Map/TopDownPack/outdoor-misc-stuff.png" id="35_5ahvw"]
+[ext_resource type="Texture2D" uid="uid://cn3ifn5xwlp4g" path="res://assets/Map/TopDownPack/plants-tree.png" id="36_018se"]
+[ext_resource type="Texture2D" uid="uid://domr8n5nt75ac" path="res://assets/Map/TopDownPack/robot-arm.png" id="37_kpvik"]
+[ext_resource type="Texture2D" uid="uid://dcoo2fmokrfxm" path="res://assets/Map/TopDownPack/surgery-room.png" id="38_krydk"]
+[ext_resource type="Texture2D" uid="uid://nt557458xf0r" path="res://assets/Map/TopDownPack/vehicles-fixing.png" id="39_8pltr"]
+[ext_resource type="Texture2D" uid="uid://cgmg0fqswfslu" path="res://assets/Map/TopDownPack/vehicles.png" id="40_d28c4"]
+[ext_resource type="Texture2D" uid="uid://8jfjblroqbh6" path="res://assets/Map/Selfmade/PoliceSign.png" id="41_6ah4o"]
+[ext_resource type="Texture2D" uid="uid://pu3a0tjmj37u" path="res://assets/Map/TopDownPack/adv-board.png" id="42_f6a27"]
 [ext_resource type="PackedScene" uid="uid://d06523r6uwlmc" path="res://Scenes/Player/Player.tscn" id="43_cj6ot"]
 [ext_resource type="PackedScene" uid="uid://b0xqb38acejis" path="res://Interaction/Doors/Door.tscn" id="44_jwgbx"]
+[ext_resource type="PackedScene" uid="uid://bsolum1117wiw" path="res://Interaction/Items/ItemScene.tscn" id="47_x2cos"]
+[ext_resource type="Script" uid="uid://bej3684kpdmq8" path="res://scripts/Npc/npc.gd" id="48_ay6ku"]
+[ext_resource type="Texture2D" uid="uid://2821gwgi0of1" path="res://assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/edgerunners/rpgmaker compat 48x48/maine.png" id="51_tgfad"]
+[ext_resource type="PackedScene" uid="uid://c40h00sbv0l0y" path="res://Scenes/Dialogue/dialogue.tscn" id="51_yr301"]
+[ext_resource type="Script" uid="uid://bquehj3xedq4" path="res://scripts/Npc/patrol_behavior.gd" id="52_iqbs8"]
+[ext_resource type="Script" uid="uid://dnhtv77nf6s3f" path="res://scripts/Npc/patrol_location.gd" id="53_4j1cy"]
+[ext_resource type="Script" uid="uid://cgpjq2wuxwrww" path="res://scripts/Npc/detection.gd" id="54_l2ojw"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4a6f5"]
 texture = ExtResource("1_mfxgf")
@@ -104082,11 +104090,150 @@ sources/38 = SubResource("TileSetAtlasSource_1bu8t")
 sources/39 = SubResource("TileSetAtlasSource_pwpve")
 sources/40 = SubResource("TileSetAtlasSource_p8aql")
 
+[sub_resource type="Animation" id="Animation_tlawm"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+
+[sub_resource type="Animation" id="Animation_37ake"]
+resource_name = "idle_down"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+
+[sub_resource type="Animation" id="Animation_b2drp"]
+resource_name = "idle_side"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [7]
+}
+
+[sub_resource type="Animation" id="Animation_r2mia"]
+resource_name = "idle_up"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [10]
+}
+
+[sub_resource type="Animation" id="Animation_qxiy1"]
+resource_name = "walk_down"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 1, 1.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [0, 2, 0, 2]
+}
+
+[sub_resource type="Animation" id="Animation_fpqpt"]
+resource_name = "walk_side"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 1, 1.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [6, 7, 8, 7]
+}
+
+[sub_resource type="Animation" id="Animation_uy66f"]
+resource_name = "walk_up"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 1, 1.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [9, 10, 11, 10]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_fvu2l"]
+_data = {
+&"RESET": SubResource("Animation_tlawm"),
+&"idle_down": SubResource("Animation_37ake"),
+&"idle_side": SubResource("Animation_b2drp"),
+&"idle_up": SubResource("Animation_r2mia"),
+&"walk_down": SubResource("Animation_qxiy1"),
+&"walk_side": SubResource("Animation_fpqpt"),
+&"walk_up": SubResource("Animation_uy66f")
+}
+
+[sub_resource type="Gradient" id="Gradient_fpqpt"]
+offsets = PackedFloat32Array(0.480519, 0.798701, 0.993506)
+colors = PackedColorArray(1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_ghbp3"]
+gradient = SubResource("Gradient_fpqpt")
+width = 24
+height = 24
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+fill_to = Vector2(0.5, 0)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_cbq4t"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_77hyk"]
+
 [node name="CityMap" type="Node2D"]
+script = ExtResource("1_uhbmj")
 
 [node name="Player" parent="." instance=ExtResource("43_cj6ot")]
 z_index = 6
-position = Vector2(482, 959)
+position = Vector2(482, 870)
 scale = Vector2(2.21, 2.21)
 movement_speed = 500.0
 
@@ -104165,18 +104312,21 @@ metadata/_edit_lock_ = true
 position = Vector2(-92, 1545)
 scale = Vector2(1.335, 1.335)
 target_scene_path = "uid://dqpiidii1buod"
+required_flag = "maid"
 action_name = "enter"
 
 [node name="Bar" parent="." instance=ExtResource("44_jwgbx")]
 position = Vector2(742, 1546)
 scale = Vector2(1.275, 1.275)
 target_scene_path = "uid://derad0n6ii0hf"
+required_flag = "bar"
 action_name = "enter"
 
 [node name="PoliceStation" parent="." instance=ExtResource("44_jwgbx")]
 position = Vector2(452, 63)
 scale = Vector2(2.005, 2.005)
 target_scene_path = "uid://bllgdksh0t7wf"
+required_flag = "police"
 action_name = "enter"
 
 [node name="House" parent="." instance=ExtResource("44_jwgbx")]
@@ -104189,10 +104339,241 @@ action_name = "enter"
 position = Vector2(1560, -459)
 scale = Vector2(1.205, 1.205)
 target_scene_path = "uid://5s48by732xw6"
+required_flag = "police_back"
 action_name = "enter"
 
 [node name="Gangster" parent="." instance=ExtResource("44_jwgbx")]
 position = Vector2(-1394, 1203)
 scale = Vector2(1.785, 1.785)
 target_scene_path = "uid://bhv1yf5tjy08c"
+required_flag = "gangster"
 action_name = "enter"
+
+[node name="Dialogue" parent="." instance=ExtResource("51_yr301")]
+
+[node name="first_startpoint" type="Marker2D" parent="."]
+top_level = true
+position = Vector2(1154, 936)
+
+[node name="Glitchy Joe" parent="." instance=ExtResource("47_x2cos")]
+z_index = 4
+position = Vector2(1123, 1992)
+scale = Vector2(0.8, 0.8)
+item_name = "glitchy"
+vanishes = false
+reveals_and_stays_vanished = false
+
+[node name="NPC" type="CharacterBody2D" parent="." groups=["npc"]]
+z_index = 6
+position = Vector2(1104, 2004)
+scale = Vector2(0.75, 0.75)
+disable_mode = 1
+motion_mode = 1
+script = ExtResource("48_ay6ku")
+
+[node name="Sprite2D" type="Sprite2D" parent="NPC"]
+position = Vector2(0, -35)
+texture = ExtResource("51_tgfad")
+hframes = 3
+vframes = 4
+frame = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="NPC"]
+libraries = {
+&"": SubResource("AnimationLibrary_fvu2l")
+}
+
+[node name="NpcBehaviorPatrol" type="Node2D" parent="NPC"]
+position = Vector2(0, 2)
+script = ExtResource("52_iqbs8")
+speed = 40.0
+
+[node name="NPC_Way" type="Node2D" parent="NPC/NpcBehaviorPatrol"]
+modulate = Color(1, 0, 0, 1)
+show_behind_parent = true
+position = Vector2(-2, -4)
+script = ExtResource("53_4j1cy")
+
+[node name="Way" type="Sprite2D" parent="NPC/NpcBehaviorPatrol/NPC_Way"]
+self_modulate = Color(1, 1, 1, 0.447059)
+position = Vector2(-1, 3)
+texture = SubResource("GradientTexture2D_ghbp3")
+
+[node name="Line2D" type="Line2D" parent="NPC/NpcBehaviorPatrol/NPC_Way/Way"]
+points = PackedVector2Array(0, 0, -0.66666, -47.3333)
+width = 1.0
+default_color = Color(1, 1, 1, 0.552941)
+
+[node name="Label" type="Label" parent="NPC/NpcBehaviorPatrol/NPC_Way/Way"]
+offset_left = -3.0
+offset_top = -9.0
+offset_right = 37.0
+offset_bottom = 14.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 12
+text = "0"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label2" type="Label" parent="NPC/NpcBehaviorPatrol/NPC_Way/Way"]
+offset_left = -14.0
+offset_top = 6.0
+offset_right = 30.0
+offset_bottom = 23.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 8
+text = "wait: 0.0s"
+metadata/_edit_use_anchors_ = true
+
+[node name="NPC_Way2" type="Node2D" parent="NPC/NpcBehaviorPatrol"]
+modulate = Color(1, 1, 0, 1)
+show_behind_parent = true
+position = Vector2(-2.66666, -51.3333)
+script = ExtResource("53_4j1cy")
+
+[node name="Way" type="Sprite2D" parent="NPC/NpcBehaviorPatrol/NPC_Way2"]
+self_modulate = Color(1, 1, 1, 0.447059)
+position = Vector2(-1, 3)
+texture = SubResource("GradientTexture2D_ghbp3")
+
+[node name="Line2D" type="Line2D" parent="NPC/NpcBehaviorPatrol/NPC_Way2/Way"]
+points = PackedVector2Array(0, 0, 50.6667, 0)
+width = 1.0
+default_color = Color(1, 1, 1, 0.552941)
+
+[node name="Label" type="Label" parent="NPC/NpcBehaviorPatrol/NPC_Way2/Way"]
+offset_left = -3.0
+offset_top = -9.0
+offset_right = 37.0
+offset_bottom = 14.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 12
+text = "1"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label2" type="Label" parent="NPC/NpcBehaviorPatrol/NPC_Way2/Way"]
+offset_left = -14.0
+offset_top = 6.0
+offset_right = 30.0
+offset_bottom = 23.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 8
+text = "wait: 0.0s"
+metadata/_edit_use_anchors_ = true
+
+[node name="NPC_Way3" type="Node2D" parent="NPC/NpcBehaviorPatrol"]
+modulate = Color(0, 1, 0, 1)
+show_behind_parent = true
+position = Vector2(48, -51.3333)
+script = ExtResource("53_4j1cy")
+
+[node name="Way" type="Sprite2D" parent="NPC/NpcBehaviorPatrol/NPC_Way3"]
+self_modulate = Color(1, 1, 1, 0.447059)
+position = Vector2(-1, 3)
+texture = SubResource("GradientTexture2D_ghbp3")
+
+[node name="Line2D" type="Line2D" parent="NPC/NpcBehaviorPatrol/NPC_Way3/Way"]
+points = PackedVector2Array(0, 0, 1.3333, 41.3333)
+width = 1.0
+default_color = Color(1, 1, 1, 0.552941)
+
+[node name="Label" type="Label" parent="NPC/NpcBehaviorPatrol/NPC_Way3/Way"]
+offset_left = -3.0
+offset_top = -9.0
+offset_right = 37.0
+offset_bottom = 14.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 12
+text = "2"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label2" type="Label" parent="NPC/NpcBehaviorPatrol/NPC_Way3/Way"]
+offset_left = -14.0
+offset_top = 6.0
+offset_right = 30.0
+offset_bottom = 23.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 8
+text = "wait: 0.0s"
+metadata/_edit_use_anchors_ = true
+
+[node name="NPC_Way4" type="Node2D" parent="NPC/NpcBehaviorPatrol"]
+modulate = Color(0, 1, 1, 1)
+show_behind_parent = true
+position = Vector2(49.3333, -10)
+script = ExtResource("53_4j1cy")
+
+[node name="Way" type="Sprite2D" parent="NPC/NpcBehaviorPatrol/NPC_Way4"]
+self_modulate = Color(1, 1, 1, 0.447059)
+position = Vector2(-1, 3)
+texture = SubResource("GradientTexture2D_ghbp3")
+
+[node name="Line2D" type="Line2D" parent="NPC/NpcBehaviorPatrol/NPC_Way4/Way"]
+points = PackedVector2Array(0, 0, -51.3333, 6)
+width = 1.0
+default_color = Color(1, 1, 1, 0.552941)
+
+[node name="Label" type="Label" parent="NPC/NpcBehaviorPatrol/NPC_Way4/Way"]
+offset_left = -3.0
+offset_top = -9.0
+offset_right = 37.0
+offset_bottom = 14.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 12
+text = "3"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label2" type="Label" parent="NPC/NpcBehaviorPatrol/NPC_Way4/Way"]
+offset_left = -14.0
+offset_top = 6.0
+offset_right = 30.0
+offset_bottom = 23.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 8
+text = "wait: 0.0s"
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC"]
+rotation = -1.58168
+shape = SubResource("CapsuleShape2D_cbq4t")
+
+[node name="DetectionArea" type="Area2D" parent="NPC"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC/DetectionArea"]
+scale = Vector2(4, 4)
+shape = SubResource("CircleShape2D_77hyk")
+
+[node name="DetectionDebug" type="Node2D" parent="NPC" node_paths=PackedStringArray("col_shape")]
+script = ExtResource("54_l2ojw")
+col_shape = NodePath("../DetectionArea/CollisionShape2D")

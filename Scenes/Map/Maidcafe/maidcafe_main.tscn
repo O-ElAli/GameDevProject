@@ -1,34 +1,42 @@
-[gd_scene load_steps=60 format=4 uid="uid://dqpiidii1buod"]
+[gd_scene load_steps=82 format=4 uid="uid://dqpiidii1buod"]
 
 [ext_resource type="PackedScene" uid="uid://d06523r6uwlmc" path="res://Scenes/Player/Player.tscn" id="1_ekqxe"]
-[ext_resource type="Texture2D" uid="uid://bjcshus1vawjk" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_A2_remaster.png" id="1_y4umy"]
-[ext_resource type="Texture2D" uid="uid://dbf7cjmqgm4c1" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_A2_remaster_V2.png" id="2_3q8mh"]
-[ext_resource type="Texture2D" uid="uid://clu40gfdlrk3i" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_A2_remaster_V2_2.png" id="3_4nn6y"]
-[ext_resource type="Texture2D" uid="uid://bmenmwb6arjsg" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A2_Bright.png" id="4_2u4ai"]
-[ext_resource type="Texture2D" uid="uid://bp81y04rehofi" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_A4_remaster.png" id="4_naliw"]
-[ext_resource type="Texture2D" uid="uid://bq807txph2vpm" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_Bv2_remaster.png" id="5_h07qf"]
-[ext_resource type="Texture2D" uid="uid://b3i11dk5317oh" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A3.png" id="6_2u4ai"]
-[ext_resource type="Texture2D" uid="uid://b7oyjp145thvt" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_B_remaster.png" id="6_at06r"]
-[ext_resource type="Texture2D" uid="uid://bsaii0u6qibwc" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!decoration_CP_static.png" id="7_2u4ai"]
-[ext_resource type="Texture2D" uid="uid://bpnon5807vul8" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A5.png" id="7_at06r"]
-[ext_resource type="Texture2D" uid="uid://bvns1c2v3a36r" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A4.png" id="7_s481f"]
-[ext_resource type="Texture2D" uid="uid://b61l7t52gs88h" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!Kitchen_devices_remaster.png" id="8_s481f"]
-[ext_resource type="Texture2D" uid="uid://jknljltitxxr" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!lights_1_2.png" id="9_5ur0s"]
-[ext_resource type="Texture2D" uid="uid://tuoxubj73lx6" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!lights_remaster.png" id="10_634dp"]
-[ext_resource type="Texture2D" uid="uid://d1qi3txmma6so" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!obj_door1_2_remaster.png" id="11_mc63j"]
-[ext_resource type="Texture2D" uid="uid://b5vyrx5f50tpw" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!obj_door1_remaster.png" id="12_ajl37"]
-[ext_resource type="Texture2D" uid="uid://df4f8sg4hjg6v" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!TV_screens_remaster.png" id="13_d337v"]
-[ext_resource type="Texture2D" uid="uid://b8sn7qda5l3ju" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_C_remaster.png" id="14_xclj0"]
-[ext_resource type="Texture2D" uid="uid://cssps26i6n55j" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_D_remaster.png" id="15_vtf7s"]
-[ext_resource type="Texture2D" uid="uid://o5wuqjhyl8nm" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!$Gate1_remaster.png" id="16_qg5xo"]
-[ext_resource type="Texture2D" uid="uid://gkhx86hn0uo2" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!$Lights_Glowing.png" id="17_p0adj"]
-[ext_resource type="Texture2D" uid="uid://b21k14j4714af" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!candles_remaster.png" id="18_cjwm1"]
-[ext_resource type="Texture2D" uid="uid://c4r40dcqb81bp" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!cleanrobot_remaster.png" id="19_qbcn3"]
-[ext_resource type="Texture2D" uid="uid://v52gk5wxs4i0" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!Cyberpunk_decoration.png" id="20_qx3t3"]
-[ext_resource type="Texture2D" uid="uid://d4i70400oonv1" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!Cyberpunk_Toilet_Door.png" id="21_uq4u3"]
+[ext_resource type="Script" uid="uid://bj7y7x0wrk0ey" path="res://scripts/maidcafe/maidcafe.gd" id="1_xclj0"]
+[ext_resource type="Texture2D" uid="uid://770eguff8lyv" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_A2_remaster.png" id="1_y4umy"]
+[ext_resource type="Texture2D" uid="uid://n28j2k34cv2c" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_A2_remaster_V2.png" id="2_3q8mh"]
+[ext_resource type="Texture2D" uid="uid://3el8vigldouj" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_A2_remaster_V2_2.png" id="3_4nn6y"]
+[ext_resource type="Texture2D" uid="uid://3ppsxbsnh2sb" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A2_Bright.png" id="4_2u4ai"]
+[ext_resource type="Texture2D" uid="uid://b76lfd53kv2yj" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_A4_remaster.png" id="4_naliw"]
+[ext_resource type="Texture2D" uid="uid://bpm13324o3vlh" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_Bv2_remaster.png" id="5_h07qf"]
+[ext_resource type="Texture2D" uid="uid://c5r68le4u2tlv" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A3.png" id="6_2u4ai"]
+[ext_resource type="Texture2D" uid="uid://o7dj3m3qfx7g" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_B_remaster.png" id="6_at06r"]
+[ext_resource type="Texture2D" uid="uid://cgkk207q13l5g" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!decoration_CP_static.png" id="7_2u4ai"]
+[ext_resource type="Texture2D" uid="uid://cb3tw54rqmivv" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A5.png" id="7_at06r"]
+[ext_resource type="Texture2D" uid="uid://cqsawgkpmrhpj" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A4.png" id="7_s481f"]
+[ext_resource type="Texture2D" uid="uid://bqik8gucoss33" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!Kitchen_devices_remaster.png" id="8_s481f"]
+[ext_resource type="Texture2D" uid="uid://byvfxufejjr5p" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!lights_1_2.png" id="9_5ur0s"]
+[ext_resource type="Texture2D" uid="uid://crcalqs45p1hy" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!lights_remaster.png" id="10_634dp"]
+[ext_resource type="Texture2D" uid="uid://b1dudc2wbwny8" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!obj_door1_2_remaster.png" id="11_mc63j"]
+[ext_resource type="Texture2D" uid="uid://c4rmo0plp7f20" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!obj_door1_remaster.png" id="12_ajl37"]
+[ext_resource type="Texture2D" uid="uid://s8ea6i7gis78" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!TV_screens_remaster.png" id="13_d337v"]
+[ext_resource type="Texture2D" uid="uid://dqau468m1a8wu" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_C_remaster.png" id="14_xclj0"]
+[ext_resource type="Texture2D" uid="uid://cvjcfu6aswo7w" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_D_remaster.png" id="15_vtf7s"]
+[ext_resource type="Texture2D" uid="uid://cg7unkiyke38g" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!$Gate1_remaster.png" id="16_qg5xo"]
+[ext_resource type="Texture2D" uid="uid://dkw1k6lbw8a8a" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!$Lights_Glowing.png" id="17_p0adj"]
+[ext_resource type="Texture2D" uid="uid://xqa8gwpj8u02" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!candles_remaster.png" id="18_cjwm1"]
+[ext_resource type="Texture2D" uid="uid://dpqsj68xk1t0j" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!cleanrobot_remaster.png" id="19_qbcn3"]
+[ext_resource type="Texture2D" uid="uid://ow5f1g1co345" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!Cyberpunk_decoration.png" id="20_qx3t3"]
+[ext_resource type="Texture2D" uid="uid://b60t7nw76qhbl" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!Cyberpunk_Toilet_Door.png" id="21_uq4u3"]
 [ext_resource type="PackedScene" uid="uid://b0xqb38acejis" path="res://Interaction/Doors/Door.tscn" id="23_3q8mh"]
-[ext_resource type="Texture2D" uid="uid://dy1k7tywo6e4r" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_A5_remaster.png" id="24_4nn6y"]
-[ext_resource type="AudioStream" uid="uid://bcd8163fq0rrx" path="res://assets/music/maidcafe/Cute Bossa Nova.ogg" id="29_s481f"]
+[ext_resource type="Texture2D" uid="uid://c5uwag0esubwv" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_A5_remaster.png" id="24_4nn6y"]
+[ext_resource type="AudioStream" uid="uid://bsmsaq4sqnj17" path="res://assets/music/maidcafe/Cute Bossa Nova.ogg" id="29_s481f"]
+[ext_resource type="PackedScene" uid="uid://c40h00sbv0l0y" path="res://Scenes/Dialogue/dialogue.tscn" id="31_vtf7s"]
+[ext_resource type="Script" uid="uid://bej3684kpdmq8" path="res://scripts/Npc/npc.gd" id="32_qg5xo"]
+[ext_resource type="PackedScene" uid="uid://b3ts4syrygxeo" path="res://Interaction/NPC/npc_interaction.tscn" id="33_p0adj"]
+[ext_resource type="Texture2D" uid="uid://dw3tcwdrdlnl0" path="res://assets/Characters/NPCs/terminatorSERIESfreebies/upscaled 48x48/terminator 2/$terminatorSKELETAL.png" id="34_cjwm1"]
+[ext_resource type="Script" uid="uid://cgpjq2wuxwrww" path="res://scripts/Npc/detection.gd" id="35_qbcn3"]
+[ext_resource type="PackedScene" uid="uid://bsolum1117wiw" path="res://Interaction/Items/ItemScene.tscn" id="36_vtf7s"]
+[ext_resource type="FontFile" uid="uid://bhrvcujduvgs5" path="res://assets/start_screen/Born2bSportyV2.ttf" id="37_qg5xo"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_aawy3"]
 texture = ExtResource("1_y4umy")
@@ -35160,7 +35168,188 @@ texture = ExtResource("7_at06r")
 [sub_resource type="TileSet" id="TileSet_2u4ai"]
 sources/2 = SubResource("TileSetAtlasSource_at06r")
 
+[sub_resource type="Animation" id="Animation_tlawm"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+
+[sub_resource type="Animation" id="Animation_37ake"]
+resource_name = "idle_down"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+
+[sub_resource type="Animation" id="Animation_b2drp"]
+resource_name = "idle_side"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [7]
+}
+
+[sub_resource type="Animation" id="Animation_r2mia"]
+resource_name = "idle_up"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [10]
+}
+
+[sub_resource type="Animation" id="Animation_qxiy1"]
+resource_name = "walk_down"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 1, 1.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [0, 2, 0, 2]
+}
+
+[sub_resource type="Animation" id="Animation_fpqpt"]
+resource_name = "walk_side"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 1, 1.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [6, 7, 8, 7]
+}
+
+[sub_resource type="Animation" id="Animation_uy66f"]
+resource_name = "walk_up"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 1, 1.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [9, 10, 11, 10]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_fvu2l"]
+_data = {
+&"RESET": SubResource("Animation_tlawm"),
+&"idle_down": SubResource("Animation_37ake"),
+&"idle_side": SubResource("Animation_b2drp"),
+&"idle_up": SubResource("Animation_r2mia"),
+&"walk_down": SubResource("Animation_qxiy1"),
+&"walk_side": SubResource("Animation_fpqpt"),
+&"walk_up": SubResource("Animation_uy66f")
+}
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_qx3t3"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_uq4u3"]
+
+[sub_resource type="Animation" id="Animation_k5ki8"]
+resource_name = "Fade In"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.99, 3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 0), Color(0, 0, 0, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_8c11w"]
+resource_name = "Fade Out"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.98, 3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(0, 0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_o5mhj"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_8c11w"]
+_data = {
+&"Fade In": SubResource("Animation_k5ki8"),
+&"Fade Out": SubResource("Animation_8c11w"),
+&"RESET": SubResource("Animation_o5mhj")
+}
+
 [node name="MaidcafeMain" type="Node2D"]
+script = ExtResource("1_xclj0")
 
 [node name="Tilemap" type="Node" parent="."]
 
@@ -35257,3 +35446,90 @@ stream = ExtResource("29_s481f")
 volume_db = -14.04
 autoplay = true
 parameters/looping = true
+
+[node name="Dialogue" parent="." instance=ExtResource("31_vtf7s")]
+
+[node name="NPC" type="CharacterBody2D" parent="." groups=["npc"]]
+z_index = 6
+position = Vector2(-94, 183)
+scale = Vector2(0.75, 0.75)
+disable_mode = 1
+motion_mode = 1
+script = ExtResource("32_qg5xo")
+
+[node name="npc_interaction" parent="NPC" instance=ExtResource("33_p0adj")]
+npc_name = "Police_Chief"
+dialogue_system_path = NodePath("../../Dialogue")
+
+[node name="Sprite2D" type="Sprite2D" parent="NPC"]
+position = Vector2(0, -35)
+texture = ExtResource("34_cjwm1")
+hframes = 3
+vframes = 4
+frame = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="NPC"]
+libraries = {
+&"": SubResource("AnimationLibrary_fvu2l")
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC"]
+rotation = -1.58168
+shape = SubResource("CapsuleShape2D_qx3t3")
+
+[node name="DetectionArea" type="Area2D" parent="NPC"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC/DetectionArea"]
+scale = Vector2(4, 4)
+shape = SubResource("CircleShape2D_uq4u3")
+
+[node name="DetectionDebug" type="Node2D" parent="NPC" node_paths=PackedStringArray("col_shape")]
+script = ExtResource("35_qbcn3")
+col_shape = NodePath("../DetectionArea/CollisionShape2D")
+
+[node name="note" parent="." instance=ExtResource("36_vtf7s")]
+z_index = 4
+position = Vector2(-189, -187)
+item_name = "note"
+vanishes = false
+reveals_and_stays_vanished = false
+
+[node name="Fading_Out" type="CanvasLayer" parent="."]
+layer = 2
+
+[node name="ColorRect" type="ColorRect" parent="Fading_Out"]
+offset_right = 1925.0
+offset_bottom = 1075.0
+mouse_filter = 2
+color = Color(0, 0, 0, 0)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Fading_Out"]
+libraries = {
+&"": SubResource("AnimationLibrary_8c11w")
+}
+
+[node name="ColorRect2" type="ColorRect" parent="Fading_Out"]
+visible = false
+offset_right = 1925.0
+offset_bottom = 1075.0
+mouse_filter = 2
+color = Color(0, 0, 0, 0)
+
+[node name="Title_Prologue" type="Label" parent="Fading_Out"]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -297.0
+offset_top = -41.5
+offset_right = 297.0
+offset_bottom = 41.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.443137, 0.109804, 0.568627, 1)
+theme_override_colors/font_outline_color = Color(0.443137, 0.109804, 0.568627, 1)
+theme_override_fonts/font = ExtResource("37_qg5xo")
+theme_override_font_sizes/font_size = 82
+text = "Chapter 2: The Secret Base"

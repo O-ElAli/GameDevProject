@@ -1,13 +1,14 @@
-[gd_scene load_steps=19 format=3 uid="uid://csp8hwwrci1iy"]
+[gd_scene load_steps=22 format=3 uid="uid://csp8hwwrci1iy"]
 
 [ext_resource type="Script" uid="uid://bej3684kpdmq8" path="res://scripts/Npc/npc.gd" id="1_37ake"]
-[ext_resource type="Texture2D" uid="uid://bw746mw18lg3s" path="res://assets/Characters/NPCs/matrixSERIESfreebies/upscaled48x48/$morpheusmatrix.png" id="2_37ake"]
 [ext_resource type="Resource" uid="uid://doectsk62do5w" path="res://resources/NPC/test_npc.tres" id="2_tlawm"]
 [ext_resource type="PackedScene" uid="uid://b3ts4syrygxeo" path="res://Interaction/NPC/npc_interaction.tscn" id="3_r2mia"]
 [ext_resource type="Script" uid="uid://bquehj3xedq4" path="res://scripts/Npc/patrol_behavior.gd" id="3_tlawm"]
 [ext_resource type="PackedScene" uid="uid://c40h00sbv0l0y" path="res://Scenes/Dialogue/dialogue.tscn" id="4_qxiy1"]
 [ext_resource type="Script" uid="uid://dnhtv77nf6s3f" path="res://scripts/Npc/patrol_location.gd" id="4_r2mia"]
+[ext_resource type="Texture2D" uid="uid://dw3tcwdrdlnl0" path="res://assets/Characters/NPCs/terminatorSERIESfreebies/upscaled 48x48/terminator 2/$terminatorSKELETAL.png" id="5_fpqpt"]
 [ext_resource type="PackedScene" uid="uid://d06523r6uwlmc" path="res://Scenes/Player/Player.tscn" id="7_b2drp"]
+[ext_resource type="Script" uid="uid://cgpjq2wuxwrww" path="res://scripts/Npc/detection.gd" id="8_fpqpt"]
 
 [sub_resource type="Animation" id="Animation_tlawm"]
 length = 0.001
@@ -131,35 +132,43 @@ _data = {
 &"walk_up": SubResource("Animation_uy66f")
 }
 
-[sub_resource type="Gradient" id="Gradient_r2mia"]
+[sub_resource type="Gradient" id="Gradient_fpqpt"]
 offsets = PackedFloat32Array(0.480519, 0.798701, 0.993506)
 colors = PackedColorArray(1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0)
 
 [sub_resource type="GradientTexture2D" id="GradientTexture2D_tlawm"]
-gradient = SubResource("Gradient_r2mia")
+gradient = SubResource("Gradient_fpqpt")
 width = 24
 height = 24
 fill = 1
 fill_from = Vector2(0.5, 0.5)
 fill_to = Vector2(0.5, 0)
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_qxiy1"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_fpqpt"]
+
 [node name="NPC_Node" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource("7_b2drp")]
-position = Vector2(557, 378)
+position = Vector2(657, 345)
 
-[node name="NPC" type="CharacterBody2D" parent="."]
+[node name="NPC" type="CharacterBody2D" parent="." groups=["npc"]]
+z_index = 6
 position = Vector2(725, 348)
+scale = Vector2(0.75, 0.75)
+disable_mode = 1
+motion_mode = 1
 script = ExtResource("1_37ake")
 data = ExtResource("2_tlawm")
 
 [node name="npc_interaction" parent="NPC" instance=ExtResource("3_r2mia")]
-npc_name = "Igor"
+npc_name = "Police_Chief"
 dialogue_system_path = NodePath("../../Dialogue")
 
 [node name="Sprite2D" type="Sprite2D" parent="NPC"]
 position = Vector2(0, -35)
-texture = ExtResource("2_37ake")
+texture = ExtResource("5_fpqpt")
 hframes = 3
 vframes = 4
 frame = 1
@@ -172,6 +181,7 @@ libraries = {
 [node name="NpcBehaviorPatrol" type="Node2D" parent="NPC"]
 position = Vector2(0, 2)
 script = ExtResource("3_tlawm")
+speed = 40.0
 
 [node name="NPC_Way" type="Node2D" parent="NPC/NpcBehaviorPatrol"]
 modulate = Color(1, 0, 0, 1)
@@ -348,5 +358,19 @@ theme_override_constants/outline_size = 3
 theme_override_font_sizes/font_size = 8
 text = "wait: 0.0s"
 metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC"]
+rotation = -1.58168
+shape = SubResource("CapsuleShape2D_qxiy1")
+
+[node name="DetectionArea" type="Area2D" parent="NPC"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC/DetectionArea"]
+scale = Vector2(4, 4)
+shape = SubResource("CircleShape2D_fpqpt")
+
+[node name="DetectionDebug" type="Node2D" parent="NPC" node_paths=PackedStringArray("col_shape")]
+script = ExtResource("8_fpqpt")
+col_shape = NodePath("../DetectionArea/CollisionShape2D")
 
 [node name="Dialogue" parent="." instance=ExtResource("4_qxiy1")]

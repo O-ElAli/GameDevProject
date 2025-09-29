@@ -1,0 +1,102 @@
+[gd_scene load_steps=7 format=3 uid="uid://b3gmdlutrm2le"]
+
+[ext_resource type="Script" uid="uid://b6bddvkbpaykx" path="res://scripts/Dialogue/dialogue.gd" id="1_m7wur"]
+[ext_resource type="Texture2D" uid="uid://du8ne2m7vh13q" path="res://assets/dialogue/dialoguebox_dark_purple.png" id="2_udie0"]
+[ext_resource type="FontFile" uid="uid://bhrvcujduvgs5" path="res://assets/start_screen/Born2bSportyV2.ttf" id="3_p2voq"]
+
+[sub_resource type="Gradient" id="Gradient_bg8p8"]
+offsets = PackedFloat32Array(0, 0.974026)
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_epp88"]
+gradient = SubResource("Gradient_bg8p8")
+fill_from = Vector2(0.00458716, 0.990826)
+fill_to = Vector2(0.0183486, 0.0183486)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dhgk0"]
+content_margin_left = 30.0
+content_margin_top = 60.0
+content_margin_right = 30.0
+content_margin_bottom = 10.0
+texture = ExtResource("2_udie0")
+texture_margin_left = 1.0
+texture_margin_top = 1.0
+texture_margin_right = 1.0
+texture_margin_bottom = 1.0
+
+[node name="Dialogue_player" type="CanvasLayer"]
+process_mode = 3
+script = ExtResource("1_m7wur")
+
+[node name="UI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="UI"]
+modulate = Color(0, 0, 0, 0.619608)
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 2.0
+offset_top = -561.0
+offset_right = 2.0
+offset_bottom = -20.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = SubResource("GradientTexture2D_epp88")
+
+[node name="PanelContainer" type="PanelContainer" parent="UI"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.52
+anchor_top = 1.0
+anchor_right = 0.52
+anchor_bottom = 1.0
+offset_left = -420.04
+offset_top = -252.0
+offset_right = 423.96
+offset_bottom = -41.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxTexture_dhgk0")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="UI/PanelContainer"]
+layout_mode = 2
+theme_override_colors/default_color = Color(0.725719, 0.330818, 0.891838, 1)
+theme_override_fonts/normal_font = ExtResource("3_p2voq")
+theme_override_fonts/bold_font = ExtResource("3_p2voq")
+theme_override_font_sizes/normal_font_size = 25
+theme_override_font_sizes/bold_font_size = 25
+bbcode_enabled = true
+text = "Normal
+[shake]Shaking[/shake]"
+scroll_active = false
+
+[node name="Name" type="Label" parent="UI"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -305.0
+offset_top = -243.0
+offset_right = -162.0
+offset_bottom = -211.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/shadow_outline_size = 5
+theme_override_fonts/font = ExtResource("3_p2voq")
+theme_override_font_sizes/font_size = 31
+text = "Jasmin-Chan"
+
+[node name="Timer" type="Timer" parent="UI"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="UI"]

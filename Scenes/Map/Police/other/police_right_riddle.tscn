@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://btfrrdoj7qxpk"]
+[gd_scene load_steps=6 format=3 uid="uid://btfrrdoj7qxpk"]
 
 [ext_resource type="Script" uid="uid://bnj7afy1kdkrf" path="res://scripts/Riddle/police_right_riddle.gd" id="1_n7uyf"]
+[ext_resource type="FontFile" uid="uid://bhrvcujduvgs5" path="res://assets/start_screen/Born2bSportyV2.ttf" id="2_m0qdv"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_n7uyf"]
 bg_color = Color(0.262932, 0.262932, 0.262932, 1)
@@ -18,6 +19,9 @@ corner_radius_bottom_right = 12
 corner_radius_bottom_left = 12
 shadow_color = Color(0.93845, 0.93845, 0.93845, 0.521569)
 shadow_size = 146
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_en2uq"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
 
 [node name="PoliceRightRiddle" type="Node2D"]
 
@@ -52,6 +56,7 @@ offset_left = 179.0
 offset_top = 95.0
 offset_right = 1062.0
 offset_bottom = 159.0
+theme_override_fonts/font = ExtResource("2_m0qdv")
 theme_override_font_sizes/font_size = 44
 text = "Enter Password"
 horizontal_alignment = 1
@@ -73,18 +78,22 @@ alignment = 1
 
 [node name="Input1" type="LineEdit" parent="Control/Panel/HBoxContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_m0qdv")
 alignment = 1
 
 [node name="Input2" type="LineEdit" parent="Control/Panel/HBoxContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_m0qdv")
 alignment = 1
 
 [node name="Input3" type="LineEdit" parent="Control/Panel/HBoxContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_m0qdv")
 alignment = 1
 
 [node name="Input4" type="LineEdit" parent="Control/Panel/HBoxContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_m0qdv")
 alignment = 1
 
 [node name="Button" type="Button" parent="Control/Panel"]
@@ -93,12 +102,31 @@ offset_left = 530.0
 offset_top = 477.0
 offset_right = 729.0
 offset_bottom = 530.0
+theme_override_fonts/font = ExtResource("2_m0qdv")
 text = "Verify"
 
-[node name="Button2" type="Button" parent="Control/Panel"]
-layout_mode = 0
-offset_left = 26.0
-offset_top = 30.0
-offset_right = 116.0
-offset_bottom = 92.0
-text = "ESC"
+[node name="exit" type="Button" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.963
+anchor_top = 0.106
+anchor_right = 0.963
+anchor_bottom = 0.106
+offset_left = 1475.0
+offset_top = 205.0
+offset_right = 1593.0
+offset_bottom = 284.0
+grow_horizontal = 0
+theme_override_colors/font_color = Color(0.0392157, 0.741176, 0.776471, 1)
+theme_override_colors/font_focus_color = Color(0.0392157, 0.741176, 0.776471, 1)
+theme_override_font_sizes/font_size = 58
+theme_override_styles/focus = SubResource("StyleBoxFlat_en2uq")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxFlat_en2uq")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_en2uq")
+theme_override_styles/hover = SubResource("StyleBoxFlat_en2uq")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_en2uq")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_en2uq")
+theme_override_styles/normal = SubResource("StyleBoxFlat_en2uq")
+text = "x"
+
+[connection signal="pressed" from="Control/exit" to="Control" method="_on_exit_pressed"]

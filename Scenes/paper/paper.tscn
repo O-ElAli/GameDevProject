@@ -1,7 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://c31ba5cmrurqb"]
+[gd_scene load_steps=5 format=3 uid="uid://c31ba5cmrurqb"]
 
-[ext_resource type="Texture2D" uid="uid://c2pnnc21ivshd" path="res://assets/player_hud/paper_sprite.png" id="1_pcb2g"]
-[ext_resource type="FontFile" uid="uid://cimocgogppa78" path="res://assets/start_screen/Born2bSportyV2.ttf" id="2_vv47t"]
+[ext_resource type="Script" uid="uid://bd1ygdejpbxp4" path="res://scripts/paper/paper.gd" id="1_n1nbp"]
+[ext_resource type="Texture2D" uid="uid://c8pgq2ntsqw6e" path="res://assets/player_hud/paper_sprite.png" id="1_pcb2g"]
+[ext_resource type="FontFile" uid="uid://bhrvcujduvgs5" path="res://assets/start_screen/Born2bSportyV2.ttf" id="2_vv47t"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vl0nk"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
 
 [node name="Paper" type="Control"]
 layout_mode = 3
@@ -10,6 +14,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_n1nbp")
 
 [node name="paper_sprite" type="Sprite2D" parent="."]
 position = Vector2(951, 514)
@@ -17,16 +22,49 @@ texture = ExtResource("1_pcb2g")
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 0
-offset_left = 708.0
-offset_top = 210.0
-offset_right = 1673.0
-offset_bottom = 452.0
+offset_left = 742.0
+offset_top = 205.0
+offset_right = 1707.0
+offset_bottom = 776.0
 theme_override_colors/font_color = Color(0.0392157, 0.741176, 0.776471, 1)
 theme_override_fonts/font = ExtResource("2_vv47t")
-theme_override_font_sizes/font_size = 27
+theme_override_font_sizes/font_size = 40
 text = "If I’ve forgotten again:
-Password for the PC = model number of your AI.
+password is made like this
+take the first two
+digits of your player ID and
+combine them
+with the last two digits of 
+Navis model number.
 Remember?
-Navi is one of those old NeoCorp models.
-The series was a flop, but you still keep her around.
+Navi is one of those
+old NeoCorp models.
+The series was a flop,
+but you still keep her around.
 Model Number: 2077."
+
+[node name="exit" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.963
+anchor_top = 0.106
+anchor_right = 0.963
+anchor_bottom = 0.106
+offset_left = -693.96
+offset_top = 34.52
+offset_right = -575.96
+offset_bottom = 113.52
+grow_horizontal = 0
+theme_override_colors/font_color = Color(0.0392157, 0.741176, 0.776471, 1)
+theme_override_colors/font_focus_color = Color(0.0392157, 0.741176, 0.776471, 1)
+theme_override_font_sizes/font_size = 58
+theme_override_styles/focus = SubResource("StyleBoxFlat_vl0nk")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxFlat_vl0nk")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_vl0nk")
+theme_override_styles/hover = SubResource("StyleBoxFlat_vl0nk")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_vl0nk")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_vl0nk")
+theme_override_styles/normal = SubResource("StyleBoxFlat_vl0nk")
+text = "x"
+
+[connection signal="pressed" from="exit" to="." method="_on_exit_pressed"]
