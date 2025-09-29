@@ -1,23 +1,29 @@
-[gd_scene load_steps=42 format=4 uid="uid://7areigq4b5se"]
+[gd_scene load_steps=60 format=4 uid="uid://7areigq4b5se"]
 
-[ext_resource type="Texture2D" uid="uid://bjcshus1vawjk" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_A2_remaster.png" id="1_w2700"]
-[ext_resource type="Texture2D" uid="uid://dbf7cjmqgm4c1" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_A2_remaster_V2.png" id="2_6cw71"]
-[ext_resource type="Texture2D" uid="uid://clu40gfdlrk3i" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_A2_remaster_V2_2.png" id="3_bp53s"]
-[ext_resource type="Texture2D" uid="uid://bp81y04rehofi" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_A4_remaster.png" id="4_di5i0"]
-[ext_resource type="Texture2D" uid="uid://bq807txph2vpm" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_Bv2_remaster.png" id="5_ep2mo"]
-[ext_resource type="Texture2D" uid="uid://b7oyjp145thvt" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_B_remaster.png" id="6_6aj6w"]
-[ext_resource type="Texture2D" uid="uid://df4f8sg4hjg6v" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!TV_screens_remaster.png" id="7_gjbk1"]
-[ext_resource type="Texture2D" uid="uid://dvn4v8yxobvju" path="res://assets/Map/winlu_exterior/winlu_exterior/characters/!Policedrone.png" id="8_6cw71"]
-[ext_resource type="Texture2D" uid="uid://b8sn7qda5l3ju" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_C_remaster.png" id="8_fq83e"]
-[ext_resource type="Texture2D" uid="uid://cssps26i6n55j" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_D_remaster.png" id="9_n4p8m"]
-[ext_resource type="Texture2D" uid="uid://gkhx86hn0uo2" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!$Lights_Glowing.png" id="10_014xn"]
-[ext_resource type="Texture2D" uid="uid://v52gk5wxs4i0" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!Cyberpunk_decoration.png" id="11_jn5x3"]
-[ext_resource type="Texture2D" uid="uid://bsaii0u6qibwc" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!decoration_CP_static.png" id="12_trdo1"]
-[ext_resource type="Texture2D" uid="uid://tuoxubj73lx6" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!lights_remaster.png" id="13_kktfx"]
-[ext_resource type="Texture2D" uid="uid://d1qi3txmma6so" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!obj_door1_2_remaster.png" id="14_rh701"]
-[ext_resource type="Texture2D" uid="uid://b5vyrx5f50tpw" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!obj_door1_remaster.png" id="15_gs4vs"]
+[ext_resource type="Script" uid="uid://cm2brwi6ey268" path="res://scripts/gangster_firstfloor/gangster_firstfloor.gd" id="1_di5i0"]
+[ext_resource type="Texture2D" uid="uid://770eguff8lyv" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_A2_remaster.png" id="1_w2700"]
+[ext_resource type="Texture2D" uid="uid://n28j2k34cv2c" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_A2_remaster_V2.png" id="2_6cw71"]
+[ext_resource type="Texture2D" uid="uid://3el8vigldouj" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_A2_remaster_V2_2.png" id="3_bp53s"]
+[ext_resource type="Texture2D" uid="uid://b76lfd53kv2yj" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_A4_remaster.png" id="4_di5i0"]
+[ext_resource type="Texture2D" uid="uid://bpm13324o3vlh" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_Bv2_remaster.png" id="5_ep2mo"]
+[ext_resource type="Texture2D" uid="uid://o7dj3m3qfx7g" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_B_remaster.png" id="6_6aj6w"]
+[ext_resource type="Texture2D" uid="uid://s8ea6i7gis78" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!TV_screens_remaster.png" id="7_gjbk1"]
+[ext_resource type="Texture2D" uid="uid://bmy42nx50wgjs" path="res://assets/Map/winlu_exterior/winlu_exterior/characters/!Policedrone.png" id="8_6cw71"]
+[ext_resource type="Texture2D" uid="uid://dqau468m1a8wu" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_C_remaster.png" id="8_fq83e"]
+[ext_resource type="Texture2D" uid="uid://cvjcfu6aswo7w" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_D_remaster.png" id="9_n4p8m"]
+[ext_resource type="Texture2D" uid="uid://dkw1k6lbw8a8a" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!$Lights_Glowing.png" id="10_014xn"]
+[ext_resource type="Texture2D" uid="uid://ow5f1g1co345" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!Cyberpunk_decoration.png" id="11_jn5x3"]
+[ext_resource type="Texture2D" uid="uid://cgkk207q13l5g" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!decoration_CP_static.png" id="12_trdo1"]
+[ext_resource type="Texture2D" uid="uid://crcalqs45p1hy" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!lights_remaster.png" id="13_kktfx"]
+[ext_resource type="Texture2D" uid="uid://b1dudc2wbwny8" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!obj_door1_2_remaster.png" id="14_rh701"]
+[ext_resource type="Texture2D" uid="uid://c4rmo0plp7f20" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!obj_door1_remaster.png" id="15_gs4vs"]
 [ext_resource type="PackedScene" uid="uid://b0xqb38acejis" path="res://Interaction/Doors/Door.tscn" id="16_0mi3q"]
 [ext_resource type="PackedScene" uid="uid://d06523r6uwlmc" path="res://Scenes/Player/Player.tscn" id="18_bp53s"]
+[ext_resource type="PackedScene" uid="uid://c40h00sbv0l0y" path="res://Scenes/Dialogue/dialogue.tscn" id="20_ep2mo"]
+[ext_resource type="PackedScene" uid="uid://bsolum1117wiw" path="res://Interaction/Items/ItemScene.tscn" id="21_6aj6w"]
+[ext_resource type="Script" uid="uid://bej3684kpdmq8" path="res://scripts/Npc/npc.gd" id="22_n4p8m"]
+[ext_resource type="Texture2D" uid="uid://dgkdtctdjaoir" path="res://assets/Characters/NPCs/matrixSERIESfreebies/upscaled48x48/$agentsmith.png" id="23_014xn"]
+[ext_resource type="Script" uid="uid://cgpjq2wuxwrww" path="res://scripts/Npc/detection.gd" id="24_jn5x3"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h56gi"]
 texture = ExtResource("1_w2700")
@@ -28480,7 +28486,138 @@ sources/9 = SubResource("TileSetAtlasSource_6ujf0")
 sources/10 = SubResource("TileSetAtlasSource_t4b00")
 sources/11 = SubResource("TileSetAtlasSource_bp53s")
 
+[sub_resource type="Animation" id="Animation_tlawm"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+
+[sub_resource type="Animation" id="Animation_37ake"]
+resource_name = "idle_down"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+
+[sub_resource type="Animation" id="Animation_b2drp"]
+resource_name = "idle_side"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [7]
+}
+
+[sub_resource type="Animation" id="Animation_r2mia"]
+resource_name = "idle_up"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [10]
+}
+
+[sub_resource type="Animation" id="Animation_qxiy1"]
+resource_name = "walk_down"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 1, 1.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [0, 2, 0, 2]
+}
+
+[sub_resource type="Animation" id="Animation_fpqpt"]
+resource_name = "walk_side"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 1, 1.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [6, 7, 8, 7]
+}
+
+[sub_resource type="Animation" id="Animation_uy66f"]
+resource_name = "walk_up"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 1, 1.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [9, 10, 11, 10]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_fvu2l"]
+_data = {
+&"RESET": SubResource("Animation_tlawm"),
+&"idle_down": SubResource("Animation_37ake"),
+&"idle_side": SubResource("Animation_b2drp"),
+&"idle_up": SubResource("Animation_r2mia"),
+&"walk_down": SubResource("Animation_qxiy1"),
+&"walk_side": SubResource("Animation_fpqpt"),
+&"walk_up": SubResource("Animation_uy66f")
+}
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_trdo1"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_kktfx"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rh701"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_gs4vs"]
+
 [node name="GangsterFirstFloor" type="Node2D"]
+script = ExtResource("1_di5i0")
 
 [node name="Tilemap" type="Node" parent="."]
 
@@ -28507,13 +28644,14 @@ tile_set = SubResource("TileSet_7jr8h")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="MapBounds"]
 build_mode = 1
-polygon = PackedVector2Array(-883, 59, -784, 62, -784, 112, -592, 112, -592, 96, -418, 96, -417, 113, -224, 113, -223, 65, -127, 65, -126.452, 270.475, 32, 272, 32, 351, -126.923, 353.687, -128, 544, -879, 545, -879, 352, -1041, 351, -1041, 271, -879, 273)
+polygon = PackedVector2Array(-884, 94, -783, 96, -784, 112, -592, 112, -592, 96, -418, 96, -417, 113, -224, 113, -223, 65, -127, 65, -126.452, 270.475, 32, 272, 32, 351, -126.923, 353.687, -128, 544, -879, 545, -879, 352, -1041, 351, -1041, 271, -879, 273)
 
 [node name="BossRoom" parent="." instance=ExtResource("16_0mi3q")]
 position = Vector2(-471, 68)
 rotation = 1.5708
 scale = Vector2(1.8, 1.8)
 target_scene_path = "uid://s0a8hc3b2wyr"
+required_flag = "boss_room"
 action_name = "enter"
 
 [node name="BaseFloor" parent="." instance=ExtResource("16_0mi3q")]
@@ -28528,3 +28666,81 @@ action_name = "go down"
 z_index = 1
 position = Vector2(-176, 122)
 scale = Vector2(1.775, 1.775)
+
+[node name="Dialogue" parent="." instance=ExtResource("20_ep2mo")]
+
+[node name="Warden" parent="." instance=ExtResource("21_6aj6w")]
+z_index = 4
+position = Vector2(-833, 112)
+scale = Vector2(1.5, 0.6)
+item_name = "warden"
+vanishes = false
+reveals_and_stays_vanished = false
+
+[node name="NPC" type="CharacterBody2D" parent="." groups=["npc"]]
+z_index = 6
+position = Vector2(-857, 112)
+scale = Vector2(0.75, 0.75)
+disable_mode = 1
+motion_mode = 1
+script = ExtResource("22_n4p8m")
+
+[node name="Sprite2D" type="Sprite2D" parent="NPC"]
+position = Vector2(0, -35)
+texture = ExtResource("23_014xn")
+hframes = 3
+vframes = 4
+frame = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="NPC"]
+libraries = {
+&"": SubResource("AnimationLibrary_fvu2l")
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC"]
+rotation = -1.58168
+shape = SubResource("CapsuleShape2D_trdo1")
+
+[node name="DetectionArea" type="Area2D" parent="NPC"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC/DetectionArea"]
+scale = Vector2(4, 4)
+shape = SubResource("CircleShape2D_kktfx")
+
+[node name="DetectionDebug" type="Node2D" parent="NPC" node_paths=PackedStringArray("col_shape")]
+script = ExtResource("24_jn5x3")
+col_shape = NodePath("../DetectionArea/CollisionShape2D")
+
+[node name="NPC3" type="CharacterBody2D" parent="." groups=["npc"]]
+z_index = 6
+position = Vector2(-807, 112)
+scale = Vector2(0.75, 0.75)
+disable_mode = 1
+motion_mode = 1
+script = ExtResource("22_n4p8m")
+
+[node name="Sprite2D" type="Sprite2D" parent="NPC3"]
+position = Vector2(0, -35)
+texture = ExtResource("23_014xn")
+hframes = 3
+vframes = 4
+frame = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="NPC3"]
+libraries = {
+&"": SubResource("AnimationLibrary_fvu2l")
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC3"]
+rotation = -1.58168
+shape = SubResource("CapsuleShape2D_rh701")
+
+[node name="DetectionArea" type="Area2D" parent="NPC3"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC3/DetectionArea"]
+scale = Vector2(4, 4)
+shape = SubResource("CircleShape2D_gs4vs")
+
+[node name="DetectionDebug" type="Node2D" parent="NPC3" node_paths=PackedStringArray("col_shape")]
+script = ExtResource("24_jn5x3")
+col_shape = NodePath("../DetectionArea/CollisionShape2D")

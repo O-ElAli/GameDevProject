@@ -1,12 +1,12 @@
 [gd_scene load_steps=22 format=4 uid="uid://dcuaqlbsnrk1w"]
 
-[ext_resource type="Texture2D" uid="uid://uhdxmbyc2v1r" path="res://assets/Map/maidcafe/Diner-Tileset.png" id="1_8o0ip"]
-[ext_resource type="Texture2D" uid="uid://w6h8fvmvgk1p" path="res://assets/Map/Galacti-Chrons Sci-Fi Warehouse Pack/img/tilesets/SciFi_Warehouse_E.png" id="2_ehw0a"]
-[ext_resource type="Texture2D" uid="uid://1muf77p7bq7o" path="res://assets/Map/TopDownPack/bench.png" id="3_gml6c"]
+[ext_resource type="Texture2D" uid="uid://b01mtl7ipfd37" path="res://assets/Map/maidcafe/Diner-Tileset.png" id="1_8o0ip"]
+[ext_resource type="Texture2D" uid="uid://bigtuoalo3jng" path="res://assets/Map/Galacti-Chrons Sci-Fi Warehouse Pack/img/tilesets/SciFi_Warehouse_E.png" id="2_ehw0a"]
+[ext_resource type="Texture2D" uid="uid://ck3t7t1t0qjd7" path="res://assets/Map/TopDownPack/bench.png" id="3_gml6c"]
 [ext_resource type="PackedScene" uid="uid://d06523r6uwlmc" path="res://Scenes/Player/Player.tscn" id="4_75ur6"]
 [ext_resource type="PackedScene" uid="uid://b0xqb38acejis" path="res://Interaction/Doors/Door.tscn" id="5_ubmid"]
 [ext_resource type="PackedScene" uid="uid://bsolum1117wiw" path="res://Interaction/Items/ItemScene.tscn" id="6_e5auy"]
-[ext_resource type="Texture2D" uid="uid://c85injug7lmmi" path="res://assets/player/key_sprite-Sheet.png" id="7_1y2tx"]
+[ext_resource type="Texture2D" uid="uid://de4kvdedm4lcb" path="res://assets/player/key_sprite-Sheet.png" id="7_1y2tx"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ehw0a"]
 texture = ExtResource("1_8o0ip")

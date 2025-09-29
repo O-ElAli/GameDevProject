@@ -1,6 +1,6 @@
 extends Control
 
-var code = ["1", "2", "3", "4"]
+@export var code = ["1", "2", "3", "4"]
 
 @onready var inputs = [
 	$Panel/HBoxContainer/Input1,
@@ -10,6 +10,7 @@ var code = ["1", "2", "3", "4"]
 ]
 
 @onready var title_label = $Panel/Label
+signal code_verified(result: bool)
 
 func _ready():
 	$Panel/Button.pressed.connect(_on_button_pressed)
@@ -35,6 +36,14 @@ func _on_button_pressed():
 	if entered == code:
 		title_label.text = "Access Granted"
 		title_label.modulate = Color.GREEN
+		emit_signal("code_verified", true)
+		await get_tree().create_timer(0.3).timeout
+		hide()
 	else:
 		title_label.text = "Error"
 		title_label.modulate = Color.RED
+		emit_signal("code_verified", false)
+
+
+func _on_exit_pressed() -> void:
+	hide()

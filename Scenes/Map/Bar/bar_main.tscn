@@ -1,29 +1,31 @@
-[gd_scene load_steps=51 format=4 uid="uid://derad0n6ii0hf"]
+[gd_scene load_steps=53 format=4 uid="uid://derad0n6ii0hf"]
 
+[ext_resource type="Script" uid="uid://67f8g006cw54" path="res://scripts/bar_main/bar_main.gd" id="1_4d74j"]
 [ext_resource type="PackedScene" uid="uid://d06523r6uwlmc" path="res://Scenes/Player/Player.tscn" id="1_117wq"]
 [ext_resource type="PackedScene" uid="uid://b0xqb38acejis" path="res://Interaction/Doors/Door.tscn" id="2_muo10"]
-[ext_resource type="Texture2D" uid="uid://bp81y04rehofi" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_A4_remaster.png" id="4_8sfus"]
-[ext_resource type="Texture2D" uid="uid://b3i11dk5317oh" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A3.png" id="5_aybli"]
-[ext_resource type="Texture2D" uid="uid://bjcshus1vawjk" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_A2_remaster.png" id="7_pob26"]
-[ext_resource type="Texture2D" uid="uid://dbf7cjmqgm4c1" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_A2_remaster_V2.png" id="8_yaiu8"]
-[ext_resource type="Texture2D" uid="uid://clu40gfdlrk3i" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_A2_remaster_V2_2.png" id="9_ukn3x"]
-[ext_resource type="Texture2D" uid="uid://cciw3y4tn2mtu" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A2.png" id="10_r2y68"]
-[ext_resource type="Texture2D" uid="uid://bmenmwb6arjsg" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A2_Bright.png" id="11_bu317"]
-[ext_resource type="Texture2D" uid="uid://c3p500jjjr1ap" path="res://assets/Map/Galacti-Chrons Sci-Fi Warehouse Pack/img/tilesets/SciFi_Warehouse_E.png" id="14_qairr"]
-[ext_resource type="Texture2D" uid="uid://bq807txph2vpm" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_Bv2_remaster.png" id="16_kw7m5"]
-[ext_resource type="Texture2D" uid="uid://b7oyjp145thvt" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_B_remaster.png" id="17_bdr15"]
-[ext_resource type="Texture2D" uid="uid://tuoxubj73lx6" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!lights_remaster.png" id="18_vwxk3"]
-[ext_resource type="Texture2D" uid="uid://d1qi3txmma6so" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!obj_door1_2_remaster.png" id="19_rejfq"]
-[ext_resource type="Texture2D" uid="uid://b5vyrx5f50tpw" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!obj_door1_remaster.png" id="20_3y1w8"]
-[ext_resource type="Texture2D" uid="uid://df4f8sg4hjg6v" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!TV_screens_remaster.png" id="21_tk6da"]
-[ext_resource type="Texture2D" uid="uid://b8sn7qda5l3ju" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_C_remaster.png" id="22_lk374"]
-[ext_resource type="Texture2D" uid="uid://cssps26i6n55j" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_D_remaster.png" id="23_7i61y"]
-[ext_resource type="Texture2D" uid="uid://gkhx86hn0uo2" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!$Lights_Glowing.png" id="24_llu0d"]
-[ext_resource type="Texture2D" uid="uid://b21k14j4714af" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!candles_remaster.png" id="25_pgeq8"]
-[ext_resource type="Texture2D" uid="uid://v52gk5wxs4i0" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!Cyberpunk_decoration.png" id="26_lboqp"]
-[ext_resource type="Texture2D" uid="uid://d4i70400oonv1" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!Cyberpunk_Toilet_Door.png" id="27_dauu7"]
-[ext_resource type="Texture2D" uid="uid://bsaii0u6qibwc" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!decoration_CP_static.png" id="28_jq7dv"]
-[ext_resource type="Texture2D" uid="uid://b61l7t52gs88h" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!Kitchen_devices_remaster.png" id="29_tnkoc"]
+[ext_resource type="Texture2D" uid="uid://b76lfd53kv2yj" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_A4_remaster.png" id="4_8sfus"]
+[ext_resource type="Texture2D" uid="uid://c5r68le4u2tlv" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A3.png" id="5_aybli"]
+[ext_resource type="Texture2D" uid="uid://770eguff8lyv" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_A2_remaster.png" id="7_pob26"]
+[ext_resource type="Texture2D" uid="uid://n28j2k34cv2c" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_A2_remaster_V2.png" id="8_yaiu8"]
+[ext_resource type="Texture2D" uid="uid://3el8vigldouj" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_A2_remaster_V2_2.png" id="9_ukn3x"]
+[ext_resource type="Texture2D" uid="uid://bvvmohcqje3we" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A2.png" id="10_r2y68"]
+[ext_resource type="Texture2D" uid="uid://3ppsxbsnh2sb" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A2_Bright.png" id="11_bu317"]
+[ext_resource type="Texture2D" uid="uid://bigtuoalo3jng" path="res://assets/Map/Galacti-Chrons Sci-Fi Warehouse Pack/img/tilesets/SciFi_Warehouse_E.png" id="14_qairr"]
+[ext_resource type="Texture2D" uid="uid://bpm13324o3vlh" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_Bv2_remaster.png" id="16_kw7m5"]
+[ext_resource type="Texture2D" uid="uid://o7dj3m3qfx7g" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_B_remaster.png" id="17_bdr15"]
+[ext_resource type="Texture2D" uid="uid://crcalqs45p1hy" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!lights_remaster.png" id="18_vwxk3"]
+[ext_resource type="Texture2D" uid="uid://b1dudc2wbwny8" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!obj_door1_2_remaster.png" id="19_rejfq"]
+[ext_resource type="Texture2D" uid="uid://c4rmo0plp7f20" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!obj_door1_remaster.png" id="20_3y1w8"]
+[ext_resource type="Texture2D" uid="uid://s8ea6i7gis78" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!TV_screens_remaster.png" id="21_tk6da"]
+[ext_resource type="Texture2D" uid="uid://dqau468m1a8wu" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_C_remaster.png" id="22_lk374"]
+[ext_resource type="Texture2D" uid="uid://cvjcfu6aswo7w" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_D_remaster.png" id="23_7i61y"]
+[ext_resource type="Texture2D" uid="uid://dkw1k6lbw8a8a" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!$Lights_Glowing.png" id="24_llu0d"]
+[ext_resource type="Texture2D" uid="uid://xqa8gwpj8u02" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!candles_remaster.png" id="25_pgeq8"]
+[ext_resource type="PackedScene" uid="uid://c40h00sbv0l0y" path="res://Scenes/Dialogue/dialogue.tscn" id="26_a3au5"]
+[ext_resource type="Texture2D" uid="uid://ow5f1g1co345" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!Cyberpunk_decoration.png" id="26_lboqp"]
+[ext_resource type="Texture2D" uid="uid://b60t7nw76qhbl" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!Cyberpunk_Toilet_Door.png" id="27_dauu7"]
+[ext_resource type="Texture2D" uid="uid://cgkk207q13l5g" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!decoration_CP_static.png" id="28_jq7dv"]
+[ext_resource type="Texture2D" uid="uid://bqik8gucoss33" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!Kitchen_devices_remaster.png" id="29_tnkoc"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_stq1m"]
 texture = ExtResource("4_8sfus")
@@ -32979,6 +32981,7 @@ sources/0 = SubResource("TileSetAtlasSource_8sfus")
 sources/3 = SubResource("TileSetAtlasSource_bu317")
 
 [node name="Node2D2" type="Node2D"]
+script = ExtResource("1_4d74j")
 metadata/_edit_vertical_guides_ = [-454.0]
 
 [node name="MapBounds" type="StaticBody2D" parent="."]
@@ -33050,3 +33053,5 @@ scale = Vector2(1.975, 1.975)
 target_scene_path = "uid://dk5risx4k1p4l"
 is_exit = true
 action_name = "exit"
+
+[node name="Dialogue" parent="." instance=ExtResource("26_a3au5")]

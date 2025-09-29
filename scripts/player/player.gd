@@ -5,8 +5,12 @@ extends CharacterBody2D
 var character_direction: Vector2
 
 var allow_movement:= true
+var last_direction := "Down"
+var idle_timer := 0.0
 
+@onready var sprite: AnimatedSprite2D = $sprite
 @onready var weapon_hand = $Hand
+@onready var hud = $CanvasLayer/PlayerHud
 
 var current_weapon = null
 
@@ -25,8 +29,7 @@ func _physics_process(_delta: float) -> void:
 	
 	if not allow_movement:
 		velocity = Vector2.ZERO
-		if $sprite.animation != "Idle":
-			$sprite.animation = "Idle"
+		_show_idle()
 		move_and_slide()
 		return
 	
@@ -34,31 +37,39 @@ func _physics_process(_delta: float) -> void:
 	
 	if Input.is_action_pressed("move_down"):
 		character_direction.y = 1
+		last_direction = "Down"
 	elif Input.is_action_pressed("move_up"):
 		character_direction.y = -1
+		last_direction = "Up"
 	elif Input.is_action_pressed("move_right"):
 		character_direction.x = 1
+		last_direction = "Right"
 	elif Input.is_action_pressed("move_left"):
 		character_direction.x = -1
+		last_direction = "Left"
 	
-	#Animation	
-	if character_direction.x > 0: $sprite.animation = "Right"
-	elif character_direction.x < 0: $sprite.animation = "Left"
-	elif character_direction.y > 0: $sprite.animation = "Down"
-	elif character_direction.y < 0: $sprite.animation = "Up"
-	
+	if character_direction != Vector2.ZERO:
+		velocity = character_direction.normalized() * movement_speed
+		sprite.play(last_direction)
+		idle_timer = 0.0  
 	else:
 		velocity = velocity.move_toward(Vector2.ZERO, movement_speed)
-		if $sprite.animation != "Idle": $sprite.animation = "Idle"
+		idle_timer += _delta
+		if idle_timer > 0.2:  
+			_show_idle()
 	
-	
-	velocity = character_direction * movement_speed
 	move_and_slide()
+
+func _show_idle() -> void:
+	sprite.animation = last_direction
+	sprite.frame = 0
+	sprite.stop()
 
 func set_movement_allowed(allowed:bool) -> void:
 	allow_movement = allowed
 	if not allowed:
 		velocity = Vector2.ZERO
+		_show_idle()
 	
 func _process(delta: float):
 	if current_weapon:
@@ -79,3 +90,11 @@ func change_weapon(new_weapon_scene):
 	var new_weapon_instance = new_weapon_scene.instantiate()
 	weapon_hand.add_child(new_weapon_instance)
 	current_weapon = new_weapon_instance
+
+
+func _on_button_pressed() -> void:
+	$CanvasLayer/Button.hide()
+	set_movement_allowed(false) 
+	hud.visible = true
+	#if hud:
+		#hud.visible = true

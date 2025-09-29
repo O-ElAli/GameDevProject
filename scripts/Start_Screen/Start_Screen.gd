@@ -2,7 +2,23 @@ extends Node
 
 
 func _on_start_pressed() -> void:
-	pass # Replace with function body.
+	$Fading_In/AnimationPlayer.play("Fade In")
+	await get_tree().create_timer(6.0).timeout
+	
+	var tween := create_tween()
+	$Fading_In/Title_Prologue.self_modulate.a = 0.0
+	$Fading_In/Title_Prologue.visible = true
+	tween.tween_property($Fading_In/Title_Prologue, "self_modulate:a", 1.0, 2.0)
+	await tween.finished
+	
+	await get_tree().create_timer(2.0).timeout
+	
+	var tween_out := create_tween()
+	tween_out.tween_property($Fading_In/Title_Prologue, "self_modulate:a", 0.0, 2.0)
+	await tween_out.finished
+	
+	get_tree().change_scene_to_file("res://Scenes/Map/bedroom.tscn")
+
 
 
 func _on_continue_pressed() -> void:
@@ -10,7 +26,8 @@ func _on_continue_pressed() -> void:
 
 
 func _on_options_pressed() -> void:
-	pass # Replace with function body.
+	var options = preload("res://Scenes/Options/OptionsMenu.tscn").instantiate()
+	get_tree().root.add_child(options)
 
 
 func _on_quit_pressed() -> void:

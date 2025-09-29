@@ -7,6 +7,9 @@ class_name playerHUD extends Control
 
 @export var inventory: Node
 
+@onready var player = $"../.."
+@onready var navi = $"../Button"
+
 @onready var mission: Label = $TabContainer/Mission/mission_log
 @onready var items_container: VBoxContainer = $TabContainer/Inventory/MarginContainer/items
 
@@ -15,7 +18,8 @@ func _ready():
 	#if inventory:
 		#inventory.inventory_changed.connect(_refresh_inventory)
 	#_refresh_inventory()
-	pass
+	if SceneManager.current_mission_text != "":
+		mission.text = SceneManager.current_mission_text
 
 #func _refresh_inventory() -> void:
 	## Alte Einträge löschen
@@ -47,6 +51,11 @@ func _ready():
 
 func _on_exit_pressed() -> void:
 	hide()
+	print("Player gefunden:", player)
+	if player:
+		player.set_movement_allowed(true)
+	if navi:
+		navi.visible = true
 
 
 func _on_main_menu_pressed() -> void:
@@ -58,6 +67,7 @@ func _on_save_pressed() -> void:
 
 func update_mission(text: String) -> void:
 	mission.text = text
+	SceneManager.current_mission_text = text
 
 func _make_label_settings() -> LabelSettings:
 	var settings = LabelSettings.new()
@@ -73,3 +83,8 @@ func _get_item_data_by_id(id: String) -> Resource:
 		return ResourceLoader.load(path)
 	push_warning("ItemData not found for id: %s" % id)
 	return null
+
+
+func _on_settings_pressed() -> void:
+	var options = preload("res://Scenes/Options/OptionsMenu.tscn").instantiate()
+	get_tree().root.add_child(options)

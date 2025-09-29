@@ -21,6 +21,8 @@ InteractionManager="*res://Interaction/InteractionManager.tscn"
 DamageNumber="*res://scripts/Npc/damage_number.gd"
 SceneManager="*res://scripts/SceneManager.gd"
 DialogueData="*res://scripts/dialogue_data.gd"
+LoadingScreen="*res://Scenes/loading_screen/LoadingScreen.tscn"
+GameState="*res://scripts/GameState/GameState.gd"
 
 [display]
 
@@ -31,6 +33,8 @@ window/size/viewport_height=1080
 
 player=""
 enemies=""
+npc=""
+playerHUD=""
 
 [input]
 

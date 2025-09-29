@@ -1,21 +1,27 @@
-[gd_scene load_steps=36 format=4 uid="uid://bvhbmrryrili7"]
+[gd_scene load_steps=44 format=4 uid="uid://bvhbmrryrili7"]
 
-[ext_resource type="Texture2D" uid="uid://6hji4nygq1ls" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A2.png" id="1_dmgij"]
-[ext_resource type="Texture2D" uid="uid://difmn0l2ovhh1" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A2_Bright.png" id="2_bmyfk"]
-[ext_resource type="Texture2D" uid="uid://b7glm4h3tsqtm" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A3.png" id="3_outml"]
-[ext_resource type="Texture2D" uid="uid://cbhfim8mlc6bn" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A4.png" id="4_jvexh"]
-[ext_resource type="Texture2D" uid="uid://bvgbqgoclcw80" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_A4_remaster.png" id="5_dtg10"]
-[ext_resource type="Texture2D" uid="uid://dcn0w1il1j74u" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_A2_remaster.png" id="6_v1lwi"]
-[ext_resource type="Texture2D" uid="uid://dntwj7l6xfb2p" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_A2_remaster_V2.png" id="7_gctsx"]
-[ext_resource type="Texture2D" uid="uid://cgshbl4w2yftg" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_A2_remaster_V2_2.png" id="8_bnlwp"]
-[ext_resource type="Texture2D" uid="uid://cyp5nhjese42" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A1.png" id="9_0tglm"]
-[ext_resource type="Texture2D" uid="uid://bdovsali0j2th" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A5.png" id="10_3rwk5"]
-[ext_resource type="Texture2D" uid="uid://b1aor7vsiinug" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_C.png" id="11_m2431"]
-[ext_resource type="Texture2D" uid="uid://cjgnjkrjpv8q3" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_D.png" id="12_aaje8"]
-[ext_resource type="Texture2D" uid="uid://5tohn443yj7f" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_Bv2_remaster.png" id="13_outml"]
-[ext_resource type="Texture2D" uid="uid://ndv30euemq2b" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!$Lights_Glowing.png" id="14_jvexh"]
+[ext_resource type="Texture2D" uid="uid://bvvmohcqje3we" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A2.png" id="1_dmgij"]
+[ext_resource type="Texture2D" uid="uid://3ppsxbsnh2sb" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A2_Bright.png" id="2_bmyfk"]
+[ext_resource type="Texture2D" uid="uid://c5r68le4u2tlv" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A3.png" id="3_outml"]
+[ext_resource type="Texture2D" uid="uid://cqsawgkpmrhpj" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A4.png" id="4_jvexh"]
+[ext_resource type="Texture2D" uid="uid://b76lfd53kv2yj" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_A4_remaster.png" id="5_dtg10"]
+[ext_resource type="Texture2D" uid="uid://770eguff8lyv" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_A2_remaster.png" id="6_v1lwi"]
+[ext_resource type="Texture2D" uid="uid://n28j2k34cv2c" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_A2_remaster_V2.png" id="7_gctsx"]
+[ext_resource type="Texture2D" uid="uid://3el8vigldouj" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_A2_remaster_V2_2.png" id="8_bnlwp"]
+[ext_resource type="Texture2D" uid="uid://ctjomyolw21p5" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A1.png" id="9_0tglm"]
+[ext_resource type="Texture2D" uid="uid://cb3tw54rqmivv" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A5.png" id="10_3rwk5"]
+[ext_resource type="Texture2D" uid="uid://dmh2yjqvqurs5" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_C.png" id="11_m2431"]
+[ext_resource type="Texture2D" uid="uid://lwid28ky5vrs" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_D.png" id="12_aaje8"]
+[ext_resource type="Texture2D" uid="uid://bpm13324o3vlh" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_Bv2_remaster.png" id="13_outml"]
+[ext_resource type="Texture2D" uid="uid://dkw1k6lbw8a8a" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!$Lights_Glowing.png" id="14_jvexh"]
 [ext_resource type="PackedScene" uid="uid://b0xqb38acejis" path="res://Interaction/Doors/Door.tscn" id="15_jvexh"]
 [ext_resource type="PackedScene" uid="uid://d06523r6uwlmc" path="res://Scenes/Player/Player.tscn" id="16_dtg10"]
+[ext_resource type="Script" uid="uid://bej3684kpdmq8" path="res://scripts/Npc/npc.gd" id="17_3rwk5"]
+[ext_resource type="PackedScene" uid="uid://b3ts4syrygxeo" path="res://Interaction/NPC/npc_interaction.tscn" id="19_aaje8"]
+[ext_resource type="Texture2D" uid="uid://dgkdtctdjaoir" path="res://assets/Characters/NPCs/matrixSERIESfreebies/upscaled48x48/$agentsmith.png" id="19_m2431"]
+[ext_resource type="Script" uid="uid://cgpjq2wuxwrww" path="res://scripts/Npc/detection.gd" id="21_oskh1"]
+[ext_resource type="Texture2D" uid="uid://ywfhxdpvmqwm" path="res://assets/Characters/NPCs/matrixSERIESfreebies/upscaled48x48/$ghostmatrixALT.png" id="22_aaje8"]
+[ext_resource type="PackedScene" uid="uid://c40h00sbv0l0y" path="res://Scenes/Dialogue/dialogue.tscn" id="22_m2431"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_outml"]
 texture = ExtResource("1_dmgij")
@@ -26890,6 +26896,10 @@ texture = ExtResource("14_jvexh")
 [sub_resource type="TileSet" id="TileSet_bnlwp"]
 sources/0 = SubResource("TileSetAtlasSource_5d71g")
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_583as"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_2ieay"]
+
 [node name="UndergroundMain" type="Node2D"]
 
 [node name="Tilemap" type="Node" parent="."]
@@ -26931,3 +26941,137 @@ action_name = "enter"
 z_index = 1
 position = Vector2(1650, 126)
 scale = Vector2(2.33, 2.33)
+
+[node name="NPC" type="CharacterBody2D" parent="." groups=["npc"]]
+z_index = 6
+position = Vector2(982, 103)
+scale = Vector2(0.75, 0.75)
+disable_mode = 1
+motion_mode = 1
+script = ExtResource("17_3rwk5")
+
+[node name="npc_interaction" parent="NPC" instance=ExtResource("19_aaje8")]
+npc_name = "Police_Chief"
+dialogue_system_path = NodePath("../../Dialogue")
+
+[node name="Sprite2D" type="Sprite2D" parent="NPC"]
+position = Vector2(0, -35)
+texture = ExtResource("19_m2431")
+hframes = 3
+vframes = 4
+frame = 7
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC"]
+rotation = -1.58168
+shape = SubResource("CapsuleShape2D_583as")
+
+[node name="DetectionArea" type="Area2D" parent="NPC"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC/DetectionArea"]
+scale = Vector2(4, 4)
+shape = SubResource("CircleShape2D_2ieay")
+
+[node name="DetectionDebug" type="Node2D" parent="NPC" node_paths=PackedStringArray("col_shape")]
+script = ExtResource("21_oskh1")
+col_shape = NodePath("../DetectionArea/CollisionShape2D")
+
+[node name="Dialogue" parent="." instance=ExtResource("22_m2431")]
+
+[node name="NPC2" type="CharacterBody2D" parent="." groups=["npc"]]
+z_index = 6
+position = Vector2(1018, 103)
+scale = Vector2(0.75, 0.75)
+disable_mode = 1
+motion_mode = 1
+script = ExtResource("17_3rwk5")
+
+[node name="npc_interaction" parent="NPC2" instance=ExtResource("19_aaje8")]
+npc_name = "Police_Chief"
+dialogue_system_path = NodePath("../../Dialogue")
+
+[node name="Sprite2D" type="Sprite2D" parent="NPC2"]
+position = Vector2(0, -35)
+texture = ExtResource("22_aaje8")
+hframes = 3
+vframes = 4
+frame = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC2"]
+rotation = -1.58168
+shape = SubResource("CapsuleShape2D_583as")
+
+[node name="DetectionArea" type="Area2D" parent="NPC2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC2/DetectionArea"]
+scale = Vector2(4, 4)
+shape = SubResource("CircleShape2D_2ieay")
+
+[node name="DetectionDebug" type="Node2D" parent="NPC2" node_paths=PackedStringArray("col_shape")]
+script = ExtResource("21_oskh1")
+col_shape = NodePath("../DetectionArea/CollisionShape2D")
+
+[node name="NPC3" type="CharacterBody2D" parent="." groups=["npc"]]
+z_index = 6
+position = Vector2(404, 178)
+scale = Vector2(0.75, 0.75)
+disable_mode = 1
+motion_mode = 1
+script = ExtResource("17_3rwk5")
+
+[node name="npc_interaction" parent="NPC3" instance=ExtResource("19_aaje8")]
+npc_name = "Police_Chief"
+dialogue_system_path = NodePath("../../Dialogue")
+
+[node name="Sprite2D" type="Sprite2D" parent="NPC3"]
+position = Vector2(0, -35)
+texture = ExtResource("19_m2431")
+hframes = 3
+vframes = 4
+frame = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC3"]
+rotation = -1.58168
+shape = SubResource("CapsuleShape2D_583as")
+
+[node name="DetectionArea" type="Area2D" parent="NPC3"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC3/DetectionArea"]
+scale = Vector2(4, 4)
+shape = SubResource("CircleShape2D_2ieay")
+
+[node name="DetectionDebug" type="Node2D" parent="NPC3" node_paths=PackedStringArray("col_shape")]
+script = ExtResource("21_oskh1")
+col_shape = NodePath("../DetectionArea/CollisionShape2D")
+
+[node name="NPC4" type="CharacterBody2D" parent="." groups=["npc"]]
+z_index = 6
+position = Vector2(368, 178)
+scale = Vector2(0.75, 0.75)
+disable_mode = 1
+motion_mode = 1
+script = ExtResource("17_3rwk5")
+
+[node name="npc_interaction" parent="NPC4" instance=ExtResource("19_aaje8")]
+npc_name = "Police_Chief"
+dialogue_system_path = NodePath("../../Dialogue")
+
+[node name="Sprite2D" type="Sprite2D" parent="NPC4"]
+position = Vector2(0, -35)
+texture = ExtResource("22_aaje8")
+hframes = 3
+vframes = 4
+frame = 7
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC4"]
+rotation = -1.58168
+shape = SubResource("CapsuleShape2D_583as")
+
+[node name="DetectionArea" type="Area2D" parent="NPC4"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC4/DetectionArea"]
+scale = Vector2(4, 4)
+shape = SubResource("CircleShape2D_2ieay")
+
+[node name="DetectionDebug" type="Node2D" parent="NPC4" node_paths=PackedStringArray("col_shape")]
+script = ExtResource("21_oskh1")
+col_shape = NodePath("../DetectionArea/CollisionShape2D")

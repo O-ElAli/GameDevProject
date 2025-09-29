@@ -1,0 +1,81 @@
+[gd_scene load_steps=13 format=3 uid="uid://d05w86sa0174r"]
+
+[ext_resource type="Script" uid="uid://y1q5c28s0w8b" path="res://scripts/GameOver/gameover.gd" id="1_apjpi"]
+[ext_resource type="FontFile" uid="uid://bhrvcujduvgs5" path="res://assets/start_screen/Born2bSportyV2.ttf" id="1_rp8oo"]
+[ext_resource type="Texture2D" uid="uid://c4s0t5tht1jg" path="res://assets/start_screen/restart.png" id="2_apjpi"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kok7f"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8yjya"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ybeva"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2jxxu"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tk80b"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_thtsc"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_idr2m"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_j26ao"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nmbwk"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[node name="GameOver" type="CanvasLayer"]
+script = ExtResource("1_apjpi")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -88.5
+offset_top = -23.0
+offset_right = 88.5
+offset_bottom = 23.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.0392157, 0.741176, 0.776471, 1)
+theme_override_fonts/font = ExtResource("1_rp8oo")
+theme_override_font_sizes/font_size = 75
+text = "Game Over"
+
+[node name="Button" type="Button" parent="."]
+offset_left = 904.0
+offset_top = 633.0
+offset_right = 1112.0
+offset_bottom = 841.0
+scale = Vector2(0.5, 0.5)
+theme_override_styles/focus = SubResource("StyleBoxFlat_kok7f")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxFlat_8yjya")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_ybeva")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxFlat_2jxxu")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_tk80b")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxFlat_thtsc")
+theme_override_styles/hover = SubResource("StyleBoxFlat_kok7f")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_kok7f")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_idr2m")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxFlat_j26ao")
+theme_override_styles/normal = SubResource("StyleBoxFlat_nmbwk")
+icon = ExtResource("2_apjpi")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

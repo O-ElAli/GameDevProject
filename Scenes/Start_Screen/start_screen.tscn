@@ -1,8 +1,8 @@
 [gd_scene load_steps=13 format=3 uid="uid://ben7rq638snug"]
 
 [ext_resource type="Script" uid="uid://byxhuvbhxoj8r" path="res://scripts/Start_Screen/Start_Screen.gd" id="1_xehwy"]
-[ext_resource type="Texture2D" uid="uid://cubgpdwt8vkhy" path="res://assets/start_screen/Detektiv in der Neonstadt.png" id="2_k5ki8"]
-[ext_resource type="FontFile" uid="uid://cn8hyl8fq74mt" path="res://assets/start_screen/Born2bSportyV2.ttf" id="3_k5ki8"]
+[ext_resource type="Texture2D" uid="uid://dfmqm5qgsvpr7" path="res://assets/start_screen/startscreen.png" id="2_k5ki8"]
+[ext_resource type="FontFile" uid="uid://bhrvcujduvgs5" path="res://assets/start_screen/Born2bSportyV2.ttf" id="3_k5ki8"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_o5mhj"]
 texture = ExtResource("2_k5ki8")
@@ -28,7 +28,7 @@ tracks/0/path = NodePath("ColorRect:color")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0.99, 3),
+"times": PackedFloat32Array(1, 3),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Color(0, 0, 0, 0), Color(0, 0, 0, 1)]
@@ -152,7 +152,7 @@ theme_override_styles/focus = SubResource("StyleBoxEmpty_k5ki8")
 theme_override_styles/hover = SubResource("StyleBoxFlat_o5mhj")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_8c11w")
 theme_override_styles/normal = SubResource("StyleBoxFlat_k5ki8")
-text = "Options"
+text = "Settings"
 
 [node name="Quit" type="Button" parent="."]
 layout_mode = 2
@@ -188,7 +188,7 @@ grow_horizontal = 2
 theme_override_colors/font_color = Color(0.443137, 0.109804, 0.568627, 1)
 theme_override_fonts/font = ExtResource("3_k5ki8")
 theme_override_font_sizes/font_size = 114
-text = "Lorem Ipsum"
+text = "Nocturne: First Case"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -220,7 +220,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(0.443137, 0.109804, 0.568627, 1)
 theme_override_fonts/font = ExtResource("3_k5ki8")
-theme_override_font_sizes/font_size = 96
+theme_override_font_sizes/font_size = 82
 text = "Prologue: A New Legacy"
 
 [connection signal="pressed" from="Start" to="." method="_on_start_pressed"]

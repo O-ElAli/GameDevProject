@@ -1,11 +1,11 @@
 [gd_resource type="Resource" script_class="NPCResource" load_steps=3 format=3 uid="uid://doectsk62do5w"]
 
-[ext_resource type="Script" path="res://scripts/Npc/npc_resource.gd" id="1_0vupa"]
-[ext_resource type="Texture2D" uid="uid://dvvk3fpot5brh" path="res://assets/Characters/NPCs/matrixSERIESfreebies/upscaled48x48/$morpheusmatrix.png" id="2_2xgl3"]
+[ext_resource type="Script" uid="uid://bsyafgneqowqk" path="res://scripts/Npc/npc_resource.gd" id="1_0vupa"]
+[ext_resource type="Texture2D" uid="uid://dw3tcwdrdlnl0" path="res://assets/Characters/NPCs/terminatorSERIESfreebies/upscaled 48x48/terminator 2/$terminatorSKELETAL.png" id="2_nbqty"]
 
 [resource]
 script = ExtResource("1_0vupa")
 display_name = ""
-sprite = ExtResource("2_2xgl3")
+sprite = ExtResource("2_nbqty")
 voice_pitch = ""
 metadata/_custom_type_script = "uid://b8fd6b0j483xq"

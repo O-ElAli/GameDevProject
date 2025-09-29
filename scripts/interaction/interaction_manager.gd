@@ -10,12 +10,10 @@ var active_areas : Array[InteractionArea] = []
 var can_interact := true
 
 func register_area(area: InteractionArea):
-	# Add the area2d in which the player is standing
 	print("Regiser", area, "count:", active_areas.size()+1)
 	active_areas.append(area)
 
 func unregister_area(area: InteractionArea):
-	# Remove the area2d that the player left
 	var index = active_areas.find(area)
 	if index != -1:
 		active_areas.pop_at(index)
@@ -26,7 +24,6 @@ func _process(_delta):
 		label.hide()
 		return
 		
-	# If array not empty and can_interact is true sort which one is closer to the player
 	if active_areas.size() > 0 && can_interact:
 		active_areas.sort_custom(_sort_by_distance_to_player)
 		label.text = base_text + active_areas[0].action_name
@@ -55,7 +52,6 @@ func _input(event):
 			
 			await active_areas[0].interact.call()
 			
-			#add small delay to prevent dialogue infinite loop
 			await get_tree().create_timer(2).timeout
 			can_interact = true
 			
