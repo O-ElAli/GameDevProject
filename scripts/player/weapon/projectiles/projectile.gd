@@ -1,13 +1,11 @@
 extends Area2D
 
-const SPEED: int = 300
-var damage: int # Wir verwenden "var" anstelle von "@export var", da der Wert von der Waffe gesetzt wird
+const SPEED: int = 600
+var damage: int
 
 func _ready():
-	# Optional: Debug-Ausgabe des Schadens
 	print("Projektil instanziiert mit ", damage, " Schaden.")
 
-# Eine neue Methode, um den Schadenswert von der Waffe zu setzen
 func set_damage(amount: int):
 	damage = amount
 

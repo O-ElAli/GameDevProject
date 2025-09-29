@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://dyo40fg7f21if"]
 
 [ext_resource type="Script" uid="uid://s7o44py2caut" path="res://scripts/player/weapon/weapon.gd" id="1_2mt56"]
-[ext_resource type="Texture2D" uid="uid://dem20plwa15ti" path="res://assets/weapon/Icon29_18.png" id="2_2mt56"]
+[ext_resource type="Texture2D" uid="uid://bi2ibdrmi18vq" path="res://assets/weapon/Icon29_18.png" id="2_2mt56"]
 
 [node name="Weapon" type="Node2D"]
 scale = Vector2(0.5, 0.5)
