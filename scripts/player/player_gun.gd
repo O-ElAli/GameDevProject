@@ -22,6 +22,7 @@ const SHOTGUN_SCENE = preload("res://Scenes/Player/weapon/Shotgun.tscn")
 
 func _ready() -> void:
 	add_to_group("player")
+	change_weapon(PISTOL_SCENE)
 	
 	SceneManager.restore_player_position(self, get_tree().current_scene.scene_file_path)
 
@@ -113,4 +114,5 @@ func take_damage(amount: int):
 		_die()
 		
 func _die():
-	print("Game Over!")
+		var player = get_tree().current_scene.get_node("Player")
+		SceneManager.enter_scene("res://Scenes/Game Over/GameOver.tscn", player)

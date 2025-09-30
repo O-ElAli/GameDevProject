@@ -1,11 +1,11 @@
-[gd_scene load_steps=16 format=3 uid="uid://bt7y2leuaqxcl"]
+[gd_scene load_steps=16 format=3 uid="uid://c5pktjjk7onji"]
 
-[ext_resource type="Script" uid="uid://dgg6fns36v6uc" path="res://scripts/Npc/maid_boss.gd" id="1_kwcqr"]
-[ext_resource type="Shader" uid="uid://bf0g6euyexxp4" path="res://shaders/damage_flash.gdshader" id="2_wk20e"]
-[ext_resource type="Texture2D" uid="uid://c6pl81am0mp8w" path="res://assets/Characters/NPCs/maids/maid1.png" id="3_kwcqr"]
+[ext_resource type="Script" uid="uid://dgg6fns36v6uc" path="res://scripts/Npc/maid_boss.gd" id="1_px7nt"]
+[ext_resource type="Shader" uid="uid://bf0g6euyexxp4" path="res://shaders/damage_flash.gdshader" id="2_5ed2x"]
+[ext_resource type="Texture2D" uid="uid://d0acimtggpmmh" path="res://assets/Characters/NPCs/maids/maid1.png" id="3_xcy1e"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_ueotf"]
-shader = ExtResource("2_wk20e")
+shader = ExtResource("2_5ed2x")
 shader_parameter/active = false
 shader_parameter/flash_color = Color(1, 1, 1, 1)
 
@@ -143,7 +143,7 @@ _data = {
 [node name="enemy" type="Node2D"]
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="." groups=["enemies"]]
-script = ExtResource("1_kwcqr")
+script = ExtResource("1_px7nt")
 general_cooldown = 1.5
 projectile_speed = 180.0
 boss_projectile_damage = 5
@@ -156,7 +156,7 @@ aoe_cooldown = 2.0
 
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
 material = SubResource("ShaderMaterial_ueotf")
-texture = ExtResource("3_kwcqr")
+texture = ExtResource("3_xcy1e")
 hframes = 3
 vframes = 4
 frame = 1

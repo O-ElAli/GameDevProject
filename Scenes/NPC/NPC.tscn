@@ -10,7 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://d06523r6uwlmc" path="res://Scenes/Player/Player.tscn" id="7_b2drp"]
 [ext_resource type="Script" uid="uid://cgpjq2wuxwrww" path="res://scripts/Npc/detection.gd" id="8_fpqpt"]
 
-[sub_resource type="Animation" id="Animation_tlawm"]
+[sub_resource type="Animation" id="Animation_tgfad"]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -25,7 +25,7 @@ tracks/0/keys = {
 "values": [1]
 }
 
-[sub_resource type="Animation" id="Animation_37ake"]
+[sub_resource type="Animation" id="Animation_iqbs8"]
 resource_name = "idle_down"
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -40,7 +40,7 @@ tracks/0/keys = {
 "values": [1]
 }
 
-[sub_resource type="Animation" id="Animation_b2drp"]
+[sub_resource type="Animation" id="Animation_4j1cy"]
 resource_name = "idle_side"
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -55,7 +55,7 @@ tracks/0/keys = {
 "values": [7]
 }
 
-[sub_resource type="Animation" id="Animation_r2mia"]
+[sub_resource type="Animation" id="Animation_l2ojw"]
 resource_name = "idle_up"
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -70,7 +70,7 @@ tracks/0/keys = {
 "values": [10]
 }
 
-[sub_resource type="Animation" id="Animation_qxiy1"]
+[sub_resource type="Animation" id="Animation_ghbp3"]
 resource_name = "walk_down"
 length = 2.0
 loop_mode = 1
@@ -87,7 +87,7 @@ tracks/0/keys = {
 "values": [0, 2, 0, 2]
 }
 
-[sub_resource type="Animation" id="Animation_fpqpt"]
+[sub_resource type="Animation" id="Animation_cbq4t"]
 resource_name = "walk_side"
 length = 2.0
 loop_mode = 1
@@ -104,7 +104,7 @@ tracks/0/keys = {
 "values": [6, 7, 8, 7]
 }
 
-[sub_resource type="Animation" id="Animation_uy66f"]
+[sub_resource type="Animation" id="Animation_77hyk"]
 resource_name = "walk_up"
 length = 2.0
 loop_mode = 1
@@ -121,15 +121,15 @@ tracks/0/keys = {
 "values": [9, 10, 11, 10]
 }
 
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_fvu2l"]
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_o2j8r"]
 _data = {
-&"RESET": SubResource("Animation_tlawm"),
-&"idle_down": SubResource("Animation_37ake"),
-&"idle_side": SubResource("Animation_b2drp"),
-&"idle_up": SubResource("Animation_r2mia"),
-&"walk_down": SubResource("Animation_qxiy1"),
-&"walk_side": SubResource("Animation_fpqpt"),
-&"walk_up": SubResource("Animation_uy66f")
+&"RESET": SubResource("Animation_tgfad"),
+&"idle_down": SubResource("Animation_iqbs8"),
+&"idle_side": SubResource("Animation_4j1cy"),
+&"idle_up": SubResource("Animation_l2ojw"),
+&"walk_down": SubResource("Animation_ghbp3"),
+&"walk_side": SubResource("Animation_cbq4t"),
+&"walk_up": SubResource("Animation_77hyk")
 }
 
 [sub_resource type="Gradient" id="Gradient_fpqpt"]
@@ -175,7 +175,7 @@ frame = 1
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="NPC"]
 libraries = {
-&"": SubResource("AnimationLibrary_fvu2l")
+&"": SubResource("AnimationLibrary_o2j8r")
 }
 
 [node name="NpcBehaviorPatrol" type="Node2D" parent="NPC"]

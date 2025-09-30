@@ -1,4 +1,4 @@
-[gd_scene load_steps=165 format=4 uid="uid://dk5risx4k1p4l"]
+[gd_scene load_steps=184 format=4 uid="uid://dk5risx4k1p4l"]
 
 [ext_resource type="Texture2D" uid="uid://ctjomyolw21p5" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A1.png" id="1_mfxgf"]
 [ext_resource type="Script" uid="uid://bn75yehcatcj2" path="res://scripts/citymap/citymap.gd" id="1_uhbmj"]
@@ -51,7 +51,14 @@
 [ext_resource type="PackedScene" uid="uid://c40h00sbv0l0y" path="res://Scenes/Dialogue/dialogue.tscn" id="51_yr301"]
 [ext_resource type="Script" uid="uid://bquehj3xedq4" path="res://scripts/Npc/patrol_behavior.gd" id="52_iqbs8"]
 [ext_resource type="Script" uid="uid://dnhtv77nf6s3f" path="res://scripts/Npc/patrol_location.gd" id="53_4j1cy"]
+[ext_resource type="PackedScene" uid="uid://b3ts4syrygxeo" path="res://Interaction/NPC/npc_interaction.tscn" id="53_texg2"]
 [ext_resource type="Script" uid="uid://cgpjq2wuxwrww" path="res://scripts/Npc/detection.gd" id="54_l2ojw"]
+[ext_resource type="Texture2D" uid="uid://2uoe43nv5860" path="res://assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/2077/rpgmaker compat 48x48/jackiewelles.png" id="54_mopqy"]
+[ext_resource type="Texture2D" uid="uid://b0bh741iga08s" path="res://assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/2077/rpgmaker compat 48x48/judycasual.png" id="55_texg2"]
+[ext_resource type="Texture2D" uid="uid://cwmo4jp6m7prs" path="res://assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/2077/rpgmaker compat 48x48/roguejacket.png" id="56_tgfad"]
+[ext_resource type="Texture2D" uid="uid://bulmkn2lm3ppx" path="res://assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/2077/rpgmaker compat 48x48/riverwardjacket.png" id="57_iqbs8"]
+[ext_resource type="Texture2D" uid="uid://i1kim73kxkli" path="res://assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/2077/rpgmaker compat 48x48/tbug.png" id="58_4j1cy"]
+[ext_resource type="Texture2D" uid="uid://d2v8tkcdo1qv7" path="res://assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/2077/rpgmaker compat 48x48/takemuracasual.png" id="59_iqbs8"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4a6f5"]
 texture = ExtResource("1_mfxgf")
@@ -104228,6 +104235,144 @@ fill_to = Vector2(0.5, 0)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_77hyk"]
 
+[sub_resource type="Animation" id="Animation_tgfad"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+
+[sub_resource type="Animation" id="Animation_iqbs8"]
+resource_name = "idle_down"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+
+[sub_resource type="Animation" id="Animation_4j1cy"]
+resource_name = "idle_side"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [7]
+}
+
+[sub_resource type="Animation" id="Animation_l2ojw"]
+resource_name = "idle_up"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [10]
+}
+
+[sub_resource type="Animation" id="Animation_ghbp3"]
+resource_name = "walk_down"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 1, 1.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [0, 2, 0, 2]
+}
+
+[sub_resource type="Animation" id="Animation_cbq4t"]
+resource_name = "walk_side"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 1, 1.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [6, 7, 8, 7]
+}
+
+[sub_resource type="Animation" id="Animation_77hyk"]
+resource_name = "walk_up"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 1, 1.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [9, 10, 11, 10]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_o2j8r"]
+_data = {
+&"RESET": SubResource("Animation_tgfad"),
+&"idle_down": SubResource("Animation_iqbs8"),
+&"idle_side": SubResource("Animation_4j1cy"),
+&"idle_up": SubResource("Animation_l2ojw"),
+&"walk_down": SubResource("Animation_ghbp3"),
+&"walk_side": SubResource("Animation_cbq4t"),
+&"walk_up": SubResource("Animation_77hyk")
+}
+
+[sub_resource type="Gradient" id="Gradient_rlir5"]
+offsets = PackedFloat32Array(0.480519, 0.798701, 0.993506)
+colors = PackedColorArray(1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_2mksp"]
+gradient = SubResource("Gradient_rlir5")
+width = 24
+height = 24
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+fill_to = Vector2(0.5, 0)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_wdafm"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_8hx3h"]
+
 [node name="CityMap" type="Node2D"]
 script = ExtResource("1_uhbmj")
 
@@ -104366,7 +104511,7 @@ reveals_and_stays_vanished = false
 [node name="NPC" type="CharacterBody2D" parent="." groups=["npc"]]
 z_index = 6
 position = Vector2(1104, 2004)
-scale = Vector2(0.75, 0.75)
+scale = Vector2(0.65, 0.65)
 disable_mode = 1
 motion_mode = 1
 script = ExtResource("48_ay6ku")
@@ -104575,5 +104720,1187 @@ scale = Vector2(4, 4)
 shape = SubResource("CircleShape2D_77hyk")
 
 [node name="DetectionDebug" type="Node2D" parent="NPC" node_paths=PackedStringArray("col_shape")]
+script = ExtResource("54_l2ojw")
+col_shape = NodePath("../DetectionArea/CollisionShape2D")
+
+[node name="NPC3" type="CharacterBody2D" parent="." groups=["npc"]]
+z_index = 6
+position = Vector2(-306, 2124)
+scale = Vector2(0.65, 0.65)
+disable_mode = 1
+motion_mode = 1
+script = ExtResource("48_ay6ku")
+
+[node name="npc_interaction" parent="NPC3" instance=ExtResource("53_texg2")]
+npc_name = "Rafael"
+dialogue_system_path = NodePath("../../Dialogue")
+
+[node name="Sprite2D" type="Sprite2D" parent="NPC3"]
+position = Vector2(0, -35)
+texture = ExtResource("54_mopqy")
+hframes = 3
+vframes = 4
+frame = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="NPC3"]
+libraries = {
+&"": SubResource("AnimationLibrary_o2j8r")
+}
+
+[node name="NpcBehaviorPatrol" type="Node2D" parent="NPC3"]
+position = Vector2(0, 2)
+script = ExtResource("52_iqbs8")
+speed = 40.0
+
+[node name="NPC_Way" type="Node2D" parent="NPC3/NpcBehaviorPatrol"]
+modulate = Color(1, 0, 0, 1)
+show_behind_parent = true
+position = Vector2(-2, -4)
+script = ExtResource("53_4j1cy")
+
+[node name="Way" type="Sprite2D" parent="NPC3/NpcBehaviorPatrol/NPC_Way"]
+self_modulate = Color(1, 1, 1, 0.447059)
+position = Vector2(-1, 3)
+texture = SubResource("GradientTexture2D_2mksp")
+
+[node name="Line2D" type="Line2D" parent="NPC3/NpcBehaviorPatrol/NPC_Way/Way"]
+points = PackedVector2Array(0, 0, 248.154, 0.4614)
+width = 1.0
+default_color = Color(1, 1, 1, 0.552941)
+
+[node name="Label" type="Label" parent="NPC3/NpcBehaviorPatrol/NPC_Way/Way"]
+offset_left = -3.0
+offset_top = -9.0
+offset_right = 37.0
+offset_bottom = 14.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 12
+text = "0"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label2" type="Label" parent="NPC3/NpcBehaviorPatrol/NPC_Way/Way"]
+offset_left = -14.0
+offset_top = 6.0
+offset_right = 30.0
+offset_bottom = 23.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 8
+text = "wait: 0.0s"
+metadata/_edit_use_anchors_ = true
+
+[node name="NPC_Way2" type="Node2D" parent="NPC3/NpcBehaviorPatrol"]
+modulate = Color(1, 1, 0, 1)
+show_behind_parent = true
+position = Vector2(246.154, -3.5386)
+script = ExtResource("53_4j1cy")
+
+[node name="Way" type="Sprite2D" parent="NPC3/NpcBehaviorPatrol/NPC_Way2"]
+self_modulate = Color(1, 1, 1, 0.447059)
+position = Vector2(-1, 3)
+texture = SubResource("GradientTexture2D_2mksp")
+
+[node name="Line2D" type="Line2D" parent="NPC3/NpcBehaviorPatrol/NPC_Way2/Way"]
+points = PackedVector2Array(0, 0, 6.15399, 118.462)
+width = 1.0
+default_color = Color(1, 1, 1, 0.552941)
+
+[node name="Label" type="Label" parent="NPC3/NpcBehaviorPatrol/NPC_Way2/Way"]
+offset_left = -3.0
+offset_top = -9.0
+offset_right = 37.0
+offset_bottom = 14.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 12
+text = "1"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label2" type="Label" parent="NPC3/NpcBehaviorPatrol/NPC_Way2/Way"]
+offset_left = -14.0
+offset_top = 6.0
+offset_right = 30.0
+offset_bottom = 23.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 8
+text = "wait: 0.0s"
+metadata/_edit_use_anchors_ = true
+
+[node name="NPC_Way3" type="Node2D" parent="NPC3/NpcBehaviorPatrol"]
+modulate = Color(0, 1, 0, 1)
+show_behind_parent = true
+position = Vector2(252.308, 114.923)
+script = ExtResource("53_4j1cy")
+
+[node name="Way" type="Sprite2D" parent="NPC3/NpcBehaviorPatrol/NPC_Way3"]
+self_modulate = Color(1, 1, 1, 0.447059)
+position = Vector2(-1, 3)
+texture = SubResource("GradientTexture2D_2mksp")
+
+[node name="Line2D" type="Line2D" parent="NPC3/NpcBehaviorPatrol/NPC_Way3/Way"]
+points = PackedVector2Array(0, 0, 224.615, 6.15401)
+width = 1.0
+default_color = Color(1, 1, 1, 0.552941)
+
+[node name="Label" type="Label" parent="NPC3/NpcBehaviorPatrol/NPC_Way3/Way"]
+offset_left = -3.0
+offset_top = -9.0
+offset_right = 37.0
+offset_bottom = 14.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 12
+text = "2"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label2" type="Label" parent="NPC3/NpcBehaviorPatrol/NPC_Way3/Way"]
+offset_left = -14.0
+offset_top = 6.0
+offset_right = 30.0
+offset_bottom = 23.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 8
+text = "wait: 0.0s"
+metadata/_edit_use_anchors_ = true
+
+[node name="NPC_Way4" type="Node2D" parent="NPC3/NpcBehaviorPatrol"]
+modulate = Color(0, 1, 1, 1)
+show_behind_parent = true
+position = Vector2(476.923, 121.077)
+script = ExtResource("53_4j1cy")
+
+[node name="Way" type="Sprite2D" parent="NPC3/NpcBehaviorPatrol/NPC_Way4"]
+self_modulate = Color(1, 1, 1, 0.447059)
+position = Vector2(-1, 3)
+texture = SubResource("GradientTexture2D_2mksp")
+
+[node name="Line2D" type="Line2D" parent="NPC3/NpcBehaviorPatrol/NPC_Way4/Way"]
+points = PackedVector2Array(0, 0, -224.615, -6.15401)
+width = 1.0
+default_color = Color(1, 1, 1, 0.552941)
+
+[node name="Label" type="Label" parent="NPC3/NpcBehaviorPatrol/NPC_Way4/Way"]
+offset_left = -3.0
+offset_top = -9.0
+offset_right = 37.0
+offset_bottom = 14.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 12
+text = "3"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label2" type="Label" parent="NPC3/NpcBehaviorPatrol/NPC_Way4/Way"]
+offset_left = -14.0
+offset_top = 6.0
+offset_right = 30.0
+offset_bottom = 23.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 8
+text = "wait: 0.0s"
+metadata/_edit_use_anchors_ = true
+
+[node name="NPC_Way5" type="Node2D" parent="NPC3/NpcBehaviorPatrol"]
+modulate = Color(0, 0, 1, 1)
+show_behind_parent = true
+position = Vector2(252.308, 114.923)
+script = ExtResource("53_4j1cy")
+
+[node name="Way" type="Sprite2D" parent="NPC3/NpcBehaviorPatrol/NPC_Way5"]
+self_modulate = Color(1, 1, 1, 0.447059)
+position = Vector2(-1, 3)
+texture = SubResource("GradientTexture2D_2mksp")
+
+[node name="Line2D" type="Line2D" parent="NPC3/NpcBehaviorPatrol/NPC_Way5/Way"]
+points = PackedVector2Array(0, 0, -6.15399, -118.462)
+width = 1.0
+default_color = Color(1, 1, 1, 0.552941)
+
+[node name="Label" type="Label" parent="NPC3/NpcBehaviorPatrol/NPC_Way5/Way"]
+offset_left = -3.0
+offset_top = -9.0
+offset_right = 37.0
+offset_bottom = 14.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 12
+text = "4"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label2" type="Label" parent="NPC3/NpcBehaviorPatrol/NPC_Way5/Way"]
+offset_left = -14.0
+offset_top = 6.0
+offset_right = 30.0
+offset_bottom = 23.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 8
+text = "wait: 0.0s"
+metadata/_edit_use_anchors_ = true
+
+[node name="NPC_Way6" type="Node2D" parent="NPC3/NpcBehaviorPatrol"]
+modulate = Color(1, 0, 1, 1)
+show_behind_parent = true
+position = Vector2(246.154, -3.5386)
+script = ExtResource("53_4j1cy")
+
+[node name="Way" type="Sprite2D" parent="NPC3/NpcBehaviorPatrol/NPC_Way6"]
+self_modulate = Color(1, 1, 1, 0.447059)
+position = Vector2(-1, 3)
+texture = SubResource("GradientTexture2D_2mksp")
+
+[node name="Line2D" type="Line2D" parent="NPC3/NpcBehaviorPatrol/NPC_Way6/Way"]
+points = PackedVector2Array(0, 0, -248.154, -0.4614)
+width = 1.0
+default_color = Color(1, 1, 1, 0.552941)
+
+[node name="Label" type="Label" parent="NPC3/NpcBehaviorPatrol/NPC_Way6/Way"]
+offset_left = -3.0
+offset_top = -9.0
+offset_right = 37.0
+offset_bottom = 14.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 12
+text = "5"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label2" type="Label" parent="NPC3/NpcBehaviorPatrol/NPC_Way6/Way"]
+offset_left = -14.0
+offset_top = 6.0
+offset_right = 30.0
+offset_bottom = 23.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 8
+text = "wait: 0.0s"
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC3"]
+rotation = -1.58168
+shape = SubResource("CapsuleShape2D_wdafm")
+
+[node name="DetectionArea" type="Area2D" parent="NPC3"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC3/DetectionArea"]
+scale = Vector2(4, 4)
+shape = SubResource("CircleShape2D_8hx3h")
+
+[node name="DetectionDebug" type="Node2D" parent="NPC3" node_paths=PackedStringArray("col_shape")]
+script = ExtResource("54_l2ojw")
+col_shape = NodePath("../DetectionArea/CollisionShape2D")
+
+[node name="NPC4" type="CharacterBody2D" parent="." groups=["npc"]]
+z_index = 6
+position = Vector2(-1605, 1468)
+scale = Vector2(0.65, 0.65)
+disable_mode = 1
+motion_mode = 1
+script = ExtResource("48_ay6ku")
+
+[node name="npc_interaction" parent="NPC4" instance=ExtResource("53_texg2")]
+npc_name = "Maya"
+dialogue_system_path = NodePath("../../Dialogue")
+
+[node name="Sprite2D" type="Sprite2D" parent="NPC4"]
+position = Vector2(0, -35)
+texture = ExtResource("55_texg2")
+hframes = 3
+vframes = 4
+frame = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="NPC4"]
+libraries = {
+&"": SubResource("AnimationLibrary_o2j8r")
+}
+
+[node name="NpcBehaviorPatrol" type="Node2D" parent="NPC4"]
+position = Vector2(0, 2)
+script = ExtResource("52_iqbs8")
+speed = 40.0
+
+[node name="NPC_Way" type="Node2D" parent="NPC4/NpcBehaviorPatrol"]
+modulate = Color(1, 0, 0, 1)
+show_behind_parent = true
+position = Vector2(-2, -4)
+script = ExtResource("53_4j1cy")
+
+[node name="Way" type="Sprite2D" parent="NPC4/NpcBehaviorPatrol/NPC_Way"]
+self_modulate = Color(1, 1, 1, 0.447059)
+position = Vector2(-1, 3)
+texture = SubResource("GradientTexture2D_2mksp")
+
+[node name="Line2D" type="Line2D" parent="NPC4/NpcBehaviorPatrol/NPC_Way/Way"]
+points = PackedVector2Array(0, 0, 1578.92, 8.1537)
+width = 1.0
+default_color = Color(1, 1, 1, 0.552941)
+
+[node name="Label" type="Label" parent="NPC4/NpcBehaviorPatrol/NPC_Way/Way"]
+offset_left = -3.0
+offset_top = -9.0
+offset_right = 37.0
+offset_bottom = 14.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 12
+text = "0"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label2" type="Label" parent="NPC4/NpcBehaviorPatrol/NPC_Way/Way"]
+offset_left = -14.0
+offset_top = 6.0
+offset_right = 30.0
+offset_bottom = 23.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 8
+text = "wait: 0.0s"
+metadata/_edit_use_anchors_ = true
+
+[node name="NPC_Way2" type="Node2D" parent="NPC4/NpcBehaviorPatrol"]
+modulate = Color(1, 1, 0, 1)
+show_behind_parent = true
+position = Vector2(1576.92, 4.1537)
+script = ExtResource("53_4j1cy")
+
+[node name="Way" type="Sprite2D" parent="NPC4/NpcBehaviorPatrol/NPC_Way2"]
+self_modulate = Color(1, 1, 1, 0.447059)
+position = Vector2(-1, 3)
+texture = SubResource("GradientTexture2D_2mksp")
+
+[node name="Line2D" type="Line2D" parent="NPC4/NpcBehaviorPatrol/NPC_Way2/Way"]
+points = PackedVector2Array(0, 0, 1.53992, -144.616)
+width = 1.0
+default_color = Color(1, 1, 1, 0.552941)
+
+[node name="Label" type="Label" parent="NPC4/NpcBehaviorPatrol/NPC_Way2/Way"]
+offset_left = -3.0
+offset_top = -9.0
+offset_right = 37.0
+offset_bottom = 14.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 12
+text = "1"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label2" type="Label" parent="NPC4/NpcBehaviorPatrol/NPC_Way2/Way"]
+offset_left = -14.0
+offset_top = 6.0
+offset_right = 30.0
+offset_bottom = 23.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 8
+text = "wait: 0.0s"
+metadata/_edit_use_anchors_ = true
+
+[node name="NPC_Way3" type="Node2D" parent="NPC4/NpcBehaviorPatrol"]
+modulate = Color(0, 1, 0, 1)
+show_behind_parent = true
+position = Vector2(1578.46, -140.462)
+script = ExtResource("53_4j1cy")
+
+[node name="Way" type="Sprite2D" parent="NPC4/NpcBehaviorPatrol/NPC_Way3"]
+self_modulate = Color(1, 1, 1, 0.447059)
+position = Vector2(-1, 3)
+texture = SubResource("GradientTexture2D_2mksp")
+
+[node name="Line2D" type="Line2D" parent="NPC4/NpcBehaviorPatrol/NPC_Way3/Way"]
+points = PackedVector2Array(0, 0, -310.77, 4.61601)
+width = 1.0
+default_color = Color(1, 1, 1, 0.552941)
+
+[node name="Label" type="Label" parent="NPC4/NpcBehaviorPatrol/NPC_Way3/Way"]
+offset_left = -3.0
+offset_top = -9.0
+offset_right = 37.0
+offset_bottom = 14.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 12
+text = "2"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label2" type="Label" parent="NPC4/NpcBehaviorPatrol/NPC_Way3/Way"]
+offset_left = -14.0
+offset_top = 6.0
+offset_right = 30.0
+offset_bottom = 23.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 8
+text = "wait: 0.0s"
+metadata/_edit_use_anchors_ = true
+
+[node name="NPC_Way4" type="Node2D" parent="NPC4/NpcBehaviorPatrol"]
+modulate = Color(0, 1, 1, 1)
+show_behind_parent = true
+position = Vector2(1267.69, -135.846)
+script = ExtResource("53_4j1cy")
+
+[node name="Way" type="Sprite2D" parent="NPC4/NpcBehaviorPatrol/NPC_Way4"]
+self_modulate = Color(1, 1, 1, 0.447059)
+position = Vector2(-1, 3)
+texture = SubResource("GradientTexture2D_2mksp")
+
+[node name="Line2D" type="Line2D" parent="NPC4/NpcBehaviorPatrol/NPC_Way4/Way"]
+points = PackedVector2Array(0, 0, 0, 120)
+width = 1.0
+default_color = Color(1, 1, 1, 0.552941)
+
+[node name="Label" type="Label" parent="NPC4/NpcBehaviorPatrol/NPC_Way4/Way"]
+offset_left = -3.0
+offset_top = -9.0
+offset_right = 37.0
+offset_bottom = 14.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 12
+text = "3"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label2" type="Label" parent="NPC4/NpcBehaviorPatrol/NPC_Way4/Way"]
+offset_left = -14.0
+offset_top = 6.0
+offset_right = 30.0
+offset_bottom = 23.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 8
+text = "wait: 0.0s"
+metadata/_edit_use_anchors_ = true
+
+[node name="NPC_Way5" type="Node2D" parent="NPC4/NpcBehaviorPatrol"]
+modulate = Color(0, 0, 1, 1)
+show_behind_parent = true
+position = Vector2(1267.69, -15.8462)
+script = ExtResource("53_4j1cy")
+
+[node name="Way" type="Sprite2D" parent="NPC4/NpcBehaviorPatrol/NPC_Way5"]
+self_modulate = Color(1, 1, 1, 0.447059)
+position = Vector2(-1, 3)
+texture = SubResource("GradientTexture2D_2mksp")
+
+[node name="Line2D" type="Line2D" parent="NPC4/NpcBehaviorPatrol/NPC_Way5/Way"]
+points = PackedVector2Array(0, 0, -1269.69, 11.8462)
+width = 1.0
+default_color = Color(1, 1, 1, 0.552941)
+
+[node name="Label" type="Label" parent="NPC4/NpcBehaviorPatrol/NPC_Way5/Way"]
+offset_left = -3.0
+offset_top = -9.0
+offset_right = 37.0
+offset_bottom = 14.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 12
+text = "4"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label2" type="Label" parent="NPC4/NpcBehaviorPatrol/NPC_Way5/Way"]
+offset_left = -14.0
+offset_top = 6.0
+offset_right = 30.0
+offset_bottom = 23.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 8
+text = "wait: 0.0s"
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC4"]
+rotation = -1.58168
+shape = SubResource("CapsuleShape2D_wdafm")
+
+[node name="DetectionArea" type="Area2D" parent="NPC4"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC4/DetectionArea"]
+scale = Vector2(4, 4)
+shape = SubResource("CircleShape2D_8hx3h")
+
+[node name="DetectionDebug" type="Node2D" parent="NPC4" node_paths=PackedStringArray("col_shape")]
+script = ExtResource("54_l2ojw")
+col_shape = NodePath("../DetectionArea/CollisionShape2D")
+
+[node name="NPC5" type="CharacterBody2D" parent="." groups=["npc"]]
+z_index = 6
+position = Vector2(-160, 373)
+scale = Vector2(0.65, 0.65)
+disable_mode = 1
+motion_mode = 1
+script = ExtResource("48_ay6ku")
+
+[node name="npc_interaction" parent="NPC5" instance=ExtResource("53_texg2")]
+npc_name = "Aiko"
+dialogue_system_path = NodePath("../../Dialogue")
+
+[node name="Sprite2D" type="Sprite2D" parent="NPC5"]
+position = Vector2(0, -35)
+texture = ExtResource("56_tgfad")
+hframes = 3
+vframes = 4
+frame = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="NPC5"]
+libraries = {
+&"": SubResource("AnimationLibrary_o2j8r")
+}
+
+[node name="NpcBehaviorPatrol" type="Node2D" parent="NPC5"]
+position = Vector2(0, 2)
+script = ExtResource("52_iqbs8")
+speed = 40.0
+
+[node name="NPC_Way" type="Node2D" parent="NPC5/NpcBehaviorPatrol"]
+modulate = Color(1, 0, 0, 1)
+show_behind_parent = true
+position = Vector2(-2, -4)
+script = ExtResource("53_4j1cy")
+
+[node name="Way" type="Sprite2D" parent="NPC5/NpcBehaviorPatrol/NPC_Way"]
+self_modulate = Color(1, 1, 1, 0.447059)
+position = Vector2(-1, 3)
+texture = SubResource("GradientTexture2D_2mksp")
+
+[node name="Line2D" type="Line2D" parent="NPC5/NpcBehaviorPatrol/NPC_Way/Way"]
+points = PackedVector2Array(0, 0, 1578.92, 8.1537)
+width = 1.0
+default_color = Color(1, 1, 1, 0.552941)
+
+[node name="Label" type="Label" parent="NPC5/NpcBehaviorPatrol/NPC_Way/Way"]
+offset_left = -3.0
+offset_top = -9.0
+offset_right = 37.0
+offset_bottom = 14.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 12
+text = "0"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label2" type="Label" parent="NPC5/NpcBehaviorPatrol/NPC_Way/Way"]
+offset_left = -14.0
+offset_top = 6.0
+offset_right = 30.0
+offset_bottom = 23.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 8
+text = "wait: 0.0s"
+metadata/_edit_use_anchors_ = true
+
+[node name="NPC_Way2" type="Node2D" parent="NPC5/NpcBehaviorPatrol"]
+modulate = Color(1, 1, 0, 1)
+show_behind_parent = true
+position = Vector2(1576.92, 4.1537)
+script = ExtResource("53_4j1cy")
+
+[node name="Way" type="Sprite2D" parent="NPC5/NpcBehaviorPatrol/NPC_Way2"]
+self_modulate = Color(1, 1, 1, 0.447059)
+position = Vector2(-1, 3)
+texture = SubResource("GradientTexture2D_2mksp")
+
+[node name="Line2D" type="Line2D" parent="NPC5/NpcBehaviorPatrol/NPC_Way2/Way"]
+points = PackedVector2Array(0, 0, -1578.92, -8.1537)
+width = 1.0
+default_color = Color(1, 1, 1, 0.552941)
+
+[node name="Label" type="Label" parent="NPC5/NpcBehaviorPatrol/NPC_Way2/Way"]
+offset_left = -3.0
+offset_top = -9.0
+offset_right = 37.0
+offset_bottom = 14.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 12
+text = "1"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label2" type="Label" parent="NPC5/NpcBehaviorPatrol/NPC_Way2/Way"]
+offset_left = -14.0
+offset_top = 6.0
+offset_right = 30.0
+offset_bottom = 23.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 8
+text = "wait: 0.0s"
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC5"]
+rotation = -1.58168
+shape = SubResource("CapsuleShape2D_wdafm")
+
+[node name="DetectionArea" type="Area2D" parent="NPC5"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC5/DetectionArea"]
+scale = Vector2(4, 4)
+shape = SubResource("CircleShape2D_8hx3h")
+
+[node name="DetectionDebug" type="Node2D" parent="NPC5" node_paths=PackedStringArray("col_shape")]
+script = ExtResource("54_l2ojw")
+col_shape = NodePath("../DetectionArea/CollisionShape2D")
+
+[node name="NPC6" type="CharacterBody2D" parent="." groups=["npc"]]
+z_index = 6
+position = Vector2(476, 508)
+scale = Vector2(0.65, 0.65)
+disable_mode = 1
+motion_mode = 1
+script = ExtResource("48_ay6ku")
+
+[node name="npc_interaction" parent="NPC6" instance=ExtResource("53_texg2")]
+npc_name = "Darius"
+dialogue_system_path = NodePath("../../Dialogue")
+
+[node name="Sprite2D" type="Sprite2D" parent="NPC6"]
+position = Vector2(0, -35)
+texture = ExtResource("57_iqbs8")
+hframes = 3
+vframes = 4
+frame = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="NPC6"]
+libraries = {
+&"": SubResource("AnimationLibrary_o2j8r")
+}
+
+[node name="NpcBehaviorPatrol" type="Node2D" parent="NPC6"]
+position = Vector2(0, 2)
+script = ExtResource("52_iqbs8")
+speed = 40.0
+
+[node name="NPC_Way" type="Node2D" parent="NPC6/NpcBehaviorPatrol"]
+modulate = Color(1, 0, 0, 1)
+show_behind_parent = true
+position = Vector2(-2, -4)
+script = ExtResource("53_4j1cy")
+
+[node name="Way" type="Sprite2D" parent="NPC6/NpcBehaviorPatrol/NPC_Way"]
+self_modulate = Color(1, 1, 1, 0.447059)
+position = Vector2(-1, 3)
+texture = SubResource("GradientTexture2D_2mksp")
+
+[node name="Line2D" type="Line2D" parent="NPC6/NpcBehaviorPatrol/NPC_Way/Way"]
+points = PackedVector2Array(0, 0, 3.53847, 1826.62)
+width = 1.0
+default_color = Color(1, 1, 1, 0.552941)
+
+[node name="Label" type="Label" parent="NPC6/NpcBehaviorPatrol/NPC_Way/Way"]
+offset_left = -3.0
+offset_top = -9.0
+offset_right = 37.0
+offset_bottom = 14.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 12
+text = "0"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label2" type="Label" parent="NPC6/NpcBehaviorPatrol/NPC_Way/Way"]
+offset_left = -14.0
+offset_top = 6.0
+offset_right = 30.0
+offset_bottom = 23.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 8
+text = "wait: 0.0s"
+metadata/_edit_use_anchors_ = true
+
+[node name="NPC_Way2" type="Node2D" parent="NPC6/NpcBehaviorPatrol"]
+modulate = Color(1, 1, 0, 1)
+show_behind_parent = true
+position = Vector2(1.53847, 1822.62)
+script = ExtResource("53_4j1cy")
+
+[node name="Way" type="Sprite2D" parent="NPC6/NpcBehaviorPatrol/NPC_Way2"]
+self_modulate = Color(1, 1, 1, 0.447059)
+position = Vector2(-1, 3)
+texture = SubResource("GradientTexture2D_2mksp")
+
+[node name="Line2D" type="Line2D" parent="NPC6/NpcBehaviorPatrol/NPC_Way2/Way"]
+points = PackedVector2Array(0, 0, -3.53847, -1826.62)
+width = 1.0
+default_color = Color(1, 1, 1, 0.552941)
+
+[node name="Label" type="Label" parent="NPC6/NpcBehaviorPatrol/NPC_Way2/Way"]
+offset_left = -3.0
+offset_top = -9.0
+offset_right = 37.0
+offset_bottom = 14.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 12
+text = "1"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label2" type="Label" parent="NPC6/NpcBehaviorPatrol/NPC_Way2/Way"]
+offset_left = -14.0
+offset_top = 6.0
+offset_right = 30.0
+offset_bottom = 23.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 8
+text = "wait: 0.0s"
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC6"]
+rotation = -1.58168
+shape = SubResource("CapsuleShape2D_wdafm")
+
+[node name="DetectionArea" type="Area2D" parent="NPC6"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC6/DetectionArea"]
+scale = Vector2(4, 4)
+shape = SubResource("CircleShape2D_8hx3h")
+
+[node name="DetectionDebug" type="Node2D" parent="NPC6" node_paths=PackedStringArray("col_shape")]
+script = ExtResource("54_l2ojw")
+col_shape = NodePath("../DetectionArea/CollisionShape2D")
+
+[node name="NPC7" type="CharacterBody2D" parent="." groups=["npc"]]
+z_index = 6
+position = Vector2(864, 1711)
+scale = Vector2(0.65, 0.65)
+disable_mode = 1
+motion_mode = 1
+script = ExtResource("48_ay6ku")
+
+[node name="npc_interaction" parent="NPC7" instance=ExtResource("53_texg2")]
+npc_name = "Selene"
+dialogue_system_path = NodePath("../../Dialogue")
+
+[node name="Sprite2D" type="Sprite2D" parent="NPC7"]
+position = Vector2(0, -35)
+texture = ExtResource("58_4j1cy")
+hframes = 3
+vframes = 4
+frame = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="NPC7"]
+libraries = {
+&"": SubResource("AnimationLibrary_o2j8r")
+}
+
+[node name="NpcBehaviorPatrol" type="Node2D" parent="NPC7"]
+position = Vector2(0, 2)
+script = ExtResource("52_iqbs8")
+speed = 40.0
+
+[node name="NPC_Way" type="Node2D" parent="NPC7/NpcBehaviorPatrol"]
+modulate = Color(1, 0, 0, 1)
+show_behind_parent = true
+position = Vector2(-2, -4)
+script = ExtResource("53_4j1cy")
+
+[node name="Way" type="Sprite2D" parent="NPC7/NpcBehaviorPatrol/NPC_Way"]
+self_modulate = Color(1, 1, 1, 0.447059)
+position = Vector2(-1, 3)
+texture = SubResource("GradientTexture2D_2mksp")
+
+[node name="Line2D" type="Line2D" parent="NPC7/NpcBehaviorPatrol/NPC_Way/Way"]
+points = PackedVector2Array(0, 0, 758.923, 1.99988)
+width = 1.0
+default_color = Color(1, 1, 1, 0.552941)
+
+[node name="Label" type="Label" parent="NPC7/NpcBehaviorPatrol/NPC_Way/Way"]
+offset_left = -3.0
+offset_top = -9.0
+offset_right = 37.0
+offset_bottom = 14.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 12
+text = "0"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label2" type="Label" parent="NPC7/NpcBehaviorPatrol/NPC_Way/Way"]
+offset_left = -14.0
+offset_top = 6.0
+offset_right = 30.0
+offset_bottom = 23.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 8
+text = "wait: 0.0s"
+metadata/_edit_use_anchors_ = true
+
+[node name="NPC_Way2" type="Node2D" parent="NPC7/NpcBehaviorPatrol"]
+modulate = Color(1, 1, 0, 1)
+show_behind_parent = true
+position = Vector2(756.923, -2.00012)
+script = ExtResource("53_4j1cy")
+
+[node name="Way" type="Sprite2D" parent="NPC7/NpcBehaviorPatrol/NPC_Way2"]
+self_modulate = Color(1, 1, 1, 0.447059)
+position = Vector2(-1, 3)
+texture = SubResource("GradientTexture2D_2mksp")
+
+[node name="Line2D" type="Line2D" parent="NPC7/NpcBehaviorPatrol/NPC_Way2/Way"]
+points = PackedVector2Array(0, 0, -758.923, -1.99988)
+width = 1.0
+default_color = Color(1, 1, 1, 0.552941)
+
+[node name="Label" type="Label" parent="NPC7/NpcBehaviorPatrol/NPC_Way2/Way"]
+offset_left = -3.0
+offset_top = -9.0
+offset_right = 37.0
+offset_bottom = 14.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 12
+text = "1"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label2" type="Label" parent="NPC7/NpcBehaviorPatrol/NPC_Way2/Way"]
+offset_left = -14.0
+offset_top = 6.0
+offset_right = 30.0
+offset_bottom = 23.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 8
+text = "wait: 0.0s"
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC7"]
+rotation = -1.58168
+shape = SubResource("CapsuleShape2D_wdafm")
+
+[node name="DetectionArea" type="Area2D" parent="NPC7"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC7/DetectionArea"]
+scale = Vector2(4, 4)
+shape = SubResource("CircleShape2D_8hx3h")
+
+[node name="DetectionDebug" type="Node2D" parent="NPC7" node_paths=PackedStringArray("col_shape")]
+script = ExtResource("54_l2ojw")
+col_shape = NodePath("../DetectionArea/CollisionShape2D")
+
+[node name="NPC8" type="CharacterBody2D" parent="." groups=["npc"]]
+z_index = 6
+position = Vector2(-477, 2178)
+scale = Vector2(0.65, 0.65)
+disable_mode = 1
+motion_mode = 1
+script = ExtResource("48_ay6ku")
+
+[node name="npc_interaction" parent="NPC8" instance=ExtResource("53_texg2")]
+npc_name = "Takemura"
+dialogue_system_path = NodePath("../../Dialogue")
+
+[node name="Sprite2D" type="Sprite2D" parent="NPC8"]
+position = Vector2(0, -35)
+texture = ExtResource("59_iqbs8")
+hframes = 3
+vframes = 4
+frame = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="NPC8"]
+libraries = {
+&"": SubResource("AnimationLibrary_o2j8r")
+}
+
+[node name="NpcBehaviorPatrol" type="Node2D" parent="NPC8"]
+position = Vector2(0, 2)
+script = ExtResource("52_iqbs8")
+speed = 40.0
+
+[node name="NPC_Way" type="Node2D" parent="NPC8/NpcBehaviorPatrol"]
+modulate = Color(1, 0, 0, 1)
+show_behind_parent = true
+position = Vector2(-2, -4)
+script = ExtResource("53_4j1cy")
+
+[node name="Way" type="Sprite2D" parent="NPC8/NpcBehaviorPatrol/NPC_Way"]
+self_modulate = Color(1, 1, 1, 0.447059)
+position = Vector2(-1, 3)
+texture = SubResource("GradientTexture2D_2mksp")
+
+[node name="Line2D" type="Line2D" parent="NPC8/NpcBehaviorPatrol/NPC_Way/Way"]
+points = PackedVector2Array(0, 0, -13.3846, -738)
+width = 1.0
+default_color = Color(1, 1, 1, 0.552941)
+
+[node name="Label" type="Label" parent="NPC8/NpcBehaviorPatrol/NPC_Way/Way"]
+offset_left = -3.0
+offset_top = -9.0
+offset_right = 37.0
+offset_bottom = 14.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 12
+text = "0"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label2" type="Label" parent="NPC8/NpcBehaviorPatrol/NPC_Way/Way"]
+offset_left = -14.0
+offset_top = 6.0
+offset_right = 30.0
+offset_bottom = 23.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 8
+text = "wait: 0.0s"
+metadata/_edit_use_anchors_ = true
+
+[node name="NPC_Way2" type="Node2D" parent="NPC8/NpcBehaviorPatrol"]
+modulate = Color(1, 1, 0, 1)
+show_behind_parent = true
+position = Vector2(-15.3846, -742)
+script = ExtResource("53_4j1cy")
+
+[node name="Way" type="Sprite2D" parent="NPC8/NpcBehaviorPatrol/NPC_Way2"]
+self_modulate = Color(1, 1, 1, 0.447059)
+position = Vector2(-1, 3)
+texture = SubResource("GradientTexture2D_2mksp")
+
+[node name="Line2D" type="Line2D" parent="NPC8/NpcBehaviorPatrol/NPC_Way2/Way"]
+points = PackedVector2Array(0, 0, 1303.07, -20)
+width = 1.0
+default_color = Color(1, 1, 1, 0.552941)
+
+[node name="Label" type="Label" parent="NPC8/NpcBehaviorPatrol/NPC_Way2/Way"]
+offset_left = -3.0
+offset_top = -9.0
+offset_right = 37.0
+offset_bottom = 14.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 12
+text = "1"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label2" type="Label" parent="NPC8/NpcBehaviorPatrol/NPC_Way2/Way"]
+offset_left = -14.0
+offset_top = 6.0
+offset_right = 30.0
+offset_bottom = 23.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 8
+text = "wait: 0.0s"
+metadata/_edit_use_anchors_ = true
+
+[node name="NPC_Way3" type="Node2D" parent="NPC8/NpcBehaviorPatrol"]
+modulate = Color(0, 1, 0, 1)
+show_behind_parent = true
+position = Vector2(1287.69, -762)
+script = ExtResource("53_4j1cy")
+
+[node name="Way" type="Sprite2D" parent="NPC8/NpcBehaviorPatrol/NPC_Way3"]
+self_modulate = Color(1, 1, 1, 0.447059)
+position = Vector2(-1, 3)
+texture = SubResource("GradientTexture2D_2mksp")
+
+[node name="Line2D" type="Line2D" parent="NPC8/NpcBehaviorPatrol/NPC_Way3/Way"]
+points = PackedVector2Array(0, 0, -1303.07, 20)
+width = 1.0
+default_color = Color(1, 1, 1, 0.552941)
+
+[node name="Label" type="Label" parent="NPC8/NpcBehaviorPatrol/NPC_Way3/Way"]
+offset_left = -3.0
+offset_top = -9.0
+offset_right = 37.0
+offset_bottom = 14.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 12
+text = "2"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label2" type="Label" parent="NPC8/NpcBehaviorPatrol/NPC_Way3/Way"]
+offset_left = -14.0
+offset_top = 6.0
+offset_right = 30.0
+offset_bottom = 23.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 8
+text = "wait: 0.0s"
+metadata/_edit_use_anchors_ = true
+
+[node name="NPC_Way4" type="Node2D" parent="NPC8/NpcBehaviorPatrol"]
+modulate = Color(0, 1, 1, 1)
+show_behind_parent = true
+position = Vector2(-15.3846, -742)
+script = ExtResource("53_4j1cy")
+
+[node name="Way" type="Sprite2D" parent="NPC8/NpcBehaviorPatrol/NPC_Way4"]
+self_modulate = Color(1, 1, 1, 0.447059)
+position = Vector2(-1, 3)
+texture = SubResource("GradientTexture2D_2mksp")
+
+[node name="Line2D" type="Line2D" parent="NPC8/NpcBehaviorPatrol/NPC_Way4/Way"]
+points = PackedVector2Array(0, 0, 13.3846, 738)
+width = 1.0
+default_color = Color(1, 1, 1, 0.552941)
+
+[node name="Label" type="Label" parent="NPC8/NpcBehaviorPatrol/NPC_Way4/Way"]
+offset_left = -3.0
+offset_top = -9.0
+offset_right = 37.0
+offset_bottom = 14.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 12
+text = "3"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label2" type="Label" parent="NPC8/NpcBehaviorPatrol/NPC_Way4/Way"]
+offset_left = -14.0
+offset_top = 6.0
+offset_right = 30.0
+offset_bottom = 23.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 8
+text = "wait: 0.0s"
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC8"]
+rotation = -1.58168
+shape = SubResource("CapsuleShape2D_wdafm")
+
+[node name="DetectionArea" type="Area2D" parent="NPC8"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC8/DetectionArea"]
+scale = Vector2(4, 4)
+shape = SubResource("CircleShape2D_8hx3h")
+
+[node name="DetectionDebug" type="Node2D" parent="NPC8" node_paths=PackedStringArray("col_shape")]
 script = ExtResource("54_l2ojw")
 col_shape = NodePath("../DetectionArea/CollisionShape2D")

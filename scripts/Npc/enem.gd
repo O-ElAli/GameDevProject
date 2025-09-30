@@ -240,3 +240,4 @@ func take_damage(amount: int):
 	
 	if health <= 0:
 		queue_free()
+		get_tree().change_scene_to_file("res://Scenes/Map/Gangster/gangster_secretroom.tscn")

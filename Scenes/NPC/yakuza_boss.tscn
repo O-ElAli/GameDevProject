@@ -1,8 +1,8 @@
-[gd_scene load_steps=16 format=3 uid="uid://m2b1x43pbtsv"]
+[gd_scene load_steps=16 format=3 uid="uid://bfa157l2qykoc"]
 
 [ext_resource type="Script" uid="uid://b2f3cfnj4vj0n" path="res://scripts/Npc/enem.gd" id="1_8adpy"]
 [ext_resource type="Shader" uid="uid://bf0g6euyexxp4" path="res://shaders/damage_flash.gdshader" id="2_ov5lo"]
-[ext_resource type="Texture2D" uid="uid://b6lnoknnh4bd3" path="res://assets/Characters/NPCs/matrixSERIESfreebies/upscaled48x48/$neomatrix.png" id="3_8adpy"]
+[ext_resource type="Texture2D" uid="uid://xebqkhm6ctop" path="res://assets/Characters/NPCs/matrixSERIESfreebies/upscaled48x48/$neomatrix.png" id="3_8adpy"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_ueotf"]
 shader = ExtResource("2_ov5lo")

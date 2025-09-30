@@ -5,13 +5,10 @@ class_name playerHUD extends Control
 @export var font_size: int = 20
 @export var font_color: Color = Color(1, 1, 1)
 
-@export var inventory: Node
-
 @onready var player = $"../.."
 @onready var navi = $"../Button"
 
 @onready var mission: Label = $TabContainer/Mission/mission_log
-@onready var items_container: VBoxContainer = $TabContainer/Inventory/MarginContainer/items
 
 
 func _ready():

@@ -61,14 +61,17 @@ func _intro_sequence() -> void:
 	var dialogue = get_node("Dialogue")
 
 	var last_intro_dialogue = {
-	"npc_name": "Morrick",
-	"dialogue_lines": [
-		{"name": "Morrick", "text": "Well, well the little brother shows up. Want revenge? How sweet.Your brother already failed,you will too."},
-		{"name": "Player", "text": "Fuck you. I'll kill you."},
-		{"name": "Morrick", "text": "Not so fast. Remember V10‑La? I reprogrammed her. V10‑La eliminate him."},
-		{"name": "Navi", "text": "Kick his ass!"}
-	]
-}
+		"npc_name": "Morrick",
+		"dialogue_lines": [
+			{"name": "Morrick", "text": "Well, well the little brother shows up. Want revenge? How sweet. Your brother already failed, you will too."},
+			{"name": "Player", "text": "Fuck you. I'll kill you."},
+			{"name": "Morrick", "text": "Not so fast. Remember V10-La? I reprogrammed her. V10-La eliminate him."},
+			{"name": "Navi", "text": "Kick his ass!"}
+		]
+	}
+
 	player.set_movement_allowed(false)
 	dialogue.start_dialogue(last_intro_dialogue)
 	await dialogue.dialogue_finished
+	await get_tree().process_frame
+	get_tree().change_scene_to_file("res://Scenes/Map/Underground/villain_room_fighting.tscn")

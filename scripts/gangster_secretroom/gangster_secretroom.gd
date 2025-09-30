@@ -9,7 +9,8 @@ const MODERATOR_FIRST_DIALOGUE = {
 		{"name": "Moderator", "text": "You want to become the champion?"},
 		{"name": "Player", "text": "Then I’m ready!"},
 		{"name": "Moderator", "text": "I’m curious to see how you’ll do. Let’s go to the rumble!"},
-		{"name": "Navi", "text": "Here we go, Player! Time to show your skills!"}
+		{"name": "Navi", "text": "Here we go, Player! Time to show your skills!"},
+		{"name": "Navi", "text": "Switch Weapons = 1,2, Shooting = Left Click one the mouse"}
 	]
 }
 
@@ -48,3 +49,8 @@ func _on_moderator_interacted(interacted_item_name: String) -> void:
 	if dialogue and dialogue_to_use:
 		dialogue.start_dialogue(dialogue_to_use)
 		await dialogue.dialogue_finished
+
+		# Szenewechsel nur beim ersten Mal
+		if dialogue_to_use == MODERATOR_FIRST_DIALOGUE:
+			await get_tree().process_frame
+			get_tree().change_scene_to_file("res://Scenes/Map/Gangster/gangster_secretroom_fighting.tscn")

@@ -5,16 +5,15 @@ extends CharacterBody2D
 @export var projectile_speed: float = 350.0
 @export var boss_projectile_damage: int = 15
 
-#Bewegungs Parameter
-@export var move_speed: float = 50.0
-@export var movement_change_time: float = 2.0 # Richtung ändern
 
-# Burst-Muster Parameter
+@export var move_speed: float = 50.0
+@export var movement_change_time: float = 2.0 
+
+
 @export var burst_count: int = 5
 @export var burst_spread_angle: float = 0.5
 @export var burst_delay: float = 0.1
 
-# Puls-Muster Parameter
 @export var pulse_cooldown: float = 0.8
 @export var pulse_total_shots: int = 8
 @export var aoe_cooldown: float = 6.0
@@ -64,7 +63,6 @@ func _physics_process(delta):
 		velocity = Vector2.ZERO
 		movement_timer.stop()
 	else:
-		# Boss bewegt sich
 		velocity = target_move_direction * move_speed
 		if movement_timer.is_stopped():
 			movement_timer.start(movement_change_time)
@@ -74,7 +72,7 @@ func _physics_process(delta):
 	if not is_casting_attack:
 		_update_animation(velocity)
 
-# Bewegungssteuerung mit zufälligen Abweichungen (Zombiehaftes folgen vermeiden)
+
 func _calculate_new_target_direction():
 	if not is_instance_valid(player):
 		target_move_direction = Vector2.ZERO
@@ -82,14 +80,12 @@ func _calculate_new_target_direction():
 		
 	var direction_to_player = (player.global_position - global_position).normalized()
 	
-	# zufällige Abweichung vom Ziel (z.B. 10 Grad)
 	var max_erratic_angle = deg_to_rad(10.0)
 	var random_offset = randf_range(-max_erratic_angle, max_erratic_angle)
 	
 	var new_angle = direction_to_player.angle() + random_offset
 	target_move_direction = Vector2.from_angle(new_angle).normalized()
 
-# State machine
 func _set_state(new_state: BossState):
 	current_state = new_state
 	
@@ -122,7 +118,6 @@ func _decide_next_attack():
 	else:
 		_start_aoe_attack()
 
-# Burst-Mechanic
 
 func _start_burst_attack():
 	_set_state(BossState.BURST_ATTACK)
@@ -150,7 +145,6 @@ func _execute_burst_sequence(base_direction: Vector2):
 
 	_end_attack()
 
-## Pulse-Mechanic
 
 func _start_pulse_attack():
 	_set_state(BossState.PULSE_ATTACK)
@@ -188,7 +182,6 @@ func _execute_pulse_shot():
 	
 	pulse_sequence_timer.start(pulse_cooldown)
 	
-# Aoe-Angriff
 
 func _start_aoe_attack():
 	_set_state(BossState.COOLDOWN)
@@ -206,7 +199,7 @@ func _start_aoe_attack():
 func _end_attack():
 	_set_state(BossState.COOLDOWN)
 
-# Projektil-Schuss
+
 
 func _shoot_projectile(direction: Vector2):
 	var projectile_instance = PROJECTILE_SCENE.instantiate()
@@ -267,3 +260,4 @@ func take_damage(amount: int):
 	
 	if health <= 0:
 		queue_free()
+		get_tree().change_scene_to_file("res://Scenes/Map/Underground/villain_room.tscn")

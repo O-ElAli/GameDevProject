@@ -14,10 +14,11 @@ var facing_label: String = "down"
 var allow_behavior: bool = true
 
 @onready var sprite: Sprite2D = $Sprite2D
-@onready var animator: AnimationPlayer = $AnimationPlayer
+@onready var animator: AnimationPlayer = get_node("AnimationPlayer") if has_node("AnimationPlayer") else null
 @onready var detection_area: Area2D = $DetectionArea
 @onready var col_shape: CollisionShape2D = $DetectionArea/CollisionShape2D
 @onready var debug_node: Node2D = $DetectionDebug
+
 
 func _ready() -> void:
 	_initialize_from_resource()
@@ -83,7 +84,7 @@ func set_behavior_allowed(allowed: bool) -> void:
 		if animator:
 			animator.play("idle_" + facing_label)
 
-# z. B. direkt beim NPC-Detection-GameOver
+
 func _on_body_entered_detection(body: Node) -> void:
 	if stealth_enabled and body.is_in_group("player"):
 		print("Spieler entdeckt! Game Over...")
