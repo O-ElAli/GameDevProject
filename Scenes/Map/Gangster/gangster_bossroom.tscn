@@ -23707,7 +23707,7 @@ region_enabled = true
 region_rect = Rect2(-1, 287, 387, 94)
 
 [node name="Player" parent="." instance=ExtResource("18_e84xf")]
-z_index = 1
+z_index = 6
 position = Vector2(-503, 506)
 scale = Vector2(1.725, 1.725)
 
@@ -23724,7 +23724,7 @@ reveals_and_stays_vanished = false
 [node name="NPC" type="CharacterBody2D" parent="." groups=["npc"]]
 z_index = 6
 position = Vector2(-501, 150)
-scale = Vector2(0.75, 0.75)
+scale = Vector2(0.6, 0.6)
 disable_mode = 1
 motion_mode = 1
 script = ExtResource("22_rxh0w")

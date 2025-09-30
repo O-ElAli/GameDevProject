@@ -4,11 +4,15 @@ extends CharacterBody2D
 
 @export var movement_speed: float = 300.0
 
+@onready var player_healthbar: ProgressBar = $Healthbar
 var character_direction: Vector2
 
 var allow_movement:= true
 var last_direction := "Down"
 var idle_timer := 0.0
+
+var original_color: Color
+var is_flashing: bool = false
 
 @onready var sprite: AnimatedSprite2D = $sprite
 @onready var weapon_hand = $Hand
@@ -23,8 +27,11 @@ const SHOTGUN_SCENE = preload("res://Scenes/Player/weapon/Shotgun.tscn")
 func _ready() -> void:
 	add_to_group("player")
 	change_weapon(PISTOL_SCENE)
-	
+	original_color = sprite.modulate
 	SceneManager.restore_player_position(self, get_tree().current_scene.scene_file_path)
+	if player_healthbar:
+		player_healthbar.max_value = player_health
+		player_healthbar.value = player_health
 
 
 func _physics_process(_delta: float) -> void:
@@ -106,13 +113,32 @@ func _on_button_pressed() -> void:
 func take_damage(amount: int):
 	if player_health <= 0:
 		return
-		
+	
 	player_health -= amount
 	print("Spieler hat ", player_health, " Lebenspunkte übrig.")
-	# damage_flash() 
+	damage_flash()
+
+	if player_healthbar:
+		player_healthbar.value = player_health
+
 	if player_health <= 0:
 		_die()
-		
+
+
 func _die():
 		var player = get_tree().current_scene.get_node("Player")
 		SceneManager.enter_scene("res://Scenes/Game Over/GameOver.tscn", player)
+
+func damage_flash():
+	if is_flashing:
+		return
+
+	is_flashing = true
+	sprite.modulate = Color8(10, 189, 198, 255)
+
+	var timer = get_tree().create_timer(0.1)
+	timer.timeout.connect(func():
+		if is_instance_valid(sprite):
+			sprite.modulate = original_color
+		is_flashing = false
+	)

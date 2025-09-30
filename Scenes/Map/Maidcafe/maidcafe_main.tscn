@@ -35556,7 +35556,7 @@ tile_map_data = PackedByteArray("AADZ/9P/AgABAAEAAADZ/9T/AgABAAEAAADZ/9X/AgABAAE
 tile_set = SubResource("TileSet_2u4ai")
 
 [node name="Player" parent="." instance=ExtResource("1_ekqxe")]
-z_index = 2
+z_index = 6
 position = Vector2(-138, 216)
 scale = Vector2(2.35, 2.35)
 

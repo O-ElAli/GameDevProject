@@ -33193,7 +33193,7 @@ tile_map_data = PackedByteArray("AAA1APP/BAAbABQAAAA2APP/BAAcABQAAAA4APP/BAAlAB4
 tile_set = SubResource("TileSet_qycay")
 
 [node name="Player" parent="." instance=ExtResource("1_117wq")]
-z_index = 2
+z_index = 6
 position = Vector2(621, 177)
 scale = Vector2(2.12, 2.12)
 

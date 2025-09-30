@@ -30893,7 +30893,7 @@ build_mode = 1
 polygon = PackedVector2Array(-238.309, -286.444, -238.309, 241.339, 1233, 237, 1234, 351, 1392.85, 350.621, 1392.23, -286.444, 465.202, -284.717, 467.545, -136.455, -127.909, -137.364, -125.301, -288.307)
 
 [node name="Player" parent="." instance=ExtResource("23_bn778")]
-z_index = 1
+z_index = 6
 position = Vector2(1316.7, 231.47)
 scale = Vector2(2, 2)
 

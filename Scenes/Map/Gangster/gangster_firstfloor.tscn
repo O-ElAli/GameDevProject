@@ -28663,7 +28663,7 @@ is_exit = true
 action_name = "go down"
 
 [node name="Player" parent="." instance=ExtResource("18_bp53s")]
-z_index = 1
+z_index = 6
 position = Vector2(-176, 122)
 scale = Vector2(1.775, 1.775)
 
@@ -28680,7 +28680,7 @@ reveals_and_stays_vanished = false
 [node name="NPC" type="CharacterBody2D" parent="." groups=["npc"]]
 z_index = 6
 position = Vector2(-857, 112)
-scale = Vector2(0.75, 0.75)
+scale = Vector2(0.65, 0.65)
 disable_mode = 1
 motion_mode = 1
 script = ExtResource("22_n4p8m")
@@ -28714,7 +28714,7 @@ col_shape = NodePath("../DetectionArea/CollisionShape2D")
 [node name="NPC3" type="CharacterBody2D" parent="." groups=["npc"]]
 z_index = 6
 position = Vector2(-807, 112)
-scale = Vector2(0.75, 0.75)
+scale = Vector2(0.65, 0.65)
 disable_mode = 1
 motion_mode = 1
 script = ExtResource("22_n4p8m")

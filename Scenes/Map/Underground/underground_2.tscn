@@ -27117,10 +27117,6 @@ disable_mode = 1
 motion_mode = 1
 script = ExtResource("17_4d36m")
 
-[node name="npc_interaction" parent="NPC4" instance=ExtResource("18_2kncn")]
-npc_name = "Yakuza_Fight"
-dialogue_system_path = NodePath("../../Dialogue")
-
 [node name="Sprite2D" type="Sprite2D" parent="NPC4"]
 position = Vector2(0, -35)
 texture = ExtResource("22_uu1bp")
@@ -27215,10 +27211,6 @@ scale = Vector2(0.75, 0.75)
 disable_mode = 1
 motion_mode = 1
 script = ExtResource("17_4d36m")
-
-[node name="npc_interaction" parent="NPC7" instance=ExtResource("18_2kncn")]
-npc_name = "NeoCorp_Fight"
-dialogue_system_path = NodePath("../../Dialogue")
 
 [node name="Sprite2D" type="Sprite2D" parent="NPC7"]
 position = Vector2(0, -35)

@@ -1,4 +1,4 @@
-[gd_scene load_steps=73 format=4 uid="uid://dedmth5y0la0l"]
+[gd_scene load_steps=75 format=4 uid="uid://dedmth5y0la0l"]
 
 [ext_resource type="Script" uid="uid://cppwxduon33sc" path="res://scripts/villian_room/villian_room_fight.gd" id="1_tyt38"]
 [ext_resource type="Texture2D" uid="uid://bvvmohcqje3we" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A2.png" id="2_170gr"]
@@ -35023,6 +35023,12 @@ sources/10 = SubResource("TileSetAtlasSource_2jjug")
 sources/11 = SubResource("TileSetAtlasSource_34jr7")
 sources/12 = SubResource("TileSetAtlasSource_qovv4")
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tyt38"]
+bg_color = Color(0.0110876, 0.0110876, 0.0110876, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_170gr"]
+bg_color = Color(0.0392157, 0.741176, 0.776471, 1)
+
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ge7mq"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_6j20s"]
@@ -35139,6 +35145,16 @@ position = Vector2(-300, 82)
 scale = Vector2(2.105, 2.105)
 script = ExtResource("22_8rov3")
 
+[node name="Healthbar" type="ProgressBar" parent="Player"]
+offset_left = -13.3676
+offset_top = -20.5656
+offset_right = 56.6324
+offset_bottom = 2.43444
+scale = Vector2(0.4, 0.4)
+theme_override_styles/background = SubResource("StyleBoxFlat_tyt38")
+theme_override_styles/fill = SubResource("StyleBoxFlat_170gr")
+value = 30.0
+
 [node name="Dialogue" parent="." instance=ExtResource("23_j02cp")]
 
 [node name="NPC4" type="CharacterBody2D" parent="." groups=["npc"]]
@@ -35214,3 +35230,6 @@ text = "To be continued..."
 z_index = 6
 position = Vector2(-416, -233)
 scale = Vector2(2, 2)
+
+[node name="start" type="Marker2D" parent="."]
+position = Vector2(-300, 105)
