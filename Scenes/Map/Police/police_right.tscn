@@ -1,4 +1,4 @@
-[gd_scene load_steps=88 format=4 uid="uid://5s48by732xw6"]
+[gd_scene load_steps=89 format=4 uid="uid://5s48by732xw6"]
 
 [ext_resource type="Script" uid="uid://texmhdw1hced" path="res://scripts/police/policeRight.gd" id="1_ge23g"]
 [ext_resource type="Texture2D" uid="uid://770eguff8lyv" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_A2_remaster.png" id="1_lkf4i"]
@@ -36,6 +36,7 @@
 [ext_resource type="Script" uid="uid://cgpjq2wuxwrww" path="res://scripts/Npc/detection.gd" id="34_ra3m6"]
 [ext_resource type="Texture2D" uid="uid://dnluyxlkg0vc0" path="res://assets/player_hud/paper_icon.png" id="35_hahb3"]
 [ext_resource type="Texture2D" uid="uid://2icheajqf3aq" path="res://assets/player_hud/usb.png" id="36_hahb3"]
+[ext_resource type="AudioStream" uid="uid://deiv2yehftohy" path="res://assets/music/Polizei/ArcadeGameBGM#3/ArcadeGameBGM#3_Loop.wav" id="37_4na6n"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_un35h"]
 texture = ExtResource("1_lkf4i")
@@ -29320,5 +29321,10 @@ z_index = 4
 position = Vector2(-11, -815)
 item_name = "USB"
 icon = ExtResource("36_hahb3")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("37_4na6n")
+volume_db = -14.04
+autoplay = true
 
 [connection signal="pressed" from="CanvasLayer2/Control/exit" to="CanvasLayer2/Control" method="_on_exit_pressed"]

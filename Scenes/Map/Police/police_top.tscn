@@ -1,4 +1,4 @@
-[gd_scene load_steps=48 format=4 uid="uid://yr244iy6k8q3"]
+[gd_scene load_steps=49 format=4 uid="uid://yr244iy6k8q3"]
 
 [ext_resource type="Texture2D" uid="uid://770eguff8lyv" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_A2_remaster.png" id="1_6qwod"]
 [ext_resource type="Texture2D" uid="uid://n28j2k34cv2c" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_A2_remaster_V2.png" id="2_a3aq7"]
@@ -23,6 +23,7 @@
 [ext_resource type="Texture2D" uid="uid://b60t7nw76qhbl" path="res://assets/interior/Cyberpunk Interior Remaster/characters/!Cyberpunk_Toilet_Door.png" id="21_vokhv"]
 [ext_resource type="PackedScene" uid="uid://d06523r6uwlmc" path="res://Scenes/Player/Player.tscn" id="23_01pau"]
 [ext_resource type="PackedScene" uid="uid://b0xqb38acejis" path="res://Interaction/Doors/Door.tscn" id="23_60f3r"]
+[ext_resource type="AudioStream" uid="uid://deiv2yehftohy" path="res://assets/music/Polizei/ArcadeGameBGM#3/ArcadeGameBGM#3_Loop.wav" id="24_60f3r"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_v2luy"]
 texture = ExtResource("1_6qwod")
@@ -25420,3 +25421,8 @@ rotation = 1.5708
 scale = Vector2(1.77, 1.77)
 target_scene_path = "uid://bw4ued8o4ntf7"
 action_name = "enter"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("24_60f3r")
+volume_db = -14.04
+autoplay = true

@@ -1,4 +1,4 @@
-[gd_scene load_steps=184 format=4 uid="uid://dk5risx4k1p4l"]
+[gd_scene load_steps=185 format=4 uid="uid://dk5risx4k1p4l"]
 
 [ext_resource type="Texture2D" uid="uid://ctjomyolw21p5" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A1.png" id="1_mfxgf"]
 [ext_resource type="Script" uid="uid://bn75yehcatcj2" path="res://scripts/citymap/citymap.gd" id="1_uhbmj"]
@@ -59,6 +59,7 @@
 [ext_resource type="Texture2D" uid="uid://bulmkn2lm3ppx" path="res://assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/2077/rpgmaker compat 48x48/riverwardjacket.png" id="57_iqbs8"]
 [ext_resource type="Texture2D" uid="uid://i1kim73kxkli" path="res://assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/2077/rpgmaker compat 48x48/tbug.png" id="58_4j1cy"]
 [ext_resource type="Texture2D" uid="uid://d2v8tkcdo1qv7" path="res://assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/2077/rpgmaker compat 48x48/takemuracasual.png" id="59_iqbs8"]
+[ext_resource type="AudioStream" uid="uid://c5l7mnmcoflqi" path="res://assets/music/Overworld/Sci-FiGameBGM#6/Sci-Fi_BGM#6.wav" id="60_4j1cy"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4a6f5"]
 texture = ExtResource("1_mfxgf")
@@ -105904,3 +105905,8 @@ shape = SubResource("CircleShape2D_8hx3h")
 [node name="DetectionDebug" type="Node2D" parent="NPC8" node_paths=PackedStringArray("col_shape")]
 script = ExtResource("54_l2ojw")
 col_shape = NodePath("../DetectionArea/CollisionShape2D")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("60_4j1cy")
+volume_db = -14.04
+autoplay = true

@@ -17,7 +17,8 @@ const MODERATOR_FIRST_DIALOGUE = {
 const MODERATOR_REPEAT_DIALOGUE = {
 	"npc_name": "Moderator",
 	"dialogue_lines": [
-		{"name": "Moderator", "text": "Oh, the champion is back! So far, you have no opponent."}
+		{"name": "Moderator", "text": "Oh, the champion is back! So far, you have no opponent. You can also go to the boss anytime now that you are the champion."},
+		
 	]
 }
 

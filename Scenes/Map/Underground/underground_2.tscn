@@ -1,4 +1,4 @@
-[gd_scene load_steps=47 format=4 uid="uid://k2urbilwh603"]
+[gd_scene load_steps=48 format=4 uid="uid://k2urbilwh603"]
 
 [ext_resource type="Texture2D" uid="uid://bvvmohcqje3we" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A2.png" id="1_d2e8g"]
 [ext_resource type="Texture2D" uid="uid://3ppsxbsnh2sb" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A2_Bright.png" id="2_byl6v"]
@@ -23,6 +23,7 @@
 [ext_resource type="PackedScene" uid="uid://c40h00sbv0l0y" path="res://Scenes/Dialogue/dialogue.tscn" id="21_xsxeh"]
 [ext_resource type="Texture2D" uid="uid://dgkdtctdjaoir" path="res://assets/Characters/NPCs/matrixSERIESfreebies/upscaled48x48/$agentsmith.png" id="22_uu1bp"]
 [ext_resource type="Texture2D" uid="uid://ywfhxdpvmqwm" path="res://assets/Characters/NPCs/matrixSERIESfreebies/upscaled48x48/$ghostmatrixALT.png" id="23_qhrs6"]
+[ext_resource type="AudioStream" uid="uid://b507xbi3vqmne" path="res://assets/music/Underground/menu_music.wav" id="24_qhrs6"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_km3i7"]
 texture = ExtResource("1_d2e8g")
@@ -27070,7 +27071,7 @@ build_mode = 1
 polygon = PackedVector2Array(-1454, 96, -1326, 95, -1325, 70, -1284, 70, -1283, 96, 593, 97, 593, -48, 686, -48, 688, 195, -1457, 194)
 
 [node name="Player" parent="." instance=ExtResource("16_22yl6")]
-z_index = 1
+z_index = 6
 position = Vector2(636, 56)
 scale = Vector2(2.155, 2.155)
 
@@ -27232,3 +27233,8 @@ shape = SubResource("CircleShape2D_kqhvm")
 [node name="DetectionDebug" type="Node2D" parent="NPC7" node_paths=PackedStringArray("col_shape")]
 script = ExtResource("20_qhrs6")
 col_shape = NodePath("../DetectionArea/CollisionShape2D")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("24_qhrs6")
+volume_db = -14.04
+autoplay = true

@@ -1,4 +1,4 @@
-[gd_scene load_steps=60 format=4 uid="uid://bhv1yf5tjy08c"]
+[gd_scene load_steps=61 format=4 uid="uid://bhv1yf5tjy08c"]
 
 [ext_resource type="Script" uid="uid://b03j7amh12iw2" path="res://scripts/gangstermain/gangsterMain.gd" id="1_87fe8"]
 [ext_resource type="Texture2D" uid="uid://770eguff8lyv" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_A2_remaster.png" id="1_xynxm"]
@@ -25,6 +25,7 @@
 [ext_resource type="Script" uid="uid://bquehj3xedq4" path="res://scripts/Npc/patrol_behavior.gd" id="23_2rw01"]
 [ext_resource type="Script" uid="uid://dnhtv77nf6s3f" path="res://scripts/Npc/patrol_location.gd" id="24_2kfgf"]
 [ext_resource type="Script" uid="uid://cgpjq2wuxwrww" path="res://scripts/Npc/detection.gd" id="25_11rw8"]
+[ext_resource type="AudioStream" uid="uid://olbltlut5mas" path="res://assets/music/Yakuza/SF Soundtrack Free/Music/gameplay_int_medium.wav" id="26_m26yd"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ruev8"]
 texture = ExtResource("1_xynxm")
@@ -27432,3 +27433,8 @@ shape = SubResource("CircleShape2D_lbk4j")
 [node name="DetectionDebug" type="Node2D" parent="NPC10" node_paths=PackedStringArray("col_shape")]
 script = ExtResource("25_11rw8")
 col_shape = NodePath("../DetectionArea/CollisionShape2D")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("26_m26yd")
+volume_db = -14.04
+autoplay = true

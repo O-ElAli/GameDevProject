@@ -1,4 +1,4 @@
-[gd_scene load_steps=50 format=4 uid="uid://vvovinhjqwgi"]
+[gd_scene load_steps=51 format=4 uid="uid://vvovinhjqwgi"]
 
 [ext_resource type="Script" uid="uid://c0fa5qbveuic0" path="res://scripts/bar_bathroom/bar_bathroom.gd" id="1_act3s"]
 [ext_resource type="Texture2D" uid="uid://770eguff8lyv" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_A2_remaster.png" id="1_twwwq"]
@@ -24,6 +24,7 @@
 [ext_resource type="PackedScene" uid="uid://c40h00sbv0l0y" path="res://Scenes/Dialogue/dialogue.tscn" id="21_ucyxi"]
 [ext_resource type="PackedScene" uid="uid://bsolum1117wiw" path="res://Interaction/Items/ItemScene.tscn" id="22_act3s"]
 [ext_resource type="FontFile" uid="uid://bhrvcujduvgs5" path="res://assets/start_screen/Born2bSportyV2.ttf" id="24_ca7jp"]
+[ext_resource type="AudioStream" uid="uid://co2w1h4pg0c4o" path="res://assets/music/Bar/Cosmic Disco/Plasma Bolt.wav" id="25_7fnb3"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_g1qno"]
 texture = ExtResource("1_twwwq")
@@ -27336,3 +27337,8 @@ theme_override_colors/font_outline_color = Color(0.443137, 0.109804, 0.568627, 1
 theme_override_fonts/font = ExtResource("24_ca7jp")
 theme_override_font_sizes/font_size = 82
 text = "Chapter 2: The Secret Base"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("25_7fnb3")
+volume_db = -14.04
+autoplay = true

@@ -1,8 +1,9 @@
-[gd_scene load_steps=13 format=3 uid="uid://ben7rq638snug"]
+[gd_scene load_steps=14 format=3 uid="uid://ben7rq638snug"]
 
 [ext_resource type="Script" uid="uid://byxhuvbhxoj8r" path="res://scripts/Start_Screen/Start_Screen.gd" id="1_xehwy"]
 [ext_resource type="Texture2D" uid="uid://dfmqm5qgsvpr7" path="res://assets/start_screen/startscreen.png" id="2_k5ki8"]
 [ext_resource type="FontFile" uid="uid://bhrvcujduvgs5" path="res://assets/start_screen/Born2bSportyV2.ttf" id="3_k5ki8"]
+[ext_resource type="AudioStream" uid="uid://db5aqcy5lwsiy" path="res://assets/music/Startscreen/Cybertracks Vol.1/Track03.ogg" id="4_o5mhj"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_o5mhj"]
 texture = ExtResource("2_k5ki8")
@@ -222,6 +223,11 @@ theme_override_colors/font_color = Color(0.443137, 0.109804, 0.568627, 1)
 theme_override_fonts/font = ExtResource("3_k5ki8")
 theme_override_font_sizes/font_size = 82
 text = "Prologue: A New Legacy"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_o5mhj")
+volume_db = -14.04
+autoplay = true
 
 [connection signal="pressed" from="Start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="Continue" to="." method="_on_continue_pressed"]

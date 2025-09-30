@@ -1,4 +1,4 @@
-[gd_scene load_steps=45 format=4 uid="uid://by4m7woxuyr5d"]
+[gd_scene load_steps=46 format=4 uid="uid://by4m7woxuyr5d"]
 
 [ext_resource type="Texture2D" uid="uid://770eguff8lyv" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_A2_remaster.png" id="1_v0c6o"]
 [ext_resource type="Texture2D" uid="uid://n28j2k34cv2c" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_A2_remaster_V2.png" id="2_0tiph"]
@@ -20,6 +20,7 @@
 [ext_resource type="PackedScene" uid="uid://b0xqb38acejis" path="res://Interaction/Doors/Door.tscn" id="16_0tiph"]
 [ext_resource type="PackedScene" uid="uid://d06523r6uwlmc" path="res://Scenes/Player/Player.tscn" id="19_o77rp"]
 [ext_resource type="Texture2D" uid="uid://burfdgwnyye16" path="res://assets/player/light.png" id="20_uswmp"]
+[ext_resource type="AudioStream" uid="uid://olbltlut5mas" path="res://assets/music/Yakuza/SF Soundtrack Free/Music/gameplay_int_medium.wav" id="21_fwf53"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_t18y7"]
 texture = ExtResource("1_v0c6o")
@@ -29462,3 +29463,8 @@ texture_scale = 33.24
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
 color = Color(0, 0, 0, 1)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("21_fwf53")
+volume_db = -14.04
+autoplay = true

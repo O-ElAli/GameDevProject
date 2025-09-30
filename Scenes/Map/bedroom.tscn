@@ -1,4 +1,4 @@
-[gd_scene load_steps=89 format=4 uid="uid://cc70hok8kxakq"]
+[gd_scene load_steps=90 format=4 uid="uid://cc70hok8kxakq"]
 
 [ext_resource type="Texture2D" uid="uid://c5uwag0esubwv" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_A5_remaster.png" id="1_67hu0"]
 [ext_resource type="Script" uid="uid://uhru76u6gj5g" path="res://scripts/bedroom/bedroom.gd" id="1_m3vke"]
@@ -41,6 +41,7 @@
 [ext_resource type="PackedScene" uid="uid://c31ba5cmrurqb" path="res://Scenes/paper/paper.tscn" id="39_i3vpi"]
 [ext_resource type="Script" uid="uid://bnj7afy1kdkrf" path="res://scripts/Riddle/police_right_riddle.gd" id="40_6qkpk"]
 [ext_resource type="FontFile" uid="uid://bhrvcujduvgs5" path="res://assets/start_screen/Born2bSportyV2.ttf" id="41_jyk3h"]
+[ext_resource type="AudioStream" uid="uid://c5l7mnmcoflqi" path="res://assets/music/Overworld/Sci-FiGameBGM#6/Sci-Fi_BGM#6.wav" id="42_jyk3h"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5w8o4"]
 texture = ExtResource("2_5pctu")
@@ -48173,5 +48174,10 @@ theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_2vpjn")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_2vpjn")
 theme_override_styles/normal = SubResource("StyleBoxFlat_2vpjn")
 text = "x"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("42_jyk3h")
+volume_db = -14.04
+autoplay = true
 
 [connection signal="pressed" from="CanvasLayer2/Control/exit" to="CanvasLayer2/Control" method="_on_exit_pressed"]

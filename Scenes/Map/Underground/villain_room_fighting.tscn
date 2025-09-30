@@ -1,4 +1,4 @@
-[gd_scene load_steps=75 format=4 uid="uid://dedmth5y0la0l"]
+[gd_scene load_steps=76 format=4 uid="uid://dedmth5y0la0l"]
 
 [ext_resource type="Script" uid="uid://cppwxduon33sc" path="res://scripts/villian_room/villian_room_fight.gd" id="1_tyt38"]
 [ext_resource type="Texture2D" uid="uid://bvvmohcqje3we" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A2.png" id="2_170gr"]
@@ -29,6 +29,7 @@
 [ext_resource type="Script" uid="uid://cgpjq2wuxwrww" path="res://scripts/Npc/detection.gd" id="27_4c28j"]
 [ext_resource type="PackedScene" uid="uid://c5pktjjk7onji" path="res://Scenes/NPC/maid_boss.tscn" id="28_tyt38"]
 [ext_resource type="FontFile" uid="uid://bhrvcujduvgs5" path="res://assets/start_screen/Born2bSportyV2.ttf" id="29_o5oio"]
+[ext_resource type="AudioStream" uid="uid://0vb6aqmfipxw" path="res://assets/music/Fight/Soma Animus/Neon Pulse Free Action Arcade Music Pack/02 - Synthstorm [Loop] - Soma Animus.wav" id="30_170gr"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_l6sw1"]
 texture = ExtResource("2_170gr")
@@ -35233,3 +35234,8 @@ scale = Vector2(2, 2)
 
 [node name="start" type="Marker2D" parent="."]
 position = Vector2(-300, 105)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("30_170gr")
+volume_db = -14.04
+autoplay = true

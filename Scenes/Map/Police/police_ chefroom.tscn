@@ -1,4 +1,4 @@
-[gd_scene load_steps=66 format=4 uid="uid://bw4ued8o4ntf7"]
+[gd_scene load_steps=67 format=4 uid="uid://bw4ued8o4ntf7"]
 
 [ext_resource type="Texture2D" uid="uid://770eguff8lyv" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_A2_remaster.png" id="1_gwhuq"]
 [ext_resource type="Script" uid="uid://bpb7iu27tqg34" path="res://scripts/police_chefroom/police_chefroom.gd" id="1_m83et"]
@@ -30,6 +30,7 @@
 [ext_resource type="Script" uid="uid://bej3684kpdmq8" path="res://scripts/Npc/npc.gd" id="28_ln6jh"]
 [ext_resource type="Texture2D" uid="uid://mqqjbbc8q5xf" path="res://assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/2077/rpgmaker compat 48x48/johnnysilverhand.png" id="29_0hpun"]
 [ext_resource type="Script" uid="uid://cgpjq2wuxwrww" path="res://scripts/Npc/detection.gd" id="30_8jjff"]
+[ext_resource type="AudioStream" uid="uid://deiv2yehftohy" path="res://assets/music/Polizei/ArcadeGameBGM#3/ArcadeGameBGM#3_Loop.wav" id="31_0hpun"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bvipv"]
 texture = ExtResource("1_gwhuq")
@@ -29586,3 +29587,8 @@ shape = SubResource("CircleShape2D_dp8pa")
 [node name="DetectionDebug" type="Node2D" parent="NPC" node_paths=PackedStringArray("col_shape")]
 script = ExtResource("30_8jjff")
 col_shape = NodePath("../DetectionArea/CollisionShape2D")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("31_0hpun")
+volume_db = -14.04
+autoplay = true

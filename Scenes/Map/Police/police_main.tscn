@@ -1,4 +1,4 @@
-[gd_scene load_steps=61 format=4 uid="uid://bllgdksh0t7wf"]
+[gd_scene load_steps=62 format=4 uid="uid://bllgdksh0t7wf"]
 
 [ext_resource type="Script" uid="uid://hxo2t28bt510" path="res://scripts/police_main/police_main.gd" id="1_lerrq"]
 [ext_resource type="Texture2D" uid="uid://770eguff8lyv" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_A2_remaster.png" id="1_ys47u"]
@@ -31,6 +31,7 @@
 [ext_resource type="Texture2D" uid="uid://cwa64oew3tbik" path="res://assets/Characters/NPCs/terminatorSERIESfreebies/upscaled 48x48/terminator 2/$sarah1995.png" id="29_gbjdb"]
 [ext_resource type="Script" uid="uid://cgpjq2wuxwrww" path="res://scripts/Npc/detection.gd" id="30_nf1oo"]
 [ext_resource type="Texture2D" uid="uid://ml85wc3jafom" path="res://assets/Characters/NPCs/terminatorSERIESfreebies/upscaled 48x48/terminator/$terminator1984.png" id="31_bspat"]
+[ext_resource type="AudioStream" uid="uid://deiv2yehftohy" path="res://assets/music/Polizei/ArcadeGameBGM#3/ArcadeGameBGM#3_Loop.wav" id="32_s7xkw"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_eeydu"]
 texture = ExtResource("1_ys47u")
@@ -25571,3 +25572,8 @@ shape = SubResource("CircleShape2D_nf1oo")
 [node name="DetectionDebug" type="Node2D" parent="NPC4" node_paths=PackedStringArray("col_shape")]
 script = ExtResource("30_nf1oo")
 col_shape = NodePath("../DetectionArea/CollisionShape2D")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("32_s7xkw")
+volume_db = -14.04
+autoplay = true

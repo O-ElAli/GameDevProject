@@ -1,4 +1,4 @@
-[gd_scene load_steps=74 format=4 uid="uid://bedq416yj7uj5"]
+[gd_scene load_steps=75 format=4 uid="uid://bedq416yj7uj5"]
 
 [ext_resource type="Script" uid="uid://ba1w4tl0gu42d" path="res://scripts/villian_room/villian_room.gd" id="1_phfv2"]
 [ext_resource type="Texture2D" uid="uid://bvvmohcqje3we" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A2.png" id="1_rupkt"]
@@ -30,6 +30,7 @@
 [ext_resource type="Script" uid="uid://cgpjq2wuxwrww" path="res://scripts/Npc/detection.gd" id="27_5hy8f"]
 [ext_resource type="PackedScene" uid="uid://bsolum1117wiw" path="res://Interaction/Items/ItemScene.tscn" id="28_5vww2"]
 [ext_resource type="FontFile" uid="uid://bhrvcujduvgs5" path="res://assets/start_screen/Born2bSportyV2.ttf" id="29_5hy8f"]
+[ext_resource type="AudioStream" uid="uid://b507xbi3vqmne" path="res://assets/music/Underground/menu_music.wav" id="31_ge7mq"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_l6sw1"]
 texture = ExtResource("1_rupkt")
@@ -35253,3 +35254,8 @@ theme_override_colors/font_outline_color = Color(0.443137, 0.109804, 0.568627, 1
 theme_override_fonts/font = ExtResource("29_5hy8f")
 theme_override_font_sizes/font_size = 82
 text = "To be continued..."
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("31_ge7mq")
+volume_db = -14.04
+autoplay = true
