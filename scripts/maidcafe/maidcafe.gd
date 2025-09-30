@@ -100,11 +100,11 @@ func _intro_sequence() -> void:
 	var maid_intro_dialogue = {
 	"npc_name": "Maid",
 	"dialogue_lines": [
-		{"name": "Maid", "text": "Hello, Master. What would you like today?"},
+		{"name": "Akira", "text": "Hello, Master. What would you like today?"},
 		{"name": "Player", "text": "I heard one of the maids has gone missing recently."},
-		{"name": "Maid", "text": "Ah, you must mean V10-La. Yes, she’s been missing since yesterday. She told me that if the detective showed up, I should tell him she left a note at the usual place."},
+		{"name": "Akira", "text": "Ah, you must mean V10-La. Yes, she’s been missing since yesterday. She told me that if the detective showed up, I should tell him she left a note at the usual place."},
 		{"name": "Player", "text": "Where is the note?"},
-		{"name": "Maid", "text": "I’m afraid that’s all I can say… but how about a coffee, Master?"}
+		{"name": "Akira", "text": "I’m afraid that’s all I can say… but how about a coffee, Master?"}
 	]
 }
 	player.set_movement_allowed(false)

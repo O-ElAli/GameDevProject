@@ -1,4 +1,4 @@
-[gd_scene load_steps=55 format=4 uid="uid://gsafwi6iq46e"]
+[gd_scene load_steps=61 format=4 uid="uid://gsafwi6iq46e"]
 
 [ext_resource type="Script" uid="uid://b280rhx205cq8" path="res://scripts/police_left/police_left.gd" id="1_3vk77"]
 [ext_resource type="Texture2D" uid="uid://770eguff8lyv" path="res://assets/interior/Cyberpunk Interior Remaster/tilesets/Inside_A2_remaster.png" id="1_xk806"]
@@ -26,6 +26,10 @@
 [ext_resource type="PackedScene" uid="uid://b0xqb38acejis" path="res://Interaction/Doors/Door.tscn" id="23_vwlt3"]
 [ext_resource type="PackedScene" uid="uid://bsolum1117wiw" path="res://Interaction/Items/ItemScene.tscn" id="25_xfb78"]
 [ext_resource type="PackedScene" uid="uid://c40h00sbv0l0y" path="res://Scenes/Dialogue/dialogue.tscn" id="26_xfb78"]
+[ext_resource type="Script" uid="uid://bej3684kpdmq8" path="res://scripts/Npc/npc.gd" id="27_v1ihr"]
+[ext_resource type="PackedScene" uid="uid://b3ts4syrygxeo" path="res://Interaction/NPC/npc_interaction.tscn" id="28_ie10g"]
+[ext_resource type="Texture2D" uid="uid://ml85wc3jafom" path="res://assets/Characters/NPCs/terminatorSERIESfreebies/upscaled 48x48/terminator/$terminator1984.png" id="29_qyw1c"]
+[ext_resource type="Script" uid="uid://cgpjq2wuxwrww" path="res://scripts/Npc/detection.gd" id="30_wf7un"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_y8n6k"]
 texture = ExtResource("1_xk806")
@@ -30834,6 +30838,10 @@ texture = ExtResource("15_10adh")
 [sub_resource type="TileSet" id="TileSet_wfoi5"]
 sources/0 = SubResource("TileSetAtlasSource_kdjoo")
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_10adh"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_086l3"]
+
 [node name="PoliceLeft" type="Node2D"]
 script = ExtResource("1_3vk77")
 
@@ -30905,3 +30913,69 @@ vanishes = false
 reveals_and_stays_vanished = false
 
 [node name="Dialogue" parent="." instance=ExtResource("26_xfb78")]
+
+[node name="NPC3" type="CharacterBody2D" parent="." groups=["npc"]]
+z_index = 6
+position = Vector2(1353, -24)
+scale = Vector2(0.6, 0.6)
+disable_mode = 1
+motion_mode = 1
+script = ExtResource("27_v1ihr")
+
+[node name="npc_interaction" parent="NPC3" instance=ExtResource("28_ie10g")]
+npc_name = "Officer Mayhem"
+dialogue_system_path = NodePath("../../Dialogue")
+
+[node name="Sprite2D" type="Sprite2D" parent="NPC3"]
+position = Vector2(0, -35)
+texture = ExtResource("29_qyw1c")
+hframes = 3
+vframes = 4
+frame = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC3"]
+rotation = -1.58168
+shape = SubResource("CapsuleShape2D_10adh")
+
+[node name="DetectionArea" type="Area2D" parent="NPC3"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC3/DetectionArea"]
+scale = Vector2(4, 4)
+shape = SubResource("CircleShape2D_086l3")
+
+[node name="DetectionDebug" type="Node2D" parent="NPC3" node_paths=PackedStringArray("col_shape")]
+script = ExtResource("30_wf7un")
+col_shape = NodePath("../DetectionArea/CollisionShape2D")
+
+[node name="NPC4" type="CharacterBody2D" parent="." groups=["npc"]]
+z_index = 6
+position = Vector2(-179, 163)
+scale = Vector2(0.6, 0.6)
+disable_mode = 1
+motion_mode = 1
+script = ExtResource("27_v1ihr")
+
+[node name="npc_interaction" parent="NPC4" instance=ExtResource("28_ie10g")]
+npc_name = "Officer Tanaka"
+dialogue_system_path = NodePath("../../Dialogue")
+
+[node name="Sprite2D" type="Sprite2D" parent="NPC4"]
+position = Vector2(0, -35)
+texture = ExtResource("29_qyw1c")
+hframes = 3
+vframes = 4
+frame = 7
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC4"]
+rotation = -1.58168
+shape = SubResource("CapsuleShape2D_10adh")
+
+[node name="DetectionArea" type="Area2D" parent="NPC4"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC4/DetectionArea"]
+scale = Vector2(4, 4)
+shape = SubResource("CircleShape2D_086l3")
+
+[node name="DetectionDebug" type="Node2D" parent="NPC4" node_paths=PackedStringArray("col_shape")]
+script = ExtResource("30_wf7un")
+col_shape = NodePath("../DetectionArea/CollisionShape2D")

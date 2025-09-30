@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dgg6fns36v6uc" path="res://scripts/Npc/maid_boss.gd" id="1_px7nt"]
 [ext_resource type="Shader" uid="uid://bf0g6euyexxp4" path="res://shaders/damage_flash.gdshader" id="2_5ed2x"]
-[ext_resource type="Texture2D" uid="uid://d0acimtggpmmh" path="res://assets/Characters/NPCs/maids/maid1.png" id="3_xcy1e"]
+[ext_resource type="Texture2D" uid="uid://1uk71wlwd4ge" path="res://assets/Characters/NPCs/maids/maid5.png" id="3_kwcqr"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_ueotf"]
 shader = ExtResource("2_5ed2x")
@@ -156,7 +156,7 @@ aoe_cooldown = 2.0
 
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
 material = SubResource("ShaderMaterial_ueotf")
-texture = ExtResource("3_xcy1e")
+texture = ExtResource("3_kwcqr")
 hframes = 3
 vframes = 4
 frame = 1

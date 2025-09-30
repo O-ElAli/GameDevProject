@@ -33117,12 +33117,12 @@ _data = {
 &"walk_up": SubResource("Animation_77hyk")
 }
 
-[sub_resource type="Gradient" id="Gradient_rlir5"]
+[sub_resource type="Gradient" id="Gradient_ukn3x"]
 offsets = PackedFloat32Array(0.480519, 0.798701, 0.993506)
 colors = PackedColorArray(1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0)
 
 [sub_resource type="GradientTexture2D" id="GradientTexture2D_kw7m5"]
-gradient = SubResource("Gradient_rlir5")
+gradient = SubResource("Gradient_ukn3x")
 width = 24
 height = 24
 fill = 1
@@ -33288,7 +33288,7 @@ position = Vector2(-1, 3)
 texture = SubResource("GradientTexture2D_kw7m5")
 
 [node name="Line2D" type="Line2D" parent="NPC8/NpcBehaviorPatrol/NPC_Way/Way"]
-points = PackedVector2Array(0, 0, 38.9231, 0.461548)
+points = PackedVector2Array(0, 0, 38.9231, 0.46155)
 width = 1.0
 default_color = Color(1, 1, 1, 0.552941)
 
@@ -33332,7 +33332,7 @@ position = Vector2(-1, 3)
 texture = SubResource("GradientTexture2D_kw7m5")
 
 [node name="Line2D" type="Line2D" parent="NPC8/NpcBehaviorPatrol/NPC_Way2/Way"]
-points = PackedVector2Array(0, 0, -38.9231, -0.461548)
+points = PackedVector2Array(0, 0, -38.9231, -0.46155)
 width = 1.0
 default_color = Color(1, 1, 1, 0.552941)
 
@@ -33419,7 +33419,7 @@ position = Vector2(-1, 3)
 texture = SubResource("GradientTexture2D_kw7m5")
 
 [node name="Line2D" type="Line2D" parent="NPC10/NpcBehaviorPatrol/NPC_Way/Way"]
-points = PackedVector2Array(0, 0, 0.461426, -114.923)
+points = PackedVector2Array(0, 0, 0.46143, -114.923)
 width = 1.0
 default_color = Color(1, 1, 1, 0.552941)
 
@@ -33463,7 +33463,7 @@ position = Vector2(-1, 3)
 texture = SubResource("GradientTexture2D_kw7m5")
 
 [node name="Line2D" type="Line2D" parent="NPC10/NpcBehaviorPatrol/NPC_Way2/Way"]
-points = PackedVector2Array(0, 0, -0.461426, 114.923)
+points = PackedVector2Array(0, 0, -0.46143, 114.923)
 width = 1.0
 default_color = Color(1, 1, 1, 0.552941)
 
@@ -33660,7 +33660,7 @@ position = Vector2(-1, 3)
 texture = SubResource("GradientTexture2D_kw7m5")
 
 [node name="Line2D" type="Line2D" parent="NPC13/NpcBehaviorPatrol/NPC_Way2/Way"]
-points = PackedVector2Array(0, 0, 7.62939e-06, 67.6923)
+points = PackedVector2Array(0, 0, 0, 67.6923)
 width = 1.0
 default_color = Color(1, 1, 1, 0.552941)
 
@@ -33704,7 +33704,7 @@ position = Vector2(-1, 3)
 texture = SubResource("GradientTexture2D_kw7m5")
 
 [node name="Line2D" type="Line2D" parent="NPC13/NpcBehaviorPatrol/NPC_Way3/Way"]
-points = PackedVector2Array(0, 0, -115.385, 1.53846)
+points = PackedVector2Array(0, 0, -115.385, 1.5384)
 width = 1.0
 default_color = Color(1, 1, 1, 0.552941)
 

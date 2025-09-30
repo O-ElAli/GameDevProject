@@ -26951,7 +26951,7 @@ motion_mode = 1
 script = ExtResource("17_3rwk5")
 
 [node name="npc_interaction" parent="NPC" instance=ExtResource("19_aaje8")]
-npc_name = "Police_Chief"
+npc_name = "Yakuza_Fight"
 dialogue_system_path = NodePath("../../Dialogue")
 
 [node name="Sprite2D" type="Sprite2D" parent="NPC"]
@@ -26986,7 +26986,7 @@ motion_mode = 1
 script = ExtResource("17_3rwk5")
 
 [node name="npc_interaction" parent="NPC2" instance=ExtResource("19_aaje8")]
-npc_name = "Police_Chief"
+npc_name = "NeoCorp_Fight"
 dialogue_system_path = NodePath("../../Dialogue")
 
 [node name="Sprite2D" type="Sprite2D" parent="NPC2"]
@@ -27019,7 +27019,7 @@ motion_mode = 1
 script = ExtResource("17_3rwk5")
 
 [node name="npc_interaction" parent="NPC3" instance=ExtResource("19_aaje8")]
-npc_name = "Police_Chief"
+npc_name = "Yakuza_Fight"
 dialogue_system_path = NodePath("../../Dialogue")
 
 [node name="Sprite2D" type="Sprite2D" parent="NPC3"]
@@ -27052,7 +27052,7 @@ motion_mode = 1
 script = ExtResource("17_3rwk5")
 
 [node name="npc_interaction" parent="NPC4" instance=ExtResource("19_aaje8")]
-npc_name = "Police_Chief"
+npc_name = "NeoCorp_Fight"
 dialogue_system_path = NodePath("../../Dialogue")
 
 [node name="Sprite2D" type="Sprite2D" parent="NPC4"]

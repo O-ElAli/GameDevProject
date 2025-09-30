@@ -1,4 +1,4 @@
-[gd_scene load_steps=73 format=4 uid="uid://bedq416yj7uj5"]
+[gd_scene load_steps=74 format=4 uid="uid://bedq416yj7uj5"]
 
 [ext_resource type="Script" uid="uid://ba1w4tl0gu42d" path="res://scripts/villian_room/villian_room.gd" id="1_phfv2"]
 [ext_resource type="Texture2D" uid="uid://bvvmohcqje3we" path="res://assets/Map/winlu_exterior/winlu_exterior/tilesets/Outside_A2.png" id="1_rupkt"]
@@ -25,6 +25,7 @@
 [ext_resource type="PackedScene" uid="uid://c40h00sbv0l0y" path="res://Scenes/Dialogue/dialogue.tscn" id="23_yv5me"]
 [ext_resource type="Script" uid="uid://bej3684kpdmq8" path="res://scripts/Npc/npc.gd" id="24_ixxyq"]
 [ext_resource type="PackedScene" uid="uid://b3ts4syrygxeo" path="res://Interaction/NPC/npc_interaction.tscn" id="25_r2byu"]
+[ext_resource type="Texture2D" uid="uid://d3f3oe3rxbrg2" path="res://assets/Characters/NPCs/maids/maids_upscale/maid5.png" id="26_5hy8f"]
 [ext_resource type="Texture2D" uid="uid://dthw8yvt8chgr" path="res://assets/Characters/NPCs/cyberpunk2077andEDGERUNNERSsprites/png/edgerunners/rpgmaker compat 48x48/faraday.png" id="26_5vww2"]
 [ext_resource type="Script" uid="uid://cgpjq2wuxwrww" path="res://scripts/Npc/detection.gd" id="27_5hy8f"]
 [ext_resource type="PackedScene" uid="uid://bsolum1117wiw" path="res://Interaction/Items/ItemScene.tscn" id="28_5vww2"]
@@ -35143,18 +35144,18 @@ scale = Vector2(2.105, 2.105)
 [node name="NPC3" type="CharacterBody2D" parent="." groups=["npc"]]
 z_index = 6
 position = Vector2(-417, -233)
-scale = Vector2(0.75, 0.75)
+scale = Vector2(0.7, 0.7)
 disable_mode = 1
 motion_mode = 1
 script = ExtResource("24_ixxyq")
 
 [node name="npc_interaction" parent="NPC3" instance=ExtResource("25_r2byu")]
-npc_name = "Police_Chief"
+npc_name = "V10-LA"
 dialogue_system_path = NodePath("../../Dialogue")
 
 [node name="Sprite2D" type="Sprite2D" parent="NPC3"]
 position = Vector2(0, -35)
-texture = ExtResource("26_5vww2")
+texture = ExtResource("26_5hy8f")
 hframes = 3
 vframes = 4
 frame = 1
@@ -35182,7 +35183,7 @@ motion_mode = 1
 script = ExtResource("24_ixxyq")
 
 [node name="npc_interaction" parent="NPC4" instance=ExtResource("25_r2byu")]
-npc_name = "Police_Chief"
+npc_name = "Morrick"
 dialogue_system_path = NodePath("../../Dialogue")
 
 [node name="Sprite2D" type="Sprite2D" parent="NPC4"]
