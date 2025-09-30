@@ -19,4 +19,5 @@ mono_crash.*.json
 # Our ignores
 .idea/
 *.import/
-Builds/*.exe
+Builds/Nocturne_windows.exe
+Builds/Nocturne.exe
