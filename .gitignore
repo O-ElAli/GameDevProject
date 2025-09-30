@@ -21,3 +21,4 @@ mono_crash.*.json
 *.import/
 Builds/Nocturne_windows.exe
 Builds/Nocturne.exe
+/Builds/*.exe 
