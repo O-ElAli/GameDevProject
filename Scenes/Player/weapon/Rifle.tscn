@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://4i6rt3ab388t"]
 
 [ext_resource type="Script" uid="uid://s7o44py2caut" path="res://scripts/player/weapon/weapon.gd" id="1_2ob52"]
-[ext_resource type="Texture2D" uid="uid://u00wydnu6nif" path="res://assets/weapon/Icon29_11.png" id="2_51kdu"]
+[ext_resource type="Texture2D" uid="uid://bq8pfwv4y61jp" path="res://assets/weapon/Icon29_11.png" id="2_51kdu"]
 
 [node name="Weapon" type="Node2D"]
 scale = Vector2(0.5, 0.5)
@@ -10,8 +10,9 @@ damage = 8
 fire_rate = 0.08
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(38.615, -1.38502)
 rotation = 0.752237
 texture = ExtResource("2_51kdu")
 
 [node name="Muzzle" type="Marker2D" parent="."]
-position = Vector2(21, 0)
+position = Vector2(59.615, -1.38502)

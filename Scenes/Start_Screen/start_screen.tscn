@@ -222,7 +222,7 @@ grow_vertical = 2
 theme_override_colors/font_color = Color(0.443137, 0.109804, 0.568627, 1)
 theme_override_fonts/font = ExtResource("3_k5ki8")
 theme_override_font_sizes/font_size = 82
-text = "Prologue: A New Legacy"
+text = "Chapter 1: A New Legacy"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("4_o5mhj")
